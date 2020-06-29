@@ -1,29 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="be78cc9a-d26f-4038-92bb-bbe413ff137d" name="Default Changelist" comment="my design and services by doaa">
+    <list default="true" id="57f6b229-b42e-4248-aa52-bf1610b93a60" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Resource/img/AA/hi.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/css/mydesign.css" beforeDir="false" afterPath="$PROJECT_DIR$/Library/css/mydesign.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/MyDesign.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/MyDesign.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/service1.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/service1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ArtAttack.css" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtAttack.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Library/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/Home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +14,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <execution />
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,6 +28,7 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -55,9 +41,6 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\HP\PhpstormProjects\ArtAttack\Library\css" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\HsQ Galaxy Book\Desktop\ArtAttack\Resource\img\AA" />
     </key>
@@ -72,7 +55,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593422218640</updated>
-      <workItem from="1593422219985" duration="13204000" />
+      <workItem from="1593422219985" duration="16958000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1593422299046</created>
@@ -102,70 +85,37 @@
       <option name="project" value="LOCAL" />
       <updated>1593423832226</updated>
     </task>
-    <task id="LOCAL-00005" summary="my design and services by doaa">
-      <created>1593451571470</created>
+    <task id="LOCAL-00005" summary="home updated">
+      <created>1593442290339</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1593451571470</updated>
+      <updated>1593442290342</updated>
     </task>
-    <task id="LOCAL-00006" summary="my design and services by doaa">
-      <created>1593453459494</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1593453459494</updated>
-    </task>
-    <task id="LOCAL-00007" summary="my design and services by doaa">
-      <created>1593453473446</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1593453473446</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="updated" />
     <MESSAGE value="home updated" />
-    <MESSAGE value="my design and services by doaa" />
-    <option name="LAST_COMMIT_MESSAGE" value="my design and services by doaa" />
+    <option name="LAST_COMMIT_MESSAGE" value="home updated" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="173" y="0" key="CommitChangelistDialog2" timestamp="1593423831327">
+    <state x="173" y="0" key="CommitChangelistDialog2" timestamp="1593442289381">
       <screen x="0" y="0" width="1280" height="813" />
     </state>
-    <state x="173" y="0" key="CommitChangelistDialog2/0.0.1280.813@0.0.1280.813" timestamp="1593423831327" />
-    <state x="488" y="254" key="VCS.ChangelistChooser" timestamp="1593456243405">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="173" y="0" key="CommitChangelistDialog2/0.0.1280.813@0.0.1280.813" timestamp="1593442289381" />
+    <state x="233" y="140" key="Vcs.Push.Dialog.v2" timestamp="1593442294236">
+      <screen x="0" y="0" width="1280" height="813" />
     </state>
-    <state x="488" y="254" key="VCS.ChangelistChooser/0.0.1280.680@0.0.1280.680" timestamp="1593456243405" />
-    <state x="233" y="117" key="Vcs.Push.Dialog.v2" timestamp="1593453474861">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="233" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.813@0.0.1280.813" timestamp="1593442294236" />
+    <state x="450" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593442240397">
+      <screen x="0" y="0" width="1280" height="813" />
     </state>
-    <state x="233" y="117" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1593453474861" />
-    <state x="233" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.813@0.0.1280.813" timestamp="1593423834308" />
-    <state x="450" y="271" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593453480559">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="450" y="271" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1593453480559" />
     <state x="450" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.813@0.0.1280.813" timestamp="1593442240397" />
     <state x="303" y="134" width="672" height="678" key="search.everywhere.popup" timestamp="1593436106084">
       <screen x="0" y="0" width="1280" height="813" />

@@ -4,7 +4,7 @@
 /*Home Style Section*/
 #AttackWord {
     font-size: 20px;
-    color: #e83e8c;
+    color: #ff4697;
     text-shadow: 1px 1px 0 #000
 }
 
@@ -37,7 +37,8 @@ html {
     color: #fff;
     font-weight: 500;
     display: inline-block;
-    border: 2px solid #9572e8;
+    border: 2px solid #fb397d;
+    background-color: #fb397d;
     height: 50px;
     min-width: 178px;
     line-height: 46px;
@@ -46,8 +47,9 @@ html {
 }
 
 .sing-Up-button > a:hover {
-    background: #fb397d;
+    background: #3e2a72;
     color: #fff;
+    font-weight: bold;
     border-color: transparent;
     -webkit-transition-duration: 500ms;
     -o-transition-duration: 500ms;
