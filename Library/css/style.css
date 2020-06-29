@@ -509,13 +509,14 @@ p {
     min-width: 167px;
     line-height: 46px;
     text-align: center;
-    border-radius: 24px 24px 24px 0px;
+    border-radius: 24px;
     margin-left: 10px;
 }
 
 .get-start-area .submit:hover {
-    background: #6f52e5;
+    background: #4b195e;
     color: #fff;
+    font-weight: bold;
     -webkit-transition-duration: 500ms;
     -o-transition-duration: 500ms;
     transition-duration: 500ms;
