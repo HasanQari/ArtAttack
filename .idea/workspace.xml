@@ -19,12 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be78cc9a-d26f-4038-92bb-bbe413ff137d" name="Default Changelist" comment="new AA">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArtAttack/View/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/ArtAttack/View/services.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArtAttack/library/css/Mydesign.css" beforeDir="false" afterPath="$PROJECT_DIR$/ArtAttack/library/css/Mydesign.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArtAttack/library/css/services.css" beforeDir="false" afterPath="$PROJECT_DIR$/ArtAttack/library/css/services.css" afterDir="false" />
-    </list>
+    <list default="true" id="be78cc9a-d26f-4038-92bb-bbe413ff137d" name="Default Changelist" comment="my design and services by doaa" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,7 +78,7 @@
       <updated>1593381243687</updated>
       <workItem from="1593381246916" duration="470000" />
       <workItem from="1593407620355" duration="8994000" />
-      <workItem from="1593417731463" duration="847000" />
+      <workItem from="1593417731463" duration="1151000" />
     </task>
     <task id="LOCAL-00001" summary="new AA">
       <created>1593417752274</created>
@@ -106,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593418248859</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="my design and services by doaa">
+      <created>1593418645491</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1593418645491</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,7 +129,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="doaa" />
     <MESSAGE value="new AA" />
-    <option name="LAST_COMMIT_MESSAGE" value="new AA" />
+    <MESSAGE value="my design and services by doaa" />
+    <option name="LAST_COMMIT_MESSAGE" value="my design and services by doaa" />
   </component>
   <component name="WindowStateProjectService">
     <state x="233" y="0" key="#Intentions" timestamp="1593408335978">
@@ -138,6 +141,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1593418006513" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1593418659547">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1593418659547" />
     <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1593417619891">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
