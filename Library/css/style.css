@@ -324,15 +324,6 @@ p {
 :: 2.0 Header Area CSS
 -------------------------- */
 
-.header_area {
-    left: 0;
-    position: absolute;
-    width: 100%;
-    z-index: 99;
-    top: 0;
-    padding: 0 4%;
-}
-
 .menu_area .navbar-brand {
     font-size: 72px;
     font-weight: 700;
@@ -366,7 +357,6 @@ p {
     padding: 35px 15px;
 }
 
-
 .menu_area nav ul li > a:hover {
     color: #fb397d;
 }
@@ -395,6 +385,15 @@ p {
     -o-transition-duration: 500ms;
     transition-duration: 500ms;
 }
+.header_area {
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+    top: 0;
+    padding: 0 4%;
+}
+
 
 /* stcicky css */
 

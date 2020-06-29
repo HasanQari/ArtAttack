@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57f6b229-b42e-4248-aa52-bf1610b93a60" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Resource/img/AA/hi.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ArtAttack.css" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtAttack.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/css/ArtAttack.css" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtAttack.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Library/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/Home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/MyDesign.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/MyDesign.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/service1.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/service1.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +42,9 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\HsQ Galaxy Book\Desktop\ArtAttack\Library" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\HsQ Galaxy Book\Desktop\ArtAttack\Resource\img\AA" />
     </key>
@@ -92,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593442290342</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="home updated">
+      <created>1593457473552</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1593457473552</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,14 +116,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="home updated" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="173" y="0" key="CommitChangelistDialog2" timestamp="1593442289381">
+    <state x="173" y="0" key="CommitChangelistDialog2" timestamp="1593457471614">
       <screen x="0" y="0" width="1280" height="813" />
     </state>
-    <state x="173" y="0" key="CommitChangelistDialog2/0.0.1280.813@0.0.1280.813" timestamp="1593442289381" />
-    <state x="233" y="140" key="Vcs.Push.Dialog.v2" timestamp="1593442294236">
+    <state x="173" y="0" key="CommitChangelistDialog2/0.0.1280.813@0.0.1280.813" timestamp="1593457471614" />
+    <state x="233" y="140" key="Vcs.Push.Dialog.v2" timestamp="1593457477142">
       <screen x="0" y="0" width="1280" height="813" />
     </state>
-    <state x="233" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.813@0.0.1280.813" timestamp="1593442294236" />
+    <state x="233" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.813@0.0.1280.813" timestamp="1593457477142" />
     <state x="450" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593442240397">
       <screen x="0" y="0" width="1280" height="813" />
     </state>

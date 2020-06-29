@@ -1,6 +1,9 @@
 /*********** Art Attack Style Sheet ***********/
 
 
+/*Global*/
+
+
 /*Home Style Section*/
 #AttackWord {
     font-size: 20px;
@@ -31,7 +34,7 @@ html {
     scrollbar-width: none;
 }
 .sing-Up-button{
-    margin-right: -100px;
+    /*margin-right: -100px;*/
 }
 .sing-Up-button > a {
     color: #fff;
@@ -58,4 +61,40 @@ html {
 
 
 /*MyDesign Style Section*/
+.header_areaMD{
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    top: 0;
+    padding: 0 4%;
+    background: linear-gradient(to left, #7873ed, #a865e1);
+    width: 100%;
+}
 
+.Cus{
+    /*margin-right: -100px;*/
+}
+.Cus > a {
+    color: #fff;
+    font-weight: 500;
+    display: inline-block;
+    border: 2px solid #fb397d;
+    background-color: #fb397d;
+    height: 50px;
+    width: 1000%;
+    line-height: 46px;
+    text-align: left;
+    border-radius: 24px 0px 0px 24px;
+    padding-left: 20%;
+}
+
+.Cus > a:hover {
+    background: #3e2a72;
+    color: #fff;
+    font-weight: bold;
+    border-color: transparent;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
