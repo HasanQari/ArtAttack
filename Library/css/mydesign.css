@@ -631,6 +631,7 @@ p {
 
 .app-download-btn a i {
     color: #47425d;
+
     font-size: 24px;
     margin-right: 15px;
     -webkit-transition-duration: 500ms;
