@@ -20,9 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be78cc9a-d26f-4038-92bb-bbe413ff137d" name="Default Changelist" comment="my design and services by doaa">
-      <change afterPath="$PROJECT_DIR$/Library/css/mydesign.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/service1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/css/mydesign.css" beforeDir="false" afterPath="$PROJECT_DIR$/Library/css/mydesign.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Library/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/MyDesign.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/MyDesign.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/service.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/service.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +38,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -67,6 +70,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\PhpstormProjects\ArtAttack\View" />
       <recent name="C:\Users\HP\PhpstormProjects\ArtAttack\ArtAttack\View" />
     </key>
   </component>
@@ -112,7 +116,21 @@
       <option name="project" value="LOCAL" />
       <updated>1593418645491</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="my design and services by doaa">
+      <created>1593423515213</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1593423515213</updated>
+    </task>
+    <task id="LOCAL-00006" summary="my design and services by doaa">
+      <created>1593423872881</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1593423872881</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,22 +159,30 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="0" key="#Intentions/0.0.1280.680@0.0.1280.680" timestamp="1593408335978" />
-    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1593418006513">
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1593447380198">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1593418006513" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1593418659547">
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1593447380198" />
+    <state x="121" y="51" key="MergeDialog" timestamp="1593443674954">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1593418659547" />
+    <state x="121" y="51" key="MergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1593443674954" />
+    <state x="280" y="102" key="MultipleFileMergeDialog" timestamp="1593443666583">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="280" y="102" key="MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1593443666583" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1593423517110">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1593423517110" />
     <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1593417619891">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1280.680@0.0.1280.680" timestamp="1593417619891" />
-    <state x="450" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593417201228">
+    <state x="450" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593443704259">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="450" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1593417201228" />
+    <state x="450" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1593443704259" />
     <state x="297" y="151" key="run.anything.popup" timestamp="1593411645175">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
