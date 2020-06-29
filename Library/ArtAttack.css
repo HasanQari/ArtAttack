@@ -2,7 +2,20 @@
 
 
 /*Home Style Section*/
+#AttackWord {
+    font-size: 20px;
+    color: #e83e8c;
+    text-shadow: 1px 1px 0 #000
+}
 
+#rm-Mb-txt{
+    margin-bottom: 0;
+}
+
+.txt-color-pink-big{
+    color: #e83e8c;
+    font-size: 25px;
+}
 
 /*MyDesign Style Section*/
 
