@@ -1,0 +1,194 @@
+/*********** Art Attack Style Sheet ***********/
+
+
+/*Global*/
+
+
+/*Home Style Section*/
+#AttackWord {
+    font-size: 20px;
+    color: #ff4697;
+    text-shadow: 1px 1px 0 #000
+}
+
+#rm-Mb-txt {
+    margin-bottom: 0;
+}
+
+.txt-color-pink-big {
+    color: #e83e8c;
+    font-size: 25px;
+}
+
+#login-INunder {
+    color: #6f52e5;
+    cursor: pointer;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.sing-Up-button{
+    /*margin-right: -100px;*/
+}
+.sing-Up-button > a {
+    color: #fff;
+    font-weight: 500;
+    display: inline-block;
+    border: 2px solid #fb397d;
+    background-color: #fb397d;
+    height: 50px;
+    min-width: 178px;
+    line-height: 46px;
+    text-align: center;
+    border-radius: 24px;
+}
+
+.sing-Up-button > a:hover {
+    background: #3e2a72;
+    color: #fff;
+    font-weight: bold;
+    border-color: transparent;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+
+/*MyDesign Style Section*/
+.header_areaMD{
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    top: 0;
+    padding: 0 4%;
+    background: linear-gradient(to left, #7873ed, #a865e1);
+    width: 100%;
+}
+
+.Cus{
+    /*margin-right: -100px;*/
+}
+.Cus > a {
+    color: #fff;
+    font-weight: 500;
+    display: inline-block;
+    border: 2px solid #fb397d;
+    background-color: #fb397d;
+    height: 50px;
+    width: 1000%;
+    line-height: 46px;
+    text-align: left;
+    border-radius: 24px 0px 0px 24px;
+    padding-left: 20%;
+}
+
+.Cus > a:hover {
+    background: #3e2a72;
+    color: #fff;
+    font-weight: bold;
+    border-color: transparent;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+.emp-profile{
+    padding: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 0.5rem;
+    background: #fff;
+}
+.profile-img{
+    text-align: center;
+}
+.profile-img img{
+    width: 70%;
+    height: 100%;
+}
+.profile-img .file {
+    position: relative;
+    overflow: hidden;
+    margin-top: -20%;
+    width: 70%;
+    border: none;
+    border-radius: 0;
+    font-size: 15px;
+    background: #212529b8;
+}
+.profile-img .file input {
+    position: absolute;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
+.profile-head h5{
+    color: #333;
+}
+.profile-head h6{
+    color: #9900a8;
+}
+.profile-edit-btn{
+    border: none;
+    border-radius: 1.5rem;
+    width: 70%;
+    padding: 2%;
+    font-weight: 600;
+    color: #6c757d;
+    cursor: pointer;
+}
+
+
+.proile-rating{
+    font-size: 12px;
+    color: #818182;
+    margin-top: 5%;
+}
+.proile-rating span{
+    color: #495057;
+    font-size: 15px;
+    font-weight: 600;
+}
+.profile-head .nav-tabs{
+    margin-bottom:5%;
+}
+.profile-head .nav-tabs .nav-link{
+    font-weight:600;
+    border: none;
+}
+.profile-head .nav-tabs .nav-link.active{
+    border: none;
+    border-bottom:2px solid #fb397d;
+}
+.profile-work{
+    padding: 14%;
+    margin-top: -15%;
+}
+.profile-work p{
+    font-size: 15px;
+    color: #fb397d;
+    font-weight: 600;
+    margin-top: 10%;
+}
+.profile-work a{
+    text-decoration: none;
+    color: #495057;
+    font-weight: 600;
+    font-size: 14px;
+}
+.profile-work ul{
+    list-style: none;
+}
+.profile-tab label{
+    font-weight: 600;
+}
+.profile-tab p{
+    font-weight: 600;
+    color: #9900a8;
+}
