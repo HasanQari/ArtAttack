@@ -1,0 +1,9 @@
+.custom{
+    font-size: 20px;
+    background-color: mediumorchid;
+}
+
+*{
+    align-items: center;
+    justify-content: center;
+}
