@@ -19,11 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be78cc9a-d26f-4038-92bb-bbe413ff137d" name="Default Changelist" comment="my design and services by doaa">
+    <list default="true" id="be78cc9a-d26f-4038-92bb-bbe413ff137d" name="Default Changelist" comment="My design">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/css/mydesign.css" beforeDir="false" afterPath="$PROJECT_DIR$/Library/css/mydesign.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/MyDesign.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/MyDesign.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/service1.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/service1.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593453473446</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="My design">
+      <created>1593456868320</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1593456868320</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,7 +150,8 @@
     <MESSAGE value="updated" />
     <MESSAGE value="home updated" />
     <MESSAGE value="my design and services by doaa" />
-    <option name="LAST_COMMIT_MESSAGE" value="my design and services by doaa" />
+    <MESSAGE value="My design" />
+    <option name="LAST_COMMIT_MESSAGE" value="My design" />
   </component>
   <component name="WindowStateProjectService">
     <state x="173" y="0" key="CommitChangelistDialog2" timestamp="1593423831327">
@@ -157,10 +162,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="488" y="254" key="VCS.ChangelistChooser/0.0.1280.680@0.0.1280.680" timestamp="1593456243405" />
-    <state x="233" y="117" key="Vcs.Push.Dialog.v2" timestamp="1593453474861">
+    <state x="233" y="117" key="Vcs.Push.Dialog.v2" timestamp="1593456870180">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="117" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1593453474861" />
+    <state x="233" y="117" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1593456870180" />
     <state x="233" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.813@0.0.1280.813" timestamp="1593423834308" />
     <state x="450" y="271" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593453480559">
       <screen x="0" y="0" width="1280" height="680" />
