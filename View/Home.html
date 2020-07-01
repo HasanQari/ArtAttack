@@ -36,19 +36,20 @@
     <div class="wrapperAuT fadeInDownAuT">
         <div class="formContent">
             <div class="close btn pointer">
-                <button class="close btn pointer" onclick="closeIN()"><i class="ti-close" aria-hidden="true"></i></button>
+                <button class="close btn pointer" onclick="closeIN()"><i class="ti-close" aria-hidden="true"></i>
+                </button>
             </div>
             <!-- Tabs Titles -->
             <h2 class="signTitle active"> Sign IN </h2>
             <!-- Login Form -->
             <form>
-                <input type="text" class="fadeInAuT fst" name="username" placeholder="Username">
-                <input type="password" class="fadeInAuT scd" name="pass" placeholder="Password">
-                <input type="submit" class="fadeInAuT trd" value="Log In">
+                <input type="text" class="fadeInAuT fst inputAuT" name="username" placeholder="Username">
+                <input type="password" class="fadeInAuT scd inputAuT" name="pass" placeholder="Password">
+                <input type="submit" class="fadeInAuT trd AuTsubmit" value="Log In">
             </form>
             <!-- Remind Passowrd -->
             <div class="formFooter">
-                <a class="underlineHover"  onclick="RPass()" href="#FP">Forgot Password?</a>
+                <a class="underlineHover" onclick="RPass()" href="#FP">Forgot Password?</a>
             </div>
         </div>
     </div>
@@ -58,16 +59,17 @@
     <div class="wrapperAuT fadeInDownAuT">
         <div class="formContent">
             <div class="close btn pointer">
-                <button class="close btn pointer" onclick="closeUp()"><i class="ti-close" aria-hidden="true"></i></button>
+                <button class="close btn pointer" onclick="closeUp()"><i class="ti-close" aria-hidden="true"></i>
+                </button>
             </div>
             <!-- Tabs Titles -->
             <h2 class="signTitle active"> Sign Up </h2>
             <!-- Login Form -->
             <form>
-                <input type="text"  class="fadeInAuT fst" name="username" placeholder="Username">
-                <input type="email" class="fadeInAuT fst" name="email" placeholder="Email">
-                <input type="password" class="fadeInAuT scd" name="pass" placeholder="Password">
-                <input type="submit" class="fadeInAuT trd" value="Register">
+                <input type="text" class="fadeInAuT fst inputAuT" name="username" placeholder="Username">
+                <input type="email" class="fadeInAuT fst inputAuT" name="email" placeholder="Email">
+                <input type="password" class="fadeInAuT scd inputAuT" name="pass" placeholder="Password">
+                <input type="submit" class="fadeInAuT trd AuTsubmit" value="Register">
 
             </form>
         </div>
@@ -79,14 +81,15 @@
     <div class="wrapperAuT fadeInDownAuT">
         <div class="formContent">
             <div class="close btn pointer">
-                <button class="close btn pointer" onclick="closeRPass()"><i class="ti-close" aria-hidden="true"></i></button>
+                <button class="close btn pointer" onclick="closeRPass()"><i class="ti-close" aria-hidden="true"></i>
+                </button>
             </div>
             <!-- Tabs Titles -->
             <h2 class="signTitle active"> Remind Password </h2>
             <!-- Login Form -->
             <form>
-                <input type="email" class="fadeInAuT fst" name="email" placeholder="Email">
-                <input type="submit" class="fadeInAuT trd" value="Log In">
+                <input type="email" class="fadeInAuT fst inputAuT" name="email" placeholder="Email">
+                <input type="submit" class="fadeInAuT trd AuTsubmit" value="Log In">
             </form>
         </div>
     </div>
@@ -113,7 +116,7 @@
                                 <li class="nav-item"><a class="nav-link" href="#features">Services</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                                <li class="nav-item"><a class="nav-link" onclick="login()" href="#login" >Login</a></li>
+                                <li class="nav-item"><a class="nav-link" onclick="login()" href="#login">Login</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -133,7 +136,7 @@
 <!-- ***** Wellcome Area Start ***** -->
 <section class="wellcome_area clearfix" id="home">
     <!--    Welcome thumb-->
-    <div class="welcome-thumb wow fadeInDown" data-wow-delay="0.5s">
+    <div id="imgWelcome" class="welcome-thumb wow fadeInDown" data-wow-delay="0.5s">
         <img src="../Resource/img/AA/hi.png" alt="AA">
     </div>
     <div class="container h-100">
@@ -182,8 +185,8 @@
                         <i class="ti-ruler-pencil" aria-hidden="true"></i>
                     </div>
                     <h4>Powerful Design</h4>
-                    <p>We build pretty complex tools and this allows us to take designs and turn them into functional
-                        quickly and easily</p>
+                    <p>Get the ability to design what you want in a distinctive and modern design that gives you
+                        strength for your work</p>
                 </div>
             </div>
             <!-- Single Special Area -->
@@ -193,8 +196,7 @@
                         <i class="ti-settings" aria-hidden="true"></i>
                     </div>
                     <h4>Customizability</h4>
-                    <p>We build pretty complex tools and this allows us to take designs and turn them into functional
-                        quickly and easily</p>
+                    <p>Now you can create your design how you like because you have many options and ideas</p>
                 </div>
             </div>
         </div>
@@ -220,14 +222,14 @@
                         <div class="app-download-area">
                             <div class="app-download-btn wow fadeInUp" data-wow-delay="0.2s">
                                 <!-- signUp -->
-                                <a class="" href="#">
+                                <a class="" href="#" onclick="signup()">
                                     <i class="fa fa-sign-in"></i>
                                     <p class="mb-0">Sign Up Now</p>
                                 </a>
                             </div>
                         </div>
                         <br>
-                        <p>You have already Account? <a id="login-INunder" href="">Sign-In</a></p>
+                        <p>You have already Account? <a id="login-INunder" onclick="login()">Sign-In</a></p>
                     </div>
                 </div>
             </div>
@@ -260,9 +262,9 @@
                     <i class="fa fa-mortar-board" aria-hidden="true"></i>
                     <h5>The Educational Designs</h5>
                     <ul>
-                        <li>Services Services Services Services</li>
-                        <li>Services Services Services Services</li>
-                        <li>Services Services Services Services</li>
+                        <li><a href="#pptx" class="ServList">PowerPoint Template</a></li>
+                        <li><a href="#report" class="ServList">Report Template</a></li>
+                        <li><a href="#cv" class="ServList">CV Template</a></li>
                     </ul>
                 </div>
             </div>
@@ -272,9 +274,9 @@
                     <i class="fa fa-star-o" aria-hidden="true"></i>
                     <h5>The Occasions Designs</h5>
                     <ul>
-                        <li>Services Services Services Services</li>
-                        <li>Services Services Services Services</li>
-                        <li>Services Services Services Services</li>
+                        <li><a href="#" class="ServList">Design Graduation and Success Parties</a></li>
+                        <li><a href="#" class="ServList">Design Religious and Feasts Occasions</a></li>
+                        <li><a href="#" class="ServList">Design Occasions and Weddings</a></li>
                     </ul>
                 </div>
             </div>
@@ -284,9 +286,9 @@
                     <i class="fa fa-id-card-o" aria-hidden="true"></i>
                     <h5>The Commercial Designs</h5>
                     <ul>
-                        <li>Services Services Services Services</li>
-                        <li>Services Services Services Services</li>
-                        <li>Services Services Services Services</li>
+                        <li><a href="#" class="ServList">Design Business Cards</a></li>
+                        <li><a href="#" class="ServList">Design Advertisements</a></li>
+                        <li><a href="#" class="ServList">Design Posters</a></li>
                     </ul>
                 </div>
             </div>

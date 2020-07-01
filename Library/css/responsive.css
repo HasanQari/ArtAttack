@@ -54,7 +54,7 @@
     }
     .welcome-thumb {
         width: 50%;
-        bottom: -100px;
+        bottom: -1px;
         right: 0;
     }
     .wellcome-heading {
@@ -234,7 +234,7 @@
         font-size: 70px;
     }
     .welcome-thumb {
-        bottom: -109px;
+        bottom: -1px;
         width: 75%;
     }
     .wellcome-heading {

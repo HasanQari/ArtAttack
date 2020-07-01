@@ -5,17 +5,29 @@
 .pointer {
     cursor: pointer;
 }
+.hidelement{
+    display: none;
+}
 
-/************** Login *******************/
+.showElement{
+    display: block;
+}
+
+/************** Auth *******************/
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 
 .popStyle {
     font-family: "Poppins", sans-serif;
     position: fixed;
-    z-index: 2;
-    right: 33%;
-    top: 20%;
     display: none;
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
 
@@ -84,9 +96,7 @@
 
 /* FORM TYPOGRAPHY*/
 
-input[type="button"],
-input[type="submit"],
-input[type="reset"] {
+.AuTsubmit{
     background-color: rgba(59, 0, 191, 0.71);
     border: none;
     color: white;
@@ -108,15 +118,11 @@ input[type="reset"] {
     transition: all 0.3s ease-in-out;
 }
 
-input[type="button"]:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover {
+.AuTsubmit:hover {
     background-color: #ff4697;
 }
 
-input[type="button"]:active,
-input[type="submit"]:active,
-input[type="reset"]:active {
+.AuTsubmit:active {
     -moz-transform: scale(0.95);
     -webkit-transform: scale(0.95);
     -o-transform: scale(0.95);
@@ -124,8 +130,7 @@ input[type="reset"]:active {
     transform: scale(0.95);
 }
 
-input[type="text"],
-input[type="password"], input[type="email"] {
+.inputAuT {
     background-color: #f6f6f6;
     border: none;
     color: #0d0d0d;
@@ -146,14 +151,12 @@ input[type="password"], input[type="email"] {
     border-radius: 5px 5px 5px 5px;
 }
 
-input[type="text"]:focus,
-input[type="password"]:foucs, input[type="email"]:foucs{
+.inputAuT:foucs{
     background-color: #fff;
     border-bottom: 2px solid #5fbae9;
 }
 
-input[type="text"]:placeholder,
-input[type="password"]:placeholder, input[type="email"]:placeholder{
+.inputAuT:placeholder{
     color: #cccccc;
 }
 
@@ -306,7 +309,7 @@ input[type="password"]:placeholder, input[type="email"]:placeholder{
     font-size: 25px;
 }
 
-.login-INunder {
+#login-INunder {
     color: #6f52e5;
     cursor: pointer;
 }
@@ -341,6 +344,13 @@ html {
     -webkit-transition-duration: 500ms;
     -o-transition-duration: 500ms;
     transition-duration: 500ms;
+}
+.ServList{
+    color: #0b0b0b;
+    margin-left: 7%
+}
+.ServList:hover{
+    color: #ff4697;
 }
 
 
