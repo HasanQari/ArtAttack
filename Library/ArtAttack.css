@@ -1,10 +1,296 @@
-/*********** Art Attack Style Sheet ***********/
+/******************************* Art Attack Style Sheet *******************************/
+
+/******************************** Global ********************************/
+
+.pointer {
+    cursor: pointer;
+}
+
+/************** Login *******************/
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+.popStyle {
+    font-family: "Poppins", sans-serif;
+    position: fixed;
+    z-index: 2;
+    right: 33%;
+    top: 20%;
+    display: none;
+}
 
 
-/*Global*/
+.underlineHover {
+    color: #92badd;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.signTitle {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 40px 8px 10px 45px;
+    color: #cccccc;
+}
+
+/* STRUCTURE */
+
+.wrapperAuT {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    padding: 20px;
+}
+
+.formContent {
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    background: #fff;
+    padding: 30px;
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    padding: 0px;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.formFooter {
+    background-color: #f6f6f6;
+    border-top: 1px solid #dce8f1;
+    padding: 25px;
+    text-align: center;
+    -webkit-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+/* TABS */
+
+.signTitle.inactive {
+    color: #cccccc;
+}
+
+.signTitle.active {
+    color: #0d0d0d;
+    border-bottom: 2px solid #5fbae9;
+}
+
+/* FORM TYPOGRAPHY*/
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+    background-color: rgba(59, 0, 191, 0.71);
+    border: none;
+    color: white;
+    padding: 15px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 13px;
+    -webkit-box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
+    box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    margin: 5px 20px 40px 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #ff4697;
+}
+
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active {
+    -moz-transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+}
+
+input[type="text"],
+input[type="password"], input[type="email"] {
+    background-color: #f6f6f6;
+    border: none;
+    color: #0d0d0d;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    width: 85%;
+    border: 2px solid #f6f6f6;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:foucs, input[type="email"]:foucs{
+    background-color: #fff;
+    border-bottom: 2px solid #5fbae9;
+}
+
+input[type="text"]:placeholder,
+input[type="password"]:placeholder, input[type="email"]:placeholder{
+    color: #cccccc;
+}
+
+/* ANIMATIONS */
+
+/* Simple CSS3 Fade-in-down Animation */
+.fadeInDownAuT {
+    -webkit-animation-name: fadeInDownAuT;
+    animation-name: fadeInDownAuT;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDownAuT {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInDownAuT {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+/* Simple CSS3 Fade-in Animation */
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeInAuT {
+    opacity: 0;
+    -webkit-animation: fadeIn ease-in 1;
+    -moz-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.fadeInAuT.fst {
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.fadeInAuT.scd {
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.fadeInAuT.trd {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+    outline: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+/* Simple CSS3 Fade-in Animation */
+.underlineHover:after {
+    display: block;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 2px;
+    background-color: #56baed;
+    content: "";
+    transition: width 0.2s;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.underlineHover:hover {
+    color: #0d0d0d;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.underlineHover:hover:after {
+    width: 100%;
+    outline: none;
+    box-sizing: border-box;
+}
 
 
-/*Home Style Section*/
+/******************************* Home Style Section *******************************/
 #AttackWord {
     font-size: 20px;
     color: #ff4697;
@@ -20,7 +306,7 @@
     font-size: 25px;
 }
 
-#login-INunder {
+.login-INunder {
     color: #6f52e5;
     cursor: pointer;
 }
@@ -33,9 +319,7 @@ html {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
-.sing-Up-button{
-    /*margin-right: -100px;*/
-}
+
 .sing-Up-button > a {
     color: #fff;
     font-weight: 500;
@@ -60,8 +344,8 @@ html {
 }
 
 
-/*MyDesign Style Section*/
-.header_areaMD{
+/******************************* MyDesign Style Section *******************************/
+.header_areaMD {
     left: 0;
     position: fixed;
     width: 100%;
@@ -72,9 +356,6 @@ html {
     width: 100%;
 }
 
-.Cus{
-    /*margin-right: -100px;*/
-}
 .Cus > a {
     color: #fff;
     font-weight: 500;
@@ -98,20 +379,24 @@ html {
     -o-transition-duration: 500ms;
     transition-duration: 500ms;
 }
-.emp-profile{
+
+.emp-profile {
     padding: 3%;
     margin-top: 3%;
     margin-bottom: 3%;
     border-radius: 0.5rem;
     background: #fff;
 }
-.profile-img{
+
+.profile-img {
     text-align: center;
 }
-.profile-img img{
+
+.profile-img img {
     width: 70%;
     height: 100%;
 }
+
 .profile-img .file {
     position: relative;
     overflow: hidden;
@@ -122,19 +407,23 @@ html {
     font-size: 15px;
     background: #212529b8;
 }
+
 .profile-img .file input {
     position: absolute;
     opacity: 0;
     right: 0;
     top: 0;
 }
-.profile-head h5{
+
+.profile-head h5 {
     color: #333;
 }
-.profile-head h6{
+
+.profile-head h6 {
     color: #9900a8;
 }
-.profile-edit-btn{
+
+.profile-edit-btn {
     border: none;
     border-radius: 1.5rem;
     width: 70%;
@@ -145,50 +434,60 @@ html {
 }
 
 
-.proile-rating{
+.proile-rating {
     font-size: 12px;
     color: #818182;
     margin-top: 5%;
 }
-.proile-rating span{
+
+.proile-rating span {
     color: #495057;
     font-size: 15px;
     font-weight: 600;
 }
-.profile-head .nav-tabs{
-    margin-bottom:5%;
+
+.profile-head .nav-tabs {
+    margin-bottom: 5%;
 }
-.profile-head .nav-tabs .nav-link{
-    font-weight:600;
+
+.profile-head .nav-tabs .nav-link {
+    font-weight: 600;
     border: none;
 }
-.profile-head .nav-tabs .nav-link.active{
+
+.profile-head .nav-tabs .nav-link.active {
     border: none;
-    border-bottom:2px solid #fb397d;
+    border-bottom: 2px solid #fb397d;
 }
-.profile-work{
+
+.profile-work {
     padding: 14%;
     margin-top: -15%;
 }
-.profile-work p{
+
+.profile-work p {
     font-size: 15px;
     color: #fb397d;
     font-weight: 600;
     margin-top: 10%;
 }
-.profile-work a{
+
+.profile-work a {
     text-decoration: none;
     color: #495057;
     font-weight: 600;
     font-size: 14px;
 }
-.profile-work ul{
+
+.profile-work ul {
     list-style: none;
 }
-.profile-tab label{
+
+.profile-tab label {
     font-weight: 600;
 }
-.profile-tab p{
+
+.profile-tab p {
     font-weight: 600;
     color: #9900a8;
 }

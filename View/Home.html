@@ -20,12 +20,76 @@
     <!-- Home Style Sheet -->
     <link href="../Library/ArtAttack.css" rel="stylesheet" type="text/css">
 
+    <!-- Home Script Sheet -->
+    <script src="../Library/ArtAttack.js"></script>
+
 </head>
 
-<body>
+<body id="body">
 <!-- Preloader Start -->
 <div id="preloader">
     <div class="colorlib-load"></div>
+</div>
+
+<!-- sign in -->
+<div id="loginHolder" class="popStyle">
+    <div class="wrapperAuT fadeInDownAuT">
+        <div class="formContent">
+            <div class="close btn pointer">
+                <button class="close btn pointer" onclick="closeIN()"><i class="ti-close" aria-hidden="true"></i></button>
+            </div>
+            <!-- Tabs Titles -->
+            <h2 class="signTitle active"> Sign IN </h2>
+            <!-- Login Form -->
+            <form>
+                <input type="text" class="fadeInAuT fst" name="username" placeholder="Username">
+                <input type="password" class="fadeInAuT scd" name="pass" placeholder="Password">
+                <input type="submit" class="fadeInAuT trd" value="Log In">
+            </form>
+            <!-- Remind Passowrd -->
+            <div class="formFooter">
+                <a class="underlineHover"  onclick="RPass()" href="#FP">Forgot Password?</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- sign up -->
+<div id="signupHolder" class="popStyle">
+    <div class="wrapperAuT fadeInDownAuT">
+        <div class="formContent">
+            <div class="close btn pointer">
+                <button class="close btn pointer" onclick="closeUp()"><i class="ti-close" aria-hidden="true"></i></button>
+            </div>
+            <!-- Tabs Titles -->
+            <h2 class="signTitle active"> Sign Up </h2>
+            <!-- Login Form -->
+            <form>
+                <input type="text"  class="fadeInAuT fst" name="username" placeholder="Username">
+                <input type="email" class="fadeInAuT fst" name="email" placeholder="Email">
+                <input type="password" class="fadeInAuT scd" name="pass" placeholder="Password">
+                <input type="submit" class="fadeInAuT trd" value="Register">
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Remind Passowrd -->
+<div id="RPassHolder" class="popStyle">
+    <div class="wrapperAuT fadeInDownAuT">
+        <div class="formContent">
+            <div class="close btn pointer">
+                <button class="close btn pointer" onclick="closeRPass()"><i class="ti-close" aria-hidden="true"></i></button>
+            </div>
+            <!-- Tabs Titles -->
+            <h2 class="signTitle active"> Remind Password </h2>
+            <!-- Login Form -->
+            <form>
+                <input type="email" class="fadeInAuT fst" name="email" placeholder="Email">
+                <input type="submit" class="fadeInAuT trd" value="Log In">
+            </form>
+        </div>
+    </div>
 </div>
 
 <!-- ***** Header Area Start ***** -->
@@ -49,11 +113,8 @@
                                 <li class="nav-item"><a class="nav-link" href="#features">Services</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#login">Login</a></li>
+                                <li class="nav-item"><a class="nav-link" onclick="login()" href="#login" >Login</a></li>
                             </ul>
-                            <div class="sing-Up-button d-lg-none">
-                                <a href="#">Sign Up Free</a>
-                            </div>
                         </div>
                     </nav>
                 </div>
@@ -61,7 +122,7 @@
             <!-- Signin btn -->
             <div class="col-12 col-lg-2">
                 <div class="sing-Up-button d-none d-lg-block">
-                    <a href="#">Sign Up Free</a>
+                    <a onclick="signup()" href="#SignUp">Sign Up Free</a>
                 </div>
             </div>
         </div>
@@ -71,7 +132,7 @@
 
 <!-- ***** Wellcome Area Start ***** -->
 <section class="wellcome_area clearfix" id="home">
-<!--    Welcome thumb-->
+    <!--    Welcome thumb-->
     <div class="welcome-thumb wow fadeInDown" data-wow-delay="0.5s">
         <img src="../Resource/img/AA/hi.png" alt="AA">
     </div>
@@ -242,7 +303,7 @@
 
 <!-- ***** Our Team Area Start ***** -->
 <section class="our-Team-area bg-white section_padding_100_50 clearfix" id="team">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-12 text-center">
                 <!-- Heading Text  -->
