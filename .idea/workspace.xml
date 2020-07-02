@@ -19,8 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be78cc9a-d26f-4038-92bb-bbe413ff137d" name="Default Changelist" comment="My design">
+    <list default="true" id="57f6b229-b42e-4248-aa52-bf1610b93a60" name="Default Changelist" comment="updated">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/HsQ_Galaxy_Book.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/css/AAresponsive.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/Library/css/responsive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/Home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/MyDesign.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/MyDesign.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/service1.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/service1.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,13 +35,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <execution />
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -54,21 +63,21 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Library/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Library/css" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\HsQ Galaxy Book\Desktop\ArtAttack\Library\css" />
+      <recent name="C:\Users\HsQ Galaxy Book\Desktop\ArtAttack\Resource\img\AA" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\HP\PhpstormProjects\ArtAttack\Library\css" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\HP\PhpstormProjects\ArtAttack\Library\js" />
-      <recent name="C:\Users\HP\PhpstormProjects\ArtAttack\Library\css" />
-      <recent name="C:\Users\HsQ Galaxy Book\Desktop\ArtAttack\Resource\img\AA" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -82,6 +91,7 @@
       <option name="presentableId" value="Default" />
       <updated>1593422218640</updated>
       <workItem from="1593422219985" duration="13204000" />
+      <workItem from="1593689366785" duration="3302000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1593422299046</created>
@@ -139,19 +149,19 @@
       <option name="project" value="LOCAL" />
       <updated>1593503798044</updated>
     </task>
-    <task id="LOCAL-00009" summary="My design">
-      <created>1593511730925</created>
+    <task id="LOCAL-00009" summary="updated">
+      <created>1593616676364</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1593511730925</updated>
+      <updated>1593616676364</updated>
     </task>
-    <task id="LOCAL-00010" summary="My design">
-      <created>1593608761078</created>
+    <task id="LOCAL-00010" summary="updated">
+      <created>1593630548841</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1593608761078</updated>
+      <updated>1593630548841</updated>
     </task>
     <option name="localTasksCounter" value="11" />
     <servers />
@@ -164,51 +174,51 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="updated" />
     <MESSAGE value="home updated" />
     <MESSAGE value="my design and services by doaa" />
     <MESSAGE value="My design" />
-    <option name="LAST_COMMIT_MESSAGE" value="My design" />
+    <MESSAGE value="updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated" />
   </component>
   <component name="WindowStateProjectService">
     <state x="267" y="19" key="#Inspections" timestamp="1593506833773">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="267" y="19" key="#Inspections/0.0.1280.680@0.0.1280.680" timestamp="1593506833773" />
-    <state x="173" y="0" key="CommitChangelistDialog2" timestamp="1593423831327">
-      <screen x="0" y="0" width="1280" height="813" />
+    <state x="373" y="-900" key="CommitChangelistDialog2" timestamp="1593630547495">
+      <screen x="157" y="-900" width="1600" height="860" />
     </state>
+    <state x="373" y="-900" key="CommitChangelistDialog2/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1593630547495" />
     <state x="173" y="0" key="CommitChangelistDialog2/0.0.1280.813@0.0.1280.813" timestamp="1593423831327" />
-    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1593552758608">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1593552758608" />
-    <state x="436" y="43" key="RollbackChangesDialog" timestamp="1593607849067">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="436" y="43" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1593607849067" />
     <state x="488" y="254" key="VCS.ChangelistChooser" timestamp="1593456243405">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="488" y="254" key="VCS.ChangelistChooser/0.0.1280.680@0.0.1280.680" timestamp="1593456243405" />
-    <state x="233" y="117" key="Vcs.Push.Dialog.v2" timestamp="1593608765660">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="448" y="-752" key="Vcs.Push.Dialog.v2" timestamp="1593630550915">
+      <screen x="157" y="-900" width="1600" height="860" />
     </state>
-    <state x="233" y="117" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1593608765660" />
+    <state x="233" y="117" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1593503800765" />
+    <state x="448" y="-752" key="Vcs.Push.Dialog.v2/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1593630550915" />
     <state x="233" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.813@0.0.1280.813" timestamp="1593423834308" />
-    <state x="450" y="271" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593541647004">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="653" y="-647" key="com.intellij.ide.util.TipDialog" timestamp="1593689367512">
+      <screen x="157" y="-900" width="1600" height="860" />
     </state>
-    <state x="450" y="271" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1593541647004" />
+    <state x="653" y="-647" key="com.intellij.ide.util.TipDialog/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1593689367512" />
+    <state x="720" y="-557" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593692189480">
+      <screen x="157" y="-900" width="1600" height="860" />
+    </state>
+    <state x="450" y="271" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1593453480559" />
+    <state x="720" y="-557" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1593692189480" />
     <state x="450" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.813@0.0.1280.813" timestamp="1593442240397" />
     <state x="303" y="134" width="672" height="678" key="search.everywhere.popup" timestamp="1593436106084">
       <screen x="0" y="0" width="1280" height="813" />
