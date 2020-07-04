@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Design Business Cards</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="../../Library/js/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+          rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="../../Library/css/sb-admin-2.css" rel="stylesheet">
+    <link href="../../Library/css/style.css" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="../../Library/css/responsive.css" rel="stylesheet">
+
+    <!-- Home Style Sheet -->
+    <link href="../../Library/ArtAttack.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body id="page-top">
+<header class="header_areaMD animated" style="position: absolute">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <!-- Menu Area Start -->
+            <div class="col-12 col-lg-10">
+                <div class="menu_area">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <!-- Logo -->
+                        <a class="navbar-brand" href="#">Art<span id="AttackWord">Attack</span></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar"
+                                aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span
+                                class="navbar-toggler-icon"></span></button>
+                        <!-- Menu Area -->
+                        <div class="collapse navbar-collapse" id="ca-navbar">
+                            <ul class="navbar-nav ml-auto" id="nav">
+                                <li class="nav-item"><a class="nav-link" href="../Home.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#Logout">Logout</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- Customer Profile btn -->
+            <div class="col-12 col-lg-2">
+                <div class="Cus d-none d-lg-block">
+                    <a href="#">Hi Customer</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+</br></br></br><br><br>
+<!-- ***** Header Area End ***** -->
+
+<h1>Commercial poster and banner design</h1>
+<!-- Divider -->
+<hr class="sidebar-divider my-0">
+
+
+<!-- Divider -->
+<hr class="sidebar-divider">
+
+
+<!-- Sidebar Toggler (Sidebar) -->
+<div class="text-center d-none d-md-inline">
+    <button class="rounded-circle border-0" id="sidebarToggle"></button>
+</div>
+
+</ul>
+<!-- End of Sidebar -->
+
+<!-- Content Wrapper -->
+<div id="content-wrapper" class="d-flex flex-column">
+
+    <!-- Main Content -->
+    <div id="content">
+
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+
+            <!-- Content Row -->
+            <div class="row">
+
+                <!-- Earnings (Monthly) Card Example -->
+                <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-left-primary shadow h-100 py-2">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-center" id="textArea">
+
+                                <button onclick=" FunctionForUser()" style="padding: 3px"> Add Text
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="currentColor" fill-rule="evenodd"
+                                              d="M18 5.5h-5.25V18c0 .28.22.5.5.5h2a.75.75 0 1 1 0 1.5h-6.5a.75.75 0 1 1 0-1.5h2a.5.5 0 0 0 .5-.5V5.5H6a.5.5 0 0 0-.5.5v1.25a.75.75 0 0 1-1.5 0V5.5C4 4.67 4.67 4 5.5 4h13c.83 0 1.5.67 1.5 1.5v1.75a.75.75 0 1 1-1.5 0V6a.5.5 0 0 0-.5-.5z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <button type="button" onclick="document.getElementById('usertext').style.display='none'">
+                                delete
+                            </button>
+                            <button type="button" onclick="editUserText()">
+                                edit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    function FunctionForUser() {
+                        var userText = document.createElement("INPUT");
+                        userText.setAttribute("id", "usertext");
+                        let elementById = document.getElementById("INPUT");
+                        let stage = document.getElementById("stage")
+                        userText.setAttribute("type", "text");
+                        userText.setAttribute("value", "write your text here");
+                        stage.appendChild(userText);
+
+                    }
+                    var area1, area2;
+                    function editUserText() {
+
+                        if(!area1) {
+                            area1 = new nicEditor({fullPanel : true}).panelInstance('usertext',{hasPanel : true});
+                        } else {
+                            area1.removeInstance('usertext');
+                            area1 = null;
+                        }
+
+
+                    }
+                </script>
+
+                <!-- Earnings (Monthly) Card Example -->
+                <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-left-success shadow h-100 py-2">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col mr-2">
+                                    Add picture
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Earnings (Monthly) Card Example -->
+                <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-left-info shadow h-100 py-2">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col mr-2">
+                                    Add shape
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pending Requests Card Example -->
+                <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-left-warning shadow h-100 py-2">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col mr-2">
+                                    Add Wallpaper
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Area Chart -->
+                <div class="col-xl-8 col-lg-7">
+                    <div class="card shadow mb-4">
+                        <!-- Card Header - Dropdown -->
+                        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                            <h6 class="m-0 font-weight-bold text-primary">design Here</h6>
+
+                        </div>
+                        <!-- Card Body -->
+                        <div class="card-body">
+                            <div class="chart-area" id="stage">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Pie Chart -->
+                <div class="col-xl-4 col-lg-5">
+                    <div class="card shadow mb-4">
+                        <!-- Card Header - Dropdown -->
+                        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                            <h6 class="m-0 font-weight-bold text-primary">template</h6>
+                            <div class="dropdown no-arrow">
+
+                            </div>
+                        </div>
+                        <!-- Card Body -->
+                        <div class="card-body">
+                            <div class="chart-pie pt-4 pb-2">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <!-- Bootstrap core JavaScript-->
+        <script src="../../Library/js/vendor/jquery/jquery.min.js"></script>
+        <script src="../../Library/js/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Core plugin JavaScript-->
+        <script src="../../Library/js/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+        <!-- Custom scripts for all pages-->
+        <script src="../Library/js/vendor/sb-admin-2.min.js"></script>
+
+        <!-- Page level plugins -->
+        <script src="../../Library/js/vendor/chart.js/Chart.min.js"></script>
+
+        <!-- Page level custom scripts -->
+        <script src="../../Library/js/demo/chart-area-demo.js"></script>
+        <script src="../../Library/js/demo/chart-pie-demo.js"></script>
+        <script type="text/javascript" src="http://js.nicedit.com/nicEdit-latest.js"></script>
+        <script type="text/javascript">  bkLib.onDomLoaded(function () {
+            editUserText();
+        })
+        </script>
+
+
+    </div>
+</div>
+</div>
+<!-- ***** Cool Line ***** -->
+<div class="our-monthly-membership section_padding_34 "></div>
+</body>
+
+
+</html>
