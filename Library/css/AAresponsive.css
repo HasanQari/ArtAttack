@@ -255,6 +255,16 @@
     .get-start-area .email {
         margin-bottom: 0;
     }
+    *{
+        margin: auto;
+    }
+    .row {
+        display: -ms-flexbox;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
 }
 
 
