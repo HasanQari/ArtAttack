@@ -5,11 +5,12 @@
 .pointer {
     cursor: pointer;
 }
-.hidelement{
+
+.hidelement {
     display: none;
 }
 
-.showElement{
+.showElement {
     display: block;
 }
 
@@ -26,8 +27,8 @@
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 
@@ -96,7 +97,7 @@
 
 /* FORM TYPOGRAPHY*/
 
-.AuTsubmit{
+.AuTsubmit {
     background-color: rgba(59, 0, 191, 0.71);
     border: none;
     color: white;
@@ -151,12 +152,12 @@
     border-radius: 5px 5px 5px 5px;
 }
 
-.inputAuT:foucs{
+.inputAuT:foucs {
     background-color: #fff;
     border-bottom: 2px solid #5fbae9;
 }
 
-.inputAuT:placeholder{
+.inputAuT:placeholder {
     color: #cccccc;
 }
 
@@ -345,11 +346,13 @@ html {
     -o-transition-duration: 500ms;
     transition-duration: 500ms;
 }
-.ServList{
+
+.ServList {
     color: #0b0b0b;
     margin-left: 7%
 }
-.ServList:hover{
+
+.ServList:hover {
     color: #ff4697;
 }
 
@@ -357,7 +360,7 @@ html {
 /******************************* MyDesign Style Section *******************************/
 .header_areaMD {
     left: 0;
-    position: fixed;
+    position: absolute;
     width: 100%;
     z-index: 99;
     top: 0;
@@ -392,7 +395,7 @@ html {
 
 
 /******************************* Profile Style Section *******************************/
-.PFsectionTitle{
+.PFsectionTitle {
     font-weight: 300;
     color: #5b32b4;
     font-size: 48px;
@@ -509,3 +512,88 @@ html {
     font-weight: 600;
     color: #9900a8;
 }
+
+
+/******************************* Services Style Section *******************************/
+
+.sImg {
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.sImg img {
+    border-radius: 10px;
+}
+
+.sTxT > h4 {
+    font-size: 22px;
+    color: #5b32b4;
+}
+
+.sTxT > p {
+    color: #b5aec4;
+    margin-bottom: 0;
+}
+
+.S-hover-effects {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(105, 75, 228, 0.8);
+    border-radius: 10px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: all 500ms;
+    -o-transition: all 500ms;
+    transition: all 500ms;
+}
+
+.single-SSS:hover .S-hover-effects {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.S-social-icon {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.S-social-icon > a {
+    font-size: 14px;
+    color: #fff;
+    background: #9a81d7;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    display: block;
+    margin: 2.5px;
+}
+
+.single-holder {
+    border: 1px solid #eff2f6;
+    padding: 30px;
+    border-radius: 40px;
+    -webkit-transition-duration: 800ms;
+    -o-transition-duration: 800ms;
+    transition-duration: 800ms;
+    margin-bottom: 20px;
+}
+
