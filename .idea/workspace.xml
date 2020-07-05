@@ -19,18 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be78cc9a-d26f-4038-92bb-bbe413ff137d" name="Default Changelist" comment="My design">
-      <change afterPath="$PROJECT_DIR$/Resource/img/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/services/service1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/services/service2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/services/service3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_29_2020_10_52_AM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_29_2020_10_52_AM__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_29_2020_12_31_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_29_2020_12_31_PM__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_29_2020_6_14_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_29_2020_6_14_PM__Default_Changelist_.xml" afterDir="false" />
+    <list default="true" id="be78cc9a-d26f-4038-92bb-bbe413ff137d" name="Default Changelist" comment="the last update">
+      <change afterPath="$PROJECT_DIR$/View/Layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/service1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/css/service1.css" beforeDir="false" afterPath="$PROJECT_DIR$/Library/css/service1.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/Home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/service1.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/View/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/test.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -219,6 +212,10 @@
     </state>
     <state x="233" y="117" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1593608765660" />
     <state x="233" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.813@0.0.1280.813" timestamp="1593423834308" />
+    <state x="237" y="130" width="1240" height="700" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1593887199248">
+      <screen x="0" y="23" width="1440" height="837" />
+    </state>
+    <state x="237" y="130" width="1240" height="700" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.23.1440.837@0.23.1440.837" timestamp="1593887199248" />
     <state x="450" y="271" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593541647004">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
