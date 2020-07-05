@@ -118,9 +118,16 @@
                 </div>
                 <script>
                     function FunctionForUserText() {
+                        var positionX;
                         var userText = document.createElement("INPUT");
-                        userText.setAttribute("id", "usertext");
                         let stage = document.getElementById("stage");
+                        stage.addEventListener("click",function(e){
+                            positionX = e.screenX;
+                            console.log(positionX);
+                            userText.setAttribute("style","transform: translate(15.874px, 91.452px) rotate(0deg)");
+                        })
+
+                        userText.setAttribute("id", "usertext");
                         userText.setAttribute("type", "text");
                         userText.setAttribute("placeholder", "write your text here");
                         stage.appendChild(userText);
@@ -140,6 +147,9 @@
                             area1.removeInstance('usertext');
                         }
 
+
+                    }
+                    function MovingTextByUser(){
 
                     }
                 </script>
