@@ -20,23 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57f6b229-b42e-4248-aa52-bf1610b93a60" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Resource/img/cv1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resource/img/cv2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resource/img/cv3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resource/img/ppt1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resource/img/ppt2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resource/img/ppt3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resource/img/rep1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resource/img/rep2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resource/img/rep3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/HomeMember.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/services/Service1-1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/services/Service1-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/services/Service1-3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ArtAttack.css" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtAttack.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/Home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/MyDesign.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/MyDesign.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/Profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/Profile.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -185,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593940382557</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="hasan service and few update">
+      <created>1593944659335</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1593944659351</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,27 +201,29 @@
     <MESSAGE value="my design and services by doaa" />
     <MESSAGE value="My design" />
     <MESSAGE value="updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated" />
+    <MESSAGE value="hasan service and few update" />
+    <MESSAGE value="few update" />
+    <option name="LAST_COMMIT_MESSAGE" value="few update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="267" y="19" key="#Inspections" timestamp="1593506833773">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="267" y="19" key="#Inspections/0.0.1280.680@0.0.1280.680" timestamp="1593506833773" />
-    <state x="373" y="-900" key="CommitChangelistDialog2" timestamp="1593940381614">
+    <state x="373" y="-900" key="CommitChangelistDialog2" timestamp="1593944797562">
       <screen x="157" y="-900" width="1600" height="860" />
     </state>
-    <state x="373" y="-900" key="CommitChangelistDialog2/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1593940381614" />
+    <state x="373" y="-900" key="CommitChangelistDialog2/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1593944797562" />
     <state x="173" y="0" key="CommitChangelistDialog2/0.0.1280.813@0.0.1280.813" timestamp="1593423831327" />
     <state x="488" y="254" key="VCS.ChangelistChooser" timestamp="1593456243405">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="488" y="254" key="VCS.ChangelistChooser/0.0.1280.680@0.0.1280.680" timestamp="1593456243405" />
-    <state x="448" y="-752" key="Vcs.Push.Dialog.v2" timestamp="1593940385700">
+    <state x="448" y="-752" key="Vcs.Push.Dialog.v2" timestamp="1593944662073">
       <screen x="157" y="-900" width="1600" height="860" />
     </state>
     <state x="233" y="117" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1593503800765" />
-    <state x="448" y="-752" key="Vcs.Push.Dialog.v2/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1593940385700" />
+    <state x="448" y="-752" key="Vcs.Push.Dialog.v2/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1593944662073" />
     <state x="233" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.813@0.0.1280.813" timestamp="1593423834308" />
     <state x="653" y="-647" key="com.intellij.ide.util.TipDialog" timestamp="1593689367512">
       <screen x="157" y="-900" width="1600" height="860" />
