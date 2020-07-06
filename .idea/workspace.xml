@@ -20,7 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57f6b229-b42e-4248-aa52-bf1610b93a60" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/services/Service2-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_29_2020_10_52_AM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_29_2020_10_52_AM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_29_2020_12_31_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_29_2020_12_31_PM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_29_2020_6_14_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_29_2020_6_14_PM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_1_2020_10_52_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_1_2020_10_52_PM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_2_2020_7_55_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_2_2020_7_55_PM__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/Library/css/responsive.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/Profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/Profile.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,9 +38,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <execution>
-      <executable />
-    </execution>
+    <execution />
+  </component>
+  <component name="DatabaseLocalColorSettings">
+    <colors>
+      <entry key="3706795d-30cd-4ebd-8101-9239396cd741" value="Violet" />
+    </colors>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -55,6 +67,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -66,17 +79,17 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\HsQ Galaxy Book\Desktop\ArtAttack\View\services" />
-      <recent name="C:\Users\HsQ Galaxy Book\Desktop\ArtAttack\View" />
-      <recent name="C:\Users\HsQ Galaxy Book\Desktop\ArtAttack\Library\css" />
-      <recent name="C:\Users\HsQ Galaxy Book\Desktop\ArtAttack\Resource\img\AA" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\HsQ Galaxy Book\Desktop\ArtAttack\Resource\img" />
       <recent name="C:\Users\HsQ Galaxy Book\Desktop\ArtAttack\View\services" />
       <recent name="C:\Users\HsQ Galaxy Book\Desktop\ArtAttack\View" />
       <recent name="C:\Users\HP\PhpstormProjects\ArtAttack\Library\css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\HsQ Galaxy Book\Desktop\ArtAttack\View\services" />
+      <recent name="C:\Users\HsQ Galaxy Book\Desktop\ArtAttack\View" />
+      <recent name="C:\Users\HsQ Galaxy Book\Desktop\ArtAttack\Library\css" />
+      <recent name="C:\Users\HsQ Galaxy Book\Desktop\ArtAttack\Resource\img\AA" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -91,6 +104,8 @@
       <updated>1593422218640</updated>
       <workItem from="1593422219985" duration="13204000" />
       <workItem from="1593689366785" duration="3302000" />
+      <workItem from="1593974006911" duration="2212000" />
+      <workItem from="1593979134313" duration="3636000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1593422299046</created>
@@ -176,24 +191,30 @@
       <option name="project" value="LOCAL" />
       <updated>1593944659351</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="few update">
+      <created>1593944832058</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1593944832058</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -210,31 +231,60 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="267" y="19" key="#Inspections/0.0.1280.680@0.0.1280.680" timestamp="1593506833773" />
-    <state x="373" y="-900" key="CommitChangelistDialog2" timestamp="1593944797562">
+    <state x="314" y="83" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594034712585">
+      <screen x="0" y="0" width="1280" height="813" />
+    </state>
+    <state x="314" y="83" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.813/157.-900.1600.860@0.0.1280.813" timestamp="1594034712585" />
+    <state x="549" y="-812" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1593976613165" />
+    <state x="637" y="-735" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1593976523254">
       <screen x="157" y="-900" width="1600" height="860" />
     </state>
-    <state x="373" y="-900" key="CommitChangelistDialog2/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1593944797562" />
+    <state x="637" y="-735" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1593976523254" />
+    <state x="373" y="-900" key="CommitChangelistDialog2" timestamp="1593944831184">
+      <screen x="157" y="-900" width="1600" height="860" />
+    </state>
+    <state x="373" y="-900" key="CommitChangelistDialog2/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1593944831184" />
     <state x="173" y="0" key="CommitChangelistDialog2/0.0.1280.813@0.0.1280.813" timestamp="1593423831327" />
+    <state width="715" height="222" key="GridCell.Tab.0.bottom" timestamp="1594035033653">
+      <screen x="157" y="-900" width="1600" height="860" />
+    </state>
+    <state width="715" height="222" key="GridCell.Tab.0.bottom/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1594035033653" />
+    <state width="715" height="222" key="GridCell.Tab.0.center" timestamp="1594035033653">
+      <screen x="157" y="-900" width="1600" height="860" />
+    </state>
+    <state width="715" height="222" key="GridCell.Tab.0.center/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1594035033653" />
+    <state width="715" height="222" key="GridCell.Tab.0.left" timestamp="1594035033653">
+      <screen x="157" y="-900" width="1600" height="860" />
+    </state>
+    <state width="715" height="222" key="GridCell.Tab.0.left/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1594035033653" />
+    <state width="715" height="222" key="GridCell.Tab.0.right" timestamp="1594035033653">
+      <screen x="157" y="-900" width="1600" height="860" />
+    </state>
+    <state width="715" height="222" key="GridCell.Tab.0.right/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1594035033653" />
+    <state width="198" height="457" key="HiddenNamespacesPopup" timestamp="1593976625999">
+      <screen x="157" y="-900" width="1600" height="860" />
+    </state>
+    <state width="198" height="457" key="HiddenNamespacesPopup/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1593976625999" />
     <state x="488" y="254" key="VCS.ChangelistChooser" timestamp="1593456243405">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="488" y="254" key="VCS.ChangelistChooser/0.0.1280.680@0.0.1280.680" timestamp="1593456243405" />
-    <state x="448" y="-752" key="Vcs.Push.Dialog.v2" timestamp="1593944662073">
+    <state x="448" y="-752" key="Vcs.Push.Dialog.v2" timestamp="1593944834764">
       <screen x="157" y="-900" width="1600" height="860" />
     </state>
     <state x="233" y="117" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1593503800765" />
-    <state x="448" y="-752" key="Vcs.Push.Dialog.v2/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1593944662073" />
+    <state x="448" y="-752" key="Vcs.Push.Dialog.v2/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1593944834764" />
     <state x="233" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.813@0.0.1280.813" timestamp="1593423834308" />
-    <state x="653" y="-647" key="com.intellij.ide.util.TipDialog" timestamp="1593689367512">
+    <state x="653" y="-647" key="com.intellij.ide.util.TipDialog" timestamp="1593974006626">
       <screen x="157" y="-900" width="1600" height="860" />
     </state>
-    <state x="653" y="-647" key="com.intellij.ide.util.TipDialog/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1593689367512" />
-    <state x="720" y="-557" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593944597467">
+    <state x="653" y="-647" key="com.intellij.ide.util.TipDialog/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1593974006626" />
+    <state x="720" y="-557" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594037274881">
       <screen x="157" y="-900" width="1600" height="860" />
     </state>
     <state x="450" y="271" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1593453480559" />
     <state x="450" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.813/157.-900.1600.860@0.0.1280.813" timestamp="1593940247354" />
-    <state x="720" y="-557" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1593944597467" />
+    <state x="720" y="-557" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1594037274881" />
     <state x="450" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.813@0.0.1280.813" timestamp="1593442240397" />
     <state x="303" y="134" width="672" height="678" key="search.everywhere.popup" timestamp="1593436106084">
       <screen x="0" y="0" width="1280" height="813" />
