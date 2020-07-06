@@ -1,3 +1,39 @@
+@media (min-width: 1290px) and (max-width: 1550px) {
+    .menu_area .navbar-brand {
+        font-size: 42px;
+    }
+
+    .menu_area #nav .nav-link {
+        padding: 35px 7.5px;
+    }
+
+    .sing-up-button > a {
+        color: #fff;
+        height: 40px;
+        min-width: 152px;
+        line-height: 36px;
+        font-size: 14px;
+    }
+
+    .welcome-thumb {
+        width: 50%;
+        bottom: -100px;
+        right: 50px;
+    }
+
+    .video-area {
+        height: 550px;
+    }
+
+    .app_screenshots_slides {
+        padding: 0 4%;
+    }
+
+    .header_area.sticky .menu_area #nav .nav-link {
+        padding: 23px 7.5px;
+    }
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
     .menu_area .navbar-brand {
         font-size: 42px;
