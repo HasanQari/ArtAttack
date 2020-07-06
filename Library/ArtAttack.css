@@ -40,7 +40,8 @@
     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 
 }
-.respBtnHeader{
+
+.respBtnHeader {
     display: none;
 }
 
@@ -407,7 +408,7 @@ html {
     border: 2px solid #fb397d;
     background-color: #fb397d;
     height: 50px;
-    width: 1000%;
+    width: 140%;
     line-height: 46px;
     text-align: left;
     border-radius: 24px 0px 0px 24px;
@@ -631,4 +632,40 @@ html {
 .DesignArea {
     height: 22.5rem;
     margin: 10px;
+}
+
+.btnTool {
+    display: inline-block;
+    font-weight: 800;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 1.5rem 5.3rem;
+    margin: .25rem .1rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btnTool:hover {
+    background-color: #fb397d;
+    color: white;
+}
+
+.toolBar {
+    background: linear-gradient(to left, #7873ed, #a865e1);
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.btnHolder {
+    margin-left: .2rem;
 }
