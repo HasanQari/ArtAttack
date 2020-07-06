@@ -67,6 +67,10 @@ h6 {
     padding-bottom: 100px;
 }
 
+.section_padding_85{
+    padding-top: 85px;
+}
+
 .section_padding_100_50 {
     padding-top: 100px;
     padding-bottom: 50px;
@@ -79,6 +83,15 @@ h6 {
 
 .section_padding_50 {
     padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section_padding_toolBar_resp{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.section_padding_Container_resp{
+    padding-top: 150px;
     padding-bottom: 50px;
 }
 
@@ -352,7 +365,7 @@ p {
 
 .menu_area #nav .nav-link {
     color: #fff;
-    display: block;
+    /*display: block;*/
     font-size: 16px;
     font-weight: 500;
     border-radius: 30px;
