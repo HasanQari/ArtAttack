@@ -2,11 +2,15 @@
 <html lang="ar">
 
 <head>
+
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
     <meta charset="UTF-8">
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Art Attack | PowerPoint Template</title>
+    <title>Art Attack | Profile</title>
+
 
     <!-- Core Stylesheet -->
     <link href="../../Library/css/style.css" rel="stylesheet">
@@ -37,9 +41,9 @@
                         <!-- Menu Area -->
                         <div class="collapse navbar-collapse" id="ca-navbar">
                             <ul class="navbar-nav ml-auto" id="nav">
-                                <li class="nav-item"><a class="nav-link" href="../HomeMember.html">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="../MyDesign.html">My Design</a></li>
-                                <li class="nav-item"><a class="nav-link" href="../Home.html">Logout</a></li>
+                                <li class="nav-item"><a class="nav-link" href="HomeMember.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="MyDesign.html">My Design</a></li>
+                                <li class="nav-item"><a class="nav-link" href="Home.html">Logout</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -48,7 +52,7 @@
             <!-- Customer Profile btn -->
             <div class="col-12 col-lg-2">
                 <div class="Cus d-none d-lg-block">
-                    <a href="../profile.html">Hi Customer</a>
+                    <a href="#">Hi Customer</a>
                 </div>
             </div>
         </div>
@@ -56,152 +60,108 @@
 </header>
 <!-- ***** Header Area End ***** -->
 <br><br>
-<!-- ***** Special Area Start ***** -->
 <section class="special-area bg-white section_padding_100" id="about">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <!-- Section Heading Area -->
-                <div class="section-heading text-center">
-                    <h2>PowerPoint Template</h2>
+                <div class="text-center">
+                    <p class="PFsectionTitle">Profile</p>
                     <div class="line-shape"></div>
                 </div>
             </div>
-        </div>
-        <!--row1-->
-        <div class="row">
-            <div class="col-12 col-md-4">
-                <div class="single-holder text-center wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="single-icon sImg single-SSS">
-                        <img src="../../Resource/img/ppt3.png">
-                        <div class="S-hover-effects">
-                            <div class="S-social-icon">
-                                <a href="#" title="Download"><i class="fa fa-download" aria-hidden="true" title="Download"></i></a>
-                                <a href="#" title="Share"><i class="fa fa-share" aria-hidden="true" title="Share"></i></a>
+
+            <div class="container emp-profile">
+                <form method="post">
+                    <div class="row" style="margin-bottom: -5%;">
+                        <div class="col-md-4">
+                            <div class="profile-img">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog"
+                                     alt=""/>
+                                <div class="file btn btn-lg btn-primary">
+                                    Change Photo
+                                    <input type="file" name="file"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="profile-head">
+                                <h5>
+                                    Nood M
+                                </h5>
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home"
+                                           role="tab" aria-controls="home" aria-selected="true">My Profile</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile"/>
+                            <br><br>
+                            <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Save"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-8">
+                            <div class="tab-content profile-tab" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                     aria-labelledby="home-tab">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label>User Name</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p>Nood M</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label>user-id</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p>42345567</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label>Email</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p>s437001919@st.uqu.edu.sa</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label>Password</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p>**********</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label>Confirm Password</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p>**********</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="single-holder text-center wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="single-icon sImg single-SSS">
-                        <img src="../../Resource/img/ppt1.png">
-                        <div class="S-hover-effects">
-                            <div class="S-social-icon">
-                                <a href="#" title="Download"><i class="fa fa-download" aria-hidden="true" title="Download"></i></a>
-                                <a href="#" title="Share"><i class="fa fa-share" aria-hidden="true" title="Share"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="single-holder text-center wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="single-icon sImg single-SSS">
-                        <img src="../../Resource/img/ppt2.png">
-                        <div class="S-hover-effects">
-                            <div class="S-social-icon">
-                                <a href="#" title="Download"><i class="fa fa-download" aria-hidden="true" title="Download"></i></a>
-                                <a href="#" title="Share"><i class="fa fa-share" aria-hidden="true" title="Share"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--row2-->
-        <div class="row">
-            <div class="col-12 col-md-4">
-                <div class="single-holder text-center wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="single-icon sImg single-SSS">
-                        <img src="../../Resource/img/ppt2.png">
-                        <div class="S-hover-effects">
-                            <div class="S-social-icon">
-                                <a href="#" title="Download"><i class="fa fa-download" aria-hidden="true" title="Download"></i></a>
-                                <a href="#" title="Share"><i class="fa fa-share" aria-hidden="true" title="Share"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="single-holder text-center wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="single-icon sImg single-SSS">
-                        <img src="../../Resource/img/ppt3.png">
-                        <div class="S-hover-effects">
-                            <div class="S-social-icon">
-                                <a href="#" title="Download"><i class="fa fa-download" aria-hidden="true" title="Download"></i></a>
-                                <a href="#" title="Share"><i class="fa fa-share" aria-hidden="true" title="Share"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="single-holder text-center wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="single-icon sImg single-SSS">
-                        <img src="../../Resource/img/ppt1.png">
-                        <div class="S-hover-effects">
-                            <div class="S-social-icon">
-                                <a href="#" title="Download"><i class="fa fa-download" aria-hidden="true" title="Download"></i></a>
-                                <a href="#" title="Share"><i class="fa fa-share" aria-hidden="true" title="Share"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--row3-->
-        <div class="row">
-            <div class="col-12 col-md-4">
-                <div class="single-holder text-center wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="single-icon sImg single-SSS">
-                        <img src="../../Resource/img/ppt1.png">
-                        <div class="S-hover-effects">
-                            <div class="S-social-icon">
-                                <a href="#" title="Download"><i class="fa fa-download" aria-hidden="true" title="Download"></i></a>
-                                <a href="#" title="Share"><i class="fa fa-share" aria-hidden="true" title="Share"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="single-holder text-center wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="single-icon sImg single-SSS">
-                        <img src="../../Resource/img/ppt2.png">
-                        <div class="S-hover-effects">
-                            <div class="S-social-icon">
-                                <a href="#" title="Download"><i class="fa fa-download" aria-hidden="true" title="Download"></i></a>
-                                <a href="#" title="Share"><i class="fa fa-share" aria-hidden="true" title="Share"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="single-holder text-center wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="single-icon sImg single-SSS">
-                        <img src="../../Resource/img/ppt3.png">
-                        <div class="S-hover-effects">
-                            <div class="S-social-icon">
-                                <a href="#" title="Download"><i class="fa fa-download" aria-hidden="true" title="Download"></i></a>
-                                <a href="#" title="Share"><i class="fa fa-share" aria-hidden="true" title="Share"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>
-
 </section>
-<!-- ***** Special Area End ***** -->
 
 <!-- ***** Cool Line ***** -->
 <div class="our-monthly-membership section_padding_50 "></div>
-
 
 <!-- ***** Footer Area Start ***** -->
 <footer class="footer-social-icon text-center section_padding_70 clearfix">
@@ -222,24 +182,28 @@
         <!-- ***** Removing this text is now allowed! This template is licensed under CC BY 3.0 ***** -->
         <p>Copyright ©2020 Art Attack for UQU Designed by <a href="" target="_blank">HDN</a></p>
     </div>
-
 </footer>
-<!-- ***** Footer Area end ***** -->
+<!-- ***** Footer Area Start ***** -->
 
 <!-- Jquery-2.2.4 JS -->
-<script src="../../Library/js/jquery-2.2.4.min.js"></script>
+<script src="../Library/js/jquery-2.2.4.min.js"></script>
 <!-- Popper js -->
-<script src="../../Library/js/popper.min.js"></script>
+<script src="../Library/js/popper.min.js"></script>
 <!-- Bootstrap-4 Beta JS -->
-<script src="../../Library/js/bootstrap.min.js"></script>
+<script src="../Library/js/bootstrap.min.js"></script>
 <!-- All Plugins JS -->
-<script src="../../Library/js/plugins.js"></script>
+<script src="../Library/js/plugins.js"></script>
 <!-- Slick Slider Js-->
-<script src="../../Library/js/slick.min.js"></script>
+<script src="../Library/js/slick.min.js"></script>
 <!-- Footer Reveal JS -->
-<script src="../../Library/js/footer-reveal.min.js"></script>
+<script src="../Library/js/footer-reveal.min.js"></script>
 <!-- Active JS -->
-<script src="../../Library/js/active.js"></script>
+<script src="../Library/js/active.js"></script>
+
+<!-- profile side -->
+<script src="../Library/js/bootstrap.min.js"></script>
+<script src="../Library/js/jquery.min.js"></script>
+
 </body>
 
 </html>
