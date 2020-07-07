@@ -102,7 +102,7 @@
 
     .welcome-thumb {
         width: 50%;
-        bottom: -1px;
+        bottom: 15%;
         right: 0;
     }
 
@@ -221,7 +221,7 @@
 
     .welcome-thumb {
         width: 90%;
-        bottom: -74px;
+        bottom: 25%;
         right: 0;
     }
 
@@ -403,6 +403,10 @@
         width: 16%;
         color: white;
     }
+
+    .h-60 {
+        height: 60% !important
+    }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
@@ -415,7 +419,7 @@
     }
 
     .welcome-thumb {
-        bottom: -1px;
+        bottom: 25%;
         width: 75%;
     }
 
