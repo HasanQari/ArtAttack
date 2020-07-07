@@ -350,13 +350,14 @@
     }
 
     .DesignArea {
-        height: 20rem;
+        height: 30rem;
         margin: 10px;
     }
 
     .btnTool {
         display: inline-block;
         font-weight: 550;
+        width: 19.1%;
         text-align: center;
         white-space: nowrap;
         vertical-align: middle;
@@ -366,7 +367,7 @@
         user-select: none;
         border: 1px solid transparent;
         padding: .5rem .3rem;
-        margin: .15rem 0;
+        margin: .6rem 0;
         font-size: 15px;
         line-height: 1.5;
         border-radius: .3rem;
