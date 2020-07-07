@@ -28,6 +28,7 @@
 
 .inputField {
     text-align: center;
+    width: 40%;
     padding: 10px 10px;
     border-radius: 25px 25px 25px 0;
     touch-action: manipulation;
@@ -38,7 +39,7 @@
     background-clip: padding-box;
     border: 1px solid #ced4da;
     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-
+    margin-right: 5px;
 }
 
 .respBtnHeader {
@@ -668,4 +669,8 @@ html {
 
 .btnHolder {
     margin-left: .2rem;
+}
+#saveDesignBtn{
+    border-radius: 25px;
+    width: 10%;
 }

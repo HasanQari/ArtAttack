@@ -20,8 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57f6b229-b42e-4248-aa52-bf1610b93a60" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_29_2020_12_31_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_29_2020_12_31_PM__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_29_2020_6_14_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_29_2020_6_14_PM__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ArtAttack.css" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtAttack.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/css/AAresponsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/Library/css/AAresponsive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/services/Service2-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/services/Service2-1.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,6 +104,8 @@
       <workItem from="1593689366785" duration="3302000" />
       <workItem from="1593974006911" duration="2212000" />
       <workItem from="1593979134313" duration="21170000" />
+      <workItem from="1594117467212" duration="3543000" />
+      <workItem from="1594136287602" duration="991000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1593422299046</created>
