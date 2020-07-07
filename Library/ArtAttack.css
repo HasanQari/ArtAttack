@@ -402,6 +402,10 @@ html {
     width: 100%;
 }
 
+.HeaderBar{
+    background: linear-gradient(to left, #7873ed, #a865e1);
+}
+
 .Cus > a {
     color: #fff;
     font-weight: 500;

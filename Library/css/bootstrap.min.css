@@ -6981,6 +6981,11 @@ a.bg-dark:focus, a.bg-dark:hover {
     height: 75% !important
 }
 
+.h-80 {
+    height: 80% !important
+}
+
+
 .h-100 {
     height: 100% !important
 }
