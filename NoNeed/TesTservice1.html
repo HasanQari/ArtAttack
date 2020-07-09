@@ -9,22 +9,22 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Design Advertisements</title>
+    <title>Commercial poster and banner design</title>
 
     <!-- Custom fonts for this template-->
-    <link href="../../Library/js/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="../Resource/Library/js/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
           rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="../../Library/css/sb-admin-2.css" rel="stylesheet">
-    <link href="../../Library/css/style.css" rel="stylesheet">
+    <link href="../Resource/Library/css/sb-admin-2.css" rel="stylesheet">
+    <link href="../Resource/Library/css/style.css" rel="stylesheet">
 
     <!-- Responsive CSS -->
-    <link href="../../Library/css/responsive.css" rel="stylesheet">
+    <link href="../Resource/Library/css/responsive.css" rel="stylesheet">
 
     <!-- Home Style Sheet -->
-    <link href="../../Library/ArtAttack.css" rel="stylesheet" type="text/css">
+    <link href="../Resource/ArtAttack.css" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -44,7 +44,7 @@
                         <!-- Menu Area -->
                         <div class="collapse navbar-collapse" id="ca-navbar">
                             <ul class="navbar-nav ml-auto" id="nav">
-                                <li class="nav-item"><a class="nav-link" href="../Home.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../View/Home.php">Home</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#Logout">Logout</a></li>
                             </ul>
                         </div>
@@ -100,7 +100,7 @@
                         <div class="card-body">
                             <div class="row no-gutters align-items-center" id="textArea">
 
-                                <button onclick=" FunctionForUser()" style="padding: 3px"> Add Text
+                                <button onclick=" FunctionForUserText()" style="padding: 3px"> Add Text
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                         <path fill="currentColor" fill-rule="evenodd"
                                               d="M18 5.5h-5.25V18c0 .28.22.5.5.5h2a.75.75 0 1 1 0 1.5h-6.5a.75.75 0 1 1 0-1.5h2a.5.5 0 0 0 .5-.5V5.5H6a.5.5 0 0 0-.5.5v1.25a.75.75 0 0 1-1.5 0V5.5C4 4.67 4.67 4 5.5 4h13c.83 0 1.5.67 1.5 1.5v1.75a.75.75 0 1 1-1.5 0V6a.5.5 0 0 0-.5-.5z"></path>
@@ -117,26 +117,39 @@
                     </div>
                 </div>
                 <script>
-                    function FunctionForUser() {
+                    function FunctionForUserText() {
+                        var positionX;
                         var userText = document.createElement("INPUT");
+                        let stage = document.getElementById("stage");
+                        stage.addEventListener("click",function(e){
+                            positionX = e.screenX;
+                            console.log(positionX);
+                            userText.setAttribute("style","transform: translate(15.874px, 91.452px) rotate(0deg)");
+                        })
+
                         userText.setAttribute("id", "usertext");
-                        let elementById = document.getElementById("INPUT");
-                        let stage = document.getElementById("stage")
                         userText.setAttribute("type", "text");
-                        userText.setAttribute("value", "write your text here");
+                        userText.setAttribute("placeholder", "write your text here");
                         stage.appendChild(userText);
 
                     }
-                    var area1, area2;
-                    function editUserText() {
+                    var area1;
 
+                    function editUserText() {
+                        let  userTextAfterEdit=document.getElementById("usertext").innerHTML;
                         if(!area1) {
                             area1 = new nicEditor({fullPanel : true}).panelInstance('usertext',{hasPanel : true});
                         } else {
+                            let  userTextAfterEdit=document.getElementById("usertext").innerHTML;
+                            console.log(userTextAfterEdit);
+                            let stage = document.getElementById("stage");
+                            stage.append(userTextAfterEdit);
                             area1.removeInstance('usertext');
-                            area1 = null;
                         }
 
+
+                    }
+                    function MovingTextByUser(){
 
                     }
                 </script>
@@ -162,11 +175,61 @@
                                 <div class="col mr-2">
                                     Add shape
                                 </div>
+
+
+                                <svg class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                    <rect  x="10" y="10" width="30" height="30" stroke="black" fill="transparent" stroke-width="5"/>
+                                </svg>
+                                <svg class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                    <rect id="Oval" x="60" y="10" rx="10" ry="10" width="30" height="30" stroke="black" fill="transparent" stroke-width="5"/>
+                                </svg>
+                                <svg class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <circle  id="circle" cx="25" cy="75" r="20" stroke="red" fill="transparent" stroke-width="5"/>
+                                </svg>
+                                <svg class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                    <ellipse id="ellipse" cx="75" cy="75" rx="20" ry="5" stroke="red" fill="transparent" stroke-width="5"/>
+                                </svg>
+                                <svg class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                    <line id="line" x1="10" x2="50" y1="110" y2="150" stroke="orange" stroke-width="5"/>
+                                </svg>
+                                <svg class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                    <polyline id="polyline" points="60 110 65 120 70 115 75 130 80 125 85 140 90 135 95 150 100 145"
+                                              stroke="orange" fill="transparent" stroke-width="5"/>
+                                </svg>
+                                <svg class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                    <polygon id="polygon" points="50 160 55 180 70 180 60 190 65 205 50 195 35 205 40 190 30 180 45 180"
+                                             stroke="green" fill="transparent" stroke-width="5"/>
+                                </svg>
+                                <svg class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                    <path id="line2" d="M20,230 Q40,205 50,230 T90,230" fill="none" stroke="blue" stroke-width="5"/>
+                                </svg>
+
                             </div>
                         </div>
                     </div>
                 </div>
+<script>
 
+
+        let allShapes = Array.from(document.getElementsByClassName("shapes"));
+        allShapes.forEach(function(shape){
+            shape.addEventListener("click",function (e) {
+                console.log(e.target.localName);
+                if (e.target.localName != "svg"){
+                    let stage = document.getElementById("stage");
+                    let instanceOfShape= e.target.parentNode;
+                    stage.appendChild(instanceOfShape);
+               } else {
+                    let stage = document.getElementById("stage");
+                    let instanceOfShape= e.target;
+                    stage.appendChild(e.target);
+                }
+
+            })
+        })
+
+
+</script>
                 <!-- Pending Requests Card Example -->
                 <div class="col-xl-3 col-md-6 mb-4">
                     <div class="card border-left-warning shadow h-100 py-2">
@@ -192,7 +255,6 @@
                         <!-- Card Body -->
                         <div class="card-body">
                             <div class="chart-area" id="stage">
-
                             </div>
                         </div>
                     </div>
@@ -225,21 +287,21 @@
 
 
         <!-- Bootstrap core JavaScript-->
-        <script src="../../Library/js/vendor/jquery/jquery.min.js"></script>
-        <script src="../../Library/js/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="../Resource/Library/js/vendor/jquery/jquery.min.js"></script>
+        <script src="../Resource/Library/js/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
         <!-- Core plugin JavaScript-->
-        <script src="../../Library/js/vendor/jquery-easing/jquery.easing.min.js"></script>
+        <script src="../Resource/Library/js/vendor/jquery-easing/jquery.easing.min.js"></script>
 
         <!-- Custom scripts for all pages-->
         <script src="../Library/js/vendor/sb-admin-2.min.js"></script>
 
         <!-- Page level plugins -->
-        <script src="../../Library/js/vendor/chart.js/Chart.min.js"></script>
+        <script src="../Resource/Library/js/vendor/chart.js/Chart.min.js"></script>
 
         <!-- Page level custom scripts -->
-        <script src="../../Library/js/demo/chart-area-demo.js"></script>
-        <script src="../../Library/js/demo/chart-pie-demo.js"></script>
+        <script src="../Resource/Library/js/demo/chart-area-demo.js"></script>
+        <script src="../Resource/Library/js/demo/chart-pie-demo.js"></script>
         <script type="text/javascript" src="http://js.nicedit.com/nicEdit-latest.js"></script>
         <script type="text/javascript">  bkLib.onDomLoaded(function () {
             editUserText();

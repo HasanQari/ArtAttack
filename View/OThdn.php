@@ -2,11 +2,7 @@
 <html lang="en">
 
 <meta charset="UTF-8">
-
-<title>Home</title>
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <meta charset="UTF-8">
 <!- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 <head>
@@ -17,16 +13,16 @@
     <link rel="icon" href="">
 
     <!-- Core Stylesheet -->
-    <link href="../Library/css/style.css" rel="stylesheet">
+    <link href="../Resource/Library/css/style.css" rel="stylesheet">
 
     <!-- Responsive CSS -->
-    <link href="../Library/css/responsive.css" rel="stylesheet">
+    <link href="../Resource/Library/css/responsive.css" rel="stylesheet">
 
     <!-- Home Style Sheet -->
-    <link href="../Library/ArtAttack.css" rel="stylesheet" type="text/css">
+    <link href="../Resource/ArtAttack.css" rel="stylesheet" type="text/css">
 
     <!-- Home Script Sheet -->
-    <script src="../Library/ArtAttack.js"></script>
+    <script src="../Resource/ArtAttack.js"></script>
 
 </head>
 
@@ -38,7 +34,7 @@
         <div class="row align-items-center col-12 col-lg-10 menu_area">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <!-- Logo -->
-                <a class="navbar-brand" href="Home.html">Art<span id="AttackWord">Attack</span></a>
+                <a class="navbar-brand" style="color: #fff">Art<span id="AttackWord">Attack</span></a>
             </nav>
         </div>
     </div>
@@ -117,42 +113,8 @@
 </section>
 <!-- ***** Our Team Area End ***** -->
 <div class="our-monthly-membership section_padding_50 "></div>
-<!-- ***** Footer Area Start ***** -->
-<footer class="footer-social-icon text-center section_padding_70 clearfix">
-    <!-- footer logo -->
-    <div class="footer-text">
-        <h2>Art Attack</h2>
-    </div>
-    <!-- social icon-->
-    <div class="footer-social-icon">
-        <a href="https://twitter.com/elearninguqu"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-        <a href="https://www.youtube.com/user/ElearningUqu"><i class="fa fa-google" aria-hidden="true"></i></a>
-        <a href="https://uqu.edu.sa/elearn"><i class="fa fa-university" aria-hidden="true"></i></a>
-    </div>
-    <div class="footer-menu">
-    </div>
-    <!-- Foooter Text-->
-    <div class="copyright-text">
-        <!-- ***** Removing this text is now allowed! This template is licensed under CC BY 3.0 ***** -->
-        <p>Copyright ©2020 Art Attack for UQU Developed by <a href="OThdn.html" target="_blank">HDN</a></p>
-    </div>
-</footer>
-<!-- ***** Footer Area Start ***** -->
 
-<!-- Jquery-2.2.4 JS -->
-<script src="../Library/js/jquery-2.2.4.min.js"></script>
-<!-- Popper js -->
-<script src="../Library/js/popper.min.js"></script>
-<!-- Bootstrap-4 Beta JS -->
-<script src="../Library/js/bootstrap.min.js"></script>
-<!-- All Plugins JS -->
-<script src="../Library/js/plugins.js"></script>
-<!-- Slick Slider Js-->
-<script src="../Library/js/slick.min.js"></script>
-<!-- Footer Reveal JS -->
-<script src="../Library/js/footer-reveal.min.js"></script>
-<!-- Active JS -->
-<script src="../Library/js/active.js"></script>
-</body>
+<?php
+require "Layouts/footer.php";
+?>
 
-</html>

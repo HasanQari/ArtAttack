@@ -1,69 +1,31 @@
-<!DOCTYPE html>
-<html lang="ar">
+<?php
+require "Layouts/header.php";
+?>
 
 <head>
-
-
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <meta charset="UTF-8">
-    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
     <!-- Title -->
     <title>Art Attack | Profile</title>
 
-
     <!-- Core Stylesheet -->
-    <link href="../Library/css/style.css" rel="stylesheet">
+    <link href="../Resource/Library/css/style.css" rel="stylesheet">
 
     <!-- Responsive CSS -->
-    <link href="../Library/css/responsive.css" rel="stylesheet">
+    <link href="../Resource/Library/css/responsive.css" rel="stylesheet">
 
     <!-- Home Style Sheet -->
-    <link href="../Library/ArtAttack.css" rel="stylesheet" type="text/css">
+    <link href="../Resource/ArtAttack.css" rel="stylesheet" type="text/css">
+
+    <!-- AA Responsive CSS -->
+    <link href="../Resource/Library/css/AAresponsive.css" rel="stylesheet">
 
 </head>
 
-<body>
+<main>
 <!-- Preloader Start -->
 <div id="preloader">
     <div class="colorlib-load"></div>
 </div>
 
-<!-- ***** Header Area Start ***** -->
-<header class="header_areaMD animated">
-    <div class="container-fluid">
-        <div class="row align-items-center">
-            <!-- Menu Area Start -->
-            <div class="col-12 col-lg-10">
-                <div class="menu_area">
-                    <nav class="navbar navbar-expand-lg navbar-light">
-                        <!-- Logo -->
-                        <a class="navbar-brand" href="#">Art<span id="AttackWord">Attack</span></a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar"
-                                aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span
-                                class="navbar-toggler-icon"></span></button>
-                        <!-- Menu Area -->
-                        <div class="collapse navbar-collapse" id="ca-navbar">
-                            <ul class="navbar-nav ml-auto" id="nav">
-                                <li class="nav-item"><a class="nav-link" href="HomeMember.html">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="MyDesign.html">My Design</a></li>
-                                <li class="nav-item"><a class="nav-link" href="Home.html">Logout</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-            <!-- Customer Profile btn -->
-            <div class="col-12 col-lg-2">
-                <div class="Cus d-none d-lg-block">
-                    <a href="#">Hi Customer</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-<!-- ***** Header Area End ***** -->
-<br><br>
 <section class="special-area bg-white section_padding_100" id="about">
     <div class="container">
         <div class="row">
@@ -102,10 +64,10 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-2">
-                            <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile"/>
-                            <br><br>
-                            <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Save"/>
+                        <div class="row">
+                            <input type="submit" class="profile-edit-btn profBtn1" name="btnAddMore"
+                                   value="Edit Profile"/>
+                            <input type="submit" class="profile-edit-btn profBtn2" name="btnAddMore" value="Save"/>
                         </div>
                     </div>
                     <div class="row">
@@ -167,47 +129,7 @@
 <!-- ***** Cool Line ***** -->
 <div class="our-monthly-membership section_padding_50 "></div>
 
-<!-- ***** Footer Area Start ***** -->
-<footer class="footer-social-icon text-center section_padding_70 clearfix">
-    <!-- footer logo -->
-    <div class="footer-text">
-        <h2>Art Attack</h2>
-    </div>
-    <!-- social icon-->
-    <div class="footer-social-icon">
-        <a href="https://twitter.com/elearninguqu"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-        <a href="https://www.youtube.com/user/ElearningUqu"><i class="fa fa-google" aria-hidden="true"></i></a>
-        <a href="https://uqu.edu.sa/elearn"><i class="fa fa-university" aria-hidden="true"></i></a>
-    </div>
-    <div class="footer-menu">
-    </div>
-    <!-- Foooter Text-->
-    <div class="copyright-text">
-        <!-- ***** Removing this text is now allowed! This template is licensed under CC BY 3.0 ***** -->
-        <p>Copyright ©2020 Art Attack for UQU Designed by <a href="" target="_blank">HDN</a></p>
-    </div>
-</footer>
-<!-- ***** Footer Area Start ***** -->
+<?php
+require "Layouts/footer.php";
+?>
 
-<!-- Jquery-2.2.4 JS -->
-<script src="../Library/js/jquery-2.2.4.min.js"></script>
-<!-- Popper js -->
-<script src="../Library/js/popper.min.js"></script>
-<!-- Bootstrap-4 Beta JS -->
-<script src="../Library/js/bootstrap.min.js"></script>
-<!-- All Plugins JS -->
-<script src="../Library/js/plugins.js"></script>
-<!-- Slick Slider Js-->
-<script src="../Library/js/slick.min.js"></script>
-<!-- Footer Reveal JS -->
-<script src="../Library/js/footer-reveal.min.js"></script>
-<!-- Active JS -->
-<script src="../Library/js/active.js"></script>
-
-<!-- profile side -->
-<script src="../Library/js/bootstrap.min.js"></script>
-<script src="../Library/js/jquery.min.js"></script>
-
-</body>
-
-</html>

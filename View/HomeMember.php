@@ -3,8 +3,6 @@
 
   <meta charset="UTF-8">
 
-<title>Home</title>
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
@@ -13,22 +11,25 @@
     <!- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 <head>
     <!-- Title -->
-    <title>Art Attack | Home</title>
+    <title>Art Attack | Welcome</title>
 
     <!-- Favicon -->
     <link rel="icon" href="">
 
     <!-- Core Stylesheet -->
-    <link href="../Library/css/style.css" rel="stylesheet">
+    <link href="../Resource/Library/css/style.css" rel="stylesheet">
 
     <!-- Responsive CSS -->
-    <link href="../Library/css/AAresponsive.css" rel="stylesheet">
+    <link href="../Resource/Library/css/responsive.css" rel="stylesheet">
 
     <!-- Home Style Sheet -->
-    <link href="../Library/ArtAttack.css" rel="stylesheet" type="text/css">
+    <link href="../Resource/ArtAttack.css" rel="stylesheet" type="text/css">
+
+    <!-- AA Responsive CSS -->
+    <link href="../Resource/Library/css/AAresponsive.css" rel="stylesheet">
 
     <!-- Home Script Sheet -->
-    <script src="../Library/ArtAttack.js"></script>
+    <script src="../Resource/ArtAttack.js"></script>
 
 </head>
 
@@ -36,69 +37,6 @@
 <!-- Preloader Start -->
 <div id="preloader">
     <div class="colorlib-load"></div>
-</div>
-
-<!-- sign in -->
-<div id="loginHolder" class="popStyle">
-    <div class="wrapperAuT fadeInDownAuT">
-        <div class="formContent">
-            <div class="close btn pointer">
-                <button class="close btn pointer" onclick="closeIN()"><i class="ti-close" aria-hidden="true"></i>
-                </button>
-            </div>
-            <!-- Tabs Titles -->
-            <h2 class="signTitle active"> Sign IN </h2>
-            <!-- Login Form -->
-            <form>
-                <input type="text" class="fadeInAuT fst inputAuT" name="username" placeholder="Username">
-                <input type="password" class="fadeInAuT scd inputAuT" name="pass" placeholder="Password">
-                <input type="submit" class="fadeInAuT trd AuTsubmit" value="Log In">
-            </form>
-            <!-- Remind Passowrd -->
-            <div class="formFooter">
-                <a class="underlineHover" onclick="RPass()" href="#FP">Forgot Password?</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- sign up -->
-<div id="signupHolder" class="popStyle">
-    <div class="wrapperAuT fadeInDownAuT">
-        <div class="formContent">
-            <div class="close btn pointer">
-                <button class="close btn pointer" onclick="closeUp()"><i class="ti-close" aria-hidden="true"></i>
-                </button>
-            </div>
-            <!-- Tabs Titles -->
-            <h2 class="signTitle active"> Sign Up </h2>
-            <!-- Login Form -->
-            <form>
-                <input type="text" class="fadeInAuT fst inputAuT" name="username" placeholder="Username">
-                <input type="email" class="fadeInAuT fst inputAuT" name="email" placeholder="Email">
-                <input type="password" class="fadeInAuT scd inputAuT" name="pass" placeholder="Password">
-                <input type="submit" class="fadeInAuT trd AuTsubmit" value="Register">
-
-            </form>
-        </div>
-    </div>
-</div>
-<!-- Remind Passowrd -->
-<div id="RPassHolder" class="popStyle">
-    <div class="wrapperAuT fadeInDownAuT">
-        <div class="formContent">
-            <div class="close btn pointer">
-                <button class="close btn pointer" onclick="closeRPass()"><i class="ti-close" aria-hidden="true"></i>
-                </button>
-            </div>
-            <!-- Tabs Titles -->
-            <h2 class="signTitle active"> Remind Password </h2>
-            <!-- Login Form -->
-            <form>
-                <input type="email" class="fadeInAuT fst inputAuT" name="email" placeholder="Email">
-                <input type="submit" class="fadeInAuT trd AuTsubmit" value="Log In">
-            </form>
-        </div>
-    </div>
 </div>
 
 <!-- ***** Header Area Start ***** -->
@@ -120,9 +58,8 @@
                                 <li class="nav-item active"><a class="nav-link" href="#home">Home</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#features">Services</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                                <li class="nav-item"><a class="nav-link" href="Home.html">Logout</a></li>
+                                <li class="nav-item"><a class="nav-link" href="Home.php">Logout</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -131,7 +68,7 @@
             <!-- Customer Profile btn -->
             <div class="col-12 col-lg-2">
                 <div class="Cus d-none d-lg-block">
-                    <a href="profile.html">Hi Customer</a>
+                    <a href="Profile.php">Hi Customer</a>
                 </div>
             </div>
         </div>
@@ -145,13 +82,21 @@
     <div id="imgWelcome" class="welcome-thumb wow fadeInDown" data-wow-delay="0.5s">
         <img src="../Resource/img/AA/hi.png" alt="AA">
     </div>
-    <div class="container h-100">
+    <div class="container h-100 h-60">
         <div class="row h-100 align-items-center">
             <div class="col-12 col-md">
                 <div class="wellcome-heading">
                     <h2>Art Attack</h2>
                     <h3>Art</h3>
                     <p>Everything You Need. To Start Creative Ideas Beautifully</p>
+                    <div class="respBtnHeader">
+                        <p style="color: white"> Welcome
+                            <a href="Profile.php" class="txt-color-pink-big pointer "
+                               style="color: #fff;font-size: 30px;font-weight: bold;text-shadow: 2px 2px 5px red;margin-left: 5px">
+                                Customer
+                            </a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -258,9 +203,9 @@
                     <i class="fa fa-mortar-board" aria-hidden="true"></i>
                     <h5>The Educational Designs</h5>
                     <ul>
-                        <li><a href="services/Service1-1.html" class="ServList">PowerPoint Template</a></li>
-                        <li><a href="services/Service1-2.html" class="ServList">Report Template</a></li>
-                        <li><a href="services/Service1-3.html" class="ServList">CV Template</a></li>
+                        <li><a href="services/Service1-1.php" class="ServList">PowerPoint Template</a></li>
+                        <li><a href="services/Service1-2.php" class="ServList">Report Template</a></li>
+                        <li><a href="services/Service1-3.php" class="ServList">CV Template</a></li>
                     </ul>
                 </div>
             </div>
@@ -270,7 +215,7 @@
                     <i class="fa fa-star-o" aria-hidden="true"></i>
                     <h5>The Occasions Designs</h5>
                     <ul>
-                        <li><a href="services/Service2-1.html" class="ServList">Design Graduation and Success Parties</a></li>
+                        <li><a href="services/Service2-1.php" class="ServList">Design Graduation and Success Parties</a></li>
                         <li><a href="services/Service2-2.html" class="ServList">Design Religious and Feasts Occasions</a></li>
                         <li><a href="services/Service2-3.html" class="ServList">Design Occasions and Weddings</a></li>
                     </ul>
@@ -284,7 +229,7 @@
                     <ul>
                         <li><a href="services/Service3-1.html" class="ServList">Design Business Cards</a></li>
                         <li><a href="services/Service3-2.html" class="ServList">Design Advertisements</a></li>
-                        <li><a href="services/Service3-3.html" class="ServList">Commercial poster and banner design</a></li>
+                        <li><a href="services/Service3-3.html" class="ServList">Design Poster or Banner</a></li>
                     </ul>
                 </div>
             </div>
@@ -383,25 +328,25 @@
     <!-- Foooter Text-->
     <div class="copyright-text">
         <!-- ***** Removing this text is now allowed! This template is licensed under CC BY 3.0 ***** -->
-        <p>Copyright ©2020 Art Attack for UQU Designed by <a href="" target="_blank">HDN</a></p>
+        <p>Copyright ©2020 Art Attack for UQU Developed by <a href="OThdn.php" target="_blank">HDN</a></p>
     </div>
 </footer>
 <!-- ***** Footer Area Start ***** -->
 
 <!-- Jquery-2.2.4 JS -->
-<script src="../Library/js/jquery-2.2.4.min.js"></script>
+<script src="../Resource/Library/js/jquery-2.2.4.min.js"></script>
 <!-- Popper js -->
-<script src="../Library/js/popper.min.js"></script>
+<script src="../Resource/Library/js/popper.min.js"></script>
 <!-- Bootstrap-4 Beta JS -->
-<script src="../Library/js/bootstrap.min.js"></script>
+<script src="../Resource/Library/js/bootstrap.min.js"></script>
 <!-- All Plugins JS -->
-<script src="../Library/js/plugins.js"></script>
+<script src="../Resource/Library/js/plugins.js"></script>
 <!-- Slick Slider Js-->
-<script src="../Library/js/slick.min.js"></script>
+<script src="../Resource/Library/js/slick.min.js"></script>
 <!-- Footer Reveal JS -->
-<script src="../Library/js/footer-reveal.min.js"></script>
+<script src="../Resource/Library/js/footer-reveal.min.js"></script>
 <!-- Active JS -->
-<script src="../Library/js/active.js"></script>
+<script src="../Resource/Library/js/active.js"></script>
 </body>
 
 </html>

@@ -2,11 +2,7 @@
 <html lang="en">
 
 <meta charset="UTF-8">
-
-<title>Home</title>
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <meta charset="UTF-8">
 <!- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 <head>
@@ -17,29 +13,29 @@
     <link rel="icon" href="">
 
     <!-- Core Stylesheet -->
-    <link href="../Library/css/style.css" rel="stylesheet">
+    <link href="../Resource/Library/css/style.css" rel="stylesheet">
 
     <!-- Responsive CSS -->
-    <link href="../Library/css/responsive.css" rel="stylesheet">
+    <link href="../Resource/Library/css/responsive.css" rel="stylesheet">
 
     <!-- Home Style Sheet -->
-    <link href="../Library/ArtAttack.css" rel="stylesheet" type="text/css">
+    <link href="../Resource/ArtAttack.css" rel="stylesheet" type="text/css">
 
     <!-- AA Responsive CSS -->
-    <link href="../Library/css/AAresponsive.css" rel="stylesheet">
+    <link href="../Resource/Library/css/AAresponsive.css" rel="stylesheet">
 
     <!-- Home Script Sheet -->
-    <script src="../Library/ArtAttack.js"></script>
+    <script src="../Resource/ArtAttack.js"></script>
 
 </head>
 
-<body id="body">
+<body>
 <!-- Preloader Start -->
 <div id="preloader">
     <div class="colorlib-load"></div>
 </div>
 
-<!-- sign in -->
+ <!-- sign in -->
 <div id="loginHolder" class="popStyle">
     <div class="wrapperAuT fadeInDownAuT">
         <div class="formContent">
@@ -53,7 +49,7 @@
             <form>
                 <input type="text" class="fadeInAuT fst inputAuT" name="username" placeholder="Username">
                 <input type="password" class="fadeInAuT scd inputAuT" name="pass" placeholder="Password">
-                <a href="HomeMember.html"><input type="submit" class="fadeInAuT trd AuTsubmit" value="Log In"></a>
+                <a href="HomeMember.php"><input type="submit" class="fadeInAuT trd AuTsubmit" value="Log In"></a>
             </form>
             <!-- Remind Passowrd -->
             <div class="formFooter">
@@ -73,12 +69,17 @@
             <!-- Tabs Titles -->
             <h2 class="signTitle active"> Sign Up </h2>
             <!-- Login Form -->
-            <form>
-                <input type="text" class="fadeInAuT fst inputAuT" name="username" placeholder="Username">
+            <?php
+            $msg = "";
+            if ($msg != "") echo $msg."<br><br>"; ?>
+            <form method="post" action="../Controller/auth/Register.php">
+                <input type="text" class="fadeInAuT fst inputAuT" minlength="3" name="username" placeholder="Username">
                 <input type="email" class="fadeInAuT fst inputAuT" name="email" placeholder="Email">
-                <input type="password" class="fadeInAuT scd inputAuT" name="pass" placeholder="Password">
-                <input type="submit" class="fadeInAuT trd AuTsubmit" value="Register">
-
+                <input type="password" class="fadeInAuT scd inputAuT" minlength="6" name="Password"
+                       placeholder="Password">
+                <input type="password" class="fadeInAuT scd inputAuT" minlength="6" name="cPassword"
+                       placeholder="Confirm Password">
+                <input type="submit" class="fadeInAuT trd AuTsubmit" name="submit" value="Register">
             </form>
         </div>
     </div>
@@ -121,7 +122,6 @@
                                 <li class="nav-item active"><a class="nav-link" href="#home">Home</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#features">Services</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                                 <li class="nav-item"><a class="nav-link BtnSignIN" onclick="login()"
                                                         href="#login">Login</a></li>
@@ -154,6 +154,14 @@
                     <h2>Art Attack</h2>
                     <h3>Art</h3>
                     <p>Everything You Need. To Start Creative Ideas Beautifully</p>
+                    <div class="respBtnHeader">
+                        <a class="pointer app-download-btn wow fadeInUp" id="startSup"
+                           style="color: #fff;font-size: 30px;font-weight: bold;text-shadow: 2px 2px 5px red;"
+                           onclick="signup()">Start Now!</a>
+                        <p style="color: white"> You Have Account?
+                            <a style="color: deepskyblue; font-weight: bold;font-size: 20px" onclick="login()">Login</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -294,9 +302,9 @@
                     <i class="fa fa-id-card-o" aria-hidden="true"></i>
                     <h5>The Commercial Designs</h5>
                     <ul>
-                        <li><a href="services/service3.html" class="ServList">Design Business Cards</a></li>
-                        <li><a href="services/service2.html" class="ServList">Design Advertisements</a></li>
-                        <li><a href="services/service1.html" class="ServList">Commercial poster and banner design</a>
+                        <li><a href="../NoNeed/service3.html" class="ServList">Design Business Cards</a></li>
+                        <li><a href="../NoNeed/service2.html" class="ServList">Design Advertisements</a></li>
+                        <li><a href="../NoNeed/TesTservice1.html" class="ServList">Design Poster or Banner</a>
                         </li>
                     </ul>
                 </div>
@@ -396,25 +404,25 @@
     <!-- Foooter Text-->
     <div class="copyright-text">
         <!-- ***** Removing this text is now allowed! This template is licensed under CC BY 3.0 ***** -->
-        <p>Copyright ©2020 Art Attack for UQU Developed by <a href="OThdn.html" target="_blank">HDN</a></p>
+        <p>Copyright ©2020 Art Attack for UQU Developed by <a href="OThdn.php" target="_blank">HDN</a></p>
     </div>
 </footer>
 <!-- ***** Footer Area Start ***** -->
 
 <!-- Jquery-2.2.4 JS -->
-<script src="../Library/js/jquery-2.2.4.min.js"></script>
+<script src="../Resource/Library/js/jquery-2.2.4.min.js"></script>
 <!-- Popper js -->
-<script src="../Library/js/popper.min.js"></script>
+<script src="../Resource/Library/js/popper.min.js"></script>
 <!-- Bootstrap-4 Beta JS -->
-<script src="../Library/js/bootstrap.min.js"></script>
+<script src="../Resource/Library/js/bootstrap.min.js"></script>
 <!-- All Plugins JS -->
-<script src="../Library/js/plugins.js"></script>
+<script src="../Resource/Library/js/plugins.js"></script>
 <!-- Slick Slider Js-->
-<script src="../Library/js/slick.min.js"></script>
+<script src="../Resource/Library/js/slick.min.js"></script>
 <!-- Footer Reveal JS -->
-<script src="../Library/js/footer-reveal.min.js"></script>
+<script src="../Resource/Library/js/footer-reveal.min.js"></script>
 <!-- Active JS -->
-<script src="../Library/js/active.js"></script>
+<script src="../Resource/Library/js/active.js"></script>
 </body>
 
 </html>

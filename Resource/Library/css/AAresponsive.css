@@ -394,11 +394,12 @@
     }
 
     #saveDesignBtn {
-    text-decoration: underline;
-        text-decoration-color:#fb397d ;
+        text-decoration: underline;
+        text-decoration-color: #fb397d;
     }
-    #saveDesignBtn:hover{
-        text-decoration:none ;
+
+    #saveDesignBtn:hover {
+        text-decoration: none;
         background: #fb397d;
         width: 16%;
         color: white;
@@ -406,6 +407,42 @@
 
     .h-60 {
         height: 60% !important
+    }
+
+    .txt-color-pink-big {
+        color: #e83e8c;
+        font-size: 25px;
+    }
+
+    #startSup:hover {
+        color: #e83e8c;
+    }
+
+    .profile-edit-btn {
+        border: none;
+        border-radius: 1.5rem;
+        width: 25%;
+        padding: 5px;
+        font-weight: 600;
+        color: #6c757d;
+        cursor: pointer;
+    }
+
+    .profBtn1 {
+        position: absolute;
+        z-index: 1;
+        margin: 5%;
+        padding: 5px;
+        top: 55%;
+        right: 29%;
+    }
+    .profBtn2 {
+        position: absolute;
+        z-index: 1;
+        margin: 5%;
+        padding: 5px;
+        top: 55%;
+        right: 1%;
     }
 }
 
@@ -434,6 +471,11 @@
     .get-start-area .email {
         max-width: 370px;
     }
+
+    /***************************************************************************/
+    .respBtnHeader {
+        display: block;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -455,6 +497,11 @@
         flex-wrap: wrap;
         margin-right: -15px;
         margin-left: -15px;
+    }
+
+    /***************************************************************************/
+    .respBtnHeader {
+        display: block;
     }
 }
 
