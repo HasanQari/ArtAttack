@@ -46,7 +46,7 @@
                                 <li class="nav-item"><a class="nav-link" href="../View/HomeMember.php">Home</a></li>
                                 <li class="nav-item"><a class="nav-link" href="../View/Profile.php">My Profile</a></li>
                                 <li class="nav-item"><a class="nav-link" href="../View/MyDesign.php">My Design</a></li>
-                                <li class="nav-item"><a class="nav-link" href="../View/Home.php">Logout</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../View/Home.html">Logout</a></li>
                             </ul>
                         </div>
                     </nav>
