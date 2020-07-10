@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+
+<head>
+    <!-- Title -->
+    <title>Art Attack | Profile</title>
+
+
+    <!-- Core Stylesheet -->
+    <link href="../../Resource/Library/css/style.css" rel="stylesheet">
+    <!-- Home Style Sheet -->
+    <link href="../../Resource/ArtAttack.css" rel="stylesheet" type="text/css">
+    <!-- AA Responsive CSS -->
+    <link href="../../Resource/Library/css/AAresponsive.css" rel="stylesheet">
+</head>
+<header class="header_areaMD animated">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <!-- Menu Area Start -->
+            <div class="col-12 col-lg-10">
+                <div class="menu_area">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <!-- Logo -->
+                        <a class="navbar-brand" href="#">Art<span id="AttackWord">Attack</span></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar" aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                        <!-- Menu Area -->
+                        <div class="collapse navbar-collapse" id="ca-navbar">
+                            <ul class="navbar-nav ml-auto" id="nav">
+                                <li class="nav-item"><a class="nav-link respBtnHeader" href="../profile.html">My
+                                    Profile</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../HomeMember.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../MyDesign.html">My Design</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../Home.html">Logout</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- Customer Profile btn -->
+            <div class="col-12 col-lg-2">
+                <div class="Cus d-none d-lg-block">
+                    <a href="../profile.html">Hi Customer</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <section class="special-area bg-white section_padding_Container_resp" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Section Heading Area -->
+                    <div class="displayFlex">
+                        <h2 class="section-head">Graduation Party Design</h2>
+                        <input type="text" name="Projectitle" placeholder="Write project title here!"
+                               class="inputField">
+                        <button class="btn pointer" id="saveDesignBtn">Save</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card-body card shadow mb-4 DesignArea" id="stage">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ***** Cool Line ***** -->
+    <div class="toolBar section_padding_toolBar_resp">
+        <div class="btnHolder">
+            <button class="btnTool pointer" onclick="FunctionForUserText()">Text</button>
+            <button class="btnTool pointer">Picture</button>
+            <button class="btnTool pointer">Shape</button>
+            <button class="btnTool pointer">Wallpaper</button>
+            <button class="btnTool pointer" id="myBtn">Template</button>
+        </div>
+    </div>
+<script>  function FunctionForUserText() {
+    var positionX;
+    var userText = document.createElement("INPUT");
+    let stage = document.getElementById("stage");
+    stage.addEventListener("click",function(e){
+        positionX = e.screenX;
+        console.log(positionX);
+        userText.setAttribute("style","transform: translate(15.874px, 91.452px) rotate(0deg)");
+    })
+
+    userText.setAttribute("id", "usertext");
+    userText.setAttribute("type", "text");
+    userText.setAttribute("placeholder", "write your text here");
+    stage.appendChild(userText);
+
+}</script>
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <svg style="height:300px;width: 300px" id="svg"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1620"><defs><style>.cls-1,.cls-12,.cls-27,.cls-30{fill:#ffd3db;}.cls-2,.cls-33,.cls-5{fill:#fff;}.cls-26,.cls-28,.cls-3{fill:#bfd1e5;}.cls-4{fill:none;stroke:#ffd3db;stroke-miterlimit:10;stroke-width:5px;}.cls-33,.cls-5{font-size:18px;}.cls-5{font-family:Lato-Bold, Lato Bold;}.cls-27,.cls-5{font-weight:700;}.cls-6{letter-spacing:0.52em;}.cls-7{letter-spacing:0.45em;}.cls-8{letter-spacing:0.5em;}.cls-9{letter-spacing:0.46em;}.cls-10{letter-spacing:0.5em;}.cls-11{letter-spacing:0.48em;}.cls-12{font-size:36px;}.cls-12,.cls-26{font-family:SourceSerifPro-Regular, SourceSerifPro Regular;}.cls-13{letter-spacing:-0.01em;}.cls-14{letter-spacing:0em;}.cls-15{letter-spacing:0em;}.cls-16{font-size:21px;fill:#242038;font-family:Lato-Regular, Lato Regular;}.cls-17{letter-spacing:-0.01em;}.cls-18{letter-spacing:-0.01em;}.cls-19{letter-spacing:0em;}.cls-20{letter-spacing:-0.01em;}.cls-21{letter-spacing:0.01em;}.cls-22{letter-spacing:-0.01em;}.cls-23{letter-spacing:0em;}.cls-24{letter-spacing:0em;}.cls-25{letter-spacing:0em;}.cls-26{font-size:72px;}.cls-27{font-family:SourceSerifPro-Bold, SourceSerifPro Bold;}.cls-28,.cls-30{font-size:144.1px;}.cls-28,.cls-33{font-family:Lato-Black, Lato Black;font-weight:800;}.cls-29{letter-spacing:0.05em;}.cls-30{font-family:Lato-Light, Lato Light;font-weight:300;}.cls-31{letter-spacing:-0.02em;}.cls-32{letter-spacing:0.06em;}.cls-34{letter-spacing:0.46em;}.cls-35{letter-spacing:0.47em;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Background"><g id="_4" data-name="4"><g id="Vertical_4" data-name="Vertical 4"><rect id="Background-2" data-name="Background" class="cls-1" width="1080" height="1620"/><g id="Frame"><rect class="cls-2" x="92.5" y="192.5" width="895" height="1235"/><path class="cls-3" d="M985,195V1425H95V195H985m5-5H90V1430H990V190Z"/></g></g></g></g><g id="Graphics"><g id="_4-2" data-name="4"><g id="Vertical_4-2" data-name="Vertical 4"><rect id="Footer_Box" data-name="Footer Box" class="cls-3" x="290" y="1390" width="500" height="80"/><line id="Divider" class="cls-4" x1="515" y1="1093.5" x2="565" y2="1093.5"/><rect id="Header_Box" data-name="Header Box" class="cls-3" x="380" y="150" width="320" height="80"/></g></g></g><g id="Text"><g id="_4-3" data-name="4"><g id="Vertical_4-3" data-name="Vertical 4"><text class="cls-5" transform="translate(390.81 1435.19)"><tspan class="cls-6">WW</tspan><tspan class="cls-7" x="49.03" y="0">W</tspan><tspan class="cls-8" x="72.27" y="0">.</tspan><tspan class="cls-9" x="85" y="0">Y</tspan><tspan class="cls-8" x="103.08" y="0">OURSIT</tspan><tspan class="cls-10" x="212.94" y="0">E</tspan><tspan class="cls-8" x="230.72" y="0">.</tspan><tspan class="cls-11" x="243.45" y="0">C</tspan><tspan class="cls-8" x="262.51" y="0">O</tspan><tspan x="283.91" y="0">M</tspan></text><text class="cls-12" transform="translate(327.23 1181.66)">lo<tspan class="cls-13" x="28.26" y="0">r</tspan><tspan class="cls-14" x="39.67" y="0">em ipsum sit dolor ame</tspan><tspan class="cls-15" x="391.39" y="0">t</tspan><tspan x="403.2" y="0">...</tspan></text><text class="cls-16" transform="translate(275.83 951.19)"><tspan class="cls-17">L</tspan><tspan x="9.62" y="0">o</tspan><tspan class="cls-18" x="21.15" y="0">r</tspan><tspan x="27.8" y="0">em ipsum dolor sit ame</tspan><tspan class="cls-19" x="232.97" y="0">t</tspan><tspan x="239.86" y="0">, </tspan><tspan class="cls-20" x="248.66" y="0">c</tspan><tspan x="257.94" y="0">onse</tspan><tspan class="cls-21" x="299.96" y="0">c</tspan><tspan class="cls-20" x="309.64" y="0">t</tspan><tspan x="316.46" y="0">etuer adipiscing eli</tspan><tspan class="cls-19" x="481.96" y="0">t</tspan><tspan x="488.85" y="0">, sed </tspan><tspan x="14.37" y="36">diam nonum</tspan><tspan class="cls-22" x="127.14" y="36">m</tspan><tspan x="144.38" y="36">y nibh euismod tincidu</tspan><tspan class="cls-23" x="345.27" y="36">n</tspan><tspan x="356.84" y="36">t ut lao</tspan><tspan class="cls-18" x="417.82" y="36">r</tspan><tspan x="424.48" y="36">eet dolo</tspan><tspan class="cls-18" x="496.78" y="36">r</tspan><tspan x="503.44" y="36">e </tspan><tspan x="135.27" y="72">ma</tspan><tspan class="cls-20" x="162.91" y="72">g</tspan><tspan x="174.52" y="72">na aliquam e</tspan><tspan class="cls-24" x="286.74" y="72">r</tspan><tspan class="cls-23" x="293.5" y="72">a</tspan><tspan x="303.54" y="72">t </tspan><tspan class="cls-18" x="314.94" y="72">v</tspan><tspan x="324.83" y="72">olutp</tspan><tspan class="cls-23" x="371.79" y="72">a</tspan><tspan class="cls-25" x="381.83" y="72">t</tspan><tspan x="388.72" y="72">.</tspan></text><text class="cls-26" transform="translate(261.4 862.18)">lacina <tspan class="cls-27" x="190.72" y="0">non </tspan><tspan x="325.43" y="0">semper!</tspan></text><text class="cls-28" transform="translate(222.33 743.93)"><tspan class="cls-29">BUSINES</tspan><tspan x="564" y="0">S</tspan></text><text class="cls-30" transform="translate(273.63 600.83)"><tspan class="cls-29">S</tspan><tspan class="cls-31" x="78.25" y="0">T</tspan><tspan class="cls-29" x="146.26" y="0">A</tspan><tspan class="cls-32" x="241.65" y="0">R</tspan><tspan class="cls-29" x="327.68" y="0">T </tspan><tspan x="444.25" y="0">A</tspan></text><text class="cls-33" transform="translate(427.72 195.08)"><tspan class="cls-8">HOW</tspan><tspan class="cls-34" x="66.37" y="0"> </tspan><tspan class="cls-35" x="78.44" y="0">T</tspan><tspan class="cls-8" x="95.9" y="0">O SERIE</tspan><tspan x="215.69" y="0">S</tspan></text></g></g></g></g></svg>
+    </div>
+
+</div>
+
+<script>
+
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    var svg1 = document.getElementById("svg");
+    // When the user clicks on the button, open the modal
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+
+    svg1.onclick=function() {
+        alert("help");
+    }
+
+</script>
+
+    <!-- ***** Footer Area Start ***** -->
+<script src="../../Library/svg.min.js"></script>
+    <!-- Jquery-2.2.4 JS -->
+    <script src="../Library/js/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="../Library/js/popper.min.js"></script>
+    <!-- Bootstrap-4 Beta JS -->
+    <script src="../Library/js/bootstrap.min.js"></script>
+    <!-- All Plugins JS -->
+    <script src="../Library/js/plugins.js"></script>
+    <!-- Slick Slider Js-->
+    <script src="../Library/js/slick.min.js"></script>
+    <!-- Footer Reveal JS -->
+    <script src="../Library/js/footer-reveal.min.js"></script>
+    <!-- Active JS -->
+    <script src="../Library/js/active.js"></script>
+
+    <!-- profile side -->
+    <script src="../Library/js/bootstrap.min.js"></script>
+    <script src="../Library/js/jquery.min.js"></script>
+
+
+
+</html>
