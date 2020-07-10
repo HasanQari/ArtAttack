@@ -9,6 +9,14 @@
     <!-- Title -->
     <title>Art Attack | Profile</title>
 
+    <!-- Custom fonts for this template-->
+    <link href="../../Library/js/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+          rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="../../Library/css/sb-admin-2.css" rel="stylesheet">
+    <link href="../../Library/css/style.css" rel="stylesheet">
 
     <!-- Core Stylesheet -->
     <link href="../../Resource/Library/css/style.css" rel="stylesheet">
@@ -16,6 +24,7 @@
     <link href="../../Resource/ArtAttack.css" rel="stylesheet" type="text/css">
     <!-- AA Responsive CSS -->
     <link href="../../Resource/Library/css/AAresponsive.css" rel="stylesheet">
+
 </head>
 <header class="header_areaMD animated">
     <div class="container-fluid">
@@ -82,21 +91,30 @@
         </div>
     </div>
 <script>  function FunctionForUserText() {
-    var positionX;
+   // var positionX;
     var userText = document.createElement("INPUT");
     let stage = document.getElementById("stage");
-    stage.addEventListener("click",function(e){
+    /*stage.addEventListener("click",function(e){
         positionX = e.screenX;
         console.log(positionX);
         userText.setAttribute("style","transform: translate(15.874px, 91.452px) rotate(0deg)");
     })
-
+    */
     userText.setAttribute("id", "usertext");
     userText.setAttribute("type", "text");
     userText.setAttribute("placeholder", "write your text here");
     stage.appendChild(userText);
+userText.onclick(function editUserText() {
+    consolo.log("ya rb");
+    if (!area1) {
+        area1 = new nicEditor({fullPanel: true}).panelInstance('usertext', {hasPanel: true});
+    } else {
+        let stage = document.getElementById("stage");
+        area1.removeInstance('usertext');
+    }
+})}
 
-}</script>
+</script>
 <div id="myModal" class="modal">
 
     <!-- Modal content -->
@@ -111,10 +129,9 @@
 
     // Get the modal
     var modal = document.getElementById("myModal");
-
     // Get the button that opens the modal
     var btn = document.getElementById("myBtn");
-
+    var stage = document.getElementById("stage");
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
     var svg1 = document.getElementById("svg");
@@ -122,7 +139,6 @@
     btn.onclick = function() {
         modal.style.display = "block";
     }
-
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
         modal.style.display = "none";
@@ -137,7 +153,11 @@
 
 
     svg1.onclick=function() {
-        alert("help");
+       let stage = document.getElementById("stage");
+       stage.appendChild(svg1);
+       let test = document.getElementById("Header_Box");
+       console.log(test);
+       test.setAttribute("text","ya rb");
     }
 
 </script>
@@ -163,6 +183,15 @@
     <script src="../Library/js/bootstrap.min.js"></script>
     <script src="../Library/js/jquery.min.js"></script>
 
-
+<script type="text/javascript" src="../../Resource/Library/js/vendor/jquery"></script>
+<script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+<!-- Page level custom scripts -->
+<script src="../../Library/js/demo/chart-area-demo.js"></script>
+<script src="../../Library/js/demo/chart-pie-demo.js"></script>
+<script type="text/javascript" src="../../Resource/nicEdit.js"></script>
+<script type="text/javascript">  bkLib.onDomLoaded(function () {
+    editUserText();
+})
+</script>
 
 </html>

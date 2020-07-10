@@ -19,22 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57f6b229-b42e-4248-aa52-bf1610b93a60" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Library/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/polyfills.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/polyfillsIE.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/svg.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/svg.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/svg.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/svg.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/services/Service1-1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/services/test1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/services/testDoaa.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_29_2020_10_52_AM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_29_2020_10_52_AM__Default_Changelist_.xml" afterDir="false" />
+    <list default="true" id="57f6b229-b42e-4248-aa52-bf1610b93a60" name="Default Changelist" comment="update">
+      <change afterPath="$PROJECT_DIR$/Resource/nicEdit.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resource/Library/css/AAresponsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/Library/css/AAresponsive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/services/Service1-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/services/Service1-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/services/test1.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/services/test1.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -294,7 +283,21 @@
       <option name="project" value="LOCAL" />
       <updated>1594147967045</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="update">
+      <created>1594407774851</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1594407774851</updated>
+    </task>
+    <task id="LOCAL-00027" summary="update">
+      <created>1594407796454</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1594407796454</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
