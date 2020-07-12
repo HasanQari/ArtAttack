@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
-<!- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 <head>
     <!-- Title -->
     <title>Art Attack | Our Team</title>
@@ -57,7 +57,7 @@
             <div class="col-14 col-md-8 col-lg-4">
                 <div class="single-team-member">
                     <div class="member-image">
-                        <img src="../Resource/img/team-img/team-1.jpg" alt="">
+                        <img src="../Resource/img/D.png" alt="">
                         <div class="team-hover-effects">
                             <div class="team-social-icon">
                                 <a href="mailto: s437@st.uqu.edu.sa" title="Mail me!">
@@ -75,7 +75,7 @@
             <div class="col-14 col-md-8 col-lg-4">
                 <div class="single-team-member">
                     <div class="member-image">
-                        <img src="../Resource/img/team-img/team-2.jpg" alt="">
+                        <img src="../Resource/img/H.png" alt="">
                         <div class="team-hover-effects">
                             <div class="team-social-icon">
                                 <a href="mailto: s437013480@st.uqu.edu.sa" title="Mail me!">
@@ -93,10 +93,10 @@
             <div class="col-14 col-md-8 col-lg-4">
                 <div class="single-team-member">
                     <div class="member-image">
-                        <img src="../Resource/img/team-img/team-3.jpg" alt="">
+                        <img src="../Resource/img/N.png" alt="">
                         <div class="team-hover-effects">
                             <div class="team-social-icon">
-                                <a href="mailto: s437@st.uqu.edu.sa" title="Mail me!">
+                                <a href="mailto: s437001919@st.uqu.edu.sa" title="Mail me!">
                                     <i class="fa fa-envelope" aria-hidden="true" title="Mail me!"></i>
                                 </a>
                             </div>

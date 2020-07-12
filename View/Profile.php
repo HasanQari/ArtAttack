@@ -22,9 +22,7 @@ require "Layouts/header.php";
 
 <main>
 <!-- Preloader Start -->
-<div id="preloader">
-    <div class="colorlib-load"></div>
-</div>
+
 
 <section class="special-area bg-white section_padding_100" id="about">
     <div class="container">
@@ -53,7 +51,7 @@ require "Layouts/header.php";
                         <div class="col-md-6">
                             <div class="profile-head">
                                 <h5>
-                                    Nood M
+                                    <?php echo $_SESSION['username']; ?>
                                 </h5>
                                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                                     <li class="nav-item">
@@ -81,15 +79,7 @@ require "Layouts/header.php";
                                             <label>User Name</label>
                                         </div>
                                         <div class="col-md-6">
-                                            <p>Nood M</p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <label>user-id</label>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p>42345567</p>
+                                            <p><?php echo $_SESSION['username']; ?></p>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -97,7 +87,7 @@ require "Layouts/header.php";
                                             <label>Email</label>
                                         </div>
                                         <div class="col-md-6">
-                                            <p>s437001919@st.uqu.edu.sa</p>
+                                            <p><?php echo $_SESSION['usermail']; ?></p>
                                         </div>
                                     </div>
                                     <div class="row">

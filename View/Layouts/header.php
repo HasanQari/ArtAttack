@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,10 +45,16 @@
                         <!-- Menu Area -->
                         <div class="collapse navbar-collapse" id="ca-navbar">
                             <ul class="navbar-nav ml-auto" id="nav">
-                                <li class="nav-item"><a class="nav-link" href="../View/HomeMember.php">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../View/Home.php">Home</a></li>
                                 <li class="nav-item"><a class="nav-link" href="../View/Profile.php">My Profile</a></li>
                                 <li class="nav-item"><a class="nav-link" href="../View/MyDesign.php">My Design</a></li>
-                                <li class="nav-item"><a class="nav-link" href="../View/Home.html">Logout</a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link">
+                                        <form action="../Controller/auth/LogoutController.php" method="post">
+                                            <input type="submit" name="logout" value="Logout" class="logoutStyleBtn">
+                                        </form>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </nav>
@@ -55,7 +63,8 @@
             <!-- Customer Profile btn -->
             <div class="col-12 col-lg-2">
                 <div class="Cus d-none d-lg-block">
-                    <a href="../View/Profile.php">Hi Customer</a>
+                    <a style="color: white"><?php echo "Hi ". $_SESSION['username']; ?></a>
+
                 </div>
             </div>
         </div>

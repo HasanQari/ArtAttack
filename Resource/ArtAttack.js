@@ -3,25 +3,24 @@
 
 //******************************* Global ********************************
 
-function login() {
-    document.getElementById("loginHolder").style.display= "block";
+
+// Auth Script Section
+function fPass() {
+    document.getElementById("fPassHolder").style.display = "block";
+    document.getElementById("loginHolder").style.display = "none";
 }
-function signup() {
-    document.getElementById("signupHolder").style.display = "block";
-}
-function RPass() {
-    document.getElementById("RPassHolder").style.display = "block";
+function sendMail() {
+    document.getElementById("sentMsg").style.display = "block";
+    document.getElementById("fPassHolder").style.display = "none";
     document.getElementById("loginHolder").style.display = "none";
 }
 
-function closeIN() {
-    document.getElementById("loginHolder").style.display = "none";
+function okClose() {
+    document.getElementById("regsuc").style.display = "none";
 }
-function closeUp() {
-    document.getElementById("signupHolder").style.display = "none";
-}
-function closeRPass() {
-    document.getElementById("RPassHolder").style.display = "none";
+
+function logoutAjax() {
+
 }
 
 // Home Script Section
