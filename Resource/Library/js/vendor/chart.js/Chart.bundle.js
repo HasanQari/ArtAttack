@@ -7214,7 +7214,7 @@ var core_layouts = {
 	defaults: {},
 
 	/**
-	 * Register a box to a chart.
+	 * RegisterController.php a box to a chart.
 	 * A box is simply a reference to an object that requires layout. eg. Scales, Legend, Title.
 	 * @param {Chart} chart - the chart to use
 	 * @param {ILayoutItem} item - the item to add to be layed out
@@ -20626,7 +20626,7 @@ core_controller.scaleService = core_scaleService;
 core_controller.Ticks = core_ticks;
 core_controller.Tooltip = core_tooltip;
 
-// Register built-in scales
+// RegisterController.php built-in scales
 
 core_controller.helpers.each(scales, function(scale, type) {
 	core_controller.scaleService.registerScaleType(type, scale, scale._defaults);
