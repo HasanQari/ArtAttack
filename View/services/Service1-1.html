@@ -7,7 +7,7 @@
 
 <head>
     <!-- Title -->
-    <title>Art Attack | Profile</title>
+    <title>Commercial posters and banners</title>
 
     <!-- Custom fonts for this template-->
     <link href="../../Library/js/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -66,7 +66,7 @@
                 <div class="col-12">
                     <!-- Section Heading Area -->
                     <div class="displayFlex">
-                        <h2 class="section-head">Graduation Party Design</h2>
+                        <h2 class="section-head">Commercial posters and banners</h2>
                         <input type="text" name="Projectitle" placeholder="Write project title here!"
                                class="inputField">
                         <button class="btn pointer" id="saveDesignBtn">Save</button>
@@ -95,26 +95,12 @@
    // var positionX;
     var userText = document.createElement("INPUT");
     let stage = document.getElementById("stage");
-    /*stage.addEventListener("click",function(e){
-        positionX = e.screenX;
-        console.log(positionX);
-        userText.setAttribute("style","transform: translate(15.874px, 91.452px) rotate(0deg)");
-    })
-    */
+
     userText.setAttribute("id", "usertext");
     userText.setAttribute("type", "text");
     userText.setAttribute("placeholder", "write your text here");
     stage.appendChild(userText);
-/*userText.onclick(function editUserText() {
-    consolo.log("ya rb");
-    if (!area1) {
-        area1 = new nicEditor({fullPanel: true}).panelInstance('usertext', {hasPanel: true});
-    } else {
-        let stage = document.getElementById("stage");
-        area1.removeInstance('usertext');
-    }
-    8
-*/
+
 }
 
 </script>
@@ -171,6 +157,10 @@
 
         $("#test").click(function(){
            $("#usertext2").hide();
+            $("#usertext3").hide();
+            $("#usertext4").hide();
+            $("#usertext5").hide();
+
       var userText = document.createElement("INPUT");
       let stage = document.getElementById("stage");
             userText.setAttribute("id", "usertext");
@@ -188,7 +178,10 @@
  });
 
         $("#test2").click(function(){
-
+            $("#usertext1").hide();
+            $("#usertext3").hide();
+            $("#usertext4").hide();
+            $("#usertext5").hide();
             var userText2 = document.createElement("INPUT");
             let stage = document.getElementById("stage");
             userText2.setAttribute("id", "usertext2");
@@ -204,6 +197,10 @@
         });
 
         $("#test3").click(function(){
+            $("#usertext2").hide();
+            $("#usertext1").hide();
+            $("#usertext4").hide();
+            $("#usertext5").hide();
             var userText3 = document.createElement("INPUT");
             let stage = document.getElementById("stage");
             userText3.setAttribute("id", "usertext3");
@@ -219,6 +216,10 @@
         });
 
         $("#test4").click(function(){
+            $("#usertext2").hide();
+            $("#usertext3").hide();
+            $("#usertext1").hide();
+            $("#usertext5").hide();
             var userText4 = document.createElement("INPUT");
             let stage = document.getElementById("stage");
             userText4.setAttribute("id", "usertext4");
@@ -235,6 +236,10 @@
             })
         });
         $("#test5").click(function(){
+            $("#usertext2").hide();
+            $("#usertext3").hide();
+            $("#usertext4").hide();
+            $("#usertext1").hide();
             var userText5 = document.createElement("INPUT");
             let stage = document.getElementById("stage");
             userText5.setAttribute("id", "usertext5");
