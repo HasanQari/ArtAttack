@@ -16,17 +16,39 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </select>
+    <select />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57f6b229-b42e-4248-aa52-bf1610b93a60" name="Default Changelist" comment="update doaa for text in template">
-      <change beforePath="$PROJECT_DIR$/View/services/Service1-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/services/Service1-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resource/Library/js/jquery-ui-1.12.1/AUTHORS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resource/Library/js/jquery-ui-1.12.1/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resource/Library/js/jquery-ui-1.12.1/external/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resource/Library/js/jquery-ui-1.12.1/images/ui-icons_444444_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resource/Library/js/jquery-ui-1.12.1/images/ui-icons_555555_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resource/Library/js/jquery-ui-1.12.1/images/ui-icons_777620_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resource/Library/js/jquery-ui-1.12.1/images/ui-icons_777777_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resource/Library/js/jquery-ui-1.12.1/images/ui-icons_cc0000_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resource/Library/js/jquery-ui-1.12.1/images/ui-icons_ffffff_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resource/Library/js/jquery-ui-1.12.1/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resource/Library/js/jquery-ui-1.12.1/jquery-ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resource/Library/js/jquery-ui-1.12.1/jquery-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resource/Library/js/jquery-ui-1.12.1/jquery-ui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resource/Library/js/jquery-ui-1.12.1/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resource/Library/js/jquery-ui-1.12.1/jquery-ui.structure.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resource/Library/js/jquery-ui-1.12.1/jquery-ui.structure.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resource/Library/js/jquery-ui-1.12.1/jquery-ui.theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resource/Library/js/jquery-ui-1.12.1/jquery-ui.theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resource/Library/js/jquery-ui-1.12.1/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resource/img/WallPaper/wall1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resource/img/WallPaper/wall2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resource/img/WallPaper/wall3.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resource/img/WallPaper/wall4.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resource/img/WallPaper/wall5.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resource/img/WallPaper/wall6.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/services/service3-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/services/service3-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/services/service3-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -420,12 +442,13 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="488" y="254" key="VCS.ChangelistChooser/0.0.1280.680@0.0.1280.680" timestamp="1593456243405" />
-    <state x="233" y="117" key="Vcs.Push.Dialog.v2" timestamp="1594488326478">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="262" y="167" key="Vcs.Push.Dialog.v2" timestamp="1594639862856">
+      <screen x="0" y="23" width="1440" height="837" />
     </state>
     <state x="233" y="117" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1594488326478" />
     <state x="448" y="-752" key="Vcs.Push.Dialog.v2/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1594327344148" />
     <state x="233" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.813@0.0.1280.813" timestamp="1593423834308" />
+    <state x="262" y="167" key="Vcs.Push.Dialog.v2/0.23.1440.837@0.23.1440.837" timestamp="1594639862856" />
     <state x="653" y="-647" key="com.intellij.ide.util.TipDialog" timestamp="1593974006626">
       <screen x="157" y="-900" width="1600" height="860" />
     </state>

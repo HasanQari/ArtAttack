@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta charset="UTF-8">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Design Graduation and Success Parties</title>
+
+
+    <!-- Core Stylesheet -->
+    <link href="../../Resource/Library/css/style.css" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="../../Resource/Library/css/AAresponsive.css" rel="stylesheet">
+
+    <!-- Home Style Sheet -->
+    <link href="../../Resource/ArtAttack.css" rel="stylesheet" type="text/css">
+
+    <!--CSS for Modal-->
+    <link href="../../Resource/Library/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <!--CSS jquery-->
+
+    <link href="../../Resource/Library/js/jquery-ui-1.12.1/jquery-ui.css">
+    <link href="../../Resource/Library/js/jquery-ui-1.12.1/jquery-ui.structure.css">
+    <link href="../../Resource/Library/js/jquery-ui-1.12.1/jquery-ui.theme.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+
+
+</head>
+
+<body>
+
+
+<!-- ***** Header Area Start ***** -->
+<header class="header_areaMD animated">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <!-- Menu Area Start -->
+            <div class="col-12 col-lg-10">
+                <div class="menu_area">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <!-- Logo -->
+                        <a class="navbar-brand" href="#">Art<span id="AttackWord">Attack</span></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar"
+                                aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span
+                                class="navbar-toggler-icon"></span></button>
+                        <!-- Menu Area -->
+                        <div class="collapse navbar-collapse" id="ca-navbar">
+                            <ul class="navbar-nav ml-auto" id="nav">
+                                <li class="nav-item"><a class="nav-link respBtnHeader" href="../profile.html">My
+                                    Profile</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../HomeMember.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../MyDesign.html">My Design</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../Home.html">Logout</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- Customer Profile btn -->
+            <div class="col-12 col-lg-2">
+                <div class="Cus d-none d-lg-block">
+                    <a href="../profile.html">Hi Customer</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- ***** Header Area End ***** -->
+<section class="special-area bg-white section_padding_Container_resp" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- Section Heading Area -->
+                <div class="displayFlex">
+                    <h2 class="section-head">Design Title</h2>
+                    <input type="text" name="Projectitle" placeholder="Write project title here!"
+                           class="inputField">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="stage" class="card-body card shadow mb-4 DesignArea">
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ***** Cool Line ***** -->
+<div class="toolBar section_padding_toolBar_resp">
+    <div class="btnHolder">
+        <button class="btnTool pointer">Text</button>
+        <button type="button" class="btnTool pointer" data-toggle="modal" data-target="#exampleModal-pic">Picture
+        </button>
+        <button class="btnTool pointer">Shape</button>
+        <button class="btnTool pointer" data-toggle="modal" data-target="#exampleModal-wall">Wallpaper</button>
+        <button class="btnTool pointer">Template</button>
+    </div>
+</div>
+
+
+<!-- Modal (1) : -->
+<div class="modal fade" id="exampleModal-pic" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Picture</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <label>Select Photo</label>
+                <input type="file" name="bg" accept="image/png, image/jpeg , image/jpg" size="10">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="execute">Add photo</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal (2) : -->
+<div class="modal fade" id="exampleModal-wall" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Image Gallery</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <input type="image" id="wall1" class="img-fluid" src="../../Resource/img/WallPaper/wall1.jpeg"/>
+                <input type="image" id="wall2" class="img-fluid" src="../../Resource/img/WallPaper/wall2.jpeg"/>
+                <input type="image" id="wall3" class="img-fluid" src="../../Resource/img/WallPaper/wall3.jpeg"/>
+                <input type="image" id="wall4" class="img-fluid" src="../../Resource/img/WallPaper/wall4.jpeg"/>
+                <input type="image" id="wall5" class="img-fluid" src="../../Resource/img/WallPaper/wall5.jpeg"/>
+                <input type="image" id="wall6" class="img-fluid" src="../../Resource/img/WallPaper/wall6.jpeg"/>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="save-image">Select</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Model inside -->
+
+
+<!-- ***** Footer Area Start ***** -->
+
+<!-- Jquery-2.2.4 JS -->
+<script src="../../Resource/Library/js/jquery-2.2.4.min.js"></script>
+<script src="../../Resource/Library/js/jquery-ui-1.12.1/jquery-ui.js"></script>
+<!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
+<!-- Popper js -->
+<script src="../../Resource/Library/js/popper.min.js"></script>
+<!-- Bootstrap-4 Beta JS -->
+<script src="../../Resource/Library/js/bootstrap.min.js"></script>
+<!-- All Plugins JS -->
+<script src="../../Resource/Library/js/plugins.js"></script>
+<!-- Slick Slider Js-->
+<script src="../../Resource/Library/js/slick.min.js"></script>
+<!-- Footer Reveal JS -->
+<script src="../../Resource/Library/js/footer-reveal.min.js"></script>
+<!-- Active JS -->
+<script src="../../Resource/Library/js/active.js"></script>
+
+<!--Nood Side:-->
+
+<!--Add photo JS :-->
+<script>
+    $(document).ready(function () {
+        $('#execute').on('click', function () {
+            $('#stage').html($('#stage').html() + '<image ' + ' href="' + $('#image-url').val() + '/>');
+        })
+    });
+    <!--Add Wallpaper Paper JS :-->
+
+</script>
+<script>
+    let svgImage = {};
+
+    $('input[type=image]').on('click', function () {
+        svgImage.href = $(this).attr('src');
+    });
+
+    $('#save-image').on('click', function () {
+        $('#exampleModal-wall').modal('hide');
+
+        $('#stage').html($('#stage').html() + '<img  href="' + svgImage.href + '" style="height: auto; width: 100%;"/> ')
+        $("#stage").resizable({handles: "all"});
+        $("#stage").draggable({cursor: "move"});
+    });
+
+
+</script>
+
+
+</body>
+
+</html>
