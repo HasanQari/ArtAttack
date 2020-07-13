@@ -83,7 +83,7 @@
     <!-- ***** Cool Line ***** -->
     <div class="toolBar section_padding_toolBar_resp">
         <div class="btnHolder">
-            <button class="btnTool pointer" onclick="FunctionForUserText()">Text</button>
+            <button class="btnTool pointer" id="btnText">Text</button>
             <button class="btnTool pointer">Picture</button>
             <button class="btnTool pointer">Shape</button>
             <button class="btnTool pointer">Wallpaper</button>
@@ -103,6 +103,11 @@
 
 }
 
+document.getElementById('btnText')
+    .addEventListener("click", function(event) {
+        FunctionForUserText();
+    }, {once: true});
+
 </script>
 
 <div id="myModal" class="modal">
@@ -114,6 +119,41 @@
     </div>
 
 </div>
+<!-- html code for the shape -->
+<table>
+    <tr>
+<th> <svg class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <rect  x="10" y="10" width="30" height="30" stroke="black" fill="transparent" stroke-width="5"/>
+</svg></th>
+<th><svg class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <rect id="Oval" x="60" y="10" rx="10" ry="10" width="30" height="30" stroke="black" fill="transparent" stroke-width="5"/>
+</svg></th>
+<th>svg class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <circle  id="circle" cx="25" cy="75" r="20" stroke="red" fill="transparent" stroke-width="5"/>
+    </svg></th>
+    </tr>
+    <tr>
+<th><svg class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <ellipse id="ellipse" cx="75" cy="75" rx="20" ry="5" stroke="red" fill="transparent" stroke-width="5"/>
+</svg></th>
+<th><svg class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <line id="line" x1="10" x2="50" y1="110" y2="150" stroke="orange" stroke-width="5"/>
+</svg></th>
+<th><svg class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <polyline id="polyline" points="60 110 65 120 70 115 75 130 80 125 85 140 90 135 95 150 100 145"
+              stroke="orange" fill="transparent" stroke-width="5"/>
+</svg></th>
+    </tr>
+    <tr>
+    <th><svg class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <polygon id="polygon" points="50 160 55 180 70 180 60 190 65 205 50 195 35 205 40 190 30 180 45 180"
+             stroke="green" fill="transparent" stroke-width="5"/>
+    </svg></th>
+<th><svg class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <path id="line2" d="M20,230 Q40,205 50,230 T90,230" fill="none" stroke="blue" stroke-width="5"/>
+</svg></th>
+    </tr>
+</table>
 <!-- this is for the template written by doaa -->
 <script>
 
@@ -155,7 +195,7 @@
     // for edit the text in template
     $(document).ready(function (){
 
-        $("#test").click(function(){
+        $("#test").one( "click", function() {
            $("#usertext2").hide();
             $("#usertext3").hide();
             $("#usertext4").hide();
@@ -177,8 +217,8 @@
 
  });
 
-        $("#test2").click(function(){
-            $("#usertext1").hide();
+        $("#test2").one( "click", function() {
+            $("#usertext").hide();
             $("#usertext3").hide();
             $("#usertext4").hide();
             $("#usertext5").hide();
@@ -196,9 +236,9 @@
             })
         });
 
-        $("#test3").click(function(){
+        $("#test3").one( "click", function() {
             $("#usertext2").hide();
-            $("#usertext1").hide();
+            $("#usertext").hide();
             $("#usertext4").hide();
             $("#usertext5").hide();
             var userText3 = document.createElement("INPUT");
@@ -215,10 +255,10 @@
             })
         });
 
-        $("#test4").click(function(){
+        $("#test4").one( "click", function() {
             $("#usertext2").hide();
             $("#usertext3").hide();
-            $("#usertext1").hide();
+            $("#usertext").hide();
             $("#usertext5").hide();
             var userText4 = document.createElement("INPUT");
             let stage = document.getElementById("stage");
@@ -235,16 +275,16 @@
                 $("#test4").text(inputText4.value)
             })
         });
-        $("#test5").click(function(){
+        $("#test5").one( "click", function() {
             $("#usertext2").hide();
             $("#usertext3").hide();
             $("#usertext4").hide();
-            $("#usertext1").hide();
+            $("#usertext").hide();
             var userText5 = document.createElement("INPUT");
             let stage = document.getElementById("stage");
             userText5.setAttribute("id", "usertext5");
             userText5.setAttribute("type", "text");
-            userText5.setAttribute("placeholder", "doaa");
+            userText5.setAttribute("placeholder", "lorem ipsum sit dolor amet..");
             stage.appendChild(userText5);
             let inputText5 = document.getElementById("usertext5");
             $("#usertext5").change(function (){
@@ -253,6 +293,8 @@
                 $("#test5").text(inputText5.value)
             })
         });
+
+
     });
 
 </script>
