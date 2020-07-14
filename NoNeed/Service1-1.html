@@ -61,39 +61,39 @@
 
 
 
-    <section class="special-area bg-white section_padding_Container_resp" id="about">
-        <div class="container">
-            <div class="row" style="padding: 5%">
-                <div class="col-12">
-                    <!-- Section Heading Area -->
-                    <div class="displayFlex">
-                        <h2 class="section-head">Commercial posters and banners</h2>
-                        <input type="text" name="Projectitle" placeholder="Write project title here!"
-                               class="inputField">
-                        <button class="btn pointer" id="saveDesignBtn">Save</button>
-                        <button class="btn pointer" id="deleteDesignBtn" onclick="deleteStage()">Delete</button>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="card-body card shadow mb-4 DesignArea" id="stage" >
-
+<section class="special-area bg-white section_padding_Container_resp" id="about">
+    <div class="container">
+        <div class="row" style="padding: 5%">
+            <div class="col-12">
+                <!-- Section Heading Area -->
+                <div class="displayFlex">
+                    <h2 class="section-head">Commercial posters and banners</h2>
+                    <input type="text" name="Projectitle" placeholder="Write project title here!"
+                           class="inputField">
+                    <button class="btn pointer" id="saveDesignBtn">Save</button>
+                    <button class="btn pointer" id="deleteDesignBtn" onclick="deleteStage()">Delete</button>
                 </div>
             </div>
         </div>
-    </section>
+        <div class="row">
+            <div class="card-body card shadow mb-4 DesignArea" id="stage" >
 
-    <!-- ***** Cool Line ***** -->
-    <div class="toolBar section_padding_toolBar_resp">
-        <div class="btnHolder">
-            <button class="btnTool pointer" id="btnText">Text</button>
-            <button type="button" class="btnTool pointer" data-toggle="modal" data-target="#exampleModal-pic">Picture
-            </button>
-            <button class="btnTool pointer" id="btnShape">Shape</button>
-            <button id="wallpaper" class="btnTool pointer" data-toggle="modal" data-target="#exampleModal-wall">Wallpaper</button>
-            <button class="btnTool pointer" id="myBtn">Template</button>
+            </div>
         </div>
     </div>
+</section>
+
+<!-- ***** Cool Line ***** -->
+<div class="toolBar section_padding_toolBar_resp">
+    <div class="btnHolder">
+        <button class="btnTool pointer" id="btnText">Text</button>
+        <button type="button" class="btnTool pointer" data-toggle="modal" data-target="#exampleModal-pic">Picture
+        </button>
+        <button class="btnTool pointer" id="btnShape">Shape</button>
+        <button id="wallpaper" class="btnTool pointer" data-toggle="modal" data-target="#exampleModal-wall">Wallpaper</button>
+        <button class="btnTool pointer" id="myBtn">Template</button>
+    </div>
+</div>
 <!-- Modal (1) : -->
 <div class="modal " id="exampleModal-pic" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
      aria-hidden="true">
@@ -157,7 +157,7 @@
 <script>
     function deleteStage(){
         let stage = document.getElementById("stage");
-       stage.innerHTML="";
+        stage.innerHTML="";
     }
 </script>
 <!-- script for adding text -->
@@ -198,32 +198,32 @@
         <span id="close" class="close">&times;</span>
         <!-- html code for the shape -->
         <div id="table" style="padding: 0%">
-                 <svg  id ="rect" class="shapes" width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                    <rect  x="150" y="50" width="30" height="30" stroke="black" fill="transparent" stroke-width="5"/>
-                </svg>
-               <svg class="shapes" width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                    <rect id="Oval" x="75" y="50" rx="10" ry="10" width="30" height="30" stroke="black" fill="transparent" stroke-width="5"/>
-                </svg>
-                <svg class="shapes" width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                    <circle  id="circle" cx="40" cy="65" r="20" stroke="red" fill="transparent" stroke-width="5"/>
-                    </svg>
-          <svg class="shapes" width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                    <ellipse id="ellipse" cx="25" cy="75" rx="20" ry="5" stroke="red" fill="transparent" stroke-width="5"/>
-                </svg>
-              <svg class="shapes" width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                    <line id="line" x1="0" x2="50" y1="70" y2="90"  stroke="orange" stroke-width="5"/>
-                </svg>
-               <svg class="shapes" width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                    <polyline id="polyline" points="20 70 25 80 30 75 35 90 40 85 45 100 50 95 55 110 60 105"
-                              stroke="orange" fill="transparent" stroke-width="5"/>
-                </svg>
-       <svg class="shapes" width="200" height="220" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                    <polygon id="polygon" points="50 160 55 180 70 180 60 190 65 205 50 195 35 205 40 190 30 180 45 180"
-                             stroke="green" fill="transparent" stroke-width="5"/>
-                </svg>
-               <svg class="shapes" width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                    <path id="line2" d="M20,230 Q40,205 50,230 T90,230" fill="none" stroke="blue" stroke-width="5"/>
-                </svg>
+            <svg  id ="rect" class="shapes" width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <rect  x="150" y="50" width="30" height="30" stroke="black" fill="transparent" stroke-width="5"/>
+            </svg>
+            <svg class="shapes" width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <rect id="Oval" x="75" y="50" rx="10" ry="10" width="30" height="30" stroke="black" fill="transparent" stroke-width="5"/>
+            </svg>
+            <svg class="shapes" width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <circle  id="circle" cx="40" cy="65" r="20" stroke="red" fill="transparent" stroke-width="5"/>
+            </svg>
+            <svg class="shapes" width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <ellipse id="ellipse" cx="25" cy="75" rx="20" ry="5" stroke="red" fill="transparent" stroke-width="5"/>
+            </svg>
+            <svg class="shapes" width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <line id="line" x1="0" x2="50" y1="70" y2="90"  stroke="orange" stroke-width="5"/>
+            </svg>
+            <svg class="shapes" width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <polyline id="polyline" points="20 70 25 80 30 75 35 90 40 85 45 100 50 95 55 110 60 105"
+                          stroke="orange" fill="transparent" stroke-width="5"/>
+            </svg>
+            <svg class="shapes" width="200" height="220" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <polygon id="polygon" points="50 160 55 180 70 180 60 190 65 205 50 195 35 205 40 190 30 180 45 180"
+                         stroke="green" fill="transparent" stroke-width="5"/>
+            </svg>
+            <svg class="shapes" width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <path id="line2" d="M20,230 Q40,205 50,230 T90,230" fill="none" stroke="blue" stroke-width="5"/>
+            </svg>
 
         </div>
     </div>
@@ -259,7 +259,7 @@
     var btn = document.getElementById("btnShape");
     var stage = document.getElementById("stage");
     // Get the <span> element that closes the modal
-
+   var span2 = document.getElementsByClassName("close")[1];
     var table = document.getElementById("table");
     // When the user clicks on the button, open the modal
     btn.onclick = function() {
@@ -311,9 +311,9 @@
 
 
     svg1.onclick=function() {
-       let stage = document.getElementById("stage");
-       let copySvg= svg1.cloneNode(true);
-       stage.appendChild(copySvg);
+        let stage = document.getElementById("stage");
+        let copySvg= svg1.cloneNode(true);
+        stage.appendChild(copySvg);
     }
 
 </script>
@@ -332,14 +332,14 @@
             userText.setAttribute("placeholder", "BUSINES");
             stage.appendChild(userText);
             let inputText = document.getElementById("usertext");
-           $("#usertext").change(function (){
-              let s = $("#usertext").innerHTML;
-               console.log(inputText.value)
-               $("#test").text(inputText.value)
+            $("#usertext").change(function (){
+                let s = $("#usertext").innerHTML;
+                console.log(inputText.value)
+                $("#test").text(inputText.value)
 
-           })
+            })
 
- });
+        });
 
         $("#test2").one( "click", function() {
 
@@ -398,19 +398,19 @@
 
 
 <script>
-let svgImage = {};
+    let svgImage = {};
 
-$('input[type=image]').on('click', function () {
-    svgImage.href = $(this).attr('src');
-});
+    $('input[type=image]').on('click', function () {
+        svgImage.href = $(this).attr('src');
+    });
 
-$('#save-image').on('click', function () {
-    $('#exampleModal-wall').modal('hide');
+    $('#save-image').on('click', function () {
+        $('#exampleModal-wall').modal('hide');
 
-    $('#stage').html($('#stage').html() + '<img  href="' + svgImage.href + '" style="height: auto; width: 100%;"/> ')
-    $("#stage").resizable({handles: "all"});
-    $("#stage").draggable({cursor: "move"});
-});
+        $('#stage').html($('#stage').html() + '<img  href="' + svgImage.href + '" style="height: auto; width: 100%;"/> ')
+        $("#stage").resizable({handles: "all"});
+        $("#stage").draggable({cursor: "move"});
+    });
 
 
 </script>
@@ -418,56 +418,56 @@ $('#save-image').on('click', function () {
 <!--this script is for edit the graphics -->
 <script>
 
-        var draw = SVG()
-            .addTo('#stage')
-            .size(400, 400)
-        var rect = draw.rect(100, 100)
+    var draw = SVG()
+        .addTo('#stage')
+        .size(400, 400)
+    var rect = draw.rect(100, 100)
 
-        rect.draggable()
+    rect.draggable()
 
 </script>
 
-<script src="../../Resource/Library/js/svg.draggable.js"></script>
-    <!-- ***** Footer Area Start ***** -->
+<script src="../Resource/Library/js/svg.draggable.js"></script>
+<!-- ***** Footer Area Start ***** -->
 <script src="../Library/svg.min.js"></script>
-    <!-- Jquery-2.2.4 JS -->
-    <script src="../Resource/Library/js/jquery-2.2.4.min.js"></script>
-    <!-- Popper js -->
-    <script src="../../Resource/Library/js/popper.min.js"></script>
-    <!-- Bootstrap-4 Beta JS -->
-    <script src="../../Resource/Library/js/bootstrap.min.js"></script>
-    <!-- All Plugins JS -->
-    <script src="../../Resource/Library/js/plugins.js"></script>
-    <!-- Slick Slider Js-->
-    <script src="../../Resource/Library/js/slick.min.js"></script>
-    <!-- Footer Reveal JS -->
-    <script src="../../Resource/Library/js/footer-reveal.min.js"></script>
-    <!-- Active JS -->
-    <script src="../../Resource/Library/js/active.js"></script>
+<!-- Jquery-2.2.4 JS -->
+<script src="../Resource/Library/js/jquery-2.2.4.min.js"></script>
+<!-- Popper js -->
+<script src="../Resource/Library/js/popper.min.js"></script>
+<!-- Bootstrap-4 Beta JS -->
+<script src="../Resource/Library/js/bootstrap.min.js"></script>
+<!-- All Plugins JS -->
+<script src="../Resource/Library/js/plugins.js"></script>
+<!-- Slick Slider Js-->
+<script src="../Resource/Library/js/slick.min.js"></script>
+<!-- Footer Reveal JS -->
+<script src="../Resource/Library/js/footer-reveal.min.js"></script>
+<!-- Active JS -->
+<script src="../Resource/Library/js/active.js"></script>
 
-    <!-- profile side -->
-    <script src="../../Resource/Library/js/bootstrap.min.js"></script>
-    <script src="../Resource/Library/js/vendor/jquery/jquery.min.js"></script>
+<!-- profile side -->
+<script src="../Resource/Library/js/bootstrap.min.js"></script>
+<script src="../Resource/Library/js/vendor/jquery/jquery.min.js"></script>
 
 <script type="text/javascript" src="../Resource/Library/js/vendor/jquery"></script>
 <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
 <!-- Page level custom scripts -->
-<script src="../../Library/js/demo/chart-area-demo.js"></script>
-<script src="../../Library/js/demo/chart-pie-demo.js"></script>
+<script src="../Resource/Library/js/demo/chart-area-demo.js"></script>
+<script src="../Resource/Library/js/demo/chart-pie-demo.js"></script>
 <script type="text/javascript" src="../Resource/nicEdit.js"></script>
 
 <!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
 <!-- Popper js -->
-<script src="../../Resource/Library/js/popper.min.js"></script>
+<script src="../Resource/Library/js/popper.min.js"></script>
 <!-- Bootstrap-4 Beta JS -->
-<script src="../../Resource/Library/js/bootstrap.min.js"></script>
+<script src="../Resource/Library/js/bootstrap.min.js"></script>
 <!-- All Plugins JS -->
-<script src="../../Resource/Library/js/plugins.js"></script>
+<script src="../Resource/Library/js/plugins.js"></script>
 <!-- Slick Slider Js-->
-<script src="../../Resource/Library/js/slick.min.js"></script>
+<script src="../Resource/Library/js/slick.min.js"></script>
 <!-- Footer Reveal JS -->
-<script src="../../Resource/Library/js/footer-reveal.min.js"></script>
+<script src="../Resource/Library/js/footer-reveal.min.js"></script>
 <!-- Active JS -->
-<script src="../../Resource/Library/js/active.js"></script>
+<script src="../Resource/Library/js/active.js"></script>
 </html>
