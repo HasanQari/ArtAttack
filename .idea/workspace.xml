@@ -346,7 +346,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594759739184</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Responsive">
+      <created>1594763000609</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1594763000609</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -403,9 +410,10 @@
       <screen x="157" y="-900" width="1600" height="860" />
     </state>
     <state x="664" y="-828" key="#PHP/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1594315614300" />
-    <state x="314" y="83" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594034712585">
-      <screen x="0" y="0" width="1280" height="813" />
+    <state x="207" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594765114064">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state x="207" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1594765114064" />
     <state x="314" y="83" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.813/157.-900.1600.860@0.0.1280.813" timestamp="1594034712585" />
     <state x="549" y="-812" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1593976613165" />
     <state x="637" y="-735" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1593976523254">
@@ -437,9 +445,10 @@
       <screen x="157" y="-900" width="1600" height="860" />
     </state>
     <state width="715" height="222" key="GridCell.Tab.0.right/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1594040217867" />
-    <state width="198" height="457" key="HiddenNamespacesPopup" timestamp="1593976625999">
-      <screen x="157" y="-900" width="1600" height="860" />
+    <state width="198" height="362" key="HiddenNamespacesPopup" timestamp="1594764982364">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state width="198" height="362" key="HiddenNamespacesPopup/0.0.1280.680@0.0.1280.680" timestamp="1594764982364" />
     <state width="198" height="457" key="HiddenNamespacesPopup/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1593976625999" />
     <state x="791" y="-547" key="NewPhpFileDialog" timestamp="1594321030693">
       <screen x="157" y="-900" width="1600" height="860" />
@@ -459,10 +468,10 @@
       <screen x="157" y="-900" width="1600" height="860" />
     </state>
     <state x="653" y="-647" key="com.intellij.ide.util.TipDialog/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1593974006626" />
-    <state x="450" y="271" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594724296682">
+    <state x="450" y="271" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594763003937">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="450" y="271" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1594724296682" />
+    <state x="450" y="271" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1594763003937" />
     <state x="450" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.813/157.-900.1600.860@0.0.1280.813" timestamp="1593940247354" />
     <state x="720" y="-557" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1594322697213" />
     <state x="450" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.813@0.0.1280.813" timestamp="1593442240397" />
