@@ -26,7 +26,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57f6b229-b42e-4248-aa52-bf1610b93a60" name="Default Changelist" comment="update doaa for text in template">
+      <change afterPath="$PROJECT_DIR$/Resource/Library/js/svg.draggable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resource/ArtAttack.css" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/ArtAttack.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resource/Library/css/AAresponsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/Library/css/AAresponsive.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/services/Service1-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/services/Service1-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/services/test1.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/services/test1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/services/testDoaa.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/services/testDoaa.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,19 +87,19 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\PhpstormProjects\ArtAttack\Resource\Library\js" />
+      <recent name="C:\Users\HsQ Galaxy Book\Desktop\ArtAttack\View\services" />
+      <recent name="C:\Users\HsQ Galaxy Book\Desktop\ArtAttack\NoNeed" />
+      <recent name="C:\Users\HsQ Galaxy Book\Desktop\ArtAttack\Resource" />
+      <recent name="C:\Users\HsQ Galaxy Book\Desktop\ArtAttack\Controller" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\HsQ Galaxy Book\Desktop\ArtAttack\View" />
       <recent name="C:\Users\HsQ Galaxy Book\Desktop\ArtAttack" />
       <recent name="C:\Users\HsQ Galaxy Book\Desktop\ArtAttack\View\services" />
       <recent name="C:\Users\HsQ Galaxy Book\Desktop\ArtAttack\Library\css" />
       <recent name="C:\Users\HsQ Galaxy Book\Desktop\ArtAttack\Resource\img\AA" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\HsQ Galaxy Book\Desktop\ArtAttack\View\services" />
-      <recent name="C:\Users\HsQ Galaxy Book\Desktop\ArtAttack\NoNeed" />
-      <recent name="C:\Users\HsQ Galaxy Book\Desktop\ArtAttack\Resource" />
-      <recent name="C:\Users\HsQ Galaxy Book\Desktop\ArtAttack\Controller" />
-      <recent name="C:\Users\HsQ Galaxy Book\Desktop\ArtAttack\Resource\img" />
     </key>
   </component>
   <component name="SvnConfiguration">

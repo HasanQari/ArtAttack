@@ -60,6 +60,7 @@
 </header>
 
 
+
     <section class="special-area bg-white section_padding_Container_resp" id="about">
         <div class="container">
             <div class="row" style="padding: 5%">
@@ -70,11 +71,13 @@
                         <input type="text" name="Projectitle" placeholder="Write project title here!"
                                class="inputField">
                         <button class="btn pointer" id="saveDesignBtn">Save</button>
+                        <button class="btn pointer" id="deleteDesignBtn" onclick="deleteStage()">Delete</button>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="card-body card shadow mb-4 DesignArea" id="stage">
+                <div class="card-body card shadow mb-4 DesignArea" id="stage" >
+
                 </div>
             </div>
         </div>
@@ -84,31 +87,100 @@
     <div class="toolBar section_padding_toolBar_resp">
         <div class="btnHolder">
             <button class="btnTool pointer" id="btnText">Text</button>
-            <button class="btnTool pointer">Picture</button>
-            <button class="btnTool pointer">Shape</button>
-            <button class="btnTool pointer">Wallpaper</button>
+            <button type="button" class="btnTool pointer" data-toggle="modal" data-target="#exampleModal-pic">Picture
+            </button>
+            <button class="btnTool pointer" id="btnShape">Shape</button>
+            <button class="btnTool pointer" data-toggle="modal" data-target="#exampleModal-wall">Wallpaper</button>
             <button class="btnTool pointer" id="myBtn">Template</button>
         </div>
     </div>
-<!-- this is fot the text written by doaa -->
-<script>  function FunctionForUserText() {
-   // var positionX;
-    var userText = document.createElement("INPUT");
-    let stage = document.getElementById("stage");
+<!-- Modal (1) : -->
+<div class="modal fade" id="exampleModal-pic" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Picture</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <label>Select Photo</label>
+                <input type="file" name="bg" accept="image/png, image/jpeg , image/jpg" size="10">
 
-    userText.setAttribute("id", "usertext");
-    userText.setAttribute("type", "text");
-    userText.setAttribute("placeholder", "write your text here");
-    stage.appendChild(userText);
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="execute">Add photo</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal (2) : -->
+<div class="modal fade" id="exampleModal-wall" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Image Gallery</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <input type="image" id="wall1" class="img-fluid" src="../../Resource/img/WallPaper/wall1.jpeg"/>
+                <input type="image" id="wall2" class="img-fluid" src="../../Resource/img/WallPaper/wall2.jpeg"/>
+                <input type="image" id="wall3" class="img-fluid" src="../../Resource/img/WallPaper/wall3.jpeg"/>
+                <input type="image" id="wall4" class="img-fluid" src="../../Resource/img/WallPaper/wall4.jpeg"/>
+                <input type="image" id="wall5" class="img-fluid" src="../../Resource/img/WallPaper/wall5.jpeg"/>
+                <input type="image" id="wall6" class="img-fluid" src="../../Resource/img/WallPaper/wall6.jpeg"/>
 
-}
-
-document.getElementById('btnText')
-    .addEventListener("click", function(event) {
-        FunctionForUserText();
-    }, {once: true});
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="save-image">Select</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('#execute').on('click', function () {
+            $('#stage').html($('#stage').html() + '<image ' + ' href="' + $('#image-url').val() + '/>');
+        })
+    });
+    <!--Add Wallpaper Paper JS :-->
 
 </script>
+<!-- script for deleting the stage -->
+<script>
+    function deleteStage(){
+        let stage = document.getElementById("stage");
+       stage.innerHTML="";
+    }
+</script>
+<!-- script for adding text -->
+<script>
+    function FunctionForUserText() {
+        var userText = document.createElement("INPUT");
+        let stage = document.getElementById("stage");
+
+        userText.setAttribute("id", "usertext");
+        userText.setAttribute("type", "text");
+        userText.setAttribute("placeholder", "write your text here");
+        stage.appendChild(userText);
+        $("#usertext").draggable({cursor: "move"});
+
+    }
+
+    document.getElementById('btnText')
+        .addEventListener("click", function (event) {
+            FunctionForUserText();
+        }, {once: true});
+
+</script>
+
 
 <div id="myModal" class="modal">
 
@@ -119,41 +191,97 @@ document.getElementById('btnText')
     </div>
 
 </div>
-<!-- html code for the shape -->
-<table>
-    <tr>
-<th> <svg class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
-    <rect  x="10" y="10" width="30" height="30" stroke="black" fill="transparent" stroke-width="5"/>
-</svg></th>
-<th><svg class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
-    <rect id="Oval" x="60" y="10" rx="10" ry="10" width="30" height="30" stroke="black" fill="transparent" stroke-width="5"/>
-</svg></th>
-<th>svg class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
-    <circle  id="circle" cx="25" cy="75" r="20" stroke="red" fill="transparent" stroke-width="5"/>
-    </svg></th>
-    </tr>
-    <tr>
-<th><svg class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
-    <ellipse id="ellipse" cx="75" cy="75" rx="20" ry="5" stroke="red" fill="transparent" stroke-width="5"/>
-</svg></th>
-<th><svg class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
-    <line id="line" x1="10" x2="50" y1="110" y2="150" stroke="orange" stroke-width="5"/>
-</svg></th>
-<th><svg class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
-    <polyline id="polyline" points="60 110 65 120 70 115 75 130 80 125 85 140 90 135 95 150 100 145"
-              stroke="orange" fill="transparent" stroke-width="5"/>
-</svg></th>
-    </tr>
-    <tr>
-    <th><svg class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
-    <polygon id="polygon" points="50 160 55 180 70 180 60 190 65 205 50 195 35 205 40 190 30 180 45 180"
-             stroke="green" fill="transparent" stroke-width="5"/>
-    </svg></th>
-<th><svg class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
-    <path id="line2" d="M20,230 Q40,205 50,230 T90,230" fill="none" stroke="blue" stroke-width="5"/>
-</svg></th>
-    </tr>
-</table>
+<div id="myModal2" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <!-- html code for the shape -->
+        <div id="table" style="padding: 0%">
+                 <svg  id ="rect" class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <rect  x="10" y="10" width="30" height="30" stroke="black" fill="transparent" stroke-width="5"/>
+                </svg>
+               <svg class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <rect id="Oval" x="60" y="10" rx="10" ry="10" width="30" height="30" stroke="black" fill="transparent" stroke-width="5"/>
+                </svg>
+                <svg class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <circle  id="circle" cx="25" cy="75" r="20" stroke="red" fill="transparent" stroke-width="5"/>
+                    </svg>
+          <svg class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse id="ellipse" cx="75" cy="75" rx="20" ry="5" stroke="red" fill="transparent" stroke-width="5"/>
+                </svg>
+              <svg class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <line id="line" x1="10" x2="50" y1="110" y2="150" stroke="orange" stroke-width="5"/>
+                </svg>
+               <svg class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <polyline id="polyline" points="60 110 65 120 70 115 75 130 80 125 85 140 90 135 95 150 100 145"
+                              stroke="orange" fill="transparent" stroke-width="5"/>
+                </svg>
+       <svg class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <polygon id="polygon" points="50 160 55 180 70 180 60 190 65 205 50 195 35 205 40 190 30 180 45 180"
+                             stroke="green" fill="transparent" stroke-width="5"/>
+                </svg>
+               <svg class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <path id="line2" d="M20,230 Q40,205 50,230 T90,230" fill="none" stroke="blue" stroke-width="5"/>
+                </svg>
+
+        </div>
+    </div>
+
+</div>
+<script>
+
+
+    let allShapes = Array.from(document.getElementsByClassName("shapes"));
+    allShapes.forEach(function(shape){
+        shape.addEventListener("click",function (e) {
+            console.log(e.target.localName);
+            if (e.target.localName != "svg"){
+                let stage = document.getElementById("stage");
+                let instanceOfShape= e.target.parentNode;
+                stage.appendChild(instanceOfShape);
+            } else {
+                let stage = document.getElementById("stage");
+                let instanceOfShape= e.target;
+                stage.appendChild(e.target);
+            }
+
+        })
+    })
+
+
+</script>
+<!-- this is for the shape written by doaa -->
+<script>
+
+    // Get the modal
+    var modal2 = document.getElementById("myModal2");
+    // Get the button that opens the modal
+    var btn = document.getElementById("btnShape");
+    var stage = document.getElementById("stage");
+    // Get the <span> element that closes the modal
+    var span2 = document.getElementsByClassName("close")[1];
+    var table = document.getElementById("table");
+    // When the user clicks on the button, open the modal
+    btn.onclick = function() {
+        modal2.style.display = "block";
+    }
+    // When the user clicks on <span> (x), close the modal
+    span2.onclick = function() {
+        modal2.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal2) {
+            modal2.style.display = "none";
+        }
+    }
+
+
+
+
+</script>
 <!-- this is for the template written by doaa -->
 <script>
 
@@ -295,15 +423,43 @@ document.getElementById('btnText')
         });
 
 
+
     });
 
 </script>
-<!--this script is for edit the graphics -->
+<!--Add Wallpaper Paper JS :-->
+
+
 <script>
-    var draw = SVG().addTo('stage').size(300, 300)
-    var rect = draw.add("svg");
+let svgImage = {};
+
+$('input[type=image]').on('click', function () {
+    svgImage.href = $(this).attr('src');
+});
+
+$('#save-image').on('click', function () {
+    $('#exampleModal-wall').modal('hide');
+
+    $('#stage').html($('#stage').html() + '<img  href="' + svgImage.href + '" style="height: auto; width: 100%;"/> ')
+    $("#stage").resizable({handles: "all"});
+    $("#stage").draggable({cursor: "move"});
+});
+
 
 </script>
+
+<!--this script is for edit the graphics -->
+<script>
+
+        var draw = SVG()
+            .addTo('#stage')
+            .size(400, 400)
+        var rect = draw.rect(100, 100)
+
+        rect.draggable()
+
+</script>
+<script src="../../Resource/Library/js/svg.draggable.js"></script>
     <!-- ***** Footer Area Start ***** -->
 <script src="../../Library/svg.min.js"></script>
     <!-- Jquery-2.2.4 JS -->
@@ -331,6 +487,21 @@ document.getElementById('btnText')
 <script src="../../Library/js/demo/chart-area-demo.js"></script>
 <script src="../../Library/js/demo/chart-pie-demo.js"></script>
 <script type="text/javascript" src="../../Resource/nicEdit.js"></script>
-
-
+<!-- Jquery-2.2.4 JS -->
+<script src="../../Resource/Library/js/jquery-2.2.4.min.js"></script>
+<script src="../../Resource/Library/js/jquery-ui-1.12.1/jquery-ui.js"></script>
+<!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
+<!-- Popper js -->
+<script src="../../Resource/Library/js/popper.min.js"></script>
+<!-- Bootstrap-4 Beta JS -->
+<script src="../../Resource/Library/js/bootstrap.min.js"></script>
+<!-- All Plugins JS -->
+<script src="../../Resource/Library/js/plugins.js"></script>
+<!-- Slick Slider Js-->
+<script src="../../Resource/Library/js/slick.min.js"></script>
+<!-- Footer Reveal JS -->
+<script src="../../Resource/Library/js/footer-reveal.min.js"></script>
+<!-- Active JS -->
+<script src="../../Resource/Library/js/active.js"></script>
 </html>

@@ -542,6 +542,9 @@
     text-decoration: none;
     cursor: pointer;
 }
-
-
-
+#circle{
+    position: absolute;
+}
+#rect{
+    position: absolute;
+}
