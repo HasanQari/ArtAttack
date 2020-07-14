@@ -195,33 +195,33 @@
 
     <!-- Modal content -->
     <div class="modal-content">
-        <span class="close">&times;</span>
+        <span id="close" class="close">&times;</span>
         <!-- html code for the shape -->
         <div id="table" style="padding: 0%">
-                 <svg  id ="rect" class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                    <rect  x="10" y="10" width="30" height="30" stroke="black" fill="transparent" stroke-width="5"/>
+                 <svg  id ="rect" class="shapes" width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <rect  x="150" y="50" width="30" height="30" stroke="black" fill="transparent" stroke-width="5"/>
                 </svg>
-               <svg class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                    <rect id="Oval" x="60" y="10" rx="10" ry="10" width="30" height="30" stroke="black" fill="transparent" stroke-width="5"/>
+               <svg class="shapes" width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <rect id="Oval" x="75" y="50" rx="10" ry="10" width="30" height="30" stroke="black" fill="transparent" stroke-width="5"/>
                 </svg>
-                <svg class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                    <circle  id="circle" cx="25" cy="75" r="20" stroke="red" fill="transparent" stroke-width="5"/>
+                <svg class="shapes" width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <circle  id="circle" cx="40" cy="65" r="20" stroke="red" fill="transparent" stroke-width="5"/>
                     </svg>
-          <svg class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                    <ellipse id="ellipse" cx="75" cy="75" rx="20" ry="5" stroke="red" fill="transparent" stroke-width="5"/>
+          <svg class="shapes" width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse id="ellipse" cx="25" cy="75" rx="20" ry="5" stroke="red" fill="transparent" stroke-width="5"/>
                 </svg>
-              <svg class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                    <line id="line" x1="10" x2="50" y1="110" y2="150" stroke="orange" stroke-width="5"/>
+              <svg class="shapes" width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <line id="line" x1="150" x2="200" y1="110" y2="150" stroke="orange" stroke-width="5"/>
                 </svg>
-               <svg class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+               <svg class="shapes" width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
                     <polyline id="polyline" points="60 110 65 120 70 115 75 130 80 125 85 140 90 135 95 150 100 145"
                               stroke="orange" fill="transparent" stroke-width="5"/>
                 </svg>
-       <svg class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+       <svg class="shapes" width="200" height="220" version="1.1" xmlns="http://www.w3.org/2000/svg">
                     <polygon id="polygon" points="50 160 55 180 70 180 60 190 65 205 50 195 35 205 40 190 30 180 45 180"
                              stroke="green" fill="transparent" stroke-width="5"/>
                 </svg>
-               <svg class="shapes" width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+               <svg class="shapes" width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
                     <path id="line2" d="M20,230 Q40,205 50,230 T90,230" fill="none" stroke="blue" stroke-width="5"/>
                 </svg>
 
@@ -242,7 +242,7 @@
                 stage.appendChild(instanceOfShape);
             } else {
                 let instanceOfShape= e.target.cloneNode(true);
-                stage.appendChild(e.target);
+                stage.appendChild(instanceOfShape);
             }
 
         })
@@ -259,7 +259,7 @@
     var btn = document.getElementById("btnShape");
     var stage = document.getElementById("stage");
     // Get the <span> element that closes the modal
-    var span2 = document.getElementsByClassName("close")[1];
+
     var table = document.getElementById("table");
     // When the user clicks on the button, open the modal
     btn.onclick = function() {
@@ -311,7 +311,7 @@
 
     svg1.onclick=function() {
        let stage = document.getElementById("stage");
-       stage.appendChild(svg1);
+       stage.appendChild(svg1)
     }
 
 </script>
@@ -321,17 +321,12 @@
 <script>
     // for edit the text in template
     $(document).ready(function (){
+        var userText = document.createElement("INPUT");
+        let stage = document.getElementById("stage");
+        userText.setAttribute("id", "usertext");
+        userText.setAttribute("type", "text");
 
         $("#test").one( "click", function() {
-           $("#usertext2").hide();
-            $("#usertext3").hide();
-            $("#usertext4").hide();
-            $("#usertext5").hide();
-
-      var userText = document.createElement("INPUT");
-      let stage = document.getElementById("stage");
-            userText.setAttribute("id", "usertext");
-            userText.setAttribute("type", "text");
             userText.setAttribute("placeholder", "BUSINES");
             stage.appendChild(userText);
             let inputText = document.getElementById("usertext");
@@ -345,79 +340,50 @@
  });
 
         $("#test2").one( "click", function() {
-            $("#usertext").hide();
-            $("#usertext3").hide();
-            $("#usertext4").hide();
-            $("#usertext5").hide();
-            var userText2 = document.createElement("INPUT");
-            let stage = document.getElementById("stage");
-            userText2.setAttribute("id", "usertext2");
-            userText2.setAttribute("type", "text");
-            userText2.setAttribute("placeholder", "START A");
-            stage.appendChild(userText2);
-            let inputText2 = document.getElementById("usertext2");
-            $("#usertext2").change(function (){
-                let s = $("#usertext2").innerHTML;
-                console.log(inputText2.value)
-                $("#test2").text(inputText2.value)
+
+            userText.setAttribute("placeholder", "START A");
+            stage.appendChild(userText);
+            let inputText = document.getElementById("usertext");
+            $("#usertext").change(function (){
+                let s = $("#usertext").innerHTML;
+                console.log(inputText.value)
+                $("#test2").text(inputText.value)
             })
         });
 
         $("#test3").one( "click", function() {
-            $("#usertext2").hide();
-            $("#usertext").hide();
-            $("#usertext4").hide();
-            $("#usertext5").hide();
-            var userText3 = document.createElement("INPUT");
-            let stage = document.getElementById("stage");
-            userText3.setAttribute("id", "usertext3");
-            userText3.setAttribute("type", "text");
-            userText3.setAttribute("placeholder", "lacina non semper! ");
-            stage.appendChild(userText3);
-            let inputText3 = document.getElementById("usertext3");
-            $("#usertext3").change(function (){
-                let s = $("#usertext3").innerHTML;
-                console.log(inputText3.value)
-                $("#test3").text(inputText3.value)
+
+            userText.setAttribute("placeholder", "lacina non semper! ");
+            stage.appendChild(userText);
+            let inputText = document.getElementById("usertext");
+            $("#usertext").change(function (){
+                let s = $("#usertext").innerHTML;
+                console.log(inputText.value)
+                $("#test3").text(inputText.value)
             })
         });
 
         $("#test4").one( "click", function() {
-            $("#usertext2").hide();
-            $("#usertext3").hide();
-            $("#usertext").hide();
-            $("#usertext5").hide();
-            var userText4 = document.createElement("INPUT");
-            let stage = document.getElementById("stage");
-            userText4.setAttribute("id", "usertext4");
-            userText4.setAttribute("type", "text");
-            userText4.setAttribute("placeholder", "lorem ipsum sit dolor amet...\n" +
+            userText.setAttribute("placeholder", "lorem ipsum sit dolor amet...\n" +
                 "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut " +
                 "laoreet dolore magna aliquam erat volutpat ");
-            stage.appendChild(userText4);
-            let inputText4 = document.getElementById("usertext4");
-            $("#usertext4").change(function (){
-                let s = $("#usertext4").innerHTML;
-                console.log(inputText4.value)
-                $("#test4").text(inputText4.value)
+            stage.appendChild(userText);
+            let inputText = document.getElementById("usertext");
+            $("#usertext").change(function (){
+                let s = $("#usertext").innerHTML;
+                console.log(inputText.value)
+                $("#test4").text(inputText.value)
             })
         });
         $("#test5").one( "click", function() {
-            $("#usertext2").hide();
-            $("#usertext3").hide();
-            $("#usertext4").hide();
-            $("#usertext").hide();
-            var userText5 = document.createElement("INPUT");
-            let stage = document.getElementById("stage");
-            userText5.setAttribute("id", "usertext5");
-            userText5.setAttribute("type", "text");
-            userText5.setAttribute("placeholder", "lorem ipsum sit dolor amet..");
-            stage.appendChild(userText5);
-            let inputText5 = document.getElementById("usertext5");
-            $("#usertext5").change(function (){
-                let s = $("#usertext5").innerHTML;
-                console.log(inputText5.value)
-                $("#test5").text(inputText5.value)
+
+            userText.setAttribute("placeholder", "lorem ipsum sit dolor amet..");
+            stage.appendChild(userText);
+            let inputText = document.getElementById("usertext");
+            $("#usertext").change(function (){
+                let s = $("#usertext").innerHTML;
+                console.log(inputText.value)
+                $("#test5").text(inputText.value)
             })
         });
 
