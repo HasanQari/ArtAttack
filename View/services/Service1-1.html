@@ -211,10 +211,10 @@
                     <ellipse id="ellipse" cx="25" cy="75" rx="20" ry="5" stroke="red" fill="transparent" stroke-width="5"/>
                 </svg>
               <svg class="shapes" width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                    <line id="line" x1="150" x2="200" y1="110" y2="150" stroke="orange" stroke-width="5"/>
+                    <line id="line" x1="0" x2="50" y1="70" y2="90"  stroke="orange" stroke-width="5"/>
                 </svg>
                <svg class="shapes" width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                    <polyline id="polyline" points="60 110 65 120 70 115 75 130 80 125 85 140 90 135 95 150 100 145"
+                    <polyline id="polyline" points="20 70 25 80 30 75 35 90 40 85 45 100 50 95 55 110 60 105"
                               stroke="orange" fill="transparent" stroke-width="5"/>
                 </svg>
        <svg class="shapes" width="200" height="220" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -296,6 +296,7 @@
     btn.onclick = function() {
         modal.style.display = "block";
     }
+
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
         modal.style.display = "none";
@@ -311,7 +312,8 @@
 
     svg1.onclick=function() {
        let stage = document.getElementById("stage");
-       stage.appendChild(svg1)
+       let copySvg= svg1.cloneNode(true);
+       stage.appendChild(copySvg);
     }
 
 </script>
