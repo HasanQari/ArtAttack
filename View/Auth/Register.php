@@ -56,7 +56,7 @@
 
             <!-- Login Form -->
             <form method="post" action="../../Controller/auth/RegisterController.php">
-                <input type="text" name="username" placeholder="Username" minlength="3"
+                <input type="text" name="username" placeholder="Name / Username" minlength="3"
                        class="fadeInAuT fst inputAuT">
                 <input type="email" name="email" placeholder="Email"
                        class="fadeInAuT fst inputAuT">

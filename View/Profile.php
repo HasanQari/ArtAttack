@@ -40,12 +40,11 @@ require "Layouts/header.php";
                     <div class="row" style="margin-bottom: -5%;">
                         <div class="col-md-4">
                             <div class="profile-img">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog"
-                                     alt=""/>
-                                <div class="file btn btn-lg btn-primary">
-                                    Change Photo
-                                    <input type="file" name="file"/>
-                                </div>
+                                <img src="../Resource/img/PP.png" alt="profile img"/>
+<!--                                <div class="file btn btn-lg btn-primary">-->
+<!--                                    Change Photo-->
+<!--                                    <input type="file" name="file"/>-->
+<!--                                </div>-->
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -62,11 +61,11 @@ require "Layouts/header.php";
                                 </ul>
                             </div>
                         </div>
-                        <div class="row">
-                            <input type="submit" class="profile-edit-btn profBtn1" name="btnAddMore"
-                                   value="Edit Profile"/>
-                            <input type="submit" class="profile-edit-btn profBtn2" name="btnAddMore" value="Save"/>
-                        </div>
+<!--                        <div class="row">-->
+<!--                            <input type="submit" class="profile-edit-btn profBtn1" name="btnAddMore"-->
+<!--                                   value="Edit Profile"/>-->
+<!--                            <input type="submit" class="profile-edit-btn profBtn2" name="btnAddMore" value="Save"/>-->
+<!--                        </div>-->
                     </div>
                     <div class="row">
                         <div class="col-md-4"></div>
@@ -123,3 +122,4 @@ require "Layouts/header.php";
 require "Layouts/footer.php";
 ?>
 
+<!--    https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog-->

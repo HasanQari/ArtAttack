@@ -42,132 +42,32 @@ require "../Layouts/ServiceHeader.php";
             </div>
             <!--row1-->
             <div class="row">
-                <div class="col-12 col-md-4">
-                    <div class="single-holder text-center wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="single-icon sImg single-SSS">
-                            <img src="../../Resource/img/cv3.png">
-                            <div class="S-hover-effects">
-                                <div class="S-social-icon">
-                                    <a href="#" title="Download"><i class="fa fa-download" aria-hidden="true"
-                                                                    title="Download"></i></a>
+                <?php
+                include "../../Model/DataBase/DBcon.php";
+                $query = $con->prepare("SELECT * FROM SERV_TEM_EDU WHERE file_type='cv'");
+                $query->execute();
+                while ($row = $query->fetch()){
+                    ?>
+
+                    <div class="col-12 col-md-4">
+                        <div class="single-holder text-center wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="single-icon sImg single-SSS">
+                                <img src="../../Resource/img/Services1/cv/<?php echo $row['file_name'] ?>.png">
+                                <div class="S-hover-effects">
+                                    <div class="S-social-icon">
+                                        <a href="<?php echo $row['file_path'] ?>" download target="_blank" title="Download">
+                                            <i class="fa fa-download" aria-hidden="true" title="Download"></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-4">
-                    <div class="single-holder text-center wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="single-icon sImg single-SSS">
-                            <img src="../../Resource/img/cv1.png">
-                            <div class="S-hover-effects">
-                                <div class="S-social-icon">
-                                    <a href="#" title="Download"><i class="fa fa-download" aria-hidden="true"
-                                                                    title="Download"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4">
-                    <div class="single-holder text-center wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="single-icon sImg single-SSS">
-                            <img src="../../Resource/img/cv2.png">
-                            <div class="S-hover-effects">
-                                <div class="S-social-icon">
-                                    <a href="#" title="Download"><i class="fa fa-download" aria-hidden="true"
-                                                                    title="Download"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--row2-->
-            <div class="row">
-                <div class="col-12 col-md-4">
-                    <div class="single-holder text-center wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="single-icon sImg single-SSS">
-                            <img src="../../Resource/img/cv2.png">
-                            <div class="S-hover-effects">
-                                <div class="S-social-icon">
-                                    <a href="#" title="Download"><i class="fa fa-download" aria-hidden="true"
-                                                                    title="Download"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4">
-                    <div class="single-holder text-center wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="single-icon sImg single-SSS">
-                            <img src="../../Resource/img/cv3.png">
-                            <div class="S-hover-effects">
-                                <div class="S-social-icon">
-                                    <a href="#" title="Download"><i class="fa fa-download" aria-hidden="true"
-                                                                    title="Download"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4">
-                    <div class="single-holder text-center wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="single-icon sImg single-SSS">
-                            <img src="../../Resource/img/cv1.png">
-                            <div class="S-hover-effects">
-                                <div class="S-social-icon">
-                                    <a href="#" title="Download"><i class="fa fa-download" aria-hidden="true"
-                                                                    title="Download"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--row3-->
-            <div class="row">
-                <div class="col-12 col-md-4">
-                    <div class="single-holder text-center wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="single-icon sImg single-SSS">
-                            <img src="../../Resource/img/cv1.png">
-                            <div class="S-hover-effects">
-                                <div class="S-social-icon">
-                                    <a href="#" title="Download"><i class="fa fa-download" aria-hidden="true"
-                                                                    title="Download"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4">
-                    <div class="single-holder text-center wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="single-icon sImg single-SSS">
-                            <img src="../../Resource/img/cv2.png">
-                            <div class="S-hover-effects">
-                                <div class="S-social-icon">
-                                    <a href="#" title="Download"><i class="fa fa-download" aria-hidden="true"
-                                                                    title="Download"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4">
-                    <div class="single-holder text-center wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="single-icon sImg single-SSS">
-                            <img src="../../Resource/img/cv3.png">
-                            <div class="S-hover-effects">
-                                <div class="S-social-icon">
-                                    <a href="#" title="Download"><i class="fa fa-download" aria-hidden="true"
-                                                                    title="Download"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    <?php
+                }
+                ?>
             </div>
         </div>
-
     </section>
     <!-- ***** Special Area End ***** -->
 
