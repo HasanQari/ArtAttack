@@ -173,6 +173,9 @@
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+    #saveDesignBtn{
+        width: 30px;
+    }
     .header_area {
         padding: 0;
     }
@@ -390,14 +393,19 @@
 
 
     .btnHolder {
-        margin-left: .2rem;
+        margin-left: .5rem;
     }
 
     #saveDesignBtn {
         text-decoration: underline;
         text-decoration-color: #fb397d;
+        width: 120px;
     }
-
+    #deleteDesignBtn {
+        text-decoration: underline;
+        text-decoration-color: #fb397d;
+        width: 120px;
+    }
     #saveDesignBtn:hover {
         text-decoration: none;
         background: #fb397d;
@@ -443,6 +451,10 @@
         padding: 5px;
         top: 55%;
         right: 1%;
+    }
+
+    #btnText{
+        width: 50px;
     }
 }
 
