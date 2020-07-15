@@ -279,9 +279,9 @@
     $('#save-image').on('click', function () {
         $('#exampleModal-wall').modal('hide');
 
-        $('#stage').html($('#stage').html() + '<div id="newImage" ><img style="display: inline-block"  src="' + svgImage.href + '" style="height: auto; width: 100%;"/></div> ')
-     /*   $("#stage").resizable({handles: "all"});
-        $("#stage").draggable({cursor: "move"});*/
+        $('#stage').html($('#stage').html() + '<div id="newImage" ><img style="display: inline-block"  src="' + svgImage.href + '" style="height: auto; width: 100%;"/></div> ');
+        $("#newImage").resizable({handles: "all"});
+        $("#newImage").draggable({cursor: "move"});
     });
 
 </script>
