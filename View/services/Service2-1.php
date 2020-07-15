@@ -16,7 +16,7 @@ require "../Layouts/ServiceHeader.php";
     <!-- this is for help icon -->
     <link rel="stylesheet" href="../../Resource/Library/css/font-awesome.min.css">
     <!-- this is for scripts method -->
-    <script src="../../Resource/Library/js/vendor/jquery/Service2-1.js"></script>
+    <script src="../../Resource/Service2-1.js"></script>
 </head>
 
 <main>
