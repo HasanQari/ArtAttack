@@ -447,23 +447,27 @@
         $('#myModal').hide();
     });
 </script>
-<script>
-    let svgImage = {};
+    <script>
+        let svgImage = {};
 
-    $('input[type=image]').on('click', function () {
-        svgImage.href = $(this).attr('src');
-    });
-
-    $('#save-image').on('click', function () {
-        $('#exampleModal-wall').modal('hide');
-
-        $('#stage').html($('#stage').html() + '<img  href="' + svgImage.href + '" style="height: auto; width: 100%;"/> ')
-        $("#stage").resizable({handles: "all"});
-        $("#stage").draggable({cursor: "move"});
-    });
+        $('input[type=image]').on('click', function () {
+            svgImage.href = $(this).attr('src');
+        });
+        var stage =document.getElementById("stage");
 
 
-</script>
+        $('#save-image').on('click', function () {
+            $('#exampleModal-wall').modal('hide');
+
+            $('#stage').html($('#stage').html() + '<div id="newImage" ><img style="display: inline-block"  src="' + svgImage.href + '" style="height: auto; width: 100%;"/></div> ')
+            $("#newImage").resizable({handles: "all"});
+            $("#newImage").draggable({cursor: "move"});
+        });
+
+    </script>
+
+
+
 
 
 <script>
@@ -483,6 +487,7 @@
             }
 
         })
+
     })
 
 
