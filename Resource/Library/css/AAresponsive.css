@@ -1,4 +1,8 @@
 @media (min-width: 1290px) and (max-width: 1550px) {
+    .btnTool pointer {
+        width: 18%;
+    }
+
     .menu_area .navbar-brand {
         font-size: 42px;
     }
@@ -35,6 +39,10 @@
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+    .btnTool pointer {
+        argin-left: .7rem;
+        width: 18%;
+    }
     .menu_area .navbar-brand {
         font-size: 42px;
     }
@@ -70,7 +78,11 @@
     }
 }
 
+
 @media (min-width: 768px) and (max-width: 991px) {
+    .btnTool pointer {
+        width: 18%;
+    }
     .header_area {
         padding: 0;
     }
@@ -173,9 +185,16 @@
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+    .btnTool pointer {
+        width: 18%;
+    }
     #saveDesignBtn{
         width: 30px;
     }
+    #deleteDesignBtn{
+        width: 30px;
+    }
+
     .header_area {
         padding: 0;
     }
@@ -356,11 +375,13 @@
         height: 35rem;
         margin: 10px;
     }
-
+.btnTool pointer {
+    width: 18%;
+}
     .btnTool {
         display: inline-block;
-        font-weight: 550;
-        width: 19.1%;
+        font-weight: 500;
+        width: 18%;
         text-align: center;
         white-space: nowrap;
         vertical-align: middle;
@@ -406,13 +427,29 @@
         text-decoration-color: #fb397d;
         width: 120px;
     }
+    #helpDesignBtn {
+         text-decoration: underline;
+         text-decoration-color: #fb397d;
+         width: 120px;
+     }
     #saveDesignBtn:hover {
         text-decoration: none;
         background: #fb397d;
         width: 16%;
         color: white;
     }
-
+    #deleteDesignBtn:hover {
+        text-decoration: none;
+        background: #fb397d;
+        width: 16%;
+        color: white;
+    }
+    #helpDesignBtn:hover {
+        text-decoration: none;
+        background: #fb397d;
+        width: 16%;
+        color: white;
+    }
     .h-60 {
         height: 60% !important
     }
@@ -459,6 +496,9 @@
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
+    .btnTool pointer {
+        width: 18%;
+    }
     .wellcome-heading > h3 {
         font-size: 284px;
     }
@@ -491,6 +531,9 @@
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
+    .btnTool pointer {
+        width: 18%;
+    }
     .wellcome-heading > h3 {
         font-size: 286px;
     }
