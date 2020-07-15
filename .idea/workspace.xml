@@ -25,10 +25,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57f6b229-b42e-4248-aa52-bf1610b93a60" name="Default Changelist" comment="Responsive">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NoNeed/Service1-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/NoNeed/Service1-1.html" afterDir="false" />
-    </list>
+    <list default="true" id="57f6b229-b42e-4248-aa52-bf1610b93a60" name="Default Changelist" comment="Responsive" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -354,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594763000609</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Responsive">
+      <created>1594767005220</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1594767005220</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -473,10 +477,10 @@
       <screen x="157" y="-900" width="1600" height="860" />
     </state>
     <state x="653" y="-647" key="com.intellij.ide.util.TipDialog/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1593974006626" />
-    <state x="450" y="271" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594763003937">
+    <state x="450" y="271" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594798952885">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="450" y="271" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1594763003937" />
+    <state x="450" y="271" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1594798952885" />
     <state x="450" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.813/157.-900.1600.860@0.0.1280.813" timestamp="1593940247354" />
     <state x="720" y="-557" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1594322697213" />
     <state x="450" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.813@0.0.1280.813" timestamp="1593442240397" />
