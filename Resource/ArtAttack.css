@@ -727,7 +727,7 @@ html {
 }
 
 .btnHolder {
-    margin-left: .2rem;
+    margin-left: .7rem;
 }
 
 #saveDesignBtn {
@@ -738,4 +738,10 @@ html {
 #deleteDesignBtn {
     border-radius: 25px;
     width: 10%;
+}
+
+#helpDesignBtn{
+    width: 10px;
+    padding: 15%;
+    margin: 0.5%;
 }

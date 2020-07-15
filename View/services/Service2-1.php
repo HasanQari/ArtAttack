@@ -4,7 +4,7 @@ require "../Layouts/ServiceHeader.php";
 
 <head>
     <!-- Title -->
-    <title>Art Attack | Profile</title>
+    <title>Commercial posters and banners</title>
 
 
     <!-- Core Stylesheet -->
@@ -13,6 +13,10 @@ require "../Layouts/ServiceHeader.php";
     <link href="../../Resource/ArtAttack.css" rel="stylesheet" type="text/css">
     <!-- AA Responsive CSS -->
     <link href="../../Resource/Library/css/AAresponsive.css" rel="stylesheet">
+    <!-- this is for help icon -->
+    <link rel="stylesheet" href="../../Resource/Library/css/font-awesome.min.css">
+    <!-- this is for scripts method -->
+    <script src="../../Resource/Service2-1.js"></script>
 </head>
 
 <main>
@@ -23,10 +27,12 @@ require "../Layouts/ServiceHeader.php";
             <div class="col-12">
                 <!-- Section Heading Area -->
                 <div class="displayFlex">
-                    <h2 class="section-head">Graduation Party Design</h2>
+                    <h2 class="section-head">Commercial posters and banners</h2>
                     <input type="text" name="Projectitle" placeholder="Write project title here!"
                            class="inputField">
                     <button class="btn pointer" id="saveDesignBtn">Save</button>
+                    <button class="btn pointer" id="deleteDesignBtn">Delete</button>
+                    <button class="btn pointer" id="helpDesignBtn"><i class="fa fa-question-circle-o"></i> </button>
                 </div>
             </div>
         </div>
@@ -40,11 +46,11 @@ require "../Layouts/ServiceHeader.php";
 <!-- ***** Cool Line ***** -->
 <div class="toolBar section_padding_toolBar_resp">
     <div class="btnHolder">
-        <button class="btnTool pointer">Text</button>
-        <button class="btnTool pointer">Picture</button>
-        <button class="btnTool pointer">Shape</button>
-        <button class="btnTool pointer">Wallpaper</button>
-        <button class="btnTool pointer">Template</button>
+        <button class="btnTool pointer" style="width: 18%">Text</button>
+        <button class="btnTool pointer"style="width: 18%">Picture</button>
+        <button class="btnTool pointer"style="width: 18%">Shape</button>
+        <button class="btnTool pointer"style="width: 18%">Wallpaper</button>
+        <button class="btnTool pointer"style="width: 18%">Template</button>
     </div>
 </div>
 
@@ -52,23 +58,23 @@ require "../Layouts/ServiceHeader.php";
 <!-- ***** Footer Area Start ***** -->
 
 <!-- Jquery-2.2.4 JS -->
-<script src="../Library/js/jquery-2.2.4.min.js"></script>
+<script src="../../Resource/Library/js/jquery-2.2.4.min.js"></script>
 <!-- Popper js -->
-<script src="../Library/js/popper.min.js"></script>
+<script src="../../Resource/Library/js/popper.min.js"></script>
 <!-- Bootstrap-4 Beta JS -->
-<script src="../Library/js/bootstrap.min.js"></script>
+<script src="../../Resource/Library/js/bootstrap.min.js"></script>
 <!-- All Plugins JS -->
-<script src="../Library/js/plugins.js"></script>
+<script src="../../Resource/Library/js/plugins.js"></script>
 <!-- Slick Slider Js-->
-<script src="../Library/js/slick.min.js"></script>
+<script src="../../Resource/Library/js/slick.min.js"></script>
 <!-- Footer Reveal JS -->
-<script src="../Library/js/footer-reveal.min.js"></script>
+<script src="../../Resource/Library/js/footer-reveal.min.js"></script>
 <!-- Active JS -->
-<script src="../Library/js/active.js"></script>
+<script src="../../Resource/Library/js/active.js"></script>
 
 <!-- profile side -->
-<script src="../Library/js/bootstrap.min.js"></script>
-<script src="../Library/js/jquery.min.js"></script>
+<script src="../../Resource/Library/js/bootstrap.min.js"></script>
+<script src="../../Resource/Library/js/jquery-2.2.4.min.js"></script>
 
 </main>
 
