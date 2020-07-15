@@ -29,6 +29,7 @@ function logoutAjax() {
 // MyDesign Script Section
 
 // Services Script Section
+//JS here !
 function Add_photo() {
     $(document).ready(function () {
         $('#execute').on('click', function () {
