@@ -449,6 +449,7 @@
         background: #fb397d;
         width: 16%;
         color: white;
+        border-radius: 25px;
     }
     .h-60 {
         height: 60% !important
