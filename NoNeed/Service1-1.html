@@ -313,6 +313,7 @@
     svg1.onclick=function() {
         let stage = document.getElementById("stage");
         let copySvg= svg1.cloneNode(true);
+        cpoy();
         stage.appendChild(copySvg);
     }
 
@@ -321,78 +322,78 @@
 <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-    // for edit the text in template
-    $(document).ready(function (){
-        var userText = document.createElement("INPUT");
-        let stage = document.getElementById("stage");
-        userText.setAttribute("id", "usertext");
-        userText.setAttribute("type", "text");
+    function cpoy() {
+        // for edit the text in template
+        $(document).ready(function () {
+            var userText = document.createElement("INPUT");
+            let stage = document.getElementById("stage");
+            userText.setAttribute("id", "usertext");
+            userText.setAttribute("type", "text");
 
-        $("#test").one( "click", function() {
-            userText.setAttribute("placeholder", "BUSINES");
-            stage.appendChild(userText);
-            let inputText = document.getElementById("usertext");
-            $("#usertext").change(function (){
-                let s = $("#usertext").innerHTML;
-                console.log(inputText.value)
-                $("#test").text(inputText.value)
+            $("#test").one("click", function () {
+                userText.setAttribute("placeholder", "BUSINES");
+                stage.appendChild(userText);
+                let inputText = document.getElementById("usertext");
+                $("#usertext").change(function () {
+                    let s = $("#usertext").innerHTML;
+                    console.log(inputText.value)
+                    $("#test").text(inputText.value)
 
-            })
+                })
+
+            });
+
+            $("#test2").one("click", function () {
+
+                userText.setAttribute("placeholder", "START A");
+                stage.appendChild(userText);
+                let inputText = document.getElementById("usertext");
+                $("#usertext").change(function () {
+                    let s = $("#usertext").innerHTML;
+                    console.log(inputText.value)
+                    $("#test2").text(inputText.value)
+                })
+            });
+
+            $("#test3").one("click", function () {
+
+                userText.setAttribute("placeholder", "lacina non semper! ");
+                stage.appendChild(userText);
+                let inputText = document.getElementById("usertext");
+                $("#usertext").change(function () {
+                    let s = $("#usertext").innerHTML;
+                    console.log(inputText.value)
+                    $("#test3").text(inputText.value)
+                })
+            });
+
+            $("#test4").one("click", function () {
+                userText.setAttribute("placeholder", "lorem ipsum sit dolor amet...\n" +
+                    "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut " +
+                    "laoreet dolore magna aliquam erat volutpat ");
+                stage.appendChild(userText);
+                let inputText = document.getElementById("usertext");
+                $("#usertext").change(function () {
+                    let s = $("#usertext").innerHTML;
+                    console.log(inputText.value)
+                    $("#test4").text(inputText.value)
+                })
+            });
+            $("#test5").one("click", function () {
+
+                userText.setAttribute("placeholder", "lorem ipsum sit dolor amet..");
+                stage.appendChild(userText);
+                let inputText = document.getElementById("usertext");
+                $("#usertext").change(function () {
+                    let s = $("#usertext").innerHTML;
+                    console.log(inputText.value)
+                    $("#test5").text(inputText.value)
+                })
+            });
+
 
         });
-
-        $("#test2").one( "click", function() {
-
-            userText.setAttribute("placeholder", "START A");
-            stage.appendChild(userText);
-            let inputText = document.getElementById("usertext");
-            $("#usertext").change(function (){
-                let s = $("#usertext").innerHTML;
-                console.log(inputText.value)
-                $("#test2").text(inputText.value)
-            })
-        });
-
-        $("#test3").one( "click", function() {
-
-            userText.setAttribute("placeholder", "lacina non semper! ");
-            stage.appendChild(userText);
-            let inputText = document.getElementById("usertext");
-            $("#usertext").change(function (){
-                let s = $("#usertext").innerHTML;
-                console.log(inputText.value)
-                $("#test3").text(inputText.value)
-            })
-        });
-
-        $("#test4").one( "click", function() {
-            userText.setAttribute("placeholder", "lorem ipsum sit dolor amet...\n" +
-                "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut " +
-                "laoreet dolore magna aliquam erat volutpat ");
-            stage.appendChild(userText);
-            let inputText = document.getElementById("usertext");
-            $("#usertext").change(function (){
-                let s = $("#usertext").innerHTML;
-                console.log(inputText.value)
-                $("#test4").text(inputText.value)
-            })
-        });
-        $("#test5").one( "click", function() {
-
-            userText.setAttribute("placeholder", "lorem ipsum sit dolor amet..");
-            stage.appendChild(userText);
-            let inputText = document.getElementById("usertext");
-            $("#usertext").change(function (){
-                let s = $("#usertext").innerHTML;
-                console.log(inputText.value)
-                $("#test5").text(inputText.value)
-            })
-        });
-
-
-
-    });
-
+    }
 </script>
 <!--Add Wallpaper Paper JS :-->
 

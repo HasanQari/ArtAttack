@@ -25,7 +25,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57f6b229-b42e-4248-aa52-bf1610b93a60" name="Default Changelist" comment="Responsive" />
+    <list default="true" id="57f6b229-b42e-4248-aa52-bf1610b93a60" name="Default Changelist" comment="Responsive">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NoNeed/Service1-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/NoNeed/Service1-1.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -358,7 +361,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594767005220</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Responsive">
+      <created>1594799128198</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1594799128198</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,10 +417,10 @@
       <screen x="157" y="-900" width="1600" height="860" />
     </state>
     <state x="537" y="-816" key="#CLI_Interpreters/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1594315598767" />
-    <state x="267" y="19" key="#Inspections" timestamp="1593506833773">
+    <state x="267" y="19" key="#Inspections" timestamp="1594799659224">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="267" y="19" key="#Inspections/0.0.1280.680@0.0.1280.680" timestamp="1593506833773" />
+    <state x="267" y="19" key="#Inspections/0.0.1280.680@0.0.1280.680" timestamp="1594799659224" />
     <state x="664" y="-828" key="#PHP" timestamp="1594315614300">
       <screen x="157" y="-900" width="1600" height="860" />
     </state>
@@ -463,16 +473,16 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="488" y="254" key="VCS.ChangelistChooser/0.0.1280.680@0.0.1280.680" timestamp="1593456243405" />
-    <state x="233" y="117" key="Vcs.Push.Dialog.v2" timestamp="1594751253291">
+    <state x="233" y="117" key="Vcs.Push.Dialog.v2" timestamp="1594799130834">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="117" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1594751253291" />
+    <state x="233" y="117" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1594799130834" />
     <state x="448" y="-752" key="Vcs.Push.Dialog.v2/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1594327344148" />
     <state x="233" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.813@0.0.1280.813" timestamp="1593423834308" />
-    <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1594766742100">
+    <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1594799331706">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1280.680@0.0.1280.680" timestamp="1594766742100" />
+    <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1280.680@0.0.1280.680" timestamp="1594799331706" />
     <state x="653" y="-647" key="com.intellij.ide.util.TipDialog" timestamp="1593974006626">
       <screen x="157" y="-900" width="1600" height="860" />
     </state>

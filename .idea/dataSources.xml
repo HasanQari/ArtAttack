@@ -7,5 +7,11 @@
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/ArtAttack</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="artattack@localhost" uuid="f5da3c5d-5ca1-463f-aca2-57cbbbf5a289">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/artattack</jdbc-url>
+    </data-source>
   </component>
 </project>
