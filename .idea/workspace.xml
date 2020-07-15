@@ -16,17 +16,14 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </select>
+    <select />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57f6b229-b42e-4248-aa52-bf1610b93a60" name="Default Changelist" comment="Responsive">
-      <change beforePath="$PROJECT_DIR$/Resource/Library/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/Library/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NoNeed/Service1-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/NoNeed/Service1-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/services/service3-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/services/service3-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/services/service3-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/services/service3-2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

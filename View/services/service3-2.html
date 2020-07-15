@@ -237,7 +237,30 @@
 
 </script>
 
+<script>
+    var svgImage = {
+        href: '',
+        x: '0',
+        y: '0',
+        width: '500',
+        height: ''
+    };
 
+    $('input[type=image]').on('click', function() {
+        svgImage.href = $(this).attr('src');
+    });
+
+    $('#save-image').on('click', function() {
+        $('#exampleModal-wall').modal('hide');
+
+        $('#stage').html($('#stage').html() + '<image ' + (svgImage.x == '' ? '' : 'x="' + svgImage.x + '"') + (svgImage.y == '' ? '' : ' y="' + svgImage.y + '"') + ' href="' + svgImage.href + '"' + (svgImage.width == '' ? '' : ' width="' + svgImage.width + '"') + (svgImage.height == '' ? '' : ' height="' + svgImage.height) + '/> ')
+        $( "#stage" ).resizable({handles:"all"});
+        $( "#stage" ).draggable({cursor:"move"});
+    });
+
+
+
+</script>
 </body>
 
 </html>

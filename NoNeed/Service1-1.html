@@ -24,6 +24,16 @@
     <link href="../Resource/ArtAttack.css" rel="stylesheet" type="text/css">
     <!-- AA Responsive CSS -->
     <link href="../Resource/Library/css/AAresponsive.css" rel="stylesheet">
+    <!--CSS for Modal-->
+    <link href="../../Resource/Library/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <!--CSS jquery-->
+
+    <link href="/Resource/Library/js/jquery-ui-1.12.1/jquery-ui.css">
+    <link href="/Resource/Library/js/jquery-ui-1.12.1/jquery-ui.structure.css">
+    <link href="/Resource/Library/js/jquery-ui-1.12.1/jquery-ui.theme.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
 
 </head>
 <header class="header_areaMD animated" >
@@ -144,15 +154,7 @@
         </div>
     </div>
 </div>
-<script>
-    $(document).ready(function () {
-        $('#execute').on('click', function () {
-            $('#stage').html($('#stage').html() + '<image ' + ' href="' + $('#image-url').val() + '/>');
-        })
-    });
-    <!--Add Wallpaper Paper JS :-->
 
-</script>
 <!-- script for deleting the stage -->
 <script>
     function deleteStage(){
@@ -166,11 +168,11 @@
         var userText = document.createElement("INPUT");
         let stage = document.getElementById("stage");
 
-        userText.setAttribute("id", "usertext");
+        userText.setAttribute("id", "userText");
         userText.setAttribute("type", "text");
         userText.setAttribute("placeholder", "write your text here");
         stage.appendChild(userText);
-        $("#usertext").draggable({cursor: "move"});
+        $("#userText").draggable({cursor: "move"});
 
     }
 
@@ -229,6 +231,36 @@
     </div>
 
 </div>
+
+
+<!--Add Wallpaper Paper JS :-->
+<script>
+    let svgImage = {};
+
+    $('input[type=image]').on('click', function () {
+        svgImage.href = $(this).attr('src');
+    });
+    var stage =document.getElementById("stage");
+
+
+    $('#save-image').on('click', function () {
+        $('#exampleModal-wall').modal('hide');
+
+        $('#stage').html($('#stage').html() + '<div id="newImage" ><img style="display: inline-block"  src="' + svgImage.href + '" style="height: auto; width: 100%;"/></div> ')
+        $("#stage").resizable({handles: "all"});
+        $("#stage").draggable({cursor: "move"});
+    });
+
+</script>
+
+<!--Add photo JS :-->
+<script>
+    $(document).ready(function () {
+        $('#execute').on('click', function () {
+            $('#stage').html($('#stage').html() + '<image ' + ' href="' + $('#image-url').val() + '/>');
+        })
+    });
+</script>
 <script>
 
 
@@ -318,9 +350,7 @@
     }
 
 </script>
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 <script>
     function cpoy() {
         // for edit the text in template
@@ -472,3 +502,6 @@
 <!-- Active JS -->
 <script src="../Resource/Library/js/active.js"></script>
 </html>
+<!-- Jquery-2.2.4 JS -->
+<script src="/Resource/Library/js/jquery-2.2.4.min.js"></script>
+<script src="/Resource/Library/js/jquery-ui-1.12.1/jquery-ui.js"></script>
