@@ -238,6 +238,7 @@
 <!-- Jquery-2.2.4 JS -->
 <script src="../../Resource/Library/js/jquery-2.2.4.min.js"></script>
 <script src="../../Resource/Library/js/jquery-ui-1.12.1/jquery-ui.js"></script>
+<script src="../../Resource/Library/js/vendor/jquery/jquery.js"></script>
 <!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
 <!-- Popper js -->
@@ -253,33 +254,36 @@
 <!-- Active JS -->
 <script src="../../Resource/Library/js/active.js"></script>
 <!---->
-<script type="text/javascript" src="../../Resource/Library/js/vendor/jquery"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
 <!-- Page level custom scripts -->
 <script src="../../Library/js/demo/chart-area-demo.js"></script>
 <script src="../../Library/js/demo/chart-pie-demo.js"></script>
 <script type="text/javascript" src="../../Resource/nicEdit.js"></script>
 
+<script  src="../../Resource/ArtAttack.js"></script>
 
 
 
 <!--Nood Side:-->
 
-<!--Add photo JS :-->
+<!--Add photo JS :
 <script>
     $(document).ready(function () {
         $('#execute').on('click', function () {
             $('#stage').html($('#stage').html() + '<image ' + ' href="' + $('#image-url').val() + '/>');
         })
     });
-    <!--Add Wallpaper Paper JS :-->
+
 
 </script>
+&lt;!&ndash;Add Wallpaper Paper JS :&ndash;&gt;
+
 <script>
-    let svgImage = {};
+   let Wallpaper = {};
 
     $('input[type=image]').on('click', function () {
-        svgImage.href = $(this).attr('src');
+        Wallpaper.href = $(this).attr('src');
     });
     var stage =document.getElementById("stage");
 
@@ -287,16 +291,19 @@
     $('#save-image').on('click', function () {
         $('#exampleModal-wall').modal('hide');
 
-        $('#stage').html($('#stage').html() + '<div id="newImage" ><img style="display: inline-block"  src="' + svgImage.href + '" style="height: auto; width: 100%;"/></div> ');
-        $("#newImage").resizable({handles: "all"});
+        $('#stage').html($('#stage').html() + '<div id="newImage" ><img style="display: inline-block"  src="' + Wallpaper.href + '" style="height: 80%; width: 80%; "/></div> ');
+        $("#newImage").resizable({handles: "all",
+        autoHide: true,
+        ghost:true,
+        aspectRatio:true,});
         $("#newImage").draggable({cursor: "move"});
     });
 
-</script>
+</script>-->
 <!-- this is for the shape written by doaa -->
-<script>
+<!--<script>
 
-    // Get the modal
+    /*// Get the modal
     var modal2 = document.getElementById("myModal2");
     // Get the button that opens the modal
     var btn = document.getElementById("btnShape");
@@ -318,16 +325,16 @@
         if (event.target == modal2) {
             modal2.style.display = "none";
         }
-    }
+    }*/
 
 
 
 
-</script>
+</script>-->
 <!-- this is for the template written by doaa -->
-<script>
+<!--<script>
 
-    // Get the modal
+   /* // Get the modal
     var modal = document.getElementById("myModal");
     // Get the button that opens the modal
     var btn = document.getElementById("myBtn");
@@ -359,9 +366,9 @@
         cpoy();
         stage.appendChild(copySvg);
     }
-
-</script>
-
+*/
+</script>-->
+<!--
 <script>
     function cpoy() {
         // for edit the text in template
@@ -371,7 +378,8 @@
             userText.setAttribute("id", "usertext");
             userText.setAttribute("type", "text");
 
-            $("#test").one("click", function () {
+            $("#test").on("click", function () {
+                console.log("hello");
                 userText.setAttribute("placeholder", "BUSINES");
                 stage.appendChild(userText);
                 let inputText = document.getElementById("usertext");
@@ -380,13 +388,14 @@
                     console.log(inputText.value)
                     $("#test").text(inputText.value)
 
+
                 })
 
             });
 
-            $("#test2").one("click", function () {
+            $("#test2").on("click", function () {
 
-                userText.setAttribute("placeholder", "START A");
+                userText.setAttribute("value", "START A");
                 stage.appendChild(userText);
                 let inputText = document.getElementById("usertext");
                 $("#usertext").change(function () {
@@ -396,7 +405,7 @@
                 })
             });
 
-            $("#test3").one("click", function () {
+            $("#test3").on("click", function () {
 
                 userText.setAttribute("placeholder", "lacina non semper! ");
                 stage.appendChild(userText);
@@ -408,7 +417,7 @@
                 })
             });
 
-            $("#test4").one("click", function () {
+            $("#test4").on("click", function () {
                 userText.setAttribute("placeholder", "lorem ipsum sit dolor amet...\n" +
                     "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut " +
                     "laoreet dolore magna aliquam erat volutpat ");
@@ -420,7 +429,7 @@
                     $("#test4").text(inputText.value)
                 })
             });
-            $("#test5").one("click", function () {
+            $("#test5").on("click", function () {
 
                 userText.setAttribute("placeholder", "lorem ipsum sit dolor amet..");
                 stage.appendChild(userText);
@@ -435,9 +444,9 @@
 
         });
     }
-</script>
+</script>-->
 <!--Add Wallpaper Paper JS :-->
-
+<!--
 <script>
     $('#x-shape').click(function () {
         $('#myModal2').hide();
@@ -446,8 +455,8 @@
     $('#x-template').click(function () {
         $('#myModal').hide();
     });
-</script>
-    <script>
+</script>-->
+    <!--<script>
         let svgImage = {};
 
         $('input[type=image]').on('click', function () {
@@ -464,12 +473,12 @@
             $("#newImage").draggable({cursor: "move"});
         });
 
-    </script>
+    </script>-->
 
 
 
 
-
+<!--
 <script>
 
 
@@ -491,15 +500,15 @@
     })
 
 
-</script>
+</script>-->
 <!-- script for deleting the stage -->
-<script>
+<<!--script>
     function deleteStage(){
         let stage = document.getElementById("stage");
         stage.innerHTML="";
     }
-</script>
-<!-- script for adding text -->
+</script>-->
+<!-- script for adding text
 <script>
     function FunctionForUserText() {
         var userText = document.createElement("INPUT");
@@ -518,7 +527,7 @@
             FunctionForUserText();
         }, {once: true});
 
-</script>
+</script>-->
 
 
 
