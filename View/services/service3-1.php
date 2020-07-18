@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,17 +32,14 @@
     <link href="../../Resource/Library/js/jquery-ui-1.12.1/jquery-ui.css">
     <link href="../../Resource/Library/js/jquery-ui-1.12.1/jquery-ui.structure.css">
     <link href="../../Resource/Library/js/jquery-ui-1.12.1/jquery-ui.theme.css">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
 
     <!-- Custom fonts for this template-->
-    <link href="../../Library/js/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
           rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="../../Library/css/sb-admin-2.css" rel="stylesheet">
-    <link href="../../Library/css/style.css" rel="stylesheet">
+    <link href="../../Resource/Library/css/sb-admin-2.css" rel="stylesheet">
+    <link href="../../Resource/Library/css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -57,12 +57,12 @@
                         <a class="navbar-brand" href="#">Art<span id="AttackWord">Attack</span></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar"
                                 aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span
-                                class="navbar-toggler-icon"></span></button>
+                                    class="navbar-toggler-icon"></span></button>
                         <!-- Menu Area -->
                         <div class="collapse navbar-collapse" id="ca-navbar">
                             <ul class="navbar-nav ml-auto" id="nav">
                                 <li class="nav-item"><a class="nav-link respBtnHeader" href="../profile.html">My
-                                    Profile</a></li>
+                                        Profile</a></li>
                                 <li class="nav-item"><a class="nav-link" href="../HomeMember.html">Home</a></li>
                                 <li class="nav-item"><a class="nav-link" href="../MyDesign.html">My Design</a></li>
                                 <li class="nav-item"><a class="nav-link" href="../Home.html">Logout</a></li>
@@ -92,11 +92,13 @@
                            class="inputField">
                     <button class="btn pointer" id="saveDesignBtn">Save</button>
                     <button class="btn pointer" id="deleteDesignBtn" onclick="deleteStage()">Delete</button>
+               <!--     <button class="btn pointer" id="helpDesignBtn"><i class="fa fa-question-circle-o"></i> </button> -->
+                    <button class="btn pointer" id="HelpDesignBtn" onclick="helpUser()">Help</button>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div  id= "stage" class="card-body card shadow mb-4 DesignArea">
+            <div id="stage" class="card-body card shadow mb-4 DesignArea">
             </div>
 
         </div>
@@ -106,23 +108,31 @@
 <!-- ***** Cool Line ***** -->
 <div class="toolBar section_padding_toolBar_resp">
     <div class="btnHolder">
-        <button class="btnTool pointer" id="btnText">Text</button>
-        <button type="button" class="btnTool pointer" data-toggle="modal" data-target="#exampleModal-pic">Picture
-        </button>
-        <button class="btnTool pointer" id="btnShape">Shape</button>
-        <button class="btnTool pointer" data-toggle="modal" data-target="#exampleModal-wall">Wallpaper</button>
-        <button class="btnTool pointer" id="myBtn">Template</button>
+
+        <button type="button" class="btnTool pointer" data-toggle="modal" data-target="#text-modal">Text</button>
+        <button type="button" class="btnTool pointer" data-toggle="modal" data-target="#picture-modal">Picture</button>
+        <button type="button" class="btnTool pointer" data-toggle="modal" data-target="#shape-modal">Shape</button>
+        <button type="button" class="btnTool pointer" data-toggle="modal" data-target="#wallpaper-modal">Wallpaper</button>
+        <button type="button" class="btnTool pointer" data-toggle="modal" data-target="#template-modal">Template</button>
     </div>
 </div>
 
-
-<!-- Modal (1) : -->
-<div class="modal fade" id="exampleModal-pic" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-     aria-hidden="true">
+<!-- this script is for the help window -->
+<script>
+    function helpUser(){
+        alert("Hi user , to design whatever you want in our website " +
+            "\n First : choose the wallpaper you want or the template. " +
+            "\n Second : if you choose the template then you can modify it. " +
+            "\n Third : if you choose the wallpaper then you can add shapes and text." +
+            "\n Fourth : you can downloads the template or share it . ")
+    }
+</script>
+<!-- Modal for Add picture (1) : -->
+<div class="modal fade" id="picture-modal" tabindex="-1" role="dialog" aria-labelledby="picture-modal-label" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Add Picture</h5>
+                <h5 class="modal-title" id="picture-modal-label">Add Picture</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -130,23 +140,22 @@
             <div class="modal-body">
                 <label>Select Photo</label>
                 <input type="file" name="bg" accept="image/png, image/jpeg , image/jpg" size="10">
-
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" id="execute">Add photo</button>
+                <button type="button" class="btn btn-primary" id="save-picture">Select</button> <!-- Edit 12: changed id attribute and text of button -->
             </div>
         </div>
     </div>
 </div>
 
-<!-- Modal (2) : -->
-<div class="modal fade" id="exampleModal-wall" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-     aria-hidden="true">
+<!-- Modal For Add Wallpaper (2) : -->
+
+<div class="modal fade" id="wallpaper-modal" tabindex="-1" role="dialog" aria-labelledby="wallpaper-modal-label" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Image Gallery</h5>
+                <h5 class="modal-title" id="wallpaper-modal-label">Add Wallpaper</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -171,79 +180,123 @@
 
 <!--Model template-->
 
-
-<div id="myModal" class="modal" tabindex="-1" role="dialog"  aria-hidden="true">
-    <div class="modal-dialog">
-    <!-- Modal content -->
-    <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title">Add template</h5>
-            <button id="x-template" type="button" class="close" data-dismiss="true" aria-label="close" >
-        <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-        <svg style="height:300px;width: 300px" id="svg"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1620"><defs><style>.cls-1,.cls-12,.cls-27,.cls-30{fill:#ffd3db;}.cls-2,.cls-33,.cls-5{fill:#fff;}.cls-26,.cls-28,.cls-3{fill:#bfd1e5;}.cls-4{fill:none;stroke:#ffd3db;stroke-miterlimit:10;stroke-width:5px;}.cls-33,.cls-5{font-size:18px;}.cls-5{font-family:Lato-Bold, Lato Bold;}.cls-27,.cls-5{font-weight:700;}.cls-6{letter-spacing:0.52em;}.cls-7{letter-spacing:0.45em;}.cls-8{letter-spacing:0.5em;}.cls-9{letter-spacing:0.46em;}.cls-10{letter-spacing:0.5em;}.cls-11{letter-spacing:0.48em;}.cls-12{font-size:36px;}.cls-12,.cls-26{font-family:SourceSerifPro-Regular, SourceSerifPro Regular;}.cls-13{letter-spacing:-0.01em;}.cls-14{letter-spacing:0em;}.cls-15{letter-spacing:0em;}.cls-16{font-size:21px;fill:#242038;font-family:Lato-Regular, Lato Regular;}.cls-17{letter-spacing:-0.01em;}.cls-18{letter-spacing:-0.01em;}.cls-19{letter-spacing:0em;}.cls-20{letter-spacing:-0.01em;}.cls-21{letter-spacing:0.01em;}.cls-22{letter-spacing:-0.01em;}.cls-23{letter-spacing:0em;}.cls-24{letter-spacing:0em;}.cls-25{letter-spacing:0em;}.cls-26{font-size:72px;}.cls-27{font-family:SourceSerifPro-Bold, SourceSerifPro Bold;}.cls-28,.cls-30{font-size:144.1px;}.cls-28,.cls-33{font-family:Lato-Black, Lato Black;font-weight:800;}.cls-29{letter-spacing:0.05em;}.cls-30{font-family:Lato-Light, Lato Light;font-weight:300;}.cls-31{letter-spacing:-0.02em;}.cls-32{letter-spacing:0.06em;}.cls-34{letter-spacing:0.46em;}.cls-35{letter-spacing:0.47em;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Background"><g id="_4" data-name="4"><g id="Vertical_4" data-name="Vertical 4"><rect id="Background-2" data-name="Background" class="cls-1" width="1080" height="1620"/><g id="Frame"><rect class="cls-2" x="92.5" y="192.5" width="895" height="1235"/><path class="cls-3" d="M985,195V1425H95V195H985m5-5H90V1430H990V190Z"/></g></g></g></g><g id="Graphics"><g id="_4-2" data-name="4"><g id="Vertical_4-2" data-name="Vertical 4"><rect id="Footer_Box" data-name="Footer Box" class="cls-3" x="290" y="1390" width="500" height="80"/><line id="Divider" class="cls-4" x1="515" y1="1093.5" x2="565" y2="1093.5"/><rect id="Header_Box" data-name="Header Box" class="cls-3" x="380" y="150" width="320" height="80"/></g></g></g><g id="Text"><g id="_4-3" data-name="4"><g id="Vertical_4-3" data-name="Vertical 4"><text class="cls-5" transform="translate(390.81 1435.19)"><tspan class="cls-6">WW</tspan><tspan class="cls-7" x="49.03" y="0">W</tspan><tspan class="cls-8" x="72.27" y="0">.</tspan><tspan class="cls-9" x="85" y="0">Y</tspan><tspan class="cls-8" x="103.08" y="0">OURSIT</tspan><tspan class="cls-10" x="212.94" y="0">E</tspan><tspan class="cls-8" x="230.72" y="0">.</tspan><tspan class="cls-11" x="243.45" y="0">C</tspan><tspan class="cls-8" x="262.51" y="0">O</tspan><tspan x="283.91" y="0">M</tspan></text><text id="test5" class="cls-12" transform="translate(327.23 1181.66)">lo<tspan class="cls-13" x="28.26" y="0">r</tspan><tspan class="cls-14" x="39.67" y="0">em ipsum sit dolor ame</tspan><tspan class="cls-15" x="391.39" y="0">t</tspan><tspan x="403.2" y="0">...</tspan></text><text id="test4" class="cls-16" transform="translate(275.83 951.19)"><tspan class="cls-17">L</tspan><tspan x="9.62" y="0">o</tspan><tspan class="cls-18" x="21.15" y="0">r</tspan><tspan x="27.8" y="0">em ipsum dolor sit ame</tspan><tspan class="cls-19" x="232.97" y="0">t</tspan><tspan x="239.86" y="0">, </tspan><tspan class="cls-20" x="248.66" y="0">c</tspan><tspan x="257.94" y="0">onse</tspan><tspan class="cls-21" x="299.96" y="0">c</tspan><tspan class="cls-20" x="309.64" y="0">t</tspan><tspan x="316.46" y="0">etuer adipiscing eli</tspan><tspan class="cls-19" x="481.96" y="0">t</tspan><tspan x="488.85" y="0">, sed </tspan><tspan x="14.37" y="36">diam nonum</tspan><tspan class="cls-22" x="127.14" y="36">m</tspan><tspan x="144.38" y="36">y nibh euismod tincidu</tspan><tspan class="cls-23" x="345.27" y="36">n</tspan><tspan x="356.84" y="36">t ut lao</tspan><tspan class="cls-18" x="417.82" y="36">r</tspan><tspan x="424.48" y="36">eet dolo</tspan><tspan class="cls-18" x="496.78" y="36">r</tspan><tspan x="503.44" y="36">e </tspan><tspan x="135.27" y="72">ma</tspan><tspan class="cls-20" x="162.91" y="72">g</tspan><tspan x="174.52" y="72">na aliquam e</tspan><tspan class="cls-24" x="286.74" y="72">r</tspan><tspan class="cls-23" x="293.5" y="72">a</tspan><tspan x="303.54" y="72">t </tspan><tspan class="cls-18" x="314.94" y="72">v</tspan><tspan x="324.83" y="72">olutp</tspan><tspan class="cls-23" x="371.79" y="72">a</tspan><tspan class="cls-25" x="381.83" y="72">t</tspan><tspan x="388.72" y="72">.</tspan></text><text id="test3" class="cls-26" transform="translate(261.4 862.18)">lacina <tspan class="cls-27" x="190.72" y="0">non </tspan><tspan x="325.43" y="0">semper!</tspan></text><text class="cls-28" transform="translate(222.33 743.93)"><tspan class="cls-29" id="test">BUSINES</tspan><tspan x="564" y="0">S</tspan></text><text class="cls-30" id="test2"transform="translate(273.63 600.83)"><tspan class="cls-29">S</tspan><tspan class="cls-31" x="78.25" y="0">T</tspan><tspan class="cls-29" x="146.26" y="0">A</tspan><tspan class="cls-32" x="241.65" y="0">R</tspan><tspan class="cls-29" x="327.68" y="0">T </tspan><tspan x="444.25" y="0">A</tspan></text><text class="cls-33" transform="translate(427.72 195.08)"><tspan class="cls-8">HOW</tspan><tspan class="cls-34" x="66.37" y="0"> </tspan><tspan class="cls-35" x="78.44" y="0">T</tspan><tspan class="cls-8" x="95.9" y="0">O SERIE</tspan><tspan x="215.69" y="0">S</tspan></text></g></g></g></g></svg>
-    </div>
-    </div>
-
-</div>
-
-<div id="myModal2"  class="modal" tabindex="-1" role="dialog"  aria-hidden="true">
+<div class="modal fade" id="template-modal" tabindex="-1" role="dialog" aria-labelledby="template-modal-label" aria-hidden="true">
     <div class="modal-dialog">
         <!-- Modal content -->
-        <div class="modal-content" style="width: 1000px">
+        <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Add Shape</h5>
-                <button id="x-shape" type="button" class="close" data-dismiss="true" aria-label="close" >
+                <h5 class="modal-title" id="template-modal-label">Add Template</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="close" >
                     <span aria-hidden="true">&times;</span>
-
                 </button>
             </div>
-        <!-- html code for the shape -->
-        <div id="table" style="padding: 0%">
-            <svg  id ="rect" class="shapes" width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <rect  x="150" y="50" width="30" height="30" stroke="black" fill="transparent" stroke-width="5"/>
-            </svg>
-            <svg class="shapes" width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <rect id="Oval" x="75" y="50" rx="10" ry="10" width="30" height="30" stroke="black" fill="transparent" stroke-width="5"/>
-            </svg>
-            <svg class="shapes" width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <circle  id="circle" cx="40" cy="65" r="20" stroke="red" fill="transparent" stroke-width="5"/>
-            </svg>
-            <svg class="shapes" width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <ellipse id="ellipse" cx="25" cy="75" rx="20" ry="5" stroke="red" fill="transparent" stroke-width="5"/>
-            </svg>
-            <svg class="shapes" width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <line id="line" x1="0" x2="50" y1="70" y2="90"  stroke="orange" stroke-width="5"/>
-            </svg>
-            <svg class="shapes" width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <polyline id="polyline" points="20 70 25 80 30 75 35 90 40 85 45 100 50 95 55 110 60 105"
-                          stroke="orange" fill="transparent" stroke-width="5"/>
-            </svg>
-            <svg class="shapes" width="200" height="220" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <polygon id="polygon" points="50 160 55 180 70 180 60 190 65 205 50 195 35 205 40 190 30 180 45 180"
-                         stroke="green" fill="transparent" stroke-width="5"/>
-            </svg>
-            <svg class="shapes" width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <path id="line2" d="M20,230 Q40,205 50,230 T90,230" fill="none" stroke="blue" stroke-width="5"/>
-            </svg>
+            <div class="modal-body">
+                <style>
+                    button.templates {
+                        border: none;
+                        background-color: transparent;
+                    }
+                </style>
+                <button class="templates" type="button">
+            <?php
+            include "../../Model/DataBase/DBcon.php";
+            $sql = "SELECT * FROM `service2-1`";
+            $result = mysqli_query($conn, $sql);
+            if(mysqli_num_rows($result) > 0) {
+            while($row = mysqli_fetch_assoc($result)) {
+                echo $row['path_serv2'];
+            ?>
+                </button>
 
+    <?php
+    }
+    }
+    ?>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="save-shape">Select</button>
+            </div>
         </div>
+
     </div>
 
 </div>
 
+<!-- Modal (3) -->
+
+<div class="modal fade" id="shape-modal" tabindex="-1" role="dialog" aria-labelledby="shape-modal-label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="shape-modal-label">Add Shape</h5> <!-- Edit 23: added this line as title for modal -->
+                <button type="button" class="close" data-dismiss="modal" aria-label="close" >
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+
+                    <!-- this is for styling the table shapes -->
+                    <div class="col-md-2 col-sm-4 col-xs-6 text-center py-4">
+
+            <!-- php code for the shape -->
+            <?php
+
+            include "../../Model/DataBase/DBcon.php";
+            $sql = "SELECT * FROM `service2-1_shape`";
+            $result = mysqli_query($conn, $sql);
+            if(mysqli_num_rows($result) > 0) {
+                while($row = mysqli_fetch_assoc($result)) {
+                    echo $row['path_serv2_shape'];
+                    ?>
+
+
+                    <?php
+                }
+            }
+            ?>
+                </div>
+            </div>
+            <div class="modal-footer"> <!-- Edit 36: added modal footer with button to add shape to stage -->
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
 </div>
 
+<!-- Modal for Add text (1) : -->
+<div class="modal fade" id="text-modal" tabindex="-1" role="dialog" aria-labelledby="text-modal-label" aria-hidden="true"> <!-- Edit 37: added modal for text -->
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="text-modal-label">Add Text</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <label>Text</label>
+                <input type="text" name="add-text" id="add-text" class="form-control" >
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="save-text">Select</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- ***** Footer Area Start ***** -->
 
 <!-- Jquery-2.2.4 JS -->
 <script src="../../Resource/Library/js/jquery-2.2.4.min.js"></script>
 <script src="../../Resource/Library/js/jquery-ui-1.12.1/jquery-ui.js"></script>
-<script src="../../Resource/Library/js/vendor/jquery/jquery.js"></script>
-<!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
+<!--<script src="../../Resource/Library/js/vendor/jquery/jquery.js"></script>-->
+
 <!-- Popper js -->
 <script src="../../Resource/Library/js/popper.min.js"></script>
 <!-- Bootstrap-4 Beta JS -->
@@ -260,17 +313,11 @@
 
 <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
 <!-- Page level custom scripts -->
-<script src="../../Library/js/demo/chart-area-demo.js"></script>
-<script src="../../Library/js/demo/chart-pie-demo.js"></script>
+<script src="../../Resource/Library/js/demo/chart-area-demo.js"></script>
+<script src="../../Resource/Library/js/demo/chart-pie-demo.js"></script>
 <script type="text/javascript" src="../../Resource/nicEdit.js"></script>
+<script src="../../Resource/ArtAttack.js"></script>
 
-<script  src="../../Resource/ArtAttack.js"></script>
-
-
-
-<!--Nood Side:-->
-
-<!--Add photo JS :-->
 <script>
     $(document).ready(function () {
         $('#execute').on('click', function () {
@@ -283,26 +330,29 @@
 
 
 <script>
-   let Wallpaper = {};
+    let Wallpaper = {};
 
     $('input[type=image]').on('click', function () {
         Wallpaper.href = $(this).attr('src');
     });
-    var stage =document.getElementById("stage");
+    var stage = document.getElementById("stage");
 
 
     $('#save-image').on('click', function () {
         $('#exampleModal-wall').modal('hide');
 
         $('#stage').html($('#stage').html() + '<div id="newImage" ><img style="display: inline-block"  src="' + Wallpaper.href + '" style="height: 80%; width: 80%; "/></div> ');
-        $("#newImage").resizable({handles: "all",
-        autoHide: true,
-        ghost:true,
-        aspectRatio:true,});
+        $("#newImage").resizable({
+            handles: "all",
+            autoHide: true,
+            ghost: true,
+            aspectRatio: true,
+        });
         $("#newImage").draggable({cursor: "move"});
     });
 
-</script>-->
+</script>
+
 <!-- this is for the shape written by doaa -->
 <script>
 
@@ -315,22 +365,20 @@
     var span2 = document.getElementsByClassName("close")[1];
     var table = document.getElementById("table");
     // When the user clicks on the button, open the modal
-    btn.onclick = function() {
+    btn.onclick = function () {
         modal2.style.display = "block";
     }
     // When the user clicks on <span> (x), close the modal
-    span2.onclick = function() {
+    span2.onclick = function () {
         modal2.style.display = "none";
     }
 
     // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
+    window.onclick = function (event) {
         if (event.target == modal2) {
             modal2.style.display = "none";
         }
     }
-
-
 
 
 </script>
@@ -346,31 +394,32 @@
     var span = document.getElementsByClassName("close")[0];
     var svg1 = document.getElementById("svg");
     // When the user clicks on the button, open the modal
-    btn.onclick = function() {
+    btn.onclick = function () {
         modal.style.display = "block";
     }
 
     // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
+    span.onclick = function () {
         modal.style.display = "none";
     }
 
     // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
+    window.onclick = function (event) {
         if (event.target == modal) {
             modal.style.display = "none";
         }
     }
 
 
-    svg1.onclick=function() {
+    svg1.onclick = function () {
         let stage = document.getElementById("stage");
-        let copySvg= svg1.cloneNode(true);
+        let copySvg = svg1.cloneNode(true);
         cpoy();
         stage.appendChild(copySvg);
     }
 
-</script>-->
+</script>
+
 
 <script>
     function cpoy() {
@@ -402,7 +451,7 @@
                 stage.appendChild(userText);
                 let inputText = document.getElementById("usertext");
                 $("#usertext").change(function () {
-                    let s = $("#usertext").innerHTML;
+                    let s = $("#usertext").html();
                     console.log(inputText.value)
                     $("#test2").text(inputText.value)
                 })
@@ -459,27 +508,24 @@
         $('#myModal').hide();
     });
 </script>
-    <script>
-        let svgImage = {};
+<script>
+    let svgImage = {};
 
-        $('input[type=image]').on('click', function () {
-            svgImage.href = $(this).attr('src');
-        });
-        var stage =document.getElementById("stage");
-
-
-        $('#save-image').on('click', function () {
-            $('#exampleModal-wall').modal('hide');
-
-            $('#stage').html($('#stage').html() + '<div id="newImage" ><img style="display: inline-block"  src="' + svgImage.href + '" style="height: auto; width: 100%;"/></div> ')
-            $("#newImage").resizable({handles: "all"});
-            $("#newImage").draggable({cursor: "move"});
-        });
-
-    </script>
+    $('input[type=image]').on('click', function () {
+        svgImage.href = $(this).attr('src');
+    });
+    var stage = document.getElementById("stage");
 
 
+    $('#save-image').on('click', function () {
+        $('#exampleModal-wall').modal('hide');
 
+        $('#stage').html($('#stage').html() + '<div id="newImage" ><img style="display: inline-block"  src="' + svgImage.href + '" style="height: auto; width: 100%;"/></div> ')
+        $("#newImage").resizable({handles: "all"});
+        $("#newImage").draggable({cursor: "move"});
+    });
+
+</script>
 
 
 <script>
@@ -487,14 +533,14 @@
 
     let allShapes = Array.from(document.getElementsByClassName("shapes"));
     var stage = document.getElementById("stage");
-    allShapes.forEach(function(shape){
-        shape.addEventListener("click",function (e) {
+    allShapes.forEach(function (shape) {
+        shape.addEventListener("click", function (e) {
             console.log(e.target.localName);
-            if (e.target.localName != "svg"){
-                let instanceOfShape= e.target.parentNode.cloneNode(true);
+            if (e.target.localName != "svg") {
+                let instanceOfShape = e.target.parentNode.cloneNode(true);
                 stage.appendChild(instanceOfShape);
             } else {
-                let instanceOfShape= e.target.cloneNode(true);
+                let instanceOfShape = e.target.cloneNode(true);
                 stage.appendChild(instanceOfShape);
             }
 
@@ -503,12 +549,13 @@
     })
 
 
-</script>-->
+</script>
+
 <!-- script for deleting the stage -->
 <script>
-    function deleteStage(){
+    function deleteStage() {
         let stage = document.getElementById("stage");
-        stage.innerHTML="";
+        stage.innerHTML = "";
     }
 </script>
 <!-- script for adding text-->
@@ -531,7 +578,6 @@
         }, {once: true});
 
 </script>
-
 
 
 </body>

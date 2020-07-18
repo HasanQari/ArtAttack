@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1620">
+    <defs>
+        <style>
+            .cls-1,.cls-23{fill:#bfd1e5;}.cls-16,.cls-2,.cls-5{fill:#fffae3;}.cls-3{fill:#ffd3db;}.cls-4{fill:none;stroke:#fffae3;stroke-miterlimit:10;stroke-width:5px;}.cls-16,.cls-23,.cls-5{font-size:24px;font-family:Lato-Black,
+            Lato
+            Black;font-weight:800;}.cls-5,.cls-8{letter-spacing:0.5em;}.cls-6{letter-spacing:0em;}.cls-7{letter-spacing:0.49em;}.cls-9{font-size:21px;font-family:Lato-Bold,
+            Lato
+            Bold;font-weight:700;letter-spacing:0.52em;}.cls-17,.cls-19,.cls-9{fill:#fff;}.cls-10{letter-spacing:0.45em;}.cls-11{letter-spacing:0.46em;}.cls-12{letter-spacing:0.5em;}.cls-13{letter-spacing:0.5em;}.cls-14{letter-spacing:0.48em;}.cls-15{letter-spacing:0em;}.cls-17{font-size:42px;font-family:SourceSerifPro-Regular,
+            SourceSerifPro
+            Regular;}.cls-18{letter-spacing:-0.01em;}.cls-19{font-size:141px;font-family:SourceSerifPro-Light,
+            SourceSerifPro
+            Light;font-weight:300;}.cls-20{letter-spacing:-0.01em;}.cls-21{letter-spacing:0em;}.cls-22{letter-spacing:0.01em;}
+        </style>
+    </defs>
+    <g id="Layer_2" data-name="Layer 2">
+        <g id="Background">
+            <g id="_2" data-name="2">
+                <g id="Vertical_2" data-name="Vertical 2">
+                    <polygon id="Background-2" data-name="Background" class="cls-1"
+                             points="1080 540 1080 1080 540 1620 0 1080 0 540 540 0 1080 540"/>
+                    <polygon id="Corner_4" data-name="Corner 4" class="cls-2"
+                             points="830.39 1620 1080 1370.39 1080 1620 830.39 1620"/>
+                    <polygon id="Corner_3" data-name="Corner 3" class="cls-3"
+                             points="0 1620 0 1370.39 249.61 1620 0 1620"/>
+                    <polygon id="Corner_2" data-name="Corner 2" class="cls-3"
+                             points="830.39 0 1080 0 1080 249.61 830.39 0"/>
+                    <polygon id="Corner_1" data-name="Corner 1" class="cls-2" points="0 249.61 0 0 249.61 0 0 249.61"/>
+                </g>
+            </g>
+        </g>
+        <g id="Graphics">
+            <g id="_2-2" data-name="2">
+                <g id="Vertical_2-2" data-name="Vertical 2">
+                    <polygon id="Footer" class="cls-2" points="540 1560.5 466.5 1487 613.5 1487 540 1560.5"/>
+                    <line id="Divider" class="cls-4" x1="510" y1="1149.5" x2="570" y2="1149.5"/>
+                    <rect id="Line_Box" data-name="Line Box" class="cls-4" x="186.5" y="917.5" width="709" height="71"/>
+                    <rect id="Header" class="cls-2" x="415.2" y="111.7" width="249.61" height="249.61"
+                          transform="translate(325.39 -312.57) rotate(45)"/>
+                </g>
+            </g>
+        </g>
+        <g id="Text">
+            <g id="_2-3" data-name="2">
+                <g id="Vertical_2-3" data-name="Vertical 2">
+                    <text class="cls-5" transform="translate(451.37 1210.02)">REGISTE
+                        <tspan class="cls-6" x="165.53" y="0">R</tspan>
+                        <tspan class="cls-7">
+                            <tspan x="-40.6" y="37.81">B</tspan>
+                            <tspan class="cls-8" x="-15.95" y="37.81">Y MONTH 00</tspan>
+                        </tspan>
+                    </text>
+                    <text class="cls-9" transform="translate(365.94 1073.32)">WW
+                        <tspan class="cls-10" x="57.2" y="0">W</tspan>
+                        <tspan class="cls-8" x="84.31" y="0">.</tspan>
+                        <tspan class="cls-11" x="99.16" y="0">Y</tspan>
+                        <tspan class="cls-12" x="120.27" y="0">OURSIT</tspan>
+                        <tspan class="cls-13" x="248.43" y="0">E</tspan>
+                        <tspan class="cls-8" x="269.18" y="0">.</tspan>
+                        <tspan class="cls-14" x="284.02" y="0">C</tspan>
+                        <tspan class="cls-12" x="306.26" y="0">O</tspan>
+                        <tspan class="cls-15" x="331.23" y="0">M</tspan>
+                    </text>
+                    <text class="cls-16" transform="translate(410.61 961.45)">
+                        <tspan class="cls-8">SIGN UP NO</tspan>
+                        <tspan x="239.66" y="0">W</tspan>
+                    </text>
+                    <text class="cls-17" transform="translate(299.91 779.1)">lo
+                        <tspan class="cls-18" x="32.97" y="0">r</tspan>
+                        <tspan x="46.28" y="0">em ipsum dolor sit amet!</tspan>
+                    </text>
+                    <text class="cls-19" transform="translate(154.37 683.64)">headline
+                        <tspan class="cls-20" x="541.43" y="0">t</tspan>
+                        <tspan class="cls-21" x="587.26" y="0">e</tspan>
+                        <tspan class="cls-22" x="657.47" y="0">x</tspan>
+                        <tspan x="724.59" y="0">t</tspan>
+                    </text>
+                    <text class="cls-23" transform="translate(438.08 243.28)">
+                        <tspan class="cls-8">WORKSHO</tspan>
+                        <tspan x="190.78" y="0">P</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -4,6 +4,7 @@
 
 .pointer {
     cursor: pointer;
+    width: 18%;
 }
 
 .DisplayShow{
@@ -704,7 +705,7 @@ html {
     -ms-user-select: none;
     user-select: none;
     border: 1px solid transparent;
-    width: 19.4%;
+    width: 18%;
     padding: 1.5rem 0;
     margin: 1.25rem .1rem;
     font-size: 1.5rem;

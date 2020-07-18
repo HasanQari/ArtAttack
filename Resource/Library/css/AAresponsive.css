@@ -194,7 +194,9 @@
     #deleteDesignBtn{
         width: 30px;
     }
-
+    #helpDesignBtn{
+        width: 30px;
+    }
     .header_area {
         padding: 0;
     }
@@ -599,3 +601,10 @@
     cursor: pointer;
 }
 
+.modal-dialog{
+    overflow-y: initial !important
+}
+.modal-body{
+    height: 250px;
+    overflow-y: auto;
+}

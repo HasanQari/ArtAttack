@@ -26,7 +26,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57f6b229-b42e-4248-aa52-bf1610b93a60" name="Default Changelist" comment="doaa page">
-      <change beforePath="$PROJECT_DIR$/View/services/Service2-1.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/services/Service2-1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resource/CommercialTemplate/template1_serv2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resource/CommercialTemplate/template2_serv2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resource/CommercialTemplate/template3_serv2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/services/service3-1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_10_2020_12_31_AM_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_10_2020_12_31_AM__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/DataBase/DBcon.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DataBase/DBcon.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resource/ArtAttack.css" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/ArtAttack.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resource/ArtAttack.js" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/ArtAttack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resource/Library/css/AAresponsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/Library/css/AAresponsive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resource/Service2-1.js" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/Service2-1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/services/service3-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/services/service3-1.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +90,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="LET" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/NoNeed" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/View/services" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -85,11 +98,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\AppServ\www\ArtAttack\View\services" />
       <recent name="C:\AppServ\www\ArtAttack\NoNeed" />
       <recent name="C:\Users\HsQ Galaxy Book\Desktop\ArtAttack\View" />
       <recent name="C:\Users\HsQ Galaxy Book\Desktop\ArtAttack" />
       <recent name="C:\Users\HsQ Galaxy Book\Desktop\ArtAttack\View\services" />
-      <recent name="C:\Users\HsQ Galaxy Book\Desktop\ArtAttack\Library\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\AppServ\www\ArtAttack\Resource" />
@@ -119,7 +132,7 @@
       <workItem from="1594322798934" duration="4472000" />
       <workItem from="1594812740433" duration="834000" />
       <workItem from="1594833819385" duration="635000" />
-      <workItem from="1594834872581" duration="12322000" />
+      <workItem from="1594834872581" duration="41453000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1593422299046</created>
@@ -436,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594893129514</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="doaa page">
+      <created>1594893256258</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1594893256258</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -500,10 +520,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="444" y="130" key="#Web_Browsers/0.0.1280.680@0.0.1280.680" timestamp="1594850853507" />
-    <state x="207" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594765114064">
+    <state x="207" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594898789855">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="207" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1594765114064" />
+    <state x="207" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1594898789855" />
     <state x="314" y="83" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.813/157.-900.1600.860@0.0.1280.813" timestamp="1594034712585" />
     <state x="549" y="-812" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1593976613165" />
     <state x="637" y="-735" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1593976523254">
@@ -515,10 +535,10 @@
     </state>
     <state x="373" y="-900" key="CommitChangelistDialog2/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1594327192264" />
     <state x="173" y="0" key="CommitChangelistDialog2/0.0.1280.813@0.0.1280.813" timestamp="1593423831327" />
-    <state x="463" y="145" key="FileChooserDialogImpl" timestamp="1594835625985">
+    <state x="463" y="145" key="FileChooserDialogImpl" timestamp="1595101229724">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="463" y="145" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1594835625985" />
+    <state x="463" y="145" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1595101229724" />
     <state x="736" y="-716" key="FileChooserDialogImpl/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1594312776354" />
     <state width="715" height="222" key="GridCell.Tab.0.bottom" timestamp="1594040217867">
       <screen x="157" y="-900" width="1600" height="860" />
@@ -563,10 +583,10 @@
       <screen x="157" y="-900" width="1600" height="860" />
     </state>
     <state x="653" y="-647" key="com.intellij.ide.util.TipDialog/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1593974006626" />
-    <state x="450" y="271" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594852997173">
+    <state x="450" y="271" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594893305290">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="450" y="271" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1594852997173" />
+    <state x="450" y="271" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1594893305290" />
     <state x="450" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.813/157.-900.1600.860@0.0.1280.813" timestamp="1593940247354" />
     <state x="720" y="-557" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1594322697213" />
     <state x="450" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.813@0.0.1280.813" timestamp="1593442240397" />

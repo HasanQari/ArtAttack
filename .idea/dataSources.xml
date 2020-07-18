@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="ArtAttack@localhost" uuid="3706795d-30cd-4ebd-8101-9239396cd741">
-      <driver-ref>mysql.8</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/ArtAttack</jdbc-url>
-    </data-source>
-    <data-source source="LOCAL" name="artattack@localhost" uuid="f5da3c5d-5ca1-463f-aca2-57cbbbf5a289">
+    <data-source source="LOCAL" name="artattack@localhost" uuid="e96d8933-3b1e-4d0e-9ab9-6133795a69f0">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
