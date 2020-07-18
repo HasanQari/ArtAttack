@@ -319,107 +319,160 @@ session_start();
 <script src="../../Resource/ArtAttack.js"></script>
 
 <script>
-    $(document).ready(function () {
-        $('#execute').on('click', function () {
-            $('#stage').html($('#stage').html() + '<image ' + ' href="' + $('#image-url').val() + '/>');
-        })
+    let elements = 0;
+    $('#stage').html('<svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>');
+
+    //Adding picture in stage when the user press "Add Photo" button:
+    $('#save-picture').on('click', function () {
+        // $('#stage').html('#stage').html() + '<image ' + ' href="' + $('#image-url').val() + '/>'); // Edit 42: used append instead of html
+        $('#stage svg').html($('#stage svg').html() + '<g id="picture-' + ++elements + '"><image href="' + $('#image-url').val() + '"/></g>');
     });
+    //});
 
 
-</script>
+    // Add Wallpaper Paper JS :
 
-
-<script>
     let Wallpaper = {};
 
     $('input[type=image]').on('click', function () {
         Wallpaper.href = $(this).attr('src');
     });
-    var stage = document.getElementById("stage");
 
 
+    // Add wall paper on stage when user press "Select" button :
     $('#save-image').on('click', function () {
-        $('#exampleModal-wall').modal('hide');
+        // $('#exampleModal-wall').modal('hide'); // Edit 44: changed id to 'wallpaper-modal'
+        $('#wallpaper-modal').modal('hide');
 
-        $('#stage').html($('#stage').html() + '<div id="newImage" ><img style="display: inline-block"  src="' + Wallpaper.href + '" style="height: 80%; width: 80%; "/></div> ');
-        $("#newImage").resizable({
-            handles: "all",
-            autoHide: true,
-            ghost: true,
-            aspectRatio: true,
-        });
-        $("#newImage").draggable({cursor: "move"});
+        // Adding image id after inserting image on stage to allow to make resizeable and draggable
+        // $('#stage').html($('<div id="newImage" ><img style="display: inline-block"  src="' + Wallpaper.href + '" style="height: 80%; width: 80%; "/></div> '); // Edit 45: changed this line to add wallpaper as background image
+        if($('#stage svg g#wallpaper').length > 0) {
+            $('#stage svg g#wallpaper').html('<image x="0" y="0" width="100%" href="' + Wallpaper.href + '"/>');
+        } else {
+            $('#stage svg').html('<g id="wallpaper"><image x="0" y="0" width="100%" href="' + Wallpaper.href + '"/></g>' + $('#stage svg').html());
+        }
+        // $("#newImage").resizable({handles: "all", // Edit 46: no need for drag and resize in wallpaper
+        //     autoHide: true,
+        //     ghost:true,
+        //     aspectRatio:true,});
+        // $("#newImage").draggable({cursor: "move"});
     });
 
-</script>
 
-<!-- this is for the shape written by doaa -->
-<script>
+    // this is for the shape written by doaa
 
+    /*Shapes Modal*/
     // Get the modal
-    var modal2 = document.getElementById("myModal2");
+    // var modal2 = document.getElementById("myModal2"); // Edit 47: no need for this line
+
     // Get the button that opens the modal
-    var btn = document.getElementById("btnShape");
-    var stage = document.getElementById("stage");
+    //var btn = document.getElementById("btnShape"); // Edit 48: no need for both lines
+    //var stage = document.getElementById("stage");
+
     // Get the <span> element that closes the modal
-    var span2 = document.getElementsByClassName("close")[1];
-    var table = document.getElementById("table");
+    //var span2 = document.getElementsByClassName("close")[1]; // Edit 49: no need for both lines
+    //var table = document.getElementById("table");
+
     // When the user clicks on the button, open the modal
-    btn.onclick = function () {
-        modal2.style.display = "block";
-    }
-    // When the user clicks on <span> (x), close the modal
-    span2.onclick = function () {
-        modal2.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-        if (event.target == modal2) {
-            modal2.style.display = "none";
-        }
-    }
-
-
-</script>
-<!-- this is for the template written by doaa -->
-<script>
-
-    // Get the modal
-    var modal = document.getElementById("myModal");
-    // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
-    var stage = document.getElementById("stage");
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-    var svg1 = document.getElementById("svg");
-    // When the user clicks on the button, open the modal
-    btn.onclick = function () {
-        modal.style.display = "block";
-    }
+    //btn.onclick = function() { // Edit 50: no need for the 3 lines
+    //modal2.style.display = "block";
+    //}
 
     // When the user clicks on <span> (x), close the modal
-    span.onclick = function () {
-        modal.style.display = "none";
-    }
+    //span2.onclick = function() { // Edit 51: no need for the 3 lines
+    //modal2.style.display = "none";
+    //}
 
     // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
+    //window.onclick = function(event) { // Edit 52: no need for the 4 lines
+    //if (event.target == modal2) {
+    //modal2.style.display = "none";
+    //}
+    //}
+
+    //$('#x-shape').click(function () { // Edit 53: no need for the 6 lines
+    //$('#myModal2').hide();
+    //});
+    //$('#x-template').click(function () {
+    //$('#myModal').hide();
+    //});
+
+    let shape = ''; // Edit 54: added variable to hold shape text
+    // let allShapes = Array.from(document.getElementsByClassName("shapes")); // Edit 55: no need for this line
+    // var stage = document.getElementById("stage"); // Edit 56: no need for this line
+    // allShapes.forEach(function(shape){ // Edit 57: Changed this line to be using jQuery
+    // shape.addEventListener("click",function (e) {
+    //     console.log(e.target.localName);
+    //     if (e.target.localName != "svg"){
+    //         let instanceOfShape= e.target.parentNode.cloneNode(true);
+    //         stage.appendChild(instanceOfShape);
+    //     } else {
+    //         let instanceOfShape= e.target.cloneNode(true);
+    //         console.log(instanceOfShape);
+    //         stage.appendChild(instanceOfShape);
+    //     }
+    // })
+    $('.shapes').click(function() {
+        shape = $(this).children(':first-child').children(':first-child')[0].outerHTML;
+    });
+    //});
+
+    $('#save-shape').click(function() { // Edit 58: changed how shapes are added using a save button
+        $('#shape-modal').modal('hide');
+
+        $('#stage svg').html($('#stage svg').html() + '<g id="' + $(shape)[0].tagName.toLowerCase() + '-' + ++elements + '">' + shape + '</g>');
+    });
 
 
-    svg1.onclick = function () {
-        let stage = document.getElementById("stage");
-        let copySvg = svg1.cloneNode(true);
-        cpoy();
-        stage.appendChild(copySvg);
-    }
+    // this is for the template written by doaa -->
 
+    //Template Modal:
+    // Get the modal
+    //var modal = document.getElementById("myModal"); // Edit 59: no need for this line
+    // Get the button that opens the modal
+    //var btn = document.getElementById("myBtn"); // Edit 60: no need for both lines
+    //var stage = document.getElementById("stage");
+    // Get the <span> element that closes the modal
+    //var span = document.getElementsByClassName("close")[0]; // Edit 61: no need for both lines
+    //var svg1 = document.getElementById("svg");
+    // When the user clicks on the button, open the modal
+    // btn.onclick = function() { // Edit 62: no need for the 3 lines
+    //     modal.style.display = "block";
+    // }
+
+    // When the user clicks on <span> (x), close the modal
+    // span.onclick = function() { // Edit 63: no need for the 3 lines
+    //     modal.style.display = "none";
+    // }
+
+    // When the user clicks anywhere outside of the modal, close it
+    // window.onclick = function(event) { // Edit 64: no need for the 4 lines
+    //     if (event.target == modal) {
+    //         modal.style.display = "none";
+    //     }
+    // }
+
+    let template = ''; // Edit 65: added template variable
+    // svg1.onclick=function() { // Edit 66: changed to a different way to handle adding template to stage
+    //     let stage = document.getElementById("stage");
+    //     let copySvg= svg1.cloneNode(true);
+    //     cpoy();
+    //     stage.appendChild(copySvg);
+    // }
+    $('.templates').click(function() {
+        template = $(this).children(':first-child')[0].outerHTML;
+    });
+
+    $('#save-template').click(function() { // Edit 67: changed how template is added using a save button
+        $('#template-modal').modal('hide');
+        $('#stage').html(template);
+    })
+
+    $('#save-text').click(function() { // Edit 68: changed how text is added using a save button
+        $('#text-modal').modal('hide');
+        $('#stage svg').html($('#stage svg').html() + '<g id="text-' + ++elements + '"><text x="0" y="20" fill="black" font-size="20">' + $('#add-text').val() + '</text></g>');
+    });
 </script>
-
 
 <script>
     function cpoy() {
@@ -451,7 +504,7 @@ session_start();
                 stage.appendChild(userText);
                 let inputText = document.getElementById("usertext");
                 $("#usertext").change(function () {
-                    let s = $("#usertext").html();
+                    let s = $("#usertext").innerHTML;
                     console.log(inputText.value)
                     $("#test2").text(inputText.value)
                 })
@@ -497,68 +550,15 @@ session_start();
         });
     }
 </script>
-<!--Add Wallpaper Paper JS :-->
-
-<script>
-    $('#x-shape').click(function () {
-        $('#myModal2').hide();
-    });
-
-    $('#x-template').click(function () {
-        $('#myModal').hide();
-    });
-</script>
-<script>
-    let svgImage = {};
-
-    $('input[type=image]').on('click', function () {
-        svgImage.href = $(this).attr('src');
-    });
-    var stage = document.getElementById("stage");
 
 
-    $('#save-image').on('click', function () {
-        $('#exampleModal-wall').modal('hide');
-
-        $('#stage').html($('#stage').html() + '<div id="newImage" ><img style="display: inline-block"  src="' + svgImage.href + '" style="height: auto; width: 100%;"/></div> ')
-        $("#newImage").resizable({handles: "all"});
-        $("#newImage").draggable({cursor: "move"});
-    });
-
-</script>
 
 
-<script>
 
 
-    let allShapes = Array.from(document.getElementsByClassName("shapes"));
-    var stage = document.getElementById("stage");
-    allShapes.forEach(function (shape) {
-        shape.addEventListener("click", function (e) {
-            console.log(e.target.localName);
-            if (e.target.localName != "svg") {
-                let instanceOfShape = e.target.parentNode.cloneNode(true);
-                stage.appendChild(instanceOfShape);
-            } else {
-                let instanceOfShape = e.target.cloneNode(true);
-                stage.appendChild(instanceOfShape);
-            }
-
-        })
-
-    })
 
 
-</script>
-
-<!-- script for deleting the stage -->
-<script>
-    function deleteStage() {
-        let stage = document.getElementById("stage");
-        stage.innerHTML = "";
-    }
-</script>
-<!-- script for adding text-->
+<!-- script for adding text -->
 <script>
     function FunctionForUserText() {
         var userText = document.createElement("INPUT");
@@ -577,6 +577,17 @@ session_start();
             FunctionForUserText();
         }, {once: true});
 
+</script>
+
+
+
+
+<!-- script for deleting the stage -->
+<script>
+    function deleteStage(){
+        $("#stage").html("");
+
+    }
 </script>
 
 

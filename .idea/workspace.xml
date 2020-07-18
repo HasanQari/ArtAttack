@@ -26,20 +26,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57f6b229-b42e-4248-aa52-bf1610b93a60" name="Default Changelist" comment="doaa page">
-      <change afterPath="$PROJECT_DIR$/Resource/CommercialTemplate/template1_serv2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resource/CommercialTemplate/template2_serv2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resource/CommercialTemplate/template3_serv2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/services/service3-1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_10_2020_12_31_AM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_10_2020_12_31_AM__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/DataBase/DBcon.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DataBase/DBcon.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resource/ArtAttack.css" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/ArtAttack.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resource/ArtAttack.js" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/ArtAttack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resource/Library/css/AAresponsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/Library/css/AAresponsive.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resource/Service2-1.js" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/Service2-1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/services/service3-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/services/service3-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/services/service3-1.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/services/service3-1.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +119,7 @@
       <workItem from="1594322798934" duration="4472000" />
       <workItem from="1594812740433" duration="834000" />
       <workItem from="1594833819385" duration="635000" />
-      <workItem from="1594834872581" duration="41453000" />
+      <workItem from="1594834872581" duration="41931000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1593422299046</created>
@@ -456,7 +443,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594893256258</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="doaa page">
+      <created>1595105093399</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1595105093399</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
