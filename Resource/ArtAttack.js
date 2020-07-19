@@ -31,13 +31,12 @@ function logoutAjax() {
 // Services Script Section
 //JS here !
 
-// Add Wallpaper:
+// Add SVG on Stage:
 let elements = 0;
 $('#stage').html('<svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>');
 
-//Adding picture in stage when the user press "Add Photo" button:
+//Add Photo:
 $('#save-picture').on('click', function () {
-    // $('#stage').html('#stage').html() + '<image ' + ' href="' + $('#image-url').val() + '/>'); // Edit 42: used append instead of html
     $('#stage svg').html($('#stage svg').html() + '<g id="picture-' + ++elements + '"><image href="' + $('#image-url').val() + '"/></g>');
 });
 //});
@@ -51,14 +50,9 @@ $('input[type=image]').on('click', function () {
     Wallpaper.href = $(this).attr('src');
 });
 
-
 // Add wall paper on stage when user press "Select" button :
 $('#save-image').on('click', function () {
-    // $('#exampleModal-wall').modal('hide'); // Edit 44: changed id to 'wallpaper-modal'
     $('#wallpaper-modal').modal('hide');
-
-    // Adding image id after inserting image on stage to allow to make resizeable and draggable
-    // $('#stage').html($('<div id="newImage" ><img style="display: inline-block"  src="' + Wallpaper.href + '" style="height: 80%; width: 80%; "/></div> '); // Edit 45: changed this line to add wallpaper as background image
     if($('#stage svg g#wallpaper').length > 0) {
         $('#stage svg g#wallpaper').html('<image x="0" y="0" width="100%" href="' + Wallpaper.href + '"/>');
     } else {
@@ -70,19 +64,6 @@ $('#save-image').on('click', function () {
     //     aspectRatio:true,});
     // $("#newImage").draggable({cursor: "move"});
 });
-//----------------------------------------------------
-
-// Add photo :
-/*let elements = 0;
-$('#stage').html('<svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>');
-
-//Adding picture in stage when the user press "Add Photo" button:
-$('#save-picture').on('click', function () {
-    // $('#stage').html('#stage').html() + '<image ' + ' href="' + $('#image-url').val() + '/>'); // Edit 42: used append instead of html
-    $('#stage svg').html($('#stage svg').html() + '<g id="picture-' + ++elements + '"><image href="' + $('#image-url').val() + '"/></g>');
-});
-
- */
 
 
 //----------------------------------------------------
@@ -94,6 +75,7 @@ addSheapsListener.addEventListener("click", function (e){
     console.log("hello");
     let allShapes = Array.from(document.getElementsByClassName("shapes"));
     let stage = document.getElementById("stage");
+    $('#shape-modal').modal('hide');
     allShapes.forEach(function(shape) {
         shape.addEventListener("click", function (e) {
             console.log(e.target.localName);
