@@ -211,6 +211,7 @@ function cpoy() {
 //Add Text :
 
 $("#save-text").on("click", function (){
+    console.log("ya rb")
         alert("help");
         var userText = document.createElement("LABEL");
         let stage = document.getElementById("stage");

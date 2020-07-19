@@ -112,14 +112,16 @@ session_start();
         <button type="button" class="btnTool pointer" data-toggle="modal" data-target="#text-modal">Text</button>
         <button type="button" class="btnTool pointer" data-toggle="modal" data-target="#picture-modal">Picture</button>
         <button type="button" class="btnTool pointer" data-toggle="modal" data-target="#shape-modal">Shape</button>
-        <button type="button" class="btnTool pointer" data-toggle="modal" data-target="#wallpaper-modal">Wallpaper</button>
-        <button type="button" class="btnTool pointer" data-toggle="modal" data-target="#template-modal">Template</button>
+        <button type="button" class="btnTool pointer" data-toggle="modal" data-target="#wallpaper-modal">Wallpaper
+        </button>
+        <button type="button" class="btnTool pointer" data-toggle="modal" data-target="#template-modal">Template
+        </button>
     </div>
 </div>
 
 <!-- this script is for the help window -->
 <script>
-    function helpUser(){
+    function helpUser() {
         alert("Hi user , to design whatever you want in our website " +
             "\n First : choose the wallpaper you want or the template. " +
             "\n Second : if you choose the template then you can modify it. " +
@@ -128,7 +130,8 @@ session_start();
     }
 </script>
 <!-- Modal for Add picture (1) : -->
-<div class="modal fade" id="picture-modal" tabindex="-1" role="dialog" aria-labelledby="picture-modal-label" aria-hidden="true">
+<div class="modal fade" id="picture-modal" tabindex="-1" role="dialog" aria-labelledby="picture-modal-label"
+     aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -143,7 +146,8 @@ session_start();
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" id="save-picture">Select</button> <!-- Edit 12: changed id attribute and text of button -->
+                <button type="button" class="btn btn-primary" id="save-picture">Select</button>
+                <!-- Edit 12: changed id attribute and text of button -->
             </div>
         </div>
     </div>
@@ -151,7 +155,8 @@ session_start();
 
 <!-- Modal For Add Wallpaper (2) : -->
 
-<div class="modal fade" id="wallpaper-modal" tabindex="-1" role="dialog" aria-labelledby="wallpaper-modal-label" aria-hidden="true">
+<div class="modal fade" id="wallpaper-modal" tabindex="-1" role="dialog" aria-labelledby="wallpaper-modal-label"
+     aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -180,13 +185,14 @@ session_start();
 
 <!--Model template-->
 
-<div class="modal fade" id="template-modal" tabindex="-1" role="dialog" aria-labelledby="template-modal-label" aria-hidden="true">
+<div class="modal fade" id="template-modal" tabindex="-1" role="dialog" aria-labelledby="template-modal-label"
+     aria-hidden="true">
     <div class="modal-dialog">
         <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="template-modal-label">Add Template</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="close" >
+                <button type="button" class="close" data-dismiss="modal" aria-label="close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -202,8 +208,8 @@ session_start();
                     include "../../Model/DataBase/DBcon.php";
                     $sql = "SELECT * FROM `service2-1`";
                     $result = mysqli_query($conn, $sql);
-                    if(mysqli_num_rows($result) > 0) {
-                    while($row = mysqli_fetch_assoc($result)) {
+                    if (mysqli_num_rows($result) > 0) {
+                    while ($row = mysqli_fetch_assoc($result)) {
                     echo $row['path_serv2'];
                     ?>
                 </button>
@@ -225,13 +231,14 @@ session_start();
 
 <!-- Modal (3) for shapes -->
 
-<div class="modal fade" id="shape-modal" tabindex="-1" role="dialog" aria-labelledby="shape-modal-label" aria-hidden="true">
+<div class="modal fade" id="shape-modal" tabindex="-1" role="dialog" aria-labelledby="shape-modal-label"
+     aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="shape-modal-label">Add Shape</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="close" >
+                <button type="button" class="close" data-dismiss="modal" aria-label="close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -249,15 +256,15 @@ session_start();
                 include "../../Model/DataBase/DBcon.php";
                 $sql = "SELECT * FROM `service2-1_shape`";
                 $result = mysqli_query($conn, $sql);
-                if(mysqli_num_rows($result) > 0) {
-                    while($row = mysqli_fetch_assoc($result)) {
+                if (mysqli_num_rows($result) > 0) {
+                    while ($row = mysqli_fetch_assoc($result)) {
                         ?>
                         <button type="button" class="shapes">
                             <?php
-                        echo $row['path_serv2_shape'];
-                        ?>
+                            echo $row['path_serv2_shape'];
+                            ?>
 
-</button>
+                        </button>
                         <?php
                     }
                 }
@@ -275,7 +282,8 @@ session_start();
 </div>
 
 <!-- Modal for Add text (1) : -->
-<div class="modal fade" id="text-modal" tabindex="-1" role="dialog" aria-labelledby="text-modal-label" aria-hidden="true"> <!-- Edit 37: added modal for text -->
+<div class="modal fade" id="text-modal" tabindex="-1" role="dialog" aria-labelledby="text-modal-label"
+     aria-hidden="true"> <!-- Edit 37: added modal for text -->
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -286,11 +294,11 @@ session_start();
             </div>
             <div class="modal-body">
                 <label>Text</label>
-                <input type="text" name="add-text" id="add-text" class="form-control" >
+                <input type="text" name="add-text" id="add-text" class="form-control">
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" id="save-text" >Select</button>
+                <button type="button" class="btn btn-primary" id="save-text">Select</button>
             </div>
         </div>
     </div>
@@ -318,12 +326,23 @@ session_start();
 <!---->
 
 <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
-<!-- Page level custom scripts -->
+<!-- Page level custom scripts
 <script src="../../Resource/Library/js/demo/chart-area-demo.js"></script>
 <script src="../../Resource/Library/js/demo/chart-pie-demo.js"></script>
+-->
 <script type="text/javascript" src="../../Resource/nicEdit.js"></script>
 <script src="../../Resource/ArtAttack.js"></script>
+<script>
+    $("#save-text").on("click", function () {
+        console.log($("#add-text").val());
+        var userText = document.createElement("INPUT");
+        let stage = document.getElementById("stage");
+        userText.setAttribute("id", "userText");
+        userText.setAttribute("type", "text");
+        $("#userText").val($("#add-text").val());
+        stage.appendChild(userText);
 
+    });</script>
 <!--<script>
 script    let elements = 0;
     //this variable to group all content that the user add , so that we can downloads the all designe
