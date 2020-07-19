@@ -31,18 +31,16 @@ function logoutAjax() {
 // Services Script Section
 //JS here !
 
-// Add photo :
+// Add Wallpaper:
 let elements = 0;
 $('#stage').html('<svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>');
 
 //Adding picture in stage when the user press "Add Photo" button:
 $('#save-picture').on('click', function () {
-
+    // $('#stage').html('#stage').html() + '<image ' + ' href="' + $('#image-url').val() + '/>'); // Edit 42: used append instead of html
     $('#stage svg').html($('#stage svg').html() + '<g id="picture-' + ++elements + '"><image href="' + $('#image-url').val() + '"/></g>');
 });
-
-
-//----------------------------------------------------
+//});
 
 
 // Add Wallpaper Paper JS :
@@ -56,29 +54,51 @@ $('input[type=image]').on('click', function () {
 
 // Add wall paper on stage when user press "Select" button :
 $('#save-image').on('click', function () {
-
+    // $('#exampleModal-wall').modal('hide'); // Edit 44: changed id to 'wallpaper-modal'
     $('#wallpaper-modal').modal('hide');
 
-
+    // Adding image id after inserting image on stage to allow to make resizeable and draggable
+    // $('#stage').html($('<div id="newImage" ><img style="display: inline-block"  src="' + Wallpaper.href + '" style="height: 80%; width: 80%; "/></div> '); // Edit 45: changed this line to add wallpaper as background image
     if($('#stage svg g#wallpaper').length > 0) {
         $('#stage svg g#wallpaper').html('<image x="0" y="0" width="100%" href="' + Wallpaper.href + '"/>');
     } else {
         $('#stage svg').html('<g id="wallpaper"><image x="0" y="0" width="100%" href="' + Wallpaper.href + '"/></g>' + $('#stage svg').html());
     }
-
+    // $("#newImage").resizable({handles: "all", // Edit 46: no need for drag and resize in wallpaper
+    //     autoHide: true,
+    //     ghost:true,
+    //     aspectRatio:true,});
+    // $("#newImage").draggable({cursor: "move"});
 });
 //----------------------------------------------------
 
+// Add photo :
+/*let elements = 0;
+$('#stage').html('<svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>');
+
+//Adding picture in stage when the user press "Add Photo" button:
+$('#save-picture').on('click', function () {
+    // $('#stage').html('#stage').html() + '<image ' + ' href="' + $('#image-url').val() + '/>'); // Edit 42: used append instead of html
+    $('#stage svg').html($('#stage svg').html() + '<g id="picture-' + ++elements + '"><image href="' + $('#image-url').val() + '"/></g>');
+});
+
+ */
+
+
+//----------------------------------------------------
 
 // Add shape:
-$("#save-shape").on("click",
-function AddShapes(){
+console.log($("#save-shape"));
+let addSheapsListener = document.getElementById("save-shape");
+addSheapsListener.addEventListener("click", function (e){
+    console.log("hello");
     let allShapes = Array.from(document.getElementsByClassName("shapes"));
-    var stage = document.getElementById("stage");
+    let stage = document.getElementById("stage");
     allShapes.forEach(function(shape) {
         shape.addEventListener("click", function (e) {
             console.log(e.target.localName);
-            if (e.target.localName != "svg") {
+            console.log("ya rb");
+            if (e.target.localName !== "svg") {
                 let instanceOfShape = e.target.parentNode.cloneNode(true);
                 stage.appendChild(instanceOfShape);
             } else {
@@ -192,22 +212,20 @@ function cpoy() {
 }
 
 //----------------------------------------------------
-
-//Add Text :
-
-$("#save-text").on("click", function (){
-    console.log("ya rb")
-        alert("help");
-        var userText = document.createElement("LABEL");
-        let stage = document.getElementById("stage");
-        userText.setAttribute("id", "userText");
-        userText.setAttribute("type", "text");
-        let value = document.getElementById("add-text");
-        let insideValue = value.innerText;
-        userText.setAttribute("value", insideValue);
-        stage.appendChild(userText);
+//ADD text
+$("#save-text").on("click", function () {
+    console.log($("#add-text").val());
+    var userText = document.createElement("label");
+    let stage = document.getElementById("stage");
+    userText.setAttribute("id", "userTextOnStage");
+    userText.setAttribute("type", "text");
+    let userTextOnStage= document.getElementById("userTextOnStage");
+    console.log(userTextOnStage);
+    userText.innerHTML= ($("#add-text").val());
+    stage.appendChild(userText);
 
 });
+
 
 
 
@@ -220,6 +238,15 @@ function deleteStage(){
 
 }
 
+//------------------------Help user----------------------------
+function helpUser() {
+    alert("Hi user , to design whatever you want in our website " +
+        "\n First : choose the wallpaper you want or the template. " +
+        "\n Second : if you choose the template then you can modify it. " +
+        "\n Third : if you choose the wallpaper then you can add shapes and text." +
+        "\n Fourth : you can downloads the template or share it . ")
+}
+
 //----------------------------------------------------
-//----------------------------------------------------
+
 //----------------------------------------------------

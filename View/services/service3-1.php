@@ -119,16 +119,7 @@ session_start();
     </div>
 </div>
 
-<!-- this script is for the help window -->
-<script>
-    function helpUser() {
-        alert("Hi user , to design whatever you want in our website " +
-            "\n First : choose the wallpaper you want or the template. " +
-            "\n Second : if you choose the template then you can modify it. " +
-            "\n Third : if you choose the wallpaper then you can add shapes and text." +
-            "\n Fourth : you can downloads the template or share it . ")
-    }
-</script>
+
 <!-- Modal for Add picture (1) : -->
 <div class="modal fade" id="picture-modal" tabindex="-1" role="dialog" aria-labelledby="picture-modal-label"
      aria-hidden="true">
@@ -230,7 +221,7 @@ session_start();
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" id="save-shape">Select</button>
+                <button type="button" class="btn btn-primary" id="save-template">Select</button>
             </div>
         </div>
 
@@ -340,18 +331,9 @@ session_start();
 <script src="../../Resource/Library/js/demo/chart-pie-demo.js"></script>
 -->
 <script type="text/javascript" src="../../Resource/nicEdit.js"></script>
-<script src="../../Resource/ArtAttack.js"></script>
-<script>
-    $("#save-text").on("click", function () {
-        console.log($("#add-text").val());
-        var userText = document.createElement("INPUT");
-        let stage = document.getElementById("stage");
-        userText.setAttribute("id", "userText");
-        userText.setAttribute("type", "text");
-        $("#userText").val($("#add-text").val());
-        stage.appendChild(userText);
+<script type="text/javascript" src="../../Resource/ArtAttack.js"></script>
+<!--<script src="../../Resource/ArtAttack.js"></script>-->
 
-    });</script>
 <!--<script>
 script    let elements = 0;
     //this variable to group all content that the user add , so that we can downloads the all designe
