@@ -108,33 +108,25 @@ function AddShapes(){
 //----------------------------------------------------
 
 //Add Template :
-let template = '';
-$('.templates').click(function() {
-    template = $(this).innerHTML;
-});
 
-$('#save-template').click(function() {
-    $('#template-modal').modal('hide');
-    $('#stage').html(template);
-})
-// this is for text
-/*function AddText(){
-    var userText = document.createElement("LABEL");
-    let stage = document.getElementById("stage");
-    userText.setAttribute("id", "usertext");
-    userText.setAttribute("type", "text");
-    let value = document.getElementById("add-text");
-    let value1= value.innerText;
-    userText.setAttribute("value", value1);
-    stage.appendChild(userText);
-}
-
-$('#save-text').click(function() {
-    $('#text-modal').modal('hide');
-    $('#stage').html( $('#add-text').val());
-});
-*/
-
+$("#save-template").on("click",
+    function AddTemplate(){
+        let allTemplates = Array.from(document.getElementsByClassName("templates"));
+        var stage = document.getElementById("stage");
+        allTemplates.forEach(function(shape) {
+            shape.addEventListener("click", function (e) {
+                console.log(e.target.localName);
+                if (e.target.localName != "svg") {
+                    let instanceOfShape = e.target.parentNode.cloneNode(true);
+                    stage.appendChild(instanceOfShape);
+                } else {
+                    let instanceOfShape = e.target.cloneNode(true);
+                    console.log(instanceOfShape);
+                    stage.appendChild(instanceOfShape);
+                }
+            })
+        })
+    });
 
 //----------------------------------------------------
 
