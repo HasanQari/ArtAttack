@@ -120,14 +120,7 @@
       <workItem from="1594322798934" duration="4472000" />
       <workItem from="1594812740433" duration="834000" />
       <workItem from="1594833819385" duration="635000" />
-      <workItem from="1594834872581" duration="45295000" />
-    </task>
-    <task id="LOCAL-00002" summary="updated">
-      <created>1593423395969</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1593423395970</updated>
+      <workItem from="1594834872581" duration="46865000" />
     </task>
     <task id="LOCAL-00003" summary="home updated">
       <created>1593423640868</created>
@@ -465,7 +458,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595132124366</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="doaa page">
+      <created>1595133691405</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1595133691405</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -578,10 +578,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="488" y="254" key="VCS.ChangelistChooser/0.0.1280.680@0.0.1280.680" timestamp="1594841673293" />
-    <state x="233" y="117" key="Vcs.Push.Dialog.v2" timestamp="1595132126506">
+    <state x="233" y="117" key="Vcs.Push.Dialog.v2" timestamp="1595133694403">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="117" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1595132126506" />
+    <state x="233" y="117" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1595133694403" />
     <state x="448" y="-752" key="Vcs.Push.Dialog.v2/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1594327344148" />
     <state x="233" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.813@0.0.1280.813" timestamp="1593423834308" />
     <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1594799331706">
@@ -592,10 +592,10 @@
       <screen x="157" y="-900" width="1600" height="860" />
     </state>
     <state x="653" y="-647" key="com.intellij.ide.util.TipDialog/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1593974006626" />
-    <state x="450" y="271" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594893305290">
+    <state x="450" y="271" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595134716702">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="450" y="271" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1594893305290" />
+    <state x="450" y="271" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1595134716702" />
     <state x="450" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.813/157.-900.1600.860@0.0.1280.813" timestamp="1593940247354" />
     <state x="720" y="-557" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1594322697213" />
     <state x="450" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.813@0.0.1280.813" timestamp="1593442240397" />
