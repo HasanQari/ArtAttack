@@ -37,6 +37,8 @@ $('#stage').html('<svg width="100%" height="100%" version="1.1" xmlns="http://ww
 
 //Add Photo:
 $('#save-picture').on('click', function () {
+    let pic = $('#image-url').val();
+    alert(pic);
     $('#stage svg').html($('#stage svg').html() + '<g id="picture-' + ++elements + '"><image href="' + $('#image-url').val() + '"/></g>');
 });
 //});
@@ -56,7 +58,11 @@ $('#save-image').on('click', function () {
     if($('#stage svg g#wallpaper').length > 0) {
         $('#stage svg g#wallpaper').html('<image x="0" y="0" width="100%" href="' + Wallpaper.href + '"/>');
     } else {
-        $('#stage svg').html('<g id="wallpaper"><image x="0" y="0" width="100%" href="' + Wallpaper.href + '"/></g>' + $('#stage svg').html());
+
+        let imageUrl = "url('" + Wallpaper.href+ "')";
+        $('#stage').css("backgroundImage",imageUrl);
+
+        //$('#stage svg').html('<g id="wallpaper"><image x="0" y="0" width="100%" href="' + Wallpaper.href + '"/></g>' + $('#stage svg').html());
     }
     // $("#newImage").resizable({handles: "all", // Edit 46: no need for drag and resize in wallpaper
     //     autoHide: true,
@@ -69,7 +75,7 @@ $('#save-image').on('click', function () {
 //----------------------------------------------------
 
 // Add shape:
-console.log($("#save-shape"));
+
 let addSheapsListener = document.getElementById("save-shape");
 addSheapsListener.addEventListener("click", function (e){
     console.log("hello");
@@ -79,7 +85,6 @@ addSheapsListener.addEventListener("click", function (e){
     allShapes.forEach(function(shape) {
         shape.addEventListener("click", function (e) {
             console.log(e.target.localName);
-            console.log("ya rb");
             if (e.target.localName !== "svg") {
                 let instanceOfShape = e.target.parentNode.cloneNode(true);
                 stage.appendChild(instanceOfShape);
@@ -96,20 +101,20 @@ addSheapsListener.addEventListener("click", function (e){
 
 //Add Template :
 
-$("#save-template").on("click",
-    function AddTemplate(){
+$("#save-template").on("click", function (){
+    console.log($("#save-template"));
         let allTemplates = Array.from(document.getElementsByClassName("templates"));
-        var stage = document.getElementById("stage");
-        allTemplates.forEach(function(shape) {
-            shape.addEventListener("click", function (e) {
+        let stage = document.getElementById("stage");
+        allTemplates.forEach(function(template) {
+            template.addEventListener("click", function (e) {
                 console.log(e.target.localName);
                 if (e.target.localName != "svg") {
-                    let instanceOfShape = e.target.parentNode.cloneNode(true);
-                    stage.appendChild(instanceOfShape);
+                    let instanceOfTemplate = e.target.parentNode.cloneNode(true);
+                    stage.appendChild(instanceOfTemplate);
                 } else {
-                    let instanceOfShape = e.target.cloneNode(true);
-                    console.log(instanceOfShape);
-                    stage.appendChild(instanceOfShape);
+                    let instanceOfTemplate = e.target.cloneNode(true);
+                    console.log(instanceOfTemplate);
+                    stage.appendChild(instanceOfTemplate);
                 }
             })
         })

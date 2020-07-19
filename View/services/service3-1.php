@@ -203,22 +203,24 @@ session_start();
                         background-color: transparent;
                     }
                 </style>
-                <button class="templates" type="button">
+
                     <?php
                     include "../../Model/DataBase/DBcon.php";
                     $sql = "SELECT * FROM `service2-1`";
                     $result = mysqli_query($conn, $sql);
+                    $counter = 0;
                     if (mysqli_num_rows($result) > 0) {
                     while ($row = mysqli_fetch_assoc($result)) {
-                    echo $row['path_serv2'];
+                    echo "<div class='templateClass' id='template$counter'>".$row['path_serv2']."</div>";
                     ?>
-                </button>
 
                 <?php
                 }
                 }
+
                 ?>
             </div>
+
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 <button type="button" class="btn btn-primary" id="save-template">Select</button>
@@ -332,6 +334,17 @@ session_start();
 -->
 <script type="text/javascript" src="../../Resource/nicEdit.js"></script>
 <script type="text/javascript" src="../../Resource/ArtAttack.js"></script>
+
+
+<script type="text/javascript">
+    $(".templateClass").click(function(){
+        let templateHtml = $(this).html();
+        let stage = $("#stage").html(templateHtml);
+        let savedHTMl = stage.html();
+        //alert(templateHtml);
+    });
+</script>
+
 <!--<script src="../../Resource/ArtAttack.js"></script>-->
 
 <!--<script>
