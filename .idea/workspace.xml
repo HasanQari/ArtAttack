@@ -26,6 +26,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57f6b229-b42e-4248-aa52-bf1610b93a60" name="Default Changelist" comment="doaa page">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/services/service3-1.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/services/service3-1.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -119,7 +120,7 @@
       <workItem from="1594322798934" duration="4472000" />
       <workItem from="1594812740433" duration="834000" />
       <workItem from="1594833819385" duration="635000" />
-      <workItem from="1594834872581" duration="41931000" />
+      <workItem from="1594834872581" duration="43236000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1593422299046</created>
@@ -450,7 +451,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595105093399</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="doaa page">
+      <created>1595105798344</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1595105798344</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

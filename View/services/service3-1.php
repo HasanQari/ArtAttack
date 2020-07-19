@@ -320,6 +320,7 @@ session_start();
 
 <script>
     let elements = 0;
+    //this variable to group all content that the user add , so that we can downloads the all designe
     $('#stage').html('<svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>');
 
     //Adding picture in stage when the user press "Add Photo" button:
@@ -359,45 +360,9 @@ session_start();
     });
 
 
-    // this is for the shape written by doaa
+    // this is for the shapes
 
-    /*Shapes Modal*/
-    // Get the modal
-    // var modal2 = document.getElementById("myModal2"); // Edit 47: no need for this line
-
-    // Get the button that opens the modal
-    //var btn = document.getElementById("btnShape"); // Edit 48: no need for both lines
-    //var stage = document.getElementById("stage");
-
-    // Get the <span> element that closes the modal
-    //var span2 = document.getElementsByClassName("close")[1]; // Edit 49: no need for both lines
-    //var table = document.getElementById("table");
-
-    // When the user clicks on the button, open the modal
-    //btn.onclick = function() { // Edit 50: no need for the 3 lines
-    //modal2.style.display = "block";
-    //}
-
-    // When the user clicks on <span> (x), close the modal
-    //span2.onclick = function() { // Edit 51: no need for the 3 lines
-    //modal2.style.display = "none";
-    //}
-
-    // When the user clicks anywhere outside of the modal, close it
-    //window.onclick = function(event) { // Edit 52: no need for the 4 lines
-    //if (event.target == modal2) {
-    //modal2.style.display = "none";
-    //}
-    //}
-
-    //$('#x-shape').click(function () { // Edit 53: no need for the 6 lines
-    //$('#myModal2').hide();
-    //});
-    //$('#x-template').click(function () {
-    //$('#myModal').hide();
-    //});
-
-    let shape = ''; // Edit 54: added variable to hold shape text
+    let shape = ''; //added variable to hold shape text
     // let allShapes = Array.from(document.getElementsByClassName("shapes")); // Edit 55: no need for this line
     // var stage = document.getElementById("stage"); // Edit 56: no need for this line
     // allShapes.forEach(function(shape){ // Edit 57: Changed this line to be using jQuery
@@ -413,9 +378,9 @@ session_start();
     //     }
     // })
     $('.shapes').click(function() {
-        shape = $(this).children(':first-child').children(':first-child')[0].outerHTML;
+        shape = $(this).innerHTML;
     });
-    //});
+
 
     $('#save-shape').click(function() { // Edit 58: changed how shapes are added using a save button
         $('#shape-modal').modal('hide');
