@@ -314,7 +314,7 @@ session_start();
 <script type="text/javascript" src="../../Resource/nicEdit.js"></script>
 <script src="../../Resource/ArtAttack.js"></script>
 
-<script>
+<!--<script>
     let elements = 0;
     $('#stage').html('<svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>');
 
@@ -337,7 +337,7 @@ session_start();
 
     // Add wall paper on stage when user press "Select" button :
     $('#save-image').on('click', function () {
-        // $('#exampleModal-wall').modal('hide'); // Edit 44: changed id to 'wallpaper-modal'
+     //  Hide the modal when i press (SELECT):
         $('#wallpaper-modal').modal('hide');
 
         // Adding image id after inserting image on stage to allow to make resizeable and draggable
@@ -378,7 +378,7 @@ session_start();
 
     // this is for the template written by doaa -->
 
-    //Template Modal:
+   <!-- //Template Modal:
     // Get the modal
     //var modal = document.getElementById("myModal"); // Edit 59: no need for this line
     // Get the button that opens the modal
@@ -434,125 +434,125 @@ session_start();
     $('#save-text').click(function() {
         $('#text-modal').modal('hide');
         $('#stage').html( $('#add-text').val());
-    });
-</script>
-
-<script>
-    function cpoy() {
-        // for edit the text in template
-        $(document).ready(function () {
-            var userText = document.createElement("INPUT");
-            let stage = document.getElementById("stage");
-            userText.setAttribute("id", "usertext");
-            userText.setAttribute("type", "text");
-
-            $("#test").on("click", function () {
-                console.log("hello");
-                userText.setAttribute("placeholder", "BUSINES");
-                stage.appendChild(userText);
-                let inputText = document.getElementById("usertext");
-                $("#usertext").change(function () {
-                    let s = $("#usertext").innerHTML;
-                    console.log(inputText.value)
-                    $("#test").text(inputText.value)
-
-
-                })
-
-            });
-
-            $("#test2").on("click", function () {
-
-                userText.setAttribute("value", "START A");
-                stage.appendChild(userText);
-                let inputText = document.getElementById("usertext");
-                $("#usertext").change(function () {
-                    let s = $("#usertext").innerHTML;
-                    console.log(inputText.value)
-                    $("#test2").text(inputText.value)
-                })
-            });
-
-            $("#test3").on("click", function () {
-
-                userText.setAttribute("placeholder", "lacina non semper! ");
-                stage.appendChild(userText);
-                let inputText = document.getElementById("usertext");
-                $("#usertext").change(function () {
-                    let s = $("#usertext").innerHTML;
-                    console.log(inputText.value)
-                    $("#test3").text(inputText.value)
-                })
-            });
-
-            $("#test4").on("click", function () {
-                userText.setAttribute("placeholder", "lorem ipsum sit dolor amet...\n" +
-                    "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut " +
-                    "laoreet dolore magna aliquam erat volutpat ");
-                stage.appendChild(userText);
-                let inputText = document.getElementById("usertext");
-                $("#usertext").change(function () {
-                    let s = $("#usertext").innerHTML;
-                    console.log(inputText.value)
-                    $("#test4").text(inputText.value)
-                })
-            });
-            $("#test5").on("click", function () {
-
-                userText.setAttribute("placeholder", "lorem ipsum sit dolor amet..");
-                stage.appendChild(userText);
-                let inputText = document.getElementById("usertext");
-                $("#usertext").change(function () {
-                    let s = $("#usertext").innerHTML;
-                    console.log(inputText.value)
-                    $("#test5").text(inputText.value)
-                })
-            });
-
-
-        });
-    }
-</script>
-
-
-
-
-
-
-
-
+    });-->
+<!--</script>-->
+<!---->
+<!--<script>-->
+<!--    function cpoy() {-->
+<!--        // for edit the text in template-->
+<!--        $(document).ready(function () {-->
+<!--            var userText = document.createElement("INPUT");-->
+<!--            let stage = document.getElementById("stage");-->
+<!--            userText.setAttribute("id", "usertext");-->
+<!--            userText.setAttribute("type", "text");-->
+<!---->
+<!--            $("#test").on("click", function () {-->
+<!--                console.log("hello");-->
+<!--                userText.setAttribute("placeholder", "BUSINES");-->
+<!--                stage.appendChild(userText);-->
+<!--                let inputText = document.getElementById("usertext");-->
+<!--                $("#usertext").change(function () {-->
+<!--                    let s = $("#usertext").innerHTML;-->
+<!--                    console.log(inputText.value)-->
+<!--                    $("#test").text(inputText.value)-->
+<!---->
+<!---->
+<!--                })-->
+<!---->
+<!--            });-->
+<!---->
+<!--            $("#test2").on("click", function () {-->
+<!---->
+<!--                userText.setAttribute("value", "START A");-->
+<!--                stage.appendChild(userText);-->
+<!--                let inputText = document.getElementById("usertext");-->
+<!--                $("#usertext").change(function () {-->
+<!--                    let s = $("#usertext").innerHTML;-->
+<!--                    console.log(inputText.value)-->
+<!--                    $("#test2").text(inputText.value)-->
+<!--                })-->
+<!--            });-->
+<!---->
+<!--            $("#test3").on("click", function () {-->
+<!---->
+<!--                userText.setAttribute("placeholder", "lacina non semper! ");-->
+<!--                stage.appendChild(userText);-->
+<!--                let inputText = document.getElementById("usertext");-->
+<!--                $("#usertext").change(function () {-->
+<!--                    let s = $("#usertext").innerHTML;-->
+<!--                    console.log(inputText.value)-->
+<!--                    $("#test3").text(inputText.value)-->
+<!--                })-->
+<!--            });-->
+<!---->
+<!--            $("#test4").on("click", function () {-->
+<!--                userText.setAttribute("placeholder", "lorem ipsum sit dolor amet...\n" +-->
+<!--                    "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut " +-->
+<!--                    "laoreet dolore magna aliquam erat volutpat ");-->
+<!--                stage.appendChild(userText);-->
+<!--                let inputText = document.getElementById("usertext");-->
+<!--                $("#usertext").change(function () {-->
+<!--                    let s = $("#usertext").innerHTML;-->
+<!--                    console.log(inputText.value)-->
+<!--                    $("#test4").text(inputText.value)-->
+<!--                })-->
+<!--            });-->
+<!--            $("#test5").on("click", function () {-->
+<!---->
+<!--                userText.setAttribute("placeholder", "lorem ipsum sit dolor amet..");-->
+<!--                stage.appendChild(userText);-->
+<!--                let inputText = document.getElementById("usertext");-->
+<!--                $("#usertext").change(function () {-->
+<!--                    let s = $("#usertext").innerHTML;-->
+<!--                    console.log(inputText.value)-->
+<!--                    $("#test5").text(inputText.value)-->
+<!--                })-->
+<!--            });-->
+<!---->
+<!---->
+<!--        });-->
+<!--    }-->
+<!--</script>-->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
 <!-- script for adding text -->
-<script>
-    function FunctionForUserText() {
-        var userText = document.createElement("label");
-        let stage = document.getElementById("stage");
-
-        userText.setAttribute("id", "userText");
-        userText.setAttribute("type", "text");
-        userText.setAttribute("placeholder", "write your text here");
-        stage.appendChild(userText);
-        $("#userText").draggable({cursor: "move"});
-
-    }
-
-    document.getElementById('btnText')
-        .addEventListener("click", function (event) {
-            FunctionForUserText();
-        }, {once: true});
-
-</script>
-
-
-
-
+<!--<script>-->
+<!--    function FunctionForUserText() {-->
+<!--        var userText = document.createElement("label");-->
+<!--        let stage = document.getElementById("stage");-->
+<!---->
+<!--        userText.setAttribute("id", "userText");-->
+<!--        userText.setAttribute("type", "text");-->
+<!--        userText.setAttribute("placeholder", "write your text here");-->
+<!--        stage.appendChild(userText);-->
+<!--        $("#userText").draggable({cursor: "move"});-->
+<!---->
+<!--    }-->
+<!---->
+<!--    document.getElementById('btnText')-->
+<!--        .addEventListener("click", function (event) {-->
+<!--            FunctionForUserText();-->
+<!--        }, {once: true});-->
+<!---->
+<!--</script>-->
+<!---->
+<!---->
+<!---->
+<!---->
 <!-- script for deleting the stage -->
-<script>
-    function deleteStage(){
-        $("#stage").html("");
-
-    }
-</script>
-
+<!--<script>-->
+<!--    function deleteStage(){-->
+<!--        $("#stage").html("");-->
+<!---->
+<!--    }-->
+<!--</script>-->
+-->
 
 </body>
 
