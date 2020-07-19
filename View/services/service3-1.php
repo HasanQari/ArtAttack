@@ -230,12 +230,18 @@ session_start();
         <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="shape-modal-label">Add Shape</h5> <!-- Edit 23: added this line as title for modal -->
+                <h5 class="modal-title" id="shape-modal-label">Add Shape</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="close" >
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
+                <style>
+                    button.shapes {
+                        border: none;
+                        background-color: transparent;
+                    }
+                </style>
 
                 <!-- php code for the shape -->
                 <?php
@@ -245,10 +251,13 @@ session_start();
                 $result = mysqli_query($conn, $sql);
                 if(mysqli_num_rows($result) > 0) {
                     while($row = mysqli_fetch_assoc($result)) {
+                        ?>
+                        <button type="button" class="shapes">
+                            <?php
                         echo $row['path_serv2_shape'];
                         ?>
 
-
+</button>
                         <?php
                     }
                 }
@@ -257,6 +266,7 @@ session_start();
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="save-shape">Select</button>
             </div>
         </div>
 

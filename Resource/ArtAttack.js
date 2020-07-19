@@ -86,6 +86,7 @@ $('#save-picture').on('click', function () {
 //----------------------------------------------------
 
 // Add shape:
+$("#save-shape").on("click",
 function AddShapes(){
     let allShapes = Array.from(document.getElementsByClassName("shapes"));
     var stage = document.getElementById("stage");
@@ -102,7 +103,7 @@ function AddShapes(){
             }
         })
     })
-}
+});
 
 //----------------------------------------------------
 
