@@ -223,7 +223,7 @@ session_start();
 
 </div>
 
-<!-- Modal (3) -->
+<!-- Modal (3) for shapes -->
 
 <div class="modal fade" id="shape-modal" tabindex="-1" role="dialog" aria-labelledby="shape-modal-label" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -236,10 +236,6 @@ session_start();
                 </button>
             </div>
             <div class="modal-body">
-
-
-                    <!-- this is for styling the table shapes -->
-                    <div class="col-md-2 col-sm-4 col-xs-6 text-center py-4">
 
             <!-- php code for the shape -->
             <?php
@@ -257,9 +253,9 @@ session_start();
                 }
             }
             ?>
-                </div>
+
             </div>
-            <div class="modal-footer"> <!-- Edit 36: added modal footer with button to add shape to stage -->
+            <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
         </div>
@@ -362,31 +358,25 @@ session_start();
 
     // this is for the shapes
 
-    let shape = ''; //added variable to hold shape text
-    // let allShapes = Array.from(document.getElementsByClassName("shapes")); // Edit 55: no need for this line
-    // var stage = document.getElementById("stage"); // Edit 56: no need for this line
-    // allShapes.forEach(function(shape){ // Edit 57: Changed this line to be using jQuery
-    // shape.addEventListener("click",function (e) {
-    //     console.log(e.target.localName);
-    //     if (e.target.localName != "svg"){
-    //         let instanceOfShape= e.target.parentNode.cloneNode(true);
-    //         stage.appendChild(instanceOfShape);
-    //     } else {
-    //         let instanceOfShape= e.target.cloneNode(true);
-    //         console.log(instanceOfShape);
-    //         stage.appendChild(instanceOfShape);
-    //     }
-    // })
-    $('.shapes').click(function() {
-        shape = $(this).innerHTML;
-    });
+     //added variable to hold shape text
+    function AddShapes(){
+     let allShapes = Array.from(document.getElementsByClassName("shapes")); // Edit 55: no need for this line
+    var stage = document.getElementById("stage"); // Edit 56: no need for this line
+   allShapes.forEach(function(shape) { // Edit 57: Changed this line to be using jQuery
+       shape.addEventListener("click", function (e) {
+           console.log(e.target.localName);
+           if (e.target.localName != "svg") {
+               let instanceOfShape = e.target.parentNode.cloneNode(true);
+               stage.appendChild(instanceOfShape);
+           } else {
+               let instanceOfShape = e.target.cloneNode(true);
+               console.log(instanceOfShape);
+               stage.appendChild(instanceOfShape);
+           }
+       })
+   }
+    }
 
-
-    $('#save-shape').click(function() { // Edit 58: changed how shapes are added using a save button
-        $('#shape-modal').modal('hide');
-
-        $('#stage svg').html($('#stage svg').html() + '<g id="' + $(shape)[0].tagName.toLowerCase() + '-' + ++elements + '">' + shape + '</g>');
-    });
 
 
     // this is for the template written by doaa -->
