@@ -172,7 +172,16 @@ session_start();
                 <input type="image" id="wall4" class="img-fluid" src="../../Resource/img/WallPaper/wall4.jpeg"/>
                 <input type="image" id="wall5" class="img-fluid" src="../../Resource/img/WallPaper/wall5.jpeg"/>
                 <input type="image" id="wall6" class="img-fluid" src="../../Resource/img/WallPaper/wall6.jpeg"/>
-
+                <input type="image" id="wall7" class="img-fluid" src="../../Resource/img/WallPaper/wall7.jpg"/>
+                <input type="image" id="wall8" class="img-fluid" src="../../Resource/img/WallPaper/wall8.jpg"/>
+                <input type="image" id="wall9" class="img-fluid" src="../../Resource/img/WallPaper/wall9.jpg"/>
+                <input type="image" id="wall10" class="img-fluid" src="../../Resource/img/WallPaper/wall10.jpg"/>
+                <input type="image" id="wall11" class="img-fluid" src="../../Resource/img/WallPaper/wall11.jpg"/>
+                <input type="image" id="wall12" class="img-fluid" src="../../Resource/img/WallPaper/wall12.jpg"/>
+                <input type="image" id="wall13" class="img-fluid" src="../../Resource/img/WallPaper/wall13.jpg"/>
+                <input type="image" id="wall14" class="img-fluid" src="../../Resource/img/WallPaper/wall14.jpg"/>
+                <input type="image" id="wall15" class="img-fluid" src="../../Resource/img/WallPaper/wall15.jpg"/>
+                <input type="image" id="wall16" class="img-fluid" src="../../Resource/img/WallPaper/wall16.jpg"/>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

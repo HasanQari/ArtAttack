@@ -1,29 +1,8 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
-<html lang="ar">
-
-<head>
-
-
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <meta charset="UTF-8">
-    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
-    <!-- Title -->
-    <title>Design Religious and Feasts Occasions</title>
-
-    <!-- Core Stylesheet -->
-    <link href="../../Resource/Library/css/style.css" rel="stylesheet">
-
-    <!-- Responsive CSS -->
-    <link href="../../Resource/Library/css/AAresponsive.css" rel="stylesheet">
-
-    <!-- Home Style Sheet -->
-    <link href="../../Resource/ArtAttack.css" rel="stylesheet" type="text/css">
-
-</head>
-
-<body><!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 
 <head>
 
@@ -53,10 +32,14 @@
     <link href="../../Resource/Library/js/jquery-ui-1.12.1/jquery-ui.css">
     <link href="../../Resource/Library/js/jquery-ui-1.12.1/jquery-ui.structure.css">
     <link href="../../Resource/Library/js/jquery-ui-1.12.1/jquery-ui.theme.css">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
 
+    <!-- Custom fonts for this template-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+          rel="stylesheet">
 
+    <!-- Custom styles for this template-->
+    <link href="../../Resource/Library/css/sb-admin-2.css" rel="stylesheet">
+    <link href="../../Resource/Library/css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -100,19 +83,22 @@
 <!-- ***** Header Area End ***** -->
 <section class="special-area bg-white section_padding_Container_resp" id="about">
     <div class="container">
-        <div class="row">
+        <div class="row" style="padding: 5%">
             <div class="col-12">
                 <!-- Section Heading Area -->
                 <div class="displayFlex">
                     <h2 class="section-head">Design Title</h2>
                     <input type="text" name="Projectitle" placeholder="Write project title here!"
                            class="inputField">
+                    <button class="btn pointer" id="saveDesignBtn">Save</button>
+                    <button class="btn pointer" id="deleteDesignBtn" onclick="deleteStage()">Delete</button>
+                    <!--     <button class="btn pointer" id="helpDesignBtn"><i class="fa fa-question-circle-o"></i> </button> -->
+                    <button class="btn pointer" id="HelpDesignBtn" onclick="helpUser()">Help</button>
                 </div>
             </div>
         </div>
         <div class="row">
             <div id="stage" class="card-body card shadow mb-4 DesignArea">
-
             </div>
 
         </div>
@@ -122,23 +108,31 @@
 <!-- ***** Cool Line ***** -->
 <div class="toolBar section_padding_toolBar_resp">
     <div class="btnHolder">
-        <button class="btnTool pointer">Text</button>
-        <button type="button" class="btnTool pointer" data-toggle="modal" data-target="#exampleModal-pic">Picture
-        </button>
-        <button class="btnTool pointer">Shape</button>
-        <button class="btnTool pointer" data-toggle="modal" data-target="#exampleModal-wall">Wallpaper</button>
-        <button class="btnTool pointer">Template</button>
+
+        <button type="button" class="btnTool pointer" data-toggle="modal" data-target="#text-modal">Text</button>
+        <button type="button" class="btnTool pointer" data-toggle="modal" data-target="#picture-modal">Picture</button>
+        <button type="button" class="btnTool pointer" data-toggle="modal" data-target="#shape-modal">Shape</button>
+        <button type="button" class="btnTool pointer" data-toggle="modal" data-target="#wallpaper-modal">Wallpaper</button>
+        <button type="button" class="btnTool pointer" data-toggle="modal" data-target="#template-modal">Template</button>
     </div>
 </div>
 
-
-<!-- Modal (1) : -->
-<div class="modal fade" id="exampleModal-pic" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-     aria-hidden="true">
+<!-- this script is for the help window -->
+<script>
+    function helpUser(){
+        alert("Hi user , to design whatever you want in our website " +
+            "\n First : choose the wallpaper you want or the template. " +
+            "\n Second : if you choose the template then you can modify it. " +
+            "\n Third : if you choose the wallpaper then you can add shapes and text." +
+            "\n Fourth : you can downloads the template or share it . ")
+    }
+</script>
+<!-- Modal for Add picture (1) : -->
+<div class="modal fade" id="picture-modal" tabindex="-1" role="dialog" aria-labelledby="picture-modal-label" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Add Picture</h5>
+                <h5 class="modal-title" id="picture-modal-label">Add Picture</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -146,23 +140,22 @@
             <div class="modal-body">
                 <label>Select Photo</label>
                 <input type="file" name="bg" accept="image/png, image/jpeg , image/jpg" size="10">
-
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" id="execute">Add photo</button>
+                <button type="button" class="btn btn-primary" id="save-picture">Select</button> <!-- Edit 12: changed id attribute and text of button -->
             </div>
         </div>
     </div>
 </div>
 
-<!-- Modal (2) : -->
-<div class="modal fade" id="exampleModal-wall" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-     aria-hidden="true">
+<!-- Modal For Add Wallpaper (2) : -->
+
+<div class="modal fade" id="wallpaper-modal" tabindex="-1" role="dialog" aria-labelledby="wallpaper-modal-label" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Image Gallery</h5>
+                <h5 class="modal-title" id="wallpaper-modal-label">Add Wallpaper</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -174,7 +167,16 @@
                 <input type="image" id="wall4" class="img-fluid" src="../../Resource/img/WallPaper/wall4.jpeg"/>
                 <input type="image" id="wall5" class="img-fluid" src="../../Resource/img/WallPaper/wall5.jpeg"/>
                 <input type="image" id="wall6" class="img-fluid" src="../../Resource/img/WallPaper/wall6.jpeg"/>
-
+                <input type="image" id="wall7" class="img-fluid" src="../../Resource/img/WallPaper/wall7.jpg"/>
+                <input type="image" id="wall8" class="img-fluid" src="../../Resource/img/WallPaper/wall8.jpg"/>
+                <input type="image" id="wall9" class="img-fluid" src="../../Resource/img/WallPaper/wall9.jpg"/>
+                <input type="image" id="wall10" class="img-fluid" src="../../Resource/img/WallPaper/wall10.jpg"/>
+                <input type="image" id="wall11" class="img-fluid" src="../../Resource/img/WallPaper/wall11.jpg"/>
+                <input type="image" id="wall12" class="img-fluid" src="../../Resource/img/WallPaper/wall12.jpg"/>
+                <input type="image" id="wall13" class="img-fluid" src="../../Resource/img/WallPaper/wall13.jpg"/>
+                <input type="image" id="wall14" class="img-fluid" src="../../Resource/img/WallPaper/wall14.jpg"/>
+                <input type="image" id="wall15" class="img-fluid" src="../../Resource/img/WallPaper/wall15.jpg"/>
+                <input type="image" id="wall16" class="img-fluid" src="../../Resource/img/WallPaper/wall16.jpg"/>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -184,16 +186,132 @@
     </div>
 </div>
 
-<!--Model inside -->
 
+<!--Model template-->
+
+<div class="modal fade" id="template-modal" tabindex="-1" role="dialog" aria-labelledby="template-modal-label" aria-hidden="true">
+    <div class="modal-dialog">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="template-modal-label">Add Template</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="close" >
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <style>
+                    button.templates {
+                        border: none;
+                        background-color: transparent;
+                    }
+                </style>
+                <button class="templates" type="button">
+                    <?php
+                    include "../../Model/DataBase/DBcon.php";
+                    $sql = "SELECT * FROM `service2-1`";
+                    $result = mysqli_query($conn, $sql);
+                    if(mysqli_num_rows($result) > 0) {
+                    while($row = mysqli_fetch_assoc($result)) {
+                    echo $row['path_serv2'];
+                    ?>
+                </button>
+
+                <?php
+                }
+                }
+                ?>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="save-shape">Select</button>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Modal (3) for shapes -->
+
+<div class="modal fade" id="shape-modal" tabindex="-1" role="dialog" aria-labelledby="shape-modal-label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="shape-modal-label">Add Shape</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="close" >
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <style>
+                    button.shapes {
+                        border: none;
+                        background-color: transparent;
+                    }
+                </style>
+
+                <!-- php code for the shape -->
+                <?php
+
+                include "../../Model/DataBase/DBcon.php";
+                $sql = "SELECT * FROM `service2-1_shape`";
+                $result = mysqli_query($conn, $sql);
+                if(mysqli_num_rows($result) > 0) {
+                while($row = mysqli_fetch_assoc($result)) {
+                ?>
+                <button type="button" class="shapes">
+                    <?php
+                        echo $row['path_serv2_shape'];
+                        ?>
+
+                </button>
+                <?php
+                    }
+                }
+                ?>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="save-shape">Select</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+
+<!-- Modal for Add text (1) : -->
+<div class="modal fade" id="text-modal" tabindex="-1" role="dialog" aria-labelledby="text-modal-label" aria-hidden="true"> <!-- Edit 37: added modal for text -->
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="text-modal-label">Add Text</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <label>Text</label>
+                <input type="text" name="add-text" id="add-text" class="form-control" >
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="save-text" >Select</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- ***** Footer Area Start ***** -->
 
 <!-- Jquery-2.2.4 JS -->
 <script src="../../Resource/Library/js/jquery-2.2.4.min.js"></script>
 <script src="../../Resource/Library/js/jquery-ui-1.12.1/jquery-ui.js"></script>
-<!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
+<!--<script src="../../Resource/Library/js/vendor/jquery/jquery.js"></script>-->
+
 <!-- Popper js -->
 <script src="../../Resource/Library/js/popper.min.js"></script>
 <!-- Bootstrap-4 Beta JS -->
@@ -206,64 +324,212 @@
 <script src="../../Resource/Library/js/footer-reveal.min.js"></script>
 <!-- Active JS -->
 <script src="../../Resource/Library/js/active.js"></script>
+<!---->
 
-<!--Nood Side:-->
+<script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+<!-- Page level custom scripts -->
+<script src="../../Resource/Library/js/demo/chart-area-demo.js"></script>
+<script src="../../Resource/Library/js/demo/chart-pie-demo.js"></script>
+<script type="text/javascript" src="../../Resource/nicEdit.js"></script>
+<script src="../../Resource/ArtAttack.js"></script>
 
-<!--Add photo JS :-->
-<script>
-    $(document).ready(function () {
-        $('#execute').on('click', function () {
-            $('#stage').html($('#stage').html() + '<image ' + ' href="' + $('#image-url').val() + '/>');
-        })
+<!--<script>
+script    let elements = 0;
+    //this variable to group all content that the user add , so that we can downloads the all designe
+    $('#stage').html('<svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>');
+
+    //Adding picture in stage when the user press "Add Photo" button:
+    $('#save-picture').on('click', function () {
+        // $('#stage').html('#stage').html() + '<image ' + ' href="' + $('#image-url').val() + '/>'); // Edit 42: used append instead of html
+        $('#stage svg').html($('#stage svg').html() + '<g id="picture-' + ++elements + '"><image href="' + $('#image-url').val() + '"/></g>');
     });
-    <!--Add Wallpaper Paper JS :-->
+    //});
 
-</script>
-<script>
-    let svgImage = {};
+
+    // Add Wallpaper Paper JS :
+
+    let Wallpaper = {};
 
     $('input[type=image]').on('click', function () {
-        svgImage.href = $(this).attr('src');
+        Wallpaper.href = $(this).attr('src');
     });
 
+
+    // Add wall paper on stage when user press "Select" button :
     $('#save-image').on('click', function () {
-        $('#exampleModal-wall').modal('hide');
+        // $('#exampleModal-wall').modal('hide'); // Edit 44: changed id to 'wallpaper-modal'
+        $('#wallpaper-modal').modal('hide');
 
-        $('#stage').html($('#stage').html() + '<img  href="' + svgImage.href + '" style="height: auto; width: 100%;"/> ')
-        $("#stage").resizable({handles: "all"});
-        $("#stage").draggable({cursor: "move"});
+        // Adding image id after inserting image on stage to allow to make resizeable and draggable
+        // $('#stage').html($('<div id="newImage" ><img style="display: inline-block"  src="' + Wallpaper.href + '" style="height: 80%; width: 80%; "/></div> '); // Edit 45: changed this line to add wallpaper as background image
+        if($('#stage svg g#wallpaper').length > 0) {
+            $('#stage svg g#wallpaper').html('<image x="0" y="0" width="100%" href="' + Wallpaper.href + '"/>');
+        } else {
+            $('#stage svg').html('<g id="wallpaper"><image x="0" y="0" width="100%" href="' + Wallpaper.href + '"/></g>' + $('#stage svg').html());
+        }
+        // $("#newImage").resizable({handles: "all", // Edit 46: no need for drag and resize in wallpaper
+        //     autoHide: true,
+        //     ghost:true,
+        //     aspectRatio:true,});
+        // $("#newImage").draggable({cursor: "move"});
     });
 
+
+    // this is for the shapes
+    function AddShapes(){
+        let allShapes = Array.from(document.getElementsByClassName("shapes"));
+        var stage = document.getElementById("stage");
+        allShapes.forEach(function(shape) {
+            shape.addEventListener("click", function (e) {
+                console.log(e.target.localName);
+                if (e.target.localName != "svg") {
+                    let instanceOfShape = e.target.parentNode.cloneNode(true);
+                    stage.appendChild(instanceOfShape);
+                } else {
+                    let instanceOfShape = e.target.cloneNode(true);
+                    console.log(instanceOfShape);
+                    stage.appendChild(instanceOfShape);
+                }
+            })
+        }
+    }
+
+
+    let template = '';
+    // svg1.onclick=function() { // Edit 66: changed to a different way to handle adding template to stage
+    //     let stage = document.getElementById("stage");
+    //     let copySvg= svg1.cloneNode(true);
+    //     cpoy();
+    //     stage.appendChild(copySvg);
+    // }
+    $('.templates').click(function() {
+        template = $(this).innerHTML;
+    });
+
+    $('#save-template').click(function() {
+        $('#template-modal').modal('hide');
+        $('#stage').html(template);
+    })
 
 </script>
 
 <script>
-    var svgImage = {
-        href: '',
-        x: '0',
-        y: '0',
-        width: '500',
-        height: ''
-    };
+    function cpoy() {
+        // for edit the text in template
+        $(document).ready(function () {
+            var userText = document.createElement("INPUT");
+            let stage = document.getElementById("stage");
+            userText.setAttribute("id", "usertext");
+            userText.setAttribute("type", "text");
 
-    $('input[type=image]').on('click', function() {
-        svgImage.href = $(this).attr('src');
-    });
-
-    $('#save-image').on('click', function() {
-        $('#exampleModal-wall').modal('hide');
-
-        $('#stage').html($('#stage').html() + '<image ' + (svgImage.x == '' ? '' : 'x="' + svgImage.x + '"') + (svgImage.y == '' ? '' : ' y="' + svgImage.y + '"') + ' href="' + svgImage.href + '"' + (svgImage.width == '' ? '' : ' width="' + svgImage.width + '"') + (svgImage.height == '' ? '' : ' height="' + svgImage.height) + '/> ')
-        $( "#stage" ).resizable({handles:"all"});
-        $( "#stage" ).draggable({cursor:"move"});
-    });
+            $("#test").on("click", function () {
+                console.log("hello");
+                userText.setAttribute("placeholder", "BUSINES");
+                stage.appendChild(userText);
+                let inputText = document.getElementById("usertext");
+                $("#usertext").change(function () {
+                    let s = $("#usertext").innerHTML;
+                    console.log(inputText.value)
+                    $("#test").text(inputText.value)
 
 
+                })
 
+            });
+
+            $("#test2").on("click", function () {
+
+                userText.setAttribute("value", "START A");
+                stage.appendChild(userText);
+                let inputText = document.getElementById("usertext");
+                $("#usertext").change(function () {
+                    let s = $("#usertext").innerHTML;
+                    console.log(inputText.value)
+                    $("#test2").text(inputText.value)
+                })
+            });
+
+            $("#test3").on("click", function () {
+
+                userText.setAttribute("placeholder", "lacina non semper! ");
+                stage.appendChild(userText);
+                let inputText = document.getElementById("usertext");
+                $("#usertext").change(function () {
+                    let s = $("#usertext").innerHTML;
+                    console.log(inputText.value)
+                    $("#test3").text(inputText.value)
+                })
+            });
+
+            $("#test4").on("click", function () {
+                userText.setAttribute("placeholder", "lorem ipsum sit dolor amet...\n" +
+                    "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut " +
+                    "laoreet dolore magna aliquam erat volutpat ");
+                stage.appendChild(userText);
+                let inputText = document.getElementById("usertext");
+                $("#usertext").change(function () {
+                    let s = $("#usertext").innerHTML;
+                    console.log(inputText.value)
+                    $("#test4").text(inputText.value)
+                })
+            });
+            $("#test5").on("click", function () {
+
+                userText.setAttribute("placeholder", "lorem ipsum sit dolor amet..");
+                stage.appendChild(userText);
+                let inputText = document.getElementById("usertext");
+                $("#usertext").change(function () {
+                    let s = $("#usertext").innerHTML;
+                    console.log(inputText.value)
+                    $("#test5").text(inputText.value)
+                })
+            });
+
+
+        });
+    }
 </script>
-</body>
 
-</html>
+
+
+
+
+
+
+
+ script for adding text -->
+<!--<script>-->
+<!--    function FunctionForUserText() {-->
+<!--        var userText = document.createElement("INPUT");-->
+<!--        let stage = document.getElementById("stage");-->
+<!---->
+<!--        userText.setAttribute("id", "userText");-->
+<!--        userText.setAttribute("type", "text");-->
+<!--        userText.setAttribute("placeholder", "write your text here");-->
+<!--        stage.appendChild(userText);-->
+<!--        $("#userText").draggable({cursor: "move"});-->
+<!---->
+<!--    }-->
+<!---->
+<!--    document.getElementById('btnText')-->
+<!--        .addEventListener("click", function (event) {-->
+<!--            FunctionForUserText();-->
+<!--        }, {once: true});-->
+<!---->
+<!--</script>-->
+<!---->
+<!---->
+<!---->
+<!---->
+<!-- script for deleting the stage -->
+<!--<script>-->
+<!--    function deleteStage(){-->
+<!--        $("#stage").html("");-->
+<!---->
+<!--    }-->
+<!--</script>-->
+
+
 </body>
 
 </html>
