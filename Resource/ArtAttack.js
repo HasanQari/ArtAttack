@@ -65,140 +65,48 @@ $('#save-image').on('click', function () {
 
         //$('#stage svg').html('<g id="wallpaper"><image x="0" y="0" width="100%" href="' + Wallpaper.href + '"/></g>' + $('#stage svg').html());
     }
-    // $("#newImage").resizable({handles: "all", // Edit 46: no need for drag and resize in wallpaper
-    //     autoHide: true,
-    //     ghost:true,
-    //     aspectRatio:true,});
-    // $("#newImage").draggable({cursor: "move"});
+
+});
+
+// this is for Add the template
+$(".templateClass").click(function () {
+    let templateHtml = $(this).html();
+    let stage = $("#stage").html(templateHtml);
+    edit ();
+    $('#stage').css("backgroundImage", "");
+    let savedHTMl = stage.html();
 });
 
 
-//----------------------------------------------------
-
-// Add shape:
-
-let addSheapsListener = document.getElementById("save-shape");
-addSheapsListener.addEventListener("click", function (e){
-    console.log("hello");
-    let allShapes = Array.from(document.getElementsByClassName("shapes"));
-    let stage = document.getElementById("stage");
-    $('#shape-modal').modal('hide');
-    allShapes.forEach(function(shape) {
-        shape.addEventListener("click", function (e) {
-            console.log(e.target.localName);
-            if (e.target.localName !== "svg") {
-                let instanceOfShape = e.target.parentNode.cloneNode(true);
-                stage.appendChild(instanceOfShape);
-            } else {
-                let instanceOfShape = e.target.cloneNode(true);
-                console.log(instanceOfShape);
-                stage.appendChild(instanceOfShape);
-            }
-        })
-    })
+//this is for add the shapes
+$(".shapesClass").click(function () {
+    let shapeHtml = $(this).html();
+    let stage = $("#stage").append(shapeHtml);
+    let savedHTMl = stage.html();
 });
-
-//----------------------------------------------------
-
-//Add Template :
-
-$("#save-template").on("click", function (){
-    console.log($("#save-template"));
-        let allTemplates = Array.from(document.getElementsByClassName("templates"));
-        let stage = document.getElementById("stage");
-        allTemplates.forEach(function(template) {
-            template.addEventListener("click", function (e) {
-                console.log(e.target.localName);
-                if (e.target.localName != "svg") {
-                    let instanceOfTemplate = e.target.parentNode.cloneNode(true);
-                    stage.appendChild(instanceOfTemplate);
-                } else {
-                    let instanceOfTemplate = e.target.cloneNode(true);
-                    console.log(instanceOfTemplate);
-                    stage.appendChild(instanceOfTemplate);
-                }
-            })
-        })
-    });
 
 //----------------------------------------------------
 
 //Edit Text into Template :
-function cpoy() {
-    // for edit the text in template
-    $(document).ready(function () {
-        var userText = document.createElement("INPUT");
-        let stage = document.getElementById("stage");
-        userText.setAttribute("id", "usertext");
-        userText.setAttribute("type", "text");
+        function edit () {
+            var userText = document.createElement("INPUT");
+            let stage = document.getElementById("stage");
+            userText.setAttribute("id", "usertext");
+            userText.setAttribute("type", "text");
 
-        $("#test").on("click", function () {
-            console.log("hello");
-            userText.setAttribute("placeholder", "BUSINES");
-            stage.appendChild(userText);
-            let inputText = document.getElementById("usertext");
-            $("#usertext").change(function () {
-                let s = $("#usertext").innerHTML;
-                console.log(inputText.value)
-                $("#test").text(inputText.value)
+            $(".templateText").on("click", function () {
 
+                let textHtml = $(this).html();
+                stage.appendChild(userText);
+                let inputText = document.getElementById("usertext");
+                $("#usertext").change(function () {
+                    textHtml.html(inputText.value);
 
-            })
+                })
 
-        });
+            });
 
-        $("#test2").on("click", function () {
-
-            userText.setAttribute("value", "START A");
-            stage.appendChild(userText);
-            let inputText = document.getElementById("usertext");
-            $("#usertext").change(function () {
-                let s = $("#usertext").innerHTML;
-                console.log(inputText.value)
-                $("#test2").text(inputText.value)
-            })
-        });
-
-        $("#test3").on("click", function () {
-
-            userText.setAttribute("placeholder", "lacina non semper! ");
-            stage.appendChild(userText);
-            let inputText = document.getElementById("usertext");
-            $("#usertext").change(function () {
-                let s = $("#usertext").innerHTML;
-                console.log(inputText.value)
-                $("#test3").text(inputText.value)
-            })
-        });
-
-        $("#test4").on("click", function () {
-            userText.setAttribute("placeholder", "lorem ipsum sit dolor amet...\n" +
-                "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut " +
-                "laoreet dolore magna aliquam erat volutpat ");
-            stage.appendChild(userText);
-            let inputText = document.getElementById("usertext");
-            $("#usertext").change(function () {
-                let s = $("#usertext").innerHTML;
-                console.log(inputText.value)
-                $("#test4").text(inputText.value)
-            })
-        });
-        $("#test5").on("click", function () {
-
-            userText.setAttribute("placeholder", "lorem ipsum sit dolor amet..");
-            stage.appendChild(userText);
-            let inputText = document.getElementById("usertext");
-            $("#usertext").change(function () {
-                let s = $("#usertext").innerHTML;
-                console.log(inputText.value)
-                $("#test5").text(inputText.value)
-            })
-        });
-
-
-    });
-}
-
+        }
 //----------------------------------------------------
 //ADD text
 $("#save-text").on("click", function () {
@@ -223,6 +131,7 @@ $("#save-text").on("click", function () {
 
 function deleteStage(){
     $("#stage").html("");
+    $('#stage').css("backgroundImage", "");
 
 }
 
