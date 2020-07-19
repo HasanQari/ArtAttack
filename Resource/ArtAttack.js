@@ -60,6 +60,7 @@ $('#save-image').on('click', function () {
     } else {
 
         let imageUrl = "url('" + Wallpaper.href+ "')";
+        $("#stage").html("");
         $('#stage').css("backgroundImage",imageUrl);
 
         //$('#stage svg').html('<g id="wallpaper"><image x="0" y="0" width="100%" href="' + Wallpaper.href + '"/></g>' + $('#stage svg').html());

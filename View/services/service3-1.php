@@ -340,6 +340,7 @@ session_start();
     $(".templateClass").click(function(){
         let templateHtml = $(this).html();
         let stage = $("#stage").html(templateHtml);
+        $('#stage').css("backgroundImage","");
         let savedHTMl = stage.html();
         //alert(templateHtml);
     });
