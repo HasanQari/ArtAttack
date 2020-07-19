@@ -92,7 +92,7 @@ session_start();
                            class="inputField">
                     <button class="btn pointer" id="saveDesignBtn">Save</button>
                     <button class="btn pointer" id="deleteDesignBtn" onclick="deleteStage()">Delete</button>
-               <!--     <button class="btn pointer" id="helpDesignBtn"><i class="fa fa-question-circle-o"></i> </button> -->
+                    <!--     <button class="btn pointer" id="helpDesignBtn"><i class="fa fa-question-circle-o"></i> </button> -->
                     <button class="btn pointer" id="HelpDesignBtn" onclick="helpUser()">Help</button>
                 </div>
             </div>
@@ -198,20 +198,20 @@ session_start();
                     }
                 </style>
                 <button class="templates" type="button">
-            <?php
-            include "../../Model/DataBase/DBcon.php";
-            $sql = "SELECT * FROM `service2-1`";
-            $result = mysqli_query($conn, $sql);
-            if(mysqli_num_rows($result) > 0) {
-            while($row = mysqli_fetch_assoc($result)) {
-                echo $row['path_serv2'];
-            ?>
+                    <?php
+                    include "../../Model/DataBase/DBcon.php";
+                    $sql = "SELECT * FROM `service2-1`";
+                    $result = mysqli_query($conn, $sql);
+                    if(mysqli_num_rows($result) > 0) {
+                    while($row = mysqli_fetch_assoc($result)) {
+                    echo $row['path_serv2'];
+                    ?>
                 </button>
 
-    <?php
-    }
-    }
-    ?>
+                <?php
+                }
+                }
+                ?>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -237,22 +237,22 @@ session_start();
             </div>
             <div class="modal-body">
 
-            <!-- php code for the shape -->
-            <?php
+                <!-- php code for the shape -->
+                <?php
 
-            include "../../Model/DataBase/DBcon.php";
-            $sql = "SELECT * FROM `service2-1_shape`";
-            $result = mysqli_query($conn, $sql);
-            if(mysqli_num_rows($result) > 0) {
-                while($row = mysqli_fetch_assoc($result)) {
-                    echo $row['path_serv2_shape'];
-                    ?>
+                include "../../Model/DataBase/DBcon.php";
+                $sql = "SELECT * FROM `service2-1_shape`";
+                $result = mysqli_query($conn, $sql);
+                if(mysqli_num_rows($result) > 0) {
+                    while($row = mysqli_fetch_assoc($result)) {
+                        echo $row['path_serv2_shape'];
+                        ?>
 
 
-                    <?php
+                        <?php
+                    }
                 }
-            }
-            ?>
+                ?>
 
             </div>
             <div class="modal-footer">
@@ -316,6 +316,7 @@ session_start();
 
 <script>
     let elements = 0;
+    //this variable to group all content that the user add , so that we can downloads the all designe
     $('#stage').html('<svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>');
 
     //Adding picture in stage when the user press "Add Photo" button:
@@ -357,52 +358,23 @@ session_start();
 
     // this is for the shapes
     function AddShapes(){
-     let allShapes = Array.from(document.getElementsByClassName("shapes"));
-    var stage = document.getElementById("stage");
-   allShapes.forEach(function(shape) {
-       shape.addEventListener("click", function (e) {
-           console.log(e.target.localName);
-           if (e.target.localName != "svg") {
-               let instanceOfShape = e.target.parentNode.cloneNode(true);
-               stage.appendChild(instanceOfShape);
-           } else {
-               let instanceOfShape = e.target.cloneNode(true);
-               console.log(instanceOfShape);
-               stage.appendChild(instanceOfShape);
-           }
-       })
-   }
+        let allShapes = Array.from(document.getElementsByClassName("shapes"));
+        var stage = document.getElementById("stage");
+        allShapes.forEach(function(shape) {
+            shape.addEventListener("click", function (e) {
+                console.log(e.target.localName);
+                if (e.target.localName != "svg") {
+                    let instanceOfShape = e.target.parentNode.cloneNode(true);
+                    stage.appendChild(instanceOfShape);
+                } else {
+                    let instanceOfShape = e.target.cloneNode(true);
+                    console.log(instanceOfShape);
+                    stage.appendChild(instanceOfShape);
+                }
+            })
+        }
     }
 
-
-
-    // this is for the template written by doaa -->
-
-    //Template Modal:
-    // Get the modal
-    //var modal = document.getElementById("myModal"); // Edit 59: no need for this line
-    // Get the button that opens the modal
-    //var btn = document.getElementById("myBtn"); // Edit 60: no need for both lines
-    //var stage = document.getElementById("stage");
-    // Get the <span> element that closes the modal
-    //var span = document.getElementsByClassName("close")[0]; // Edit 61: no need for both lines
-    //var svg1 = document.getElementById("svg");
-    // When the user clicks on the button, open the modal
-    // btn.onclick = function() { // Edit 62: no need for the 3 lines
-    //     modal.style.display = "block";
-    // }
-
-    // When the user clicks on <span> (x), close the modal
-    // span.onclick = function() { // Edit 63: no need for the 3 lines
-    //     modal.style.display = "none";
-    // }
-
-    // When the user clicks anywhere outside of the modal, close it
-    // window.onclick = function(event) { // Edit 64: no need for the 4 lines
-    //     if (event.target == modal) {
-    //         modal.style.display = "none";
-    //     }
-    // }
 
     let template = '';
     // svg1.onclick=function() { // Edit 66: changed to a different way to handle adding template to stage
@@ -419,22 +391,7 @@ session_start();
         $('#template-modal').modal('hide');
         $('#stage').html(template);
     })
-// this is for text
-    function AddText(){
-        var userText = document.createElement("LABEL");
-        let stage = document.getElementById("stage");
-        userText.setAttribute("id", "usertext");
-        userText.setAttribute("type", "text");
-        let value = document.getElementById("add-text");
-        let value1= value.innerText;
-        userText.setAttribute("value", value1);
-        stage.appendChild(userText);
-    }
 
-    $('#save-text').click(function() {
-        $('#text-modal').modal('hide');
-        $('#stage').html( $('#add-text').val());
-    });
 </script>
 
 <script>
@@ -524,7 +481,7 @@ session_start();
 <!-- script for adding text -->
 <script>
     function FunctionForUserText() {
-        var userText = document.createElement("label");
+        var userText = document.createElement("INPUT");
         let stage = document.getElementById("stage");
 
         userText.setAttribute("id", "userText");
