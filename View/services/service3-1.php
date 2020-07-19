@@ -316,7 +316,6 @@ session_start();
 
 <script>
     let elements = 0;
-    //this variable to group all content that the user add , so that we can downloads the all designe
     $('#stage').html('<svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>');
 
     //Adding picture in stage when the user press "Add Photo" button:
@@ -376,6 +375,35 @@ session_start();
     }
 
 
+
+    // this is for the template written by doaa -->
+
+    //Template Modal:
+    // Get the modal
+    //var modal = document.getElementById("myModal"); // Edit 59: no need for this line
+    // Get the button that opens the modal
+    //var btn = document.getElementById("myBtn"); // Edit 60: no need for both lines
+    //var stage = document.getElementById("stage");
+    // Get the <span> element that closes the modal
+    //var span = document.getElementsByClassName("close")[0]; // Edit 61: no need for both lines
+    //var svg1 = document.getElementById("svg");
+    // When the user clicks on the button, open the modal
+    // btn.onclick = function() { // Edit 62: no need for the 3 lines
+    //     modal.style.display = "block";
+    // }
+
+    // When the user clicks on <span> (x), close the modal
+    // span.onclick = function() { // Edit 63: no need for the 3 lines
+    //     modal.style.display = "none";
+    // }
+
+    // When the user clicks anywhere outside of the modal, close it
+    // window.onclick = function(event) { // Edit 64: no need for the 4 lines
+    //     if (event.target == modal) {
+    //         modal.style.display = "none";
+    //     }
+    // }
+
     let template = '';
     // svg1.onclick=function() { // Edit 66: changed to a different way to handle adding template to stage
     //     let stage = document.getElementById("stage");
@@ -391,7 +419,22 @@ session_start();
         $('#template-modal').modal('hide');
         $('#stage').html(template);
     })
+// this is for text
+    function AddText(){
+        var userText = document.createElement("LABEL");
+        let stage = document.getElementById("stage");
+        userText.setAttribute("id", "usertext");
+        userText.setAttribute("type", "text");
+        let value = document.getElementById("add-text");
+        let value1= value.innerText;
+        userText.setAttribute("value", value1);
+        stage.appendChild(userText);
+    }
 
+    $('#save-text').click(function() {
+        $('#text-modal').modal('hide');
+        $('#stage').html( $('#add-text').val());
+    });
 </script>
 
 <script>
@@ -481,7 +524,7 @@ session_start();
 <!-- script for adding text -->
 <script>
     function FunctionForUserText() {
-        var userText = document.createElement("INPUT");
+        var userText = document.createElement("label");
         let stage = document.getElementById("stage");
 
         userText.setAttribute("id", "userText");
