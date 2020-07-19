@@ -314,8 +314,8 @@ session_start();
 <script type="text/javascript" src="../../Resource/nicEdit.js"></script>
 <script src="../../Resource/ArtAttack.js"></script>
 
-<script>
-    let elements = 0;
+<!--<script>
+script    let elements = 0;
     //this variable to group all content that the user add , so that we can downloads the all designe
     $('#stage').html('<svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>');
 
@@ -478,37 +478,37 @@ session_start();
 
 
 
-<!-- script for adding text -->
-<script>
-    function FunctionForUserText() {
-        var userText = document.createElement("INPUT");
-        let stage = document.getElementById("stage");
-
-        userText.setAttribute("id", "userText");
-        userText.setAttribute("type", "text");
-        userText.setAttribute("placeholder", "write your text here");
-        stage.appendChild(userText);
-        $("#userText").draggable({cursor: "move"});
-
-    }
-
-    document.getElementById('btnText')
-        .addEventListener("click", function (event) {
-            FunctionForUserText();
-        }, {once: true});
-
-</script>
-
-
-
-
+ script for adding text -->-->
+<!--<script>-->
+<!--    function FunctionForUserText() {-->
+<!--        var userText = document.createElement("INPUT");-->
+<!--        let stage = document.getElementById("stage");-->
+<!---->
+<!--        userText.setAttribute("id", "userText");-->
+<!--        userText.setAttribute("type", "text");-->
+<!--        userText.setAttribute("placeholder", "write your text here");-->
+<!--        stage.appendChild(userText);-->
+<!--        $("#userText").draggable({cursor: "move"});-->
+<!---->
+<!--    }-->
+<!---->
+<!--    document.getElementById('btnText')-->
+<!--        .addEventListener("click", function (event) {-->
+<!--            FunctionForUserText();-->
+<!--        }, {once: true});-->
+<!---->
+<!--</script>-->
+<!---->
+<!---->
+<!---->
+<!---->
 <!-- script for deleting the stage -->
-<script>
-    function deleteStage(){
-        $("#stage").html("");
-
-    }
-</script>
+<!--<script>-->
+<!--    function deleteStage(){-->
+<!--        $("#stage").html("");-->
+<!---->
+<!--    }-->
+<!--</script>-->
 
 
 </body>
