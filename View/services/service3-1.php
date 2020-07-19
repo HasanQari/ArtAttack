@@ -280,7 +280,7 @@ session_start();
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" id="save-text">Select</button>
+                <button type="button" class="btn btn-primary" id="save-text" onclick="FunctionForUserText()">Select</button>
             </div>
         </div>
     </div>
@@ -316,7 +316,6 @@ session_start();
 
 <script>
     let elements = 0;
-    //this variable to group all content that the user add , so that we can downloads the all designe
     $('#stage').html('<svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>');
 
     //Adding picture in stage when the user press "Add Photo" button:
@@ -357,12 +356,10 @@ session_start();
 
 
     // this is for the shapes
-
-     //added variable to hold shape text
     function AddShapes(){
-     let allShapes = Array.from(document.getElementsByClassName("shapes")); // Edit 55: no need for this line
-    var stage = document.getElementById("stage"); // Edit 56: no need for this line
-   allShapes.forEach(function(shape) { // Edit 57: Changed this line to be using jQuery
+     let allShapes = Array.from(document.getElementsByClassName("shapes"));
+    var stage = document.getElementById("stage");
+   allShapes.forEach(function(shape) {
        shape.addEventListener("click", function (e) {
            console.log(e.target.localName);
            if (e.target.localName != "svg") {
@@ -407,7 +404,7 @@ session_start();
     //     }
     // }
 
-    let template = ''; // Edit 65: added template variable
+    let template = '';
     // svg1.onclick=function() { // Edit 66: changed to a different way to handle adding template to stage
     //     let stage = document.getElementById("stage");
     //     let copySvg= svg1.cloneNode(true);
@@ -415,17 +412,28 @@ session_start();
     //     stage.appendChild(copySvg);
     // }
     $('.templates').click(function() {
-        template = $(this).children(':first-child')[0].outerHTML;
+        template = $(this).innerHTML;
     });
 
-    $('#save-template').click(function() { // Edit 67: changed how template is added using a save button
+    $('#save-template').click(function() {
         $('#template-modal').modal('hide');
         $('#stage').html(template);
     })
+// this is for text
+    function AddText(){
+        var userText = document.createElement("LABEL");
+        let stage = document.getElementById("stage");
+        userText.setAttribute("id", "usertext");
+        userText.setAttribute("type", "text");
+        let value = document.getElementById("add-text");
+        let value1= value.innerText;
+        userText.setAttribute("value", value1);
+        stage.appendChild(userText);
+    }
 
-    $('#save-text').click(function() { // Edit 68: changed how text is added using a save button
+    $('#save-text').click(function() {
         $('#text-modal').modal('hide');
-        $('#stage svg').html($('#stage svg').html() + '<g id="text-' + ++elements + '"><text x="0" y="20" fill="black" font-size="20">' + $('#add-text').val() + '</text></g>');
+        $('#stage').html( $('#add-text').val());
     });
 </script>
 
@@ -516,7 +524,7 @@ session_start();
 <!-- script for adding text -->
 <script>
     function FunctionForUserText() {
-        var userText = document.createElement("INPUT");
+        var userText = document.createElement("label");
         let stage = document.getElementById("stage");
 
         userText.setAttribute("id", "userText");
