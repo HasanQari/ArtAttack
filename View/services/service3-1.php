@@ -280,7 +280,7 @@ session_start();
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" id="save-text" onclick="FunctionForUserText()">Select</button>
+                <button type="button" class="btn btn-primary" id="save-text" >Select</button>
             </div>
         </div>
     </div>
@@ -478,7 +478,7 @@ script    let elements = 0;
 
 
 
- script for adding text -->-->
+ script for adding text -->
 <!--<script>-->
 <!--    function FunctionForUserText() {-->
 <!--        var userText = document.createElement("INPUT");-->
