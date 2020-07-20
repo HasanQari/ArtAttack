@@ -158,7 +158,7 @@ session_start();
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 <button type="submit"  name="submit" class="btn btn-primary" id="save-picture">Select</button>
-                <!-- Edit 12: changed id attribute and text of button -->
+
             </div>
         </div>
     </div>

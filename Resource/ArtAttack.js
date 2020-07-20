@@ -95,13 +95,17 @@ $(".shapesClass").click(function () {
             userText.setAttribute("type", "text");
 
             $(".templateText").on("click", function () {
-
-                let textHtml = $(this).html();
+                let textHtml = $(this);
+                $(this).html("");
+                console.log($(this).html());
                 stage.appendChild(userText);
                 let inputText = document.getElementById("usertext");
                 $("#usertext").change(function () {
-                    textHtml.html(inputText.value);
+                    // here i dont know how to make the text appers in template
 
+                    console.log($(this).val());
+                    textHtml.html($(this).val());
+                    console.log(textHtml.html());
                 })
 
             });
