@@ -12,7 +12,7 @@ session_start();
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Design Business Cards</title>
+    <title>Design Poster or Banner</title>
 
 
     <!-- Core Stylesheet -->
@@ -57,12 +57,12 @@ session_start();
                         <a class="navbar-brand" href="#">Art<span id="AttackWord">Attack</span></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar"
                                 aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span
-                                    class="navbar-toggler-icon"></span></button>
+                                class="navbar-toggler-icon"></span></button>
                         <!-- Menu Area -->
                         <div class="collapse navbar-collapse" id="ca-navbar">
                             <ul class="navbar-nav ml-auto" id="nav">
                                 <li class="nav-item"><a class="nav-link respBtnHeader" href="../profile.html">My
-                                        Profile</a></li>
+                                    Profile</a></li>
                                 <li class="nav-item"><a class="nav-link" href="../HomeMember.html">Home</a></li>
                                 <li class="nav-item"><a class="nav-link" href="../MyDesign.html">My Design</a></li>
                                 <li class="nav-item"><a class="nav-link" href="../Home.html">Logout</a></li>
@@ -230,11 +230,11 @@ session_start();
                 $result = mysqli_query($conn, $sql);
                 $counter = 0;
                 if (mysqli_num_rows($result) > 0) {
-                    while ($row = mysqli_fetch_assoc($result)) {
-                        echo "<div class='templateClass' >" . $row['path_serv2'] . "</div>";
-                        ?>
+                while ($row = mysqli_fetch_assoc($result)) {
+                echo "<div class='templateClass' >" . $row['path_serv2'] . "</div>";
+                ?>
 
-                        <?php
+                <?php
                     }
                 }
 
@@ -279,27 +279,27 @@ session_start();
                 $sql = "SELECT * FROM `service2-1_shape`";
                 $result = mysqli_query($conn, $sql);
                 if (mysqli_num_rows($result) > 0) {
-                    while ($row = mysqli_fetch_assoc($result)) {
-                        ?>
+                while ($row = mysqli_fetch_assoc($result)) {
+                ?>
 
-                        <?php
+                <?php
                         echo "<div class='shapesClass' id='shape$counter'>" . $row['path_serv2_shape'] . "</div>";
-                        ?>
+            ?>
 
 
-                        <?php
+            <?php
                     }
                 }
                 ?>
 
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-            </div>
         </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
+        </div>
     </div>
+
+</div>
 </div>
 </div>
 

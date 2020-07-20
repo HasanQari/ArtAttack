@@ -12,7 +12,7 @@ session_start();
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Design Graduation and Success Parties</title>
+    <title>Design Advertisements</title>
 
 
     <!-- Core Stylesheet -->
@@ -133,12 +133,32 @@ session_start();
             </div>
             <div class="modal-body">
                 <label>Select Photo</label>
-                <input type="file" name="bg" accept="image/png, image/jpeg , image/jpg" size="10">
+                <?php
+                $target_dir = "uploads/"; // specifies the directory where the file is going to be placed
+                $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]); //specifies the path of the file to be uploaded
+                $uploadOk = 1;
+                $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION)); //holds the file extension of the file (in lower case)
+                // Check if image file is a actual image or fake image
+                if(isset($_POST["submit"])) {
+                    $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+                    if($check !== false) {
+                        echo "File is an image - " . $check["mime"] . ".";
+                        $uploadOk = 1;
+                    } else {
+                        echo "File is not an image.";
+                        $uploadOk = 0;
+                    }
+                }
+                ?>
+                <form action="upload.php" method="post" enctype="multipart/form-data">
+                    Select image to upload:
+                    <input type="file" name="fileToUpload" id="fileToUpload" accept="image/png, image/jpeg , image/jpg" size="10">
+                </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" id="save-picture">Select</button>
-                <!-- Edit 12: changed id attribute and text of button -->
+                <button type="submit"  name="submit" class="btn btn-primary" id="save-picture">Select</button>
+
             </div>
         </div>
     </div>
@@ -203,25 +223,27 @@ session_start();
                         background-color: transparent;
                     }
                 </style>
-                <button class="templates" type="button">
-                    <?php
-                    include "../../Model/DataBase/DBcon.php";
-                    $sql = "SELECT * FROM `service2-1`";
-                    $result = mysqli_query($conn, $sql);
-                    if (mysqli_num_rows($result) > 0) {
-                    while ($row = mysqli_fetch_assoc($result)) {
-                    echo $row['path_serv2'];
-                    ?>
-                </button>
 
                 <?php
+                include "../../Model/DataBase/DBcon.php";
+                $sql = "SELECT * FROM `service2-1`";
+                $result = mysqli_query($conn, $sql);
+                $counter = 0;
+                if (mysqli_num_rows($result) > 0) {
+                while ($row = mysqli_fetch_assoc($result)) {
+                echo "<div class='templateClass' >" . $row['path_serv2'] . "</div>";
+                ?>
+
+                <?php
+                    }
                 }
-                }
+
                 ?>
             </div>
+
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" id="save-template">Select</button>
+
             </div>
         </div>
 
@@ -259,25 +281,25 @@ session_start();
                 if (mysqli_num_rows($result) > 0) {
                 while ($row = mysqli_fetch_assoc($result)) {
                 ?>
-                <button type="button" class="shapes">
-                    <?php
-                            echo $row['path_serv2_shape'];
-                            ?>
 
-                </button>
                 <?php
+                        echo "<div class='shapesClass' id='shape$counter'>" . $row['path_serv2_shape'] . "</div>";
+            ?>
+
+
+            <?php
                     }
                 }
                 ?>
 
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" id="save-shape">Select</button>
-            </div>
         </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
+        </div>
     </div>
+
+</div>
 </div>
 </div>
 
@@ -332,203 +354,9 @@ session_start();
 -->
 <script type="text/javascript" src="../../Resource/nicEdit.js"></script>
 <script type="text/javascript" src="../../Resource/ArtAttack.js"></script>
-<!--<script src="../../Resource/ArtAttack.js"></script>-->
-
-<!--<script>
-script    let elements = 0;
-    //this variable to group all content that the user add , so that we can downloads the all designe
-    $('#stage').html('<svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>');
-
-    //Adding picture in stage when the user press "Add Photo" button:
-    $('#save-picture').on('click', function () {
-        // $('#stage').html('#stage').html() + '<image ' + ' href="' + $('#image-url').val() + '/>'); // Edit 42: used append instead of html
-        $('#stage svg').html($('#stage svg').html() + '<g id="picture-' + ++elements + '"><image href="' + $('#image-url').val() + '"/></g>');
-    });
-    //});
-
-
-    // Add Wallpaper Paper JS :
-
-    let Wallpaper = {};
-
-    $('input[type=image]').on('click', function () {
-        Wallpaper.href = $(this).attr('src');
-    });
-
-
-    // Add wall paper on stage when user press "Select" button :
-    $('#save-image').on('click', function () {
-        // $('#exampleModal-wall').modal('hide'); // Edit 44: changed id to 'wallpaper-modal'
-        $('#wallpaper-modal').modal('hide');
-
-        // Adding image id after inserting image on stage to allow to make resizeable and draggable
-        // $('#stage').html($('<div id="newImage" ><img style="display: inline-block"  src="' + Wallpaper.href + '" style="height: 80%; width: 80%; "/></div> '); // Edit 45: changed this line to add wallpaper as background image
-        if($('#stage svg g#wallpaper').length > 0) {
-            $('#stage svg g#wallpaper').html('<image x="0" y="0" width="100%" href="' + Wallpaper.href + '"/>');
-        } else {
-            $('#stage svg').html('<g id="wallpaper"><image x="0" y="0" width="100%" href="' + Wallpaper.href + '"/></g>' + $('#stage svg').html());
-        }
-        // $("#newImage").resizable({handles: "all", // Edit 46: no need for drag and resize in wallpaper
-        //     autoHide: true,
-        //     ghost:true,
-        //     aspectRatio:true,});
-        // $("#newImage").draggable({cursor: "move"});
-    });
-
-
-    // this is for the shapes
-    function AddShapes(){
-        let allShapes = Array.from(document.getElementsByClassName("shapes"));
-        var stage = document.getElementById("stage");
-        allShapes.forEach(function(shape) {
-            shape.addEventListener("click", function (e) {
-                console.log(e.target.localName);
-                if (e.target.localName != "svg") {
-                    let instanceOfShape = e.target.parentNode.cloneNode(true);
-                    stage.appendChild(instanceOfShape);
-                } else {
-                    let instanceOfShape = e.target.cloneNode(true);
-                    console.log(instanceOfShape);
-                    stage.appendChild(instanceOfShape);
-                }
-            })
-        }
-    }
-
-
-    let template = '';
-    // svg1.onclick=function() { // Edit 66: changed to a different way to handle adding template to stage
-    //     let stage = document.getElementById("stage");
-    //     let copySvg= svg1.cloneNode(true);
-    //     cpoy();
-    //     stage.appendChild(copySvg);
-    // }
-    $('.templates').click(function() {
-        template = $(this).innerHTML;
-    });
-
-    $('#save-template').click(function() {
-        $('#template-modal').modal('hide');
-        $('#stage').html(template);
-    })
-
-</script>
-
-<script>
-    function cpoy() {
-        // for edit the text in template
-        $(document).ready(function () {
-            var userText = document.createElement("INPUT");
-            let stage = document.getElementById("stage");
-            userText.setAttribute("id", "usertext");
-            userText.setAttribute("type", "text");
-
-            $("#test").on("click", function () {
-                console.log("hello");
-                userText.setAttribute("placeholder", "BUSINES");
-                stage.appendChild(userText);
-                let inputText = document.getElementById("usertext");
-                $("#usertext").change(function () {
-                    let s = $("#usertext").innerHTML;
-                    console.log(inputText.value)
-                    $("#test").text(inputText.value)
-
-
-                })
-
-            });
-
-            $("#test2").on("click", function () {
-
-                userText.setAttribute("value", "START A");
-                stage.appendChild(userText);
-                let inputText = document.getElementById("usertext");
-                $("#usertext").change(function () {
-                    let s = $("#usertext").innerHTML;
-                    console.log(inputText.value)
-                    $("#test2").text(inputText.value)
-                })
-            });
-
-            $("#test3").on("click", function () {
-
-                userText.setAttribute("placeholder", "lacina non semper! ");
-                stage.appendChild(userText);
-                let inputText = document.getElementById("usertext");
-                $("#usertext").change(function () {
-                    let s = $("#usertext").innerHTML;
-                    console.log(inputText.value)
-                    $("#test3").text(inputText.value)
-                })
-            });
-
-            $("#test4").on("click", function () {
-                userText.setAttribute("placeholder", "lorem ipsum sit dolor amet...\n" +
-                    "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut " +
-                    "laoreet dolore magna aliquam erat volutpat ");
-                stage.appendChild(userText);
-                let inputText = document.getElementById("usertext");
-                $("#usertext").change(function () {
-                    let s = $("#usertext").innerHTML;
-                    console.log(inputText.value)
-                    $("#test4").text(inputText.value)
-                })
-            });
-            $("#test5").on("click", function () {
-
-                userText.setAttribute("placeholder", "lorem ipsum sit dolor amet..");
-                stage.appendChild(userText);
-                let inputText = document.getElementById("usertext");
-                $("#usertext").change(function () {
-                    let s = $("#usertext").innerHTML;
-                    console.log(inputText.value)
-                    $("#test5").text(inputText.value)
-                })
-            });
-
-
-        });
-    }
-</script>
 
 
 
-
-
-
-
-
- script for adding text -->
-<!--<script>-->
-<!--    function FunctionForUserText() {-->
-<!--        var userText = document.createElement("INPUT");-->
-<!--        let stage = document.getElementById("stage");-->
-<!---->
-<!--        userText.setAttribute("id", "userText");-->
-<!--        userText.setAttribute("type", "text");-->
-<!--        userText.setAttribute("placeholder", "write your text here");-->
-<!--        stage.appendChild(userText);-->
-<!--        $("#userText").draggable({cursor: "move"});-->
-<!---->
-<!--    }-->
-<!---->
-<!--    document.getElementById('btnText')-->
-<!--        .addEventListener("click", function (event) {-->
-<!--            FunctionForUserText();-->
-<!--        }, {once: true});-->
-<!---->
-<!--</script>-->
-<!---->
-<!---->
-<!---->
-<!---->
-<!-- script for deleting the stage -->
-<!--<script>-->
-<!--    function deleteStage(){-->
-<!--        $("#stage").html("");-->
-<!---->
-<!--    }-->
-<!--</script>-->
 
 
 </body>

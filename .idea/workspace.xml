@@ -26,9 +26,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57f6b229-b42e-4248-aa52-bf1610b93a60" name="Default Changelist" comment="doaa page">
+      <change afterPath="$PROJECT_DIR$/View/services/service3-3.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resource/ArtAttack.js" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/ArtAttack.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/services/service3-1.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/services/service3-1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/services/service3-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/services/service3-2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/services/service3-3.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,13 +124,6 @@
       <workItem from="1594812740433" duration="834000" />
       <workItem from="1594833819385" duration="635000" />
       <workItem from="1594834872581" duration="45295000" />
-    </task>
-    <task id="LOCAL-00011" summary="updated">
-      <created>1593940382557</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1593940382557</updated>
     </task>
     <task id="LOCAL-00012" summary="hasan service and few update">
       <created>1593944659335</created>
@@ -466,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595239323302</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="doaa page">
+      <created>1595263483272</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1595263483303</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -583,10 +585,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="488" y="254" key="VCS.ChangelistChooser/0.0.1280.680@0.0.1280.680" timestamp="1594841673293" />
-    <state x="233" y="117" key="Vcs.Push.Dialog.v2" timestamp="1595239331197">
+    <state x="233" y="117" key="Vcs.Push.Dialog.v2" timestamp="1595263508289">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="117" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1595239331197" />
+    <state x="233" y="117" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1595263508289" />
     <state x="448" y="-752" key="Vcs.Push.Dialog.v2/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1594327344148" />
     <state x="233" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.813@0.0.1280.813" timestamp="1593423834308" />
     <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1595136706927">
