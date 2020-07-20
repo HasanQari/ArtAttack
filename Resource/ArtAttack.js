@@ -114,13 +114,13 @@ $(".shapesClass").click(function () {
 //----------------------------------------------------
 //ADD text
 $("#save-text").on("click", function () {
-    console.log($("#add-text").val());
+   // console.log($("#add-text").val());
     var userText = document.createElement("label");
     let stage = document.getElementById("stage");
     userText.setAttribute("id", "userTextOnStage");
     userText.setAttribute("type", "text");
     let userTextOnStage= document.getElementById("userTextOnStage");
-    console.log(userTextOnStage);
+    //console.log(userTextOnStage);
     userText.innerHTML= ($("#add-text").val());
     stage.appendChild(userText);
 

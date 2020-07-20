@@ -89,8 +89,8 @@ session_start();
                 <div class="displayFlex">
                     <h2 class="section-head">Design Title</h2>
                     <input type="text" name="Projectitle" placeholder="Write project title here!"
-                           class="inputField">
-                    <button class="btn pointer" id="saveDesignBtn">Save</button>
+                           class="inputField" id="Projecttitle">
+                    <button class="btn pointer" id="saveDesignBtn" onclick="SaveStage()">Save</button>
                     <button class="btn pointer" id="deleteDesignBtn" onclick="deleteStage()">Delete</button>
                     <!--     <button class="btn pointer" id="helpDesignBtn"><i class="fa fa-question-circle-o"></i> </button> -->
                     <button class="btn pointer" id="HelpDesignBtn" onclick="helpUser()">Help</button>
@@ -104,6 +104,25 @@ session_start();
         </div>
     </div>
 </section>
+
+<script>
+    function SaveStage(){
+        console.log("hello");
+        let stage = document.getElementById("stage");
+        let Allstage = stage.outerHTML;
+        console.log(Allstage);
+        let title = document.getElementById("Projecttitle");
+        let name = title.innerHTML;
+        console.log(name);
+        <?php
+        include "../../Model/DataBase/DBcon.php";
+        $sql = "INSERT INTO mydesign  ('name_mydesign','date_mydesign','path_mydesign') VALUES ('','SYSDATE',All)";
+
+        $result = mysqli_query($conn, $sql);
+        ?>
+    }
+
+</script>
 
 <!-- ***** Cool Line ***** -->
 <div class="toolBar section_padding_toolBar_resp">
