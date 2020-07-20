@@ -151,7 +151,7 @@ session_start();
                 }
                 ?>
                 <form action="upload.php" method="post" enctype="multipart/form-data">
-                    Select image to upload:
+
                     <input type="file" name="fileToUpload" id="fileToUpload" accept="image/png, image/jpeg , image/jpg" size="10">
                 </form>
             </div>
