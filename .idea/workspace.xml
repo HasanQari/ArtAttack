@@ -25,10 +25,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57f6b229-b42e-4248-aa52-bf1610b93a60" name="Default Changelist" comment="JS Update">
+    <list default="true" id="57f6b229-b42e-4248-aa52-bf1610b93a60" name="Default Changelist" comment="Add Image PHP">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resource/ArtAttack.js" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/ArtAttack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/services/service3-1.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/services/service3-1.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/services/service3-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/services/service3-2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,14 +116,8 @@
       <workItem from="1594812740433" duration="834000" />
       <workItem from="1594833819385" duration="635000" />
       <workItem from="1594834872581" duration="45295000" />
-      <workItem from="1595210772831" duration="1112000" />
-    </task>
-    <task id="LOCAL-00010" summary="updated">
-      <created>1593630548841</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1593630548841</updated>
+      <workItem from="1595210772831" duration="1401000" />
+      <workItem from="1595212486321" duration="381000" />
     </task>
     <task id="LOCAL-00011" summary="updated">
       <created>1593940382557</created>
@@ -463,7 +455,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595184036749</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Add Image PHP">
+      <created>1595212066303</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1595212066305</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,7 +505,8 @@
     <MESSAGE value="update doaa for text in template" />
     <MESSAGE value="Responsive" />
     <MESSAGE value="doaa page" />
-    <option name="LAST_COMMIT_MESSAGE" value="doaa page" />
+    <MESSAGE value="Add Image PHP" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Image PHP" />
   </component>
   <component name="WindowStateProjectService">
     <state x="304" y="0" key="#CLI_Interpreters" timestamp="1594835618494">
@@ -580,12 +580,13 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="488" y="254" key="VCS.ChangelistChooser/0.0.1280.680@0.0.1280.680" timestamp="1594841673293" />
-    <state x="233" y="117" key="Vcs.Push.Dialog.v2" timestamp="1595184039169">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="262" y="155" key="Vcs.Push.Dialog.v2" timestamp="1595212069912">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="233" y="117" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1595184039169" />
     <state x="448" y="-752" key="Vcs.Push.Dialog.v2/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1594327344148" />
     <state x="233" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.813@0.0.1280.813" timestamp="1593423834308" />
+    <state x="262" y="155" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1595212069912" />
     <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1595136706927">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
