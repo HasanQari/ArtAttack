@@ -32,8 +32,8 @@ function logoutAjax() {
 //JS here !
 
 // Add SVG on Stage:
-let elements = 0;
-$('#stage').html('<svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>');
+/*let elements = 0;
+$('#stage').html('<svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>');*/
 
 //Add Photo:
 $('#save-picture').on('click', function () {

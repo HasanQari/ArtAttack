@@ -133,11 +133,31 @@ session_start();
             </div>
             <div class="modal-body">
                 <label>Select Photo</label>
-                <input type="file" name="bg" accept="image/png, image/jpeg , image/jpg" size="10">
+                <?php
+                $target_dir = "uploads/"; // specifies the directory where the file is going to be placed
+                $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]); //specifies the path of the file to be uploaded
+                $uploadOk = 1;
+                $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION)); //holds the file extension of the file (in lower case)
+                // Check if image file is a actual image or fake image
+                if(isset($_POST["submit"])) {
+                    $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+                    if($check !== false) {
+                        echo "File is an image - " . $check["mime"] . ".";
+                        $uploadOk = 1;
+                    } else {
+                        echo "File is not an image.";
+                        $uploadOk = 0;
+                    }
+                }
+                ?>
+                <form action="upload.php" method="post" enctype="multipart/form-data">
+                    Select image to upload:
+                    <input type="file" name="fileToUpload" id="fileToUpload" accept="image/png, image/jpeg , image/jpg" size="10">
+                </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" id="save-picture">Select</button>
+                <button type="submit"  name="submit" class="btn btn-primary" id="save-picture">Select</button>
                 <!-- Edit 12: changed id attribute and text of button -->
             </div>
         </div>
