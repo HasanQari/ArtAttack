@@ -1,5 +1,8 @@
 <?php
+
 session_start();
+include "../../Model/DataBase/DBcon.php";
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -117,14 +120,16 @@ session_start();
                 path: Allstage
             });
         <?php
-        $name= $_POST['Projectitle'];
-        $path="";
-        include "../../Model/DataBase/DBcon.php";
+
+
      //   $sql = "INSERT INTO mydesign  ('name_mydesign','date_mydesign','path_mydesign') VALUES ('$name','SYSDATE','$path')";
-        $sql = "INSERT INTO 'mydesign' ('name_mydesign','date_mydesign','path_mydesign') VALUES ('test','SYSDATE','test')";
+       // $sql = "INSERT INTO 'mydesign' ('name_mydesign','date_mydesign','path_mydesign') VALUES ('test','test','test')";
+        $sql="INSERT INTO 'mydesign'( 'name_mydesign', 'date_mydesign', 'path_mydesign') VALUES ('test','test','test')";
         $result = mysqli_query($con, $sql);
+        mysqli_free_result($result);
       //  mysqli_stmt_bind_param($stmt, "st", $name, $path);
         mysqli_stmt_execute($result);
+
 
 
         ?>

@@ -26,7 +26,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57f6b229-b42e-4248-aa52-bf1610b93a60" name="Default Changelist" comment="doaa page">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/services/service3-1.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/services/service3-1.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,14 +120,7 @@
       <workItem from="1594812740433" duration="834000" />
       <workItem from="1594833819385" duration="635000" />
       <workItem from="1594834872581" duration="45295000" />
-      <workItem from="1595281428012" duration="3162000" />
-    </task>
-    <task id="LOCAL-00014" summary="update">
-      <created>1594038830317</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1594038830317</updated>
+      <workItem from="1595281428012" duration="3499000" />
     </task>
     <task id="LOCAL-00015" summary="update">
       <created>1594040448975</created>
@@ -466,7 +458,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595266761002</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="doaa page">
+      <created>1595284675560</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1595284675561</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -509,7 +508,7 @@
     <MESSAGE value="update doaa for text in template" />
     <MESSAGE value="Responsive" />
     <MESSAGE value="doaa page" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <option name="LAST_COMMIT_MESSAGE" value="doaa page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="304" y="0" key="#CLI_Interpreters" timestamp="1594835618494">
@@ -583,10 +582,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="488" y="254" key="VCS.ChangelistChooser/0.0.1280.680@0.0.1280.680" timestamp="1594841673293" />
-    <state x="233" y="117" key="Vcs.Push.Dialog.v2" timestamp="1595266763523">
+    <state x="233" y="117" key="Vcs.Push.Dialog.v2" timestamp="1595284678466">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="117" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1595266763523" />
+    <state x="233" y="117" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1595284678466" />
     <state x="448" y="-752" key="Vcs.Push.Dialog.v2/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1594327344148" />
     <state x="233" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.813@0.0.1280.813" timestamp="1593423834308" />
     <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1595136706927">
