@@ -1,12 +1,9 @@
 <?php
 
 session_start();
-include "../../Model/DataBase/DBcon.php";
-
+require "../Layouts/ServiceHeader.php";
 
 ?>
-<!DOCTYPE html>
-<html lang="en">
 
 <head>
 
@@ -48,43 +45,6 @@ include "../../Model/DataBase/DBcon.php";
 
 <body>
 
-
-<!-- ***** Header Area Start ***** -->
-<header class="header_areaMD animated">
-    <div class="container-fluid">
-        <div class="row align-items-center">
-            <!-- Menu Area Start -->
-            <div class="col-12 col-lg-10">
-                <div class="menu_area">
-                    <nav class="navbar navbar-expand-lg navbar-light">
-                        <!-- Logo -->
-                        <a class="navbar-brand" href="#">Art<span id="AttackWord">Attack</span></a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar"
-                                aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span
-                                    class="navbar-toggler-icon"></span></button>
-                        <!-- Menu Area -->
-                        <div class="collapse navbar-collapse" id="ca-navbar">
-                            <ul class="navbar-nav ml-auto" id="nav">
-                                <li class="nav-item"><a class="nav-link respBtnHeader" href="../profile.html">My
-                                        Profile</a></li>
-                                <li class="nav-item"><a class="nav-link" href="../HomeMember.html">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="../MyDesign.html">My Design</a></li>
-                                <li class="nav-item"><a class="nav-link" href="../Home.html">Logout</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-            <!-- Customer Profile btn -->
-            <div class="col-12 col-lg-2">
-                <div class="Cus d-none d-lg-block">
-                    <a href="../profile.html">Hi Customer</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-<!-- ***** Header Area End ***** -->
 <section class="special-area bg-white section_padding_Container_resp" id="about">
     <div class="container">
         <div class="row" style="padding: 5%">
@@ -92,10 +52,11 @@ include "../../Model/DataBase/DBcon.php";
                 <!-- Section Heading Area -->
                 <div class="displayFlex">
                     <h2 class="section-head">Design Title</h2>
-                    <form action="service3-1.php" method="post"><input type="text" name="Projectitle" placeholder="Write project title here!"
-                                  class="inputField"  onkeyup="showHint(this.value)" >
-                    <button class="btn pointer" id="saveDesignBtn" onclick="SaveStage()">Save</button>
-                    </form>
+<!--                    <form action="service3-1.php" method="post">-->
+                        <input type="text" name="ProjectTitle" placeholder="Write project title here!"
+                               class="inputField">
+                        <button class="btn pointer" name="saveBtn" id="saveDesignBtn" onclick="SaveStage()">Save</button>
+<!--                    </form>-->
                     <button class="btn pointer" id="deleteDesignBtn" onclick="deleteStage()">Delete</button>
                     <!--     <button class="btn pointer" id="helpDesignBtn"><i class="fa fa-question-circle-o"></i> </button> -->
                     <button class="btn pointer" id="HelpDesignBtn" onclick="helpUser()">Help</button>
@@ -110,37 +71,41 @@ include "../../Model/DataBase/DBcon.php";
     </div>
 </section>
 
-<script>
-
-        function showHint(str) {
-            var xhttp;
-            if (str.length == 0) {
-                document.getElementById("stage").innerHTML = "";
-                return;
-            }
-            xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    document.getElementById("stage").innerHTML = this.responseText;
-                }
-            };
-            xhttp.open("POST", "service3-1.php?q="+str, true);
-            xhttp.send();
-        }
-        <?php
-         $name =POST['Projectitle'];
-        $sql = "INSERT INTO mydesign  ('name_mydesign','date_mydesign','path_mydesign') VALUES ('$name','SYSDATE','$path')";
-        $result = mysqli_query($con, $sql);
-        mysqli_free_result($result);
-      //  mysqli_stmt_bind_param($stmt, "st", $name, $path);
-        mysqli_stmt_execute($result);
-
-
-
-        ?>
-    }
-
-</script>
+<!--<script>-->
+<!--    function SaveStage() {-->
+<!---->
+<!--        let stage = document.getElementById("stage");-->
+<!--        let AllStage = stage.outerHTML;-->
+<!--        var httpr = new XMLHttpRequest();-->
+<!--        httpr.open("POST","service3-1.php",true);-->
+<!--        // httpr.setRequestHeader();-->
+<!--           httpr.send("AllStage=" + Allstage);-->
+<!--    }-->
+<!--</script>-->
+<!---->
+<?php
+//require '../../Model/DataBase/DBcon.php';
+//if (isset($_POST['saveBtn'])) {
+//    $title = $_POST['ProjectTitle'];
+//    $AllStage = $_POST['AllStage'];
+//    $conx = mysqli_connect('localhost', 'root', '1234', 'ArtAttack');
+//    $sql = "INSERT INTO 'mydesign'( name_mydesign, date_mydesign, path_mydesign) VALUES ('$title','SYSDATE','$AllStage')";
+//
+//$stmt = mysqli_stmt_init($conn);
+//if (!mysqli_stmt_prepare($stmt, $sql)) {
+//    header("Location: View/services/service3-1.php?error=sqlerror");
+//    exit();
+//} else {
+//    //mysqli_stmt_bind_param($stmt, "sss", $username, $email, $hash);
+//    mysqli_stmt_execute($stmt);
+//    header("Location: View/services/service3-1.php?ok=success");
+//}
+//    mysqli_stmt_close($stmt);
+//    mysqli_close($conn);
+//
+//}
+//
+//?>
 
 <!-- ***** Cool Line ***** -->
 <div class="toolBar section_padding_toolBar_resp">
@@ -158,11 +123,13 @@ include "../../Model/DataBase/DBcon.php";
 
 
 <!-- Modal for Add picture (1) : -->
-<div class="modal fade" id="picture-modal" tabindex="-1" role="dialog" aria-labelledby="picture-modal-label" aria-hidden="true">
+<div class="modal fade" id="picture-modal" tabindex="-1" role="dialog" aria-labelledby="picture-modal-label"
+     aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <!-- <h5 class="modal-title" id="exampleModalLabel">Add Picture</h5> --> <!-- Edit 11: changed id to 'picture-modal-label' -->
+                <!-- <h5 class="modal-title" id="exampleModalLabel">Add Picture</h5> -->
+                <!-- Edit 11: changed id to 'picture-modal-label' -->
                 <h5 class="modal-title" id="picture-modal-label">Add Picture</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -172,7 +139,8 @@ include "../../Model/DataBase/DBcon.php";
                 <form id="form" method="POST" enctype="multipart/form-data">
                     <div class="custom-control custom-control-inline">
                         <div class="custom-file mr-4">
-                            <input type="file" name="fileToUpload" id="fileToUpload" class="custom-file-input" accept="image/png, image/jpeg , image/jpg" size="10">
+                            <input type="file" name="fileToUpload" id="fileToUpload" class="custom-file-input"
+                                   accept="image/png, image/jpeg , image/jpg" size="10">
                             <label class="custom-file-label" for="fileToUpload">Select Photo</label>
                         </div>
                         <input type="submit" class="btn btn-primary" value="Upload Image" name="Submit">
@@ -182,19 +150,23 @@ include "../../Model/DataBase/DBcon.php";
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" id="save-picture">Select</button> <!-- Edit 12: changed id attribute and text of button -->
+                <button type="button" class="btn btn-primary" id="save-picture">Select</button>
+                <!-- Edit 12: changed id attribute and text of button -->
             </div>
         </div>
     </div>
 </div>
 
 <!-- Modal For Add Wallpaper (2) : -->
-<!-- <div class="modal fade" id="exampleModal-wall" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> --> <!-- Edit 13: changed id to 'wallpaper-modal' and aria-labelledby to 'wallpaper-modal-label' -->
-<div class="modal fade" id="wallpaper-modal" tabindex="-1" role="dialog" aria-labelledby="wallpaper-modal-label" aria-hidden="true">
+<!-- <div class="modal fade" id="exampleModal-wall" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> -->
+<!-- Edit 13: changed id to 'wallpaper-modal' and aria-labelledby to 'wallpaper-modal-label' -->
+<div class="modal fade" id="wallpaper-modal" tabindex="-1" role="dialog" aria-labelledby="wallpaper-modal-label"
+     aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <!-- <h5 class="modal-title">Image Gallery</h5> --> <!-- Edit 14: added id attribute and changed text to 'Add Wallpaper' -->
+                <!-- <h5 class="modal-title">Image Gallery</h5> -->
+                <!-- Edit 14: added id attribute and changed text to 'Add Wallpaper' -->
                 <h5 class="modal-title" id="wallpaper-modal-label">Add Wallpaper</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -410,7 +382,7 @@ include "../../Model/DataBase/DBcon.php";
 
 
 <script>
-    $('#form').on('submit', function(e) {
+    $('#form').on('submit', function (e) {
         e.preventDefault();
         $.ajax({
             url: '../upload.php',
@@ -419,8 +391,8 @@ include "../../Model/DataBase/DBcon.php";
             contentType: false,
             cache: false,
             processData: false,
-            success: function(data) {
-                if(data != 'invalid') {
+            success: function (data) {
+                if (data != 'invalid') {
                     $('#upload-result').html(data);
                 }
             }

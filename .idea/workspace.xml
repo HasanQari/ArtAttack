@@ -27,6 +27,8 @@
   <component name="ChangeListManager">
     <list default="true" id="57f6b229-b42e-4248-aa52-bf1610b93a60" name="Default Changelist" comment="doaa page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resource/ArtAttack.js" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/ArtAttack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/services/service3-1.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/services/service3-1.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,14 +121,7 @@
       <workItem from="1595313395436" duration="974000" />
       <workItem from="1595329627580" duration="1472000" />
       <workItem from="1595331247123" duration="3060000" />
-      <workItem from="1595350562380" duration="1422000" />
-    </task>
-    <task id="LOCAL-00018" summary="update">
-      <created>1594060664337</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1594060664338</updated>
+      <workItem from="1595350562380" duration="7478000" />
     </task>
     <task id="LOCAL-00019" summary="update">
       <created>1594137695941</created>
@@ -464,7 +459,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595350934746</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="doaa page">
+      <created>1595353155094</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1595353155094</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -510,28 +512,28 @@
     <option name="LAST_COMMIT_MESSAGE" value="doaa page" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="304" y="0" key="#CLI_Interpreters" timestamp="1594835618494">
+    <state x="304" y="0" key="#CLI_Interpreters" timestamp="1595360403009">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="304" y="0" key="#CLI_Interpreters/0.0.1280.680@0.0.1280.680" timestamp="1594835618494" />
+    <state x="304" y="0" key="#CLI_Interpreters/0.0.1280.680@0.0.1280.680" timestamp="1595360403009" />
     <state x="537" y="-816" key="#CLI_Interpreters/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1594315598767" />
     <state x="267" y="19" key="#Inspections" timestamp="1594799659224">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="267" y="19" key="#Inspections/0.0.1280.680@0.0.1280.680" timestamp="1594799659224" />
-    <state x="406" y="0" key="#PHP" timestamp="1594835627826">
+    <state x="406" y="0" key="#PHP" timestamp="1595360410731">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="406" y="0" key="#PHP/0.0.1280.680@0.0.1280.680" timestamp="1594835627826" />
+    <state x="406" y="0" key="#PHP/0.0.1280.680@0.0.1280.680" timestamp="1595360410731" />
     <state x="664" y="-828" key="#PHP/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1594315614300" />
     <state x="444" y="130" key="#Web_Browsers" timestamp="1594850853507">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="444" y="130" key="#Web_Browsers/0.0.1280.680@0.0.1280.680" timestamp="1594850853507" />
-    <state x="207" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594898789855">
+    <state x="191" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595360240742">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="207" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1594898789855" />
+    <state x="191" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1595360240742" />
     <state x="314" y="83" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.813/157.-900.1600.860@0.0.1280.813" timestamp="1594034712585" />
     <state x="549" y="-812" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1593976613165" />
     <state x="637" y="-735" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1593976523254">
@@ -585,16 +587,16 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="488" y="254" key="VCS.ChangelistChooser/0.0.1280.680@0.0.1280.680" timestamp="1594841673293" />
-    <state x="233" y="117" key="Vcs.Push.Dialog.v2" timestamp="1595350938389">
+    <state x="233" y="117" key="Vcs.Push.Dialog.v2" timestamp="1595353157310">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="117" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1595350938389" />
+    <state x="233" y="117" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1595353157310" />
     <state x="448" y="-752" key="Vcs.Push.Dialog.v2/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1594327344148" />
     <state x="233" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.813@0.0.1280.813" timestamp="1593423834308" />
-    <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1595136706927">
+    <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1595357915018">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1280.680@0.0.1280.680" timestamp="1595136706927" />
+    <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1280.680@0.0.1280.680" timestamp="1595357915018" />
     <state x="653" y="-647" key="com.intellij.ide.util.TipDialog" timestamp="1593974006626">
       <screen x="157" y="-900" width="1600" height="860" />
     </state>

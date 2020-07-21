@@ -90,7 +90,7 @@ $(".templateClass").click(function () {
 //this is for add the shapes
 $(".shapesClass").click(function () {
     let shapeHtml = $(this).html();
-    console.log(shapeHtml);
+
 
     let stage = $("#stage").append(shapeHtml);
 
