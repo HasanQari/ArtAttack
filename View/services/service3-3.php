@@ -1,8 +1,8 @@
 <?php
 session_start();
+require "../Layouts/ServiceHeader.php";
 ?>
-<!DOCTYPE html>
-<html lang="en">
+
 
 <head>
 
@@ -45,42 +45,6 @@ session_start();
 <body>
 
 
-<!-- ***** Header Area Start ***** -->
-<header class="header_areaMD animated">
-    <div class="container-fluid">
-        <div class="row align-items-center">
-            <!-- Menu Area Start -->
-            <div class="col-12 col-lg-10">
-                <div class="menu_area">
-                    <nav class="navbar navbar-expand-lg navbar-light">
-                        <!-- Logo -->
-                        <a class="navbar-brand" href="#">Art<span id="AttackWord">Attack</span></a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar"
-                                aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span
-                                class="navbar-toggler-icon"></span></button>
-                        <!-- Menu Area -->
-                        <div class="collapse navbar-collapse" id="ca-navbar">
-                            <ul class="navbar-nav ml-auto" id="nav">
-                                <li class="nav-item"><a class="nav-link respBtnHeader" href="../profile.html">My
-                                    Profile</a></li>
-                                <li class="nav-item"><a class="nav-link" href="../HomeMember.html">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="../MyDesign.html">My Design</a></li>
-                                <li class="nav-item"><a class="nav-link" href="../Home.html">Logout</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-            <!-- Customer Profile btn -->
-            <div class="col-12 col-lg-2">
-                <div class="Cus d-none d-lg-block">
-                    <a href="../profile.html">Hi Customer</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-<!-- ***** Header Area End ***** -->
 <section class="special-area bg-white section_padding_Container_resp" id="about">
     <div class="container">
         <div class="row" style="padding: 5%">
