@@ -153,44 +153,60 @@ include "../../Model/DataBase/DBcon.php";
 
 
 <!-- Modal for Add picture (1) : -->
-<div class="modal fade" id="picture-modal" tabindex="-1" role="dialog" aria-labelledby="picture-modal-label"
-     aria-hidden="true">
-    <div class="modal-dialog" role="document">
+<div class="modal fade" id="picture-modal" tabindex="-1" role="dialog" aria-labelledby="picture-modal-label" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
+                <!-- <h5 class="modal-title" id="exampleModalLabel">Add Picture</h5> --> <!-- Edit 11: changed id to 'picture-modal-label' -->
                 <h5 class="modal-title" id="picture-modal-label">Add Picture</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <label>Select Photo</label>
-                <?php
-                $target_dir = "uploads/"; // specifies the directory where the file is going to be placed
-                $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]); //specifies the path of the file to be uploaded
-                $uploadOk = 1;
-                $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION)); //holds the file extension of the file (in lower case)
-                // Check if image file is a actual image or fake image
-                if(isset($_POST["submit"])) {
-                    $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-                    if($check !== false) {
-                        echo "File is an image - " . $check["mime"] . ".";
-                        $uploadOk = 1;
-                    } else {
-                        echo "File is not an image.";
-                        $uploadOk = 0;
-                    }
-                }
-                ?>
-                <form action="upload.php" method="post" enctype="multipart/form-data">
-
-                    <input type="file" name="fileToUpload" id="fileToUpload" accept="image/png, image/jpeg , image/jpg" size="10">
+                <form id="form" method="POST" enctype="multipart/form-data">
+                    <div class="custom-control custom-control-inline">
+                        <div class="custom-file mr-4">
+                            <input type="file" name="fileToUpload" id="fileToUpload" class="custom-file-input" accept="image/png, image/jpeg , image/jpg" size="10">
+                            <label class="custom-file-label" for="fileToUpload">Select Photo</label>
+                        </div>
+                        <input type="submit" class="btn btn-primary" value="Upload Image" name="Submit">
+                    </div>
                 </form>
+                <div id="upload-result"></div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="submit"  name="submit" class="btn btn-primary" id="save-picture">Select</button>
+                <button type="button" class="btn btn-primary" id="save-picture">Select</button> <!-- Edit 12: changed id attribute and text of button -->
+            </div>
+        </div>
+    </div>
+</div>
 
+<!-- Modal For Add Wallpaper (2) : -->
+<!-- <div class="modal fade" id="exampleModal-wall" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> --> <!-- Edit 13: changed id to 'wallpaper-modal' and aria-labelledby to 'wallpaper-modal-label' -->
+<div class="modal fade" id="wallpaper-modal" tabindex="-1" role="dialog" aria-labelledby="wallpaper-modal-label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!-- <h5 class="modal-title">Image Gallery</h5> --> <!-- Edit 14: added id attribute and changed text to 'Add Wallpaper' -->
+                <h5 class="modal-title" id="wallpaper-modal-label">Add Wallpaper</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <input type="image" id="wall1" class="img-fluid" src="../../Resource/img/WallPaper/wall1.jpeg"/>
+                <input type="image" id="wall2" class="img-fluid" src="../../Resource/img/WallPaper/wall2.jpeg"/>
+                <input type="image" id="wall3" class="img-fluid" src="../../Resource/img/WallPaper/wall3.jpeg"/>
+                <input type="image" id="wall4" class="img-fluid" src="../../Resource/img/WallPaper/wall4.jpeg"/>
+                <input type="image" id="wall5" class="img-fluid" src="../../Resource/img/WallPaper/wall5.jpeg"/>
+                <input type="image" id="wall6" class="img-fluid" src="../../Resource/img/WallPaper/wall6.jpeg"/>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="save-image">Select</button>
             </div>
         </div>
     </div>
@@ -388,7 +404,24 @@ include "../../Model/DataBase/DBcon.php";
 <script type="text/javascript" src="../../Resource/ArtAttack.js"></script>
 
 
-
+<script>
+    $('#form').on('submit', function(e) {
+        e.preventDefault();
+        $.ajax({
+            url: '../upload.php',
+            type: 'POST',
+            data: new FormData(this),
+            contentType: false,
+            cache: false,
+            processData: false,
+            success: function(data) {
+                if(data != 'invalid') {
+                    $('#upload-result').html(data);
+                }
+            }
+        })
+    });
+</script>
 
 
 </body>

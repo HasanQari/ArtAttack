@@ -37,9 +37,9 @@ $('#stage').html('<svg width="100%" height="100%" version="1.1" xmlns="http://ww
 
 //Add Photo:
 $('#save-picture').on('click', function () {
-    let pic = $('#image-url').val();
-    alert(pic);
-    $('#stage svg').html($('#stage svg').html() + '<g id="picture-' + ++elements + '"><image href="' + $('#image-url').val() + '"/></g>');
+    $('#picture-modal').modal('hide');
+    // $('#stage').html('#stage').html() + '<image ' + ' href="' + $('#image-url').val() + '/>'); // Edit 42: used append instead of html
+    $('#stage').html($('#stage').html() + $('#upload-result').html());
 });
 //});
 
@@ -55,16 +55,18 @@ $('input[type=image]').on('click', function () {
 // Add wall paper on stage when user press "Select" button :
 $('#save-image').on('click', function () {
     $('#wallpaper-modal').modal('hide');
-    if($('#stage svg g#wallpaper').length > 0) {
-        $('#stage svg g#wallpaper').html('<image x="0" y="0" width="100%" href="' + Wallpaper.href + '"/>');
-    } else {
+
 
         let imageUrl = "url('" + Wallpaper.href+ "')";
         $("#stage").html("");
-        $('#stage').css("backgroundImage",imageUrl);
+        $('#stage').css({
+            "background-image": imageUrl,
+            "background-size": "cover",
+            "background-repeat": "no-repeat",
+        });
 
         //$('#stage svg').html('<g id="wallpaper"><image x="0" y="0" width="100%" href="' + Wallpaper.href + '"/></g>' + $('#stage svg').html());
-    }
+
 
 });
 
@@ -125,6 +127,11 @@ $("#save-text").on("click", function () {
     //console.log(userTextOnStage);
     userText.innerHTML= ($("#add-text").val());
     stage.appendChild(userText);
+    $("#userTextOnStage").resizable({handles: "all", // Edit 46: no need for drag and resize in wallpaper
+          autoHide: true,
+          ghost:true,
+          aspectRatio:true,});
+    $("#userTextOnStage").draggable({cursor: "move"});
 
 });
 
