@@ -12,7 +12,7 @@ session_start();
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Design Graduation and Success Parties</title>
+    <title>Design Advertisements</title>
 
 
     <!-- Core Stylesheet -->
@@ -158,7 +158,7 @@ session_start();
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 <button type="submit"  name="submit" class="btn btn-primary" id="save-picture">Select</button>
-                <!-- Edit 12: changed id attribute and text of button -->
+
             </div>
         </div>
     </div>

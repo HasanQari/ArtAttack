@@ -1,5 +1,8 @@
 <?php
+
 session_start();
+include "../../Model/DataBase/DBcon.php";
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +15,7 @@ session_start();
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Design Graduation and Success Parties</title>
+    <title>Design Business Cards</title>
 
 
     <!-- Core Stylesheet -->
@@ -88,9 +91,10 @@ session_start();
                 <!-- Section Heading Area -->
                 <div class="displayFlex">
                     <h2 class="section-head">Design Title</h2>
-                    <input type="text" name="Projectitle" placeholder="Write project title here!"
-                           class="inputField">
-                    <button class="btn pointer" id="saveDesignBtn">Save</button>
+                    <form action="service3-1.php" method="post"><input type="text" name="Projectitle" placeholder="Write project title here!"
+                                  class="inputField" >
+                    <button class="btn pointer" id="saveDesignBtn" onclick="SaveStage()">Save</button>
+                    </form>
                     <button class="btn pointer" id="deleteDesignBtn" onclick="deleteStage()">Delete</button>
                     <!--     <button class="btn pointer" id="helpDesignBtn"><i class="fa fa-question-circle-o"></i> </button> -->
                     <button class="btn pointer" id="HelpDesignBtn" onclick="helpUser()">Help</button>
@@ -104,6 +108,34 @@ session_start();
         </div>
     </div>
 </section>
+
+<script>
+    function SaveStage(){
+        console.log("hello");
+        let stage = document.getElementById("stage");
+        let Allstage = stage.outerHTML;
+        console.log(Allstage);
+        $.post("service3-1.php",
+            {
+                path: Allstage
+            });
+        <?php
+
+
+     //   $sql = "INSERT INTO mydesign  ('name_mydesign','date_mydesign','path_mydesign') VALUES ('$name','SYSDATE','$path')";
+       // $sql = "INSERT INTO 'mydesign' ('name_mydesign','date_mydesign','path_mydesign') VALUES ('test','test','test')";
+        $sql="INSERT INTO 'mydesign'( 'name_mydesign', 'date_mydesign', 'path_mydesign') VALUES ('test','test','test')";
+        $result = mysqli_query($con, $sql);
+        mysqli_free_result($result);
+      //  mysqli_stmt_bind_param($stmt, "st", $name, $path);
+        mysqli_stmt_execute($result);
+
+
+
+        ?>
+    }
+
+</script>
 
 <!-- ***** Cool Line ***** -->
 <div class="toolBar section_padding_toolBar_resp">

@@ -89,12 +89,14 @@ $(".shapesClass").click(function () {
 
 //Edit Text into Template :
         function edit () {
+            console.log("helloline92");
             var userText = document.createElement("INPUT");
             let stage = document.getElementById("stage");
             userText.setAttribute("id", "usertext");
             userText.setAttribute("type", "text");
-
-            $(".templateText").on("click", function () {
+             console.log("line96");
+            $(".cards").click( function () {
+                console.log("line98");
                 let textHtml = $(this);
                 $(this).html("");
                 console.log($(this).html());
@@ -114,13 +116,13 @@ $(".shapesClass").click(function () {
 //----------------------------------------------------
 //ADD text
 $("#save-text").on("click", function () {
-    console.log($("#add-text").val());
+   // console.log($("#add-text").val());
     var userText = document.createElement("label");
     let stage = document.getElementById("stage");
     userText.setAttribute("id", "userTextOnStage");
     userText.setAttribute("type", "text");
     let userTextOnStage= document.getElementById("userTextOnStage");
-    console.log(userTextOnStage);
+    //console.log(userTextOnStage);
     userText.innerHTML= ($("#add-text").val());
     stage.appendChild(userText);
 
