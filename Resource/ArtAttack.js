@@ -89,12 +89,14 @@ $(".shapesClass").click(function () {
 
 //Edit Text into Template :
         function edit () {
+            console.log("helloline92");
             var userText = document.createElement("INPUT");
             let stage = document.getElementById("stage");
             userText.setAttribute("id", "usertext");
             userText.setAttribute("type", "text");
-
-            $(".templateText").on("click", function () {
+             console.log("line96");
+            $(".cards").click( function () {
+                console.log("line98");
                 let textHtml = $(this);
                 $(this).html("");
                 console.log($(this).html());
