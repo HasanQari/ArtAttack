@@ -27,7 +27,6 @@
   <component name="ChangeListManager">
     <list default="true" id="57f6b229-b42e-4248-aa52-bf1610b93a60" name="Default Changelist" comment="doaa page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/services/service3-1.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/services/service3-1.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,14 +119,7 @@
       <workItem from="1595313395436" duration="974000" />
       <workItem from="1595329627580" duration="1472000" />
       <workItem from="1595331247123" duration="3060000" />
-      <workItem from="1595350562380" duration="357000" />
-    </task>
-    <task id="LOCAL-00017" summary="update">
-      <created>1594050281572</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1594050281573</updated>
+      <workItem from="1595350562380" duration="1422000" />
     </task>
     <task id="LOCAL-00018" summary="update">
       <created>1594060664337</created>
@@ -465,7 +457,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595333375694</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="doaa page">
+      <created>1595350934744</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1595350934746</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -586,10 +585,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="488" y="254" key="VCS.ChangelistChooser/0.0.1280.680@0.0.1280.680" timestamp="1594841673293" />
-    <state x="233" y="117" key="Vcs.Push.Dialog.v2" timestamp="1595333378168">
+    <state x="233" y="117" key="Vcs.Push.Dialog.v2" timestamp="1595350938389">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="117" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1595333378168" />
+    <state x="233" y="117" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1595350938389" />
     <state x="448" y="-752" key="Vcs.Push.Dialog.v2/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1594327344148" />
     <state x="233" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.813@0.0.1280.813" timestamp="1593423834308" />
     <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1595136706927">
