@@ -3,6 +3,7 @@
 session_start();
 include "../../Model/DataBase/DBcon.php";
 
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -92,7 +93,7 @@ include "../../Model/DataBase/DBcon.php";
                 <div class="displayFlex">
                     <h2 class="section-head">Design Title</h2>
                     <form action="service3-1.php" method="post"><input type="text" name="Projectitle" placeholder="Write project title here!"
-                                  class="inputField" >
+                                  class="inputField"  onkeyup="showHint(this.value)" >
                     <button class="btn pointer" id="saveDesignBtn" onclick="SaveStage()">Save</button>
                     </form>
                     <button class="btn pointer" id="deleteDesignBtn" onclick="deleteStage()">Delete</button>
@@ -119,6 +120,21 @@ include "../../Model/DataBase/DBcon.php";
             {
                 path: Allstage
             });
+        function showHint(str) {
+            var xhttp;
+            if (str.length == 0) {
+                document.getElementById("txtHint").innerHTML = "";
+                return;
+            }
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("txtHint").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", "gethint.php?q="+str, true);
+            xhttp.send();
+        }
         <?php
 
 

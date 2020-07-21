@@ -39,6 +39,13 @@ $('#stage').html('<svg width="100%" height="100%" version="1.1" xmlns="http://ww
 $('#save-picture').on('click', function () {
     $('#picture-modal').modal('hide');
     $('#stage').html($('#stage').html() + $('#upload-result').html());
+    $(".Allimg").resizable({handles: "all",
+        autoHide: true,
+        ghost:true,
+        aspectRatio:true,});
+    $(".Allimg").draggable({cursor: "move"});
+
+
 });
 //});
 
@@ -75,47 +82,54 @@ $(".templateClass").click(function () {
     let stage = $("#stage").html(templateHtml);
     edit ();
     $('#stage').css("backgroundImage", "");
-    let savedHTMl = stage.html();
+
+
 });
 
 
 //this is for add the shapes
 $(".shapesClass").click(function () {
     let shapeHtml = $(this).html();
+    console.log(shapeHtml);
+
     let stage = $("#stage").append(shapeHtml);
-    let savedHTMl = stage.html();
-    $(".shapesClass").resizable({handles: "all", // Edit 46: no need for drag and resize in wallpaper
+
+    $(".shapes").resizable({handles: "all",
         autoHide: true,
         ghost:true,
         aspectRatio:true,});
-    $(".shapesClass").draggable({cursor: "move"});
+    $(".shapes").draggable({cursor: "move"});
+
 
 });
 
 //----------------------------------------------------
 
 //Edit Text into Template :
-       // function edit () {
+       function edit () {
+           console.log("edit");
+           var userText = document.createElement("INPUT");
+           let stage = document.getElementById("stage");
+           userText.setAttribute("id", "usertext");
+           userText.setAttribute("type", "text");
+           var textHtml;
+           $(".cards").click(function (e) {
+               textHtml = $(this);
 
-            var userText = document.createElement("INPUT");
-            let stage = document.getElementById("stage");
-            userText.setAttribute("id", "usertext");
-            userText.setAttribute("type", "text");
-
-            $(".cards").click( function () {
-                let textHtml = $(this);
-                stage.appendChild(userText);
-                let inputText = document.getElementById("usertext");
-                $("#usertext").change(function () {
+               userText.setAttribute("value",$(this).html());
+               stage.appendChild(userText);
+               console.log(e.currentTarget);
+               let inputText = document.getElementById("usertext");
+               $("#usertext").change(function () {
                   textHtml.html($(this).val());
+               })
 
-                })
-                if ($("#stage").click) {
-                    $("#usertext").remove();
-                }
-            });
+               $("#usertext").focusout(function(){
+                $("#usertext").remove();
+               });
+           });
 
-       // }
+       }
 //----------------------------------------------------
 //ADD text
 $("#save-text").on("click", function () {
@@ -124,15 +138,16 @@ $("#save-text").on("click", function () {
     let stage = document.getElementById("stage");
     userText.setAttribute("id", "userTextOnStage");
     userText.setAttribute("type", "text");
+    userText.setAttribute("class","Alltext")
     let userTextOnStage= document.getElementById("userTextOnStage");
     //console.log(userTextOnStage);
     userText.innerHTML= ($("#add-text").val());
     stage.appendChild(userText);
-    $("#userTextOnStage").resizable({handles: "all", // Edit 46: no need for drag and resize in wallpaper
+    $(".Alltext").resizable({handles: "all",
           autoHide: true,
           ghost:true,
           aspectRatio:true,});
-    $("#userTextOnStage").draggable({cursor: "move"});
+    $(".Alltext").draggable({cursor: "move"});
 
 });
 

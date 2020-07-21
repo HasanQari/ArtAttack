@@ -195,9 +195,9 @@
                     <i class="fa fa-id-card-o" aria-hidden="true"></i>
                     <h5>The Commercial Designs</h5>
                     <ul>
-                        <li><a href="services/Service3-1.html" class="ServList">Design Business Cards</a></li>
-                        <li><a href="services/Service3-2.html" class="ServList">Design Advertisements</a></li>
-                        <li><a href="services/Service3-3.html" class="ServList">Design Poster or Banner</a></li>
+                        <li><a href="services/Service3-1.php" class="ServList">Design Business Cards</a></li>
+                        <li><a href="services/Service3-2.php" class="ServList">Design Advertisements</a></li>
+                        <li><a href="services/Service3-3.php" class="ServList">Design Poster or Banner</a></li>
                     </ul>
                 </div>
             </div>
