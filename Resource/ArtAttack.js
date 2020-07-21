@@ -38,7 +38,6 @@ $('#stage').html('<svg width="100%" height="100%" version="1.1" xmlns="http://ww
 //Add Photo:
 $('#save-picture').on('click', function () {
     $('#picture-modal').modal('hide');
-    // $('#stage').html('#stage').html() + '<image ' + ' href="' + $('#image-url').val() + '/>'); // Edit 42: used append instead of html
     $('#stage').html($('#stage').html() + $('#upload-result').html());
 });
 //});
@@ -85,6 +84,12 @@ $(".shapesClass").click(function () {
     let shapeHtml = $(this).html();
     let stage = $("#stage").append(shapeHtml);
     let savedHTMl = stage.html();
+    $(".shapesClass").resizable({handles: "all", // Edit 46: no need for drag and resize in wallpaper
+        autoHide: true,
+        ghost:true,
+        aspectRatio:true,});
+    $(".shapesClass").draggable({cursor: "move"});
+
 });
 
 //----------------------------------------------------
@@ -153,6 +158,7 @@ function helpUser() {
         "\n Fourth : you can downloads the template or share it . ")
 }
 
-//----------------------------------------------------
+//---------------------Add Picture-------------------------------
+
 
 //----------------------------------------------------
