@@ -741,3 +741,7 @@ html {
     width: 10%;
 }
 
+.templateClass {
+    height: 350px;
+    width: 350px;
+}

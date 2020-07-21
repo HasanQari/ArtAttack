@@ -88,31 +88,27 @@ $(".shapesClass").click(function () {
 //----------------------------------------------------
 
 //Edit Text into Template :
-        function edit () {
-            console.log("helloline92");
+       // function edit () {
+
             var userText = document.createElement("INPUT");
             let stage = document.getElementById("stage");
             userText.setAttribute("id", "usertext");
             userText.setAttribute("type", "text");
-             console.log("line96");
+
             $(".cards").click( function () {
-                console.log("line98");
                 let textHtml = $(this);
-                $(this).html("");
-                console.log($(this).html());
                 stage.appendChild(userText);
                 let inputText = document.getElementById("usertext");
                 $("#usertext").change(function () {
-                    // here i dont know how to make the text appers in template
+                  textHtml.html($(this).val());
 
-                    console.log($(this).val());
-                    textHtml.html($(this).val());
-                    console.log(textHtml.html());
                 })
-
+                if ($("#stage").click) {
+                    $("#usertext").remove();
+                }
             });
 
-        }
+       // }
 //----------------------------------------------------
 //ADD text
 $("#save-text").on("click", function () {

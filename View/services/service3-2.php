@@ -231,7 +231,7 @@ session_start();
                 $counter = 0;
                 if (mysqli_num_rows($result) > 0) {
                 while ($row = mysqli_fetch_assoc($result)) {
-                echo "<div class='templateClass' >" . $row['path_serv2'] . "</div>";
+                echo "<div  class='templateClass' >" . $row['path_serv2'] . "</div>";
                 ?>
 
                 <?php
