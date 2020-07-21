@@ -111,36 +111,25 @@ include "../../Model/DataBase/DBcon.php";
 </section>
 
 <script>
-    function SaveStage(){
-        console.log("hello");
-        let stage = document.getElementById("stage");
-        let Allstage = stage.outerHTML;
-        console.log(Allstage);
-        $.post("service3-1.php",
-            {
-                path: Allstage
-            });
+
         function showHint(str) {
             var xhttp;
             if (str.length == 0) {
-                document.getElementById("txtHint").innerHTML = "";
+                document.getElementById("stage").innerHTML = "";
                 return;
             }
             xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
-                    document.getElementById("txtHint").innerHTML = this.responseText;
+                    document.getElementById("stage").innerHTML = this.responseText;
                 }
             };
-            xhttp.open("GET", "gethint.php?q="+str, true);
+            xhttp.open("POST", "service3-1.php?q="+str, true);
             xhttp.send();
         }
         <?php
-
-
-     //   $sql = "INSERT INTO mydesign  ('name_mydesign','date_mydesign','path_mydesign') VALUES ('$name','SYSDATE','$path')";
-       // $sql = "INSERT INTO 'mydesign' ('name_mydesign','date_mydesign','path_mydesign') VALUES ('test','test','test')";
-        $sql="INSERT INTO 'mydesign'( 'name_mydesign', 'date_mydesign', 'path_mydesign') VALUES ('test','test','test')";
+         $name =POST['Projectitle'];
+        $sql = "INSERT INTO mydesign  ('name_mydesign','date_mydesign','path_mydesign') VALUES ('$name','SYSDATE','$path')";
         $result = mysqli_query($con, $sql);
         mysqli_free_result($result);
       //  mysqli_stmt_bind_param($stmt, "st", $name, $path);
