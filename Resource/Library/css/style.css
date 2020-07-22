@@ -90,6 +90,11 @@ h6 {
     height: 95px;
 }
 .section_padding_Container_resp{
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.section_padding_Container_resp100{
     padding-top: 100px;
     padding-bottom: 50px;
 }

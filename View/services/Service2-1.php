@@ -17,11 +17,14 @@ require "../Layouts/ServiceHeader.php";
     <link rel="stylesheet" href="../../Resource/Library/css/font-awesome.min.css">
     <!-- this is for scripts method -->
     <script src="../../Resource/Service2-1.js"></script>
+    <!-- this is for icon -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <main>
 
-<section class="special-area bg-white section_padding_Container_resp" id="about">
+<section class="special-area bg-white section_padding_Container_resp100" id="about">
     <div class="container">
         <div class="row">
             <div class="col-12">

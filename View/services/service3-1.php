@@ -1,6 +1,5 @@
 <?php
 
-session_start();
 require "../Layouts/ServiceHeader.php";
 
 ?>
@@ -41,6 +40,10 @@ require "../Layouts/ServiceHeader.php";
     <!-- Custom styles for this template-->
     <link href="../../Resource/Library/css/sb-admin-2.css" rel="stylesheet">
     <link href="../../Resource/Library/css/style.css" rel="stylesheet">
+
+    <!-- this is for icon -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>

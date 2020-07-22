@@ -31,6 +31,15 @@ session_start();
     <!-- Home Script Sheet -->
     <script src="../Resource/ArtAttack.js"></script>
 
+    <!-- this is for icon -->
+    <link rel="stylesheet" href="../Resource/Library/css/font-awesome.min.css">
+
+    <!-- this is for icon -->
+    <link rel="stylesheet" href="../Resource/Library/css/ionicons.min.css">
+
+    <!-- this is for icon -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>

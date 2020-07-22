@@ -25,10 +25,40 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57f6b229-b42e-4248-aa52-bf1610b93a60" name="Default Changelist" comment="doaa page">
+    <list default="true" id="57f6b229-b42e-4248-aa52-bf1610b93a60" name="Default Changelist" comment="Responsive">
+      <change afterPath="$PROJECT_DIR$/Controller/MailConfig.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/auth/FPassController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/Layouts/ServiceFooter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/Pink and Violet Neon Gradient Creative Presentation.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_29_2020_10_52_AM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_29_2020_10_52_AM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_15_2020_12_38_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_15_2020_12_38_PM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_15_2020_1_30_AM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_15_2020_1_30_AM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_19_2020_1_23_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_19_2020_1_23_PM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_19_2020_7_16_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_19_2020_7_16_PM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_19_2020_8_23_AM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_19_2020_8_23_AM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_19_2020_8_23_AM__Default_Changelist_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_19_2020_8_23_AM__Default_Changelist_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resource/ArtAttack.js" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/ArtAttack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/DataBase/DBcon.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DataBase/DBcon.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resource/ArtAttack.css" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/ArtAttack.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resource/Library/css/ionicons.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/Library/css/ionicons.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resource/Library/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/Library/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Auth/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/Auth/Login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/Home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Layouts/ServiceHeader.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/Layouts/ServiceHeader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Layouts/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/Layouts/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/MyDesign.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/MyDesign.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/OThdn.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/OThdn.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/Profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/services/Service1-1.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/services/Service1-1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/services/Service1-2.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/services/Service1-2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/services/Service1-3.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/services/Service1-3.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/services/Service2-1.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/services/Service2-1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/services/service3-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/services/service3-1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/services/service3-1.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/services/service3-1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/services/service3-2.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/services/service3-2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/services/service3-3.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/services/service3-3.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,12 +81,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="MERGE" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
-    <include_path>
-      <path value="$PROJECT_DIR$/../../../../laragon/etc/php/pear" />
-      <path value="$PROJECT_DIR$/.." />
-    </include_path>
-  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.2" />
   <component name="ProjectId" id="1dzJvUhgLg7V4CO8vIKCptt4L7f" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -79,6 +104,7 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -121,7 +147,14 @@
       <workItem from="1595313395436" duration="974000" />
       <workItem from="1595329627580" duration="1472000" />
       <workItem from="1595331247123" duration="3060000" />
-      <workItem from="1595350562380" duration="7478000" />
+      <workItem from="1595350562380" duration="1422000" />
+    </task>
+    <task id="LOCAL-00018" summary="update">
+      <created>1594060664337</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1594060664338</updated>
     </task>
     <task id="LOCAL-00019" summary="update">
       <created>1594137695941</created>
@@ -459,14 +492,7 @@
       <option name="project" value="LOCAL" />
       <updated>1595350934746</updated>
     </task>
-    <task id="LOCAL-00067" summary="doaa page">
-      <created>1595353155094</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1595353155094</updated>
-    </task>
-    <option name="localTasksCounter" value="68" />
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -512,29 +538,30 @@
     <option name="LAST_COMMIT_MESSAGE" value="doaa page" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="304" y="0" key="#CLI_Interpreters" timestamp="1595360403009">
+    <state x="304" y="0" key="#CLI_Interpreters" timestamp="1594835618494">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="304" y="0" key="#CLI_Interpreters/0.0.1280.680@0.0.1280.680" timestamp="1595360403009" />
+    <state x="304" y="0" key="#CLI_Interpreters/0.0.1280.680@0.0.1280.680" timestamp="1594835618494" />
     <state x="537" y="-816" key="#CLI_Interpreters/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1594315598767" />
     <state x="267" y="19" key="#Inspections" timestamp="1594799659224">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="267" y="19" key="#Inspections/0.0.1280.680@0.0.1280.680" timestamp="1594799659224" />
-    <state x="406" y="0" key="#PHP" timestamp="1595360410731">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="406" y="0" key="#PHP" timestamp="1595368083385">
+      <screen x="0" y="0" width="1280" height="813" />
     </state>
-    <state x="406" y="0" key="#PHP/0.0.1280.680@0.0.1280.680" timestamp="1595360410731" />
+    <state x="406" y="0" key="#PHP/0.0.1280.680@0.0.1280.680" timestamp="1594835627826" />
+    <state x="406" y="0" key="#PHP/0.0.1280.813/157.-900.1600.860@0.0.1280.813" timestamp="1595368083385" />
     <state x="664" y="-828" key="#PHP/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1594315614300" />
     <state x="444" y="130" key="#Web_Browsers" timestamp="1594850853507">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="444" y="130" key="#Web_Browsers/0.0.1280.680@0.0.1280.680" timestamp="1594850853507" />
-    <state x="191" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595360240742">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="88" y="76" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595368097215">
+      <screen x="0" y="0" width="1280" height="813" />
     </state>
-    <state x="191" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1595360240742" />
-    <state x="314" y="83" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.813/157.-900.1600.860@0.0.1280.813" timestamp="1594034712585" />
+    <state x="207" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1594898789855" />
+    <state x="88" y="76" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.813/157.-900.1600.860@0.0.1280.813" timestamp="1595368097215" />
     <state x="549" y="-812" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1593976613165" />
     <state x="637" y="-735" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1593976523254">
       <screen x="157" y="-900" width="1600" height="860" />
@@ -583,20 +610,24 @@
       <screen x="157" y="-900" width="1600" height="860" />
     </state>
     <state x="791" y="-547" key="NewPhpFileDialog/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1594321030693" />
+    <state x="142" y="52" key="SettingsEditor" timestamp="1595368153408">
+      <screen x="0" y="0" width="1280" height="813" />
+    </state>
+    <state x="142" y="52" key="SettingsEditor/0.0.1280.813/157.-900.1600.860@0.0.1280.813" timestamp="1595368153408" />
     <state x="488" y="254" key="VCS.ChangelistChooser" timestamp="1594841673293">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="488" y="254" key="VCS.ChangelistChooser/0.0.1280.680@0.0.1280.680" timestamp="1594841673293" />
-    <state x="233" y="117" key="Vcs.Push.Dialog.v2" timestamp="1595353157310">
+    <state x="233" y="117" key="Vcs.Push.Dialog.v2" timestamp="1595350938389">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="117" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1595353157310" />
+    <state x="233" y="117" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1595350938389" />
     <state x="448" y="-752" key="Vcs.Push.Dialog.v2/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1594327344148" />
     <state x="233" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.813@0.0.1280.813" timestamp="1593423834308" />
-    <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1595357915018">
+    <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1595136706927">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1280.680@0.0.1280.680" timestamp="1595357915018" />
+    <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1280.680@0.0.1280.680" timestamp="1595136706927" />
     <state x="653" y="-647" key="com.intellij.ide.util.TipDialog" timestamp="1593974006626">
       <screen x="157" y="-900" width="1600" height="860" />
     </state>

@@ -18,6 +18,9 @@ require "Layouts/header.php";
     <!-- AA Responsive CSS -->
     <link href="../Resource/Library/css/AAresponsive.css" rel="stylesheet">
 
+    <!-- this is for icon -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <main>

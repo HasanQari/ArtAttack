@@ -87,6 +87,34 @@
     </div>
 </div>
 
+<?php
+//if(!empty($_POST["forgot-password"])){
+//    $conn = mysqli_connect("localhost", "root", "", "blog_samples");
+//
+//    $condition = "";
+//
+//    if(!empty($_POST["user-email"])) {
+//        if(!empty($condition)) {
+//            $condition = " and ";
+//        }
+//        $condition = " member_email = '" . $_POST["user-email"] . "'";
+//    }
+//
+//    if(!empty($condition)) {
+//        $condition = " where " . $condition;
+//    }
+//
+//    $sql = "Select * from members " . $condition;
+//    $result = mysqli_query($conn,$sql);
+//    $user = mysqli_fetch_array($result);
+//
+//    if(!empty($user)) {
+//        require_once("../../Controller/auth/FPassController.php");
+//    } else {
+//        $error_message = 'No User Found';
+//    }
+//}
+//?>
 <!-- Forget Password -->
 <div id="fPassHolder" class="popStyle" style="display: none">
     <div class="wrapperAuT fadeInDownAuT">
@@ -94,12 +122,14 @@
             <!-- Tabs Titles -->
             <h2 class="signTitle active">Remember Password </h2>
             <!-- Login Form -->
-            <form method="post" action="../../Controller/auth/LoginController.php">
-                <input type="email" name="email" placeholder="Email"
+            <form>
+<!--                 method="post" action="../../Controller/auth/FPassController.php"> -->
+
+                <input type="email" name="user-email" id="user-email" placeholder="Email"
                        class="fadeInAuT fst inputAuT">
 
-                <a type="submit" class="fadeInAuT trd AuTsubmit"
-                   onclick="sendMail()"><span style="color:#fff;">SEND</span></a>
+                <button type="submit" name="forgot-password" id="forgot-password" class="fadeInAuT trd AuTsubmit"
+                   onclick="sendMail()"><span style="color:#fff;">SEND</span></button>
             </form>
             <div>
                 <a id="BkHome" class="underlineHover" href="">Remember it? Back to Login</a>
