@@ -25,40 +25,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57f6b229-b42e-4248-aa52-bf1610b93a60" name="Default Changelist" comment="Responsive">
-      <change afterPath="$PROJECT_DIR$/Controller/MailConfig.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controller/auth/FPassController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/Layouts/ServiceFooter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/Pink and Violet Neon Gradient Creative Presentation.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_29_2020_10_52_AM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_29_2020_10_52_AM__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_15_2020_12_38_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_15_2020_12_38_PM__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_15_2020_1_30_AM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_15_2020_1_30_AM__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_19_2020_1_23_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_19_2020_1_23_PM__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_19_2020_7_16_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_19_2020_7_16_PM__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_19_2020_8_23_AM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_19_2020_8_23_AM__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_19_2020_8_23_AM__Default_Changelist_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_19_2020_8_23_AM__Default_Changelist_1.xml" afterDir="false" />
+    <list default="true" id="57f6b229-b42e-4248-aa52-bf1610b93a60" name="Default Changelist" comment="few update">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_15_2020_1_30_AM_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_15_2020_1_30_AM__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/DataBase/DBcon.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DataBase/DBcon.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resource/ArtAttack.css" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/ArtAttack.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resource/Library/css/ionicons.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/Library/css/ionicons.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resource/Library/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/Library/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Auth/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/Auth/Login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/Home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Layouts/ServiceHeader.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/Layouts/ServiceHeader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Layouts/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/Layouts/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/MyDesign.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/MyDesign.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/OThdn.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/OThdn.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/Profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/services/Service1-1.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/services/Service1-1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/services/Service1-2.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/services/Service1-2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/services/Service1-3.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/services/Service1-3.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/services/Service2-1.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/services/Service2-1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/services/service3-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/services/service3-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/services/service3-1.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/services/service3-1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/services/service3-2.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/services/service3-2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/services/service3-3.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/services/service3-3.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,13 +118,7 @@
       <workItem from="1595329627580" duration="1472000" />
       <workItem from="1595331247123" duration="3060000" />
       <workItem from="1595350562380" duration="1422000" />
-    </task>
-    <task id="LOCAL-00018" summary="update">
-      <created>1594060664337</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1594060664338</updated>
+      <workItem from="1595385365530" duration="2911000" />
     </task>
     <task id="LOCAL-00019" summary="update">
       <created>1594137695941</created>
@@ -492,7 +456,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595350934746</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="few update">
+      <created>1595383344559</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1595383344559</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -529,13 +500,13 @@
     <MESSAGE value="My design" />
     <MESSAGE value="updated" />
     <MESSAGE value="hasan service and few update" />
-    <MESSAGE value="few update" />
     <MESSAGE value="big update" />
     <MESSAGE value="update" />
     <MESSAGE value="update doaa for text in template" />
     <MESSAGE value="Responsive" />
     <MESSAGE value="doaa page" />
-    <option name="LAST_COMMIT_MESSAGE" value="doaa page" />
+    <MESSAGE value="few update" />
+    <option name="LAST_COMMIT_MESSAGE" value="few update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="304" y="0" key="#CLI_Interpreters" timestamp="1594835618494">
@@ -618,16 +589,17 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="488" y="254" key="VCS.ChangelistChooser/0.0.1280.680@0.0.1280.680" timestamp="1594841673293" />
-    <state x="233" y="117" key="Vcs.Push.Dialog.v2" timestamp="1595350938389">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="448" y="-752" key="Vcs.Push.Dialog.v2" timestamp="1595383346924">
+      <screen x="157" y="-900" width="1600" height="860" />
     </state>
     <state x="233" y="117" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1595350938389" />
-    <state x="448" y="-752" key="Vcs.Push.Dialog.v2/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1594327344148" />
+    <state x="448" y="-752" key="Vcs.Push.Dialog.v2/0.0.1280.813/157.-900.1600.860@157.-900.1600.860" timestamp="1595383346924" />
     <state x="233" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.813@0.0.1280.813" timestamp="1593423834308" />
-    <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1595136706927">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="93" y="111" width="1095" height="592" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1595392043559">
+      <screen x="0" y="0" width="1280" height="813" />
     </state>
     <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1280.680@0.0.1280.680" timestamp="1595136706927" />
+    <state x="93" y="111" width="1095" height="592" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1280.813/157.-900.1600.860@0.0.1280.813" timestamp="1595392043559" />
     <state x="653" y="-647" key="com.intellij.ide.util.TipDialog" timestamp="1593974006626">
       <screen x="157" y="-900" width="1600" height="860" />
     </state>

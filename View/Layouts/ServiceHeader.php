@@ -5,30 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
 <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-<head>
-    <!-- Favicon -->
-    <link rel="icon" href="">
 
-    <!-- Core Stylesheet -->
-    <link href="../../Resource/Library/css/style.css" rel="stylesheet">
-
-    <!-- Responsive CSS -->
-    <link href="../../Resource/Library/css/responsive.css" rel="stylesheet">
-
-    <!-- Home Style Sheet -->
-    <link href="../../Resource/ArtAttack.css" rel="stylesheet" type="text/css">
-
-    <!-- AA Responsive CSS -->
-    <link href="../../Resource/Library/css/AAresponsive.css" rel="stylesheet">
-
-    <!-- Home Script Sheet -->
-    <script src="../../Resource/ArtAttack.js"></script>
-
-    <!-- this is for icon -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-</head>
 <body>
 
 <!-- ***** Header Area Start ***** -->
