@@ -1,3 +1,0 @@
-# ArtAttack
-Art Attack
-
